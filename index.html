@@ -25,8 +25,8 @@
     </nav>
     <div class="nav-cta">
       <a href="tel:18882261026" class="nav-phone nav-phone--dark">1-888-226-1026</a>
-      <a href="claim-your-cash.html" class="btn btn-primary btn-sm">Get a loan</a>
-      <a href="renew-your-loan.html" class="btn btn-sm btn-amber">Renew</a>
+      <a href="claim-your-cash.html" class="btn-header-red">Get a loan</a>
+      <a href="renew-your-loan.html" class="btn-header-amber">Renew</a>
     </div>
     <button class="hamburger hamburger--dark" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -764,8 +764,64 @@
 }
 .site-header--dark .nav-links a { color: rgba(255,255,255,0.65); }
 .site-header--dark .nav-links a:hover { color: #fff; }
-.btn-amber { background:linear-gradient(90deg,#e82020,#ff6a4d,#ffb347); background-size:200%; color:#fff; border-color:transparent; animation:shimmer 4s ease-in-out infinite; }
-.btn-amber:hover { transform:translateY(-1px); box-shadow:0 8px 24px rgba(232,32,32,0.4); }
+.btn-header-red, .btn-header-amber {
+  display:inline-flex; align-items:center;
+  border-radius:9999px; padding:7px 16px;
+  font-size:0.8125rem; font-weight:700;
+  text-decoration:none; border:none; cursor:pointer;
+  transition:transform 0.15s ease, box-shadow 0.15s ease;
+  position:relative; white-space:nowrap;
+}
+.btn-header-red {
+  background:linear-gradient(135deg,#e82020,#c41515);
+  color:#fff;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.15) inset,
+    0 -2px 0 rgba(0,0,0,0.3) inset,
+    0 4px 12px rgba(232,32,32,0.4),
+    0 3px 0 #8b0000;
+}
+.btn-header-red:hover {
+  transform:perspective(400px) translateZ(4px) translateY(-1px);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.18) inset,
+    0 -2px 0 rgba(0,0,0,0.3) inset,
+    0 8px 20px rgba(232,32,32,0.55),
+    0 4px 0 #8b0000;
+}
+.btn-header-red:active {
+  transform:translateY(1px);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.1) inset,
+    0 4px 8px rgba(232,32,32,0.3),
+    0 1px 0 #8b0000;
+}
+.btn-header-amber {
+  background:linear-gradient(90deg,#e82020,#ff6a4d,#ffb347);
+  background-size:200%;
+  color:#fff;
+  animation:shimmer 4s ease-in-out infinite;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.15) inset,
+    0 -2px 0 rgba(0,0,0,0.3) inset,
+    0 4px 12px rgba(232,32,32,0.35),
+    0 3px 0 #7a3800;
+}
+.btn-header-amber:hover {
+  transform:perspective(400px) translateZ(4px) translateY(-1px);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.18) inset,
+    0 -2px 0 rgba(0,0,0,0.3) inset,
+    0 8px 20px rgba(232,32,32,0.45),
+    0 4px 0 #7a3800;
+}
+.btn-header-amber:active {
+  transform:translateY(1px);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.1) inset,
+    0 4px 8px rgba(232,32,32,0.25),
+    0 1px 0 #7a3800;
+}
 .site-logo-img { display:flex; align-items:center; }
 .site-logo-img img { height:36px; width:auto; display:block; }
 .site-logo-img--footer img { height:32px; width:auto; opacity:0.92; }
