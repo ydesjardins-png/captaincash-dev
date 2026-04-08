@@ -243,35 +243,16 @@
 <section class="section section--dark bento-section">
   <!-- circuit grid background (same as hero) -->
   <div class="bento-bg" aria-hidden="true">
+    <!-- large red orb bottom-right -->
     <div class="bento-orb bento-orb-1"></div>
+    <!-- soft blue orb top-left -->
     <div class="bento-orb bento-orb-2"></div>
-    <div class="bento-grid-lines"></div>
-    <svg class="bento-circuit" viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-      <!-- radial burst from bottom-right focal point -->
-      <!-- spoke lines -->
-      <line x1="1200" y1="520" x2="-100" y2="-80"  stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
-      <line x1="1200" y1="520" x2="0"    y2="-40"  stroke="rgba(255,255,255,0.035)" stroke-width="1"/>
-      <line x1="1200" y1="520" x2="120"  y2="-60"  stroke="rgba(232,32,32,0.1)"    stroke-width="1.5"/>
-      <line x1="1200" y1="520" x2="280"  y2="-70"  stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
-      <line x1="1200" y1="520" x2="460"  y2="-80"  stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-      <line x1="1200" y1="520" x2="640"  y2="-80"  stroke="rgba(232,32,32,0.08)"   stroke-width="1.5"/>
-      <line x1="1200" y1="520" x2="820"  y2="-60"  stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-      <line x1="1200" y1="520" x2="-100" y2="80"   stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
-      <line x1="1200" y1="520" x2="-100" y2="200"  stroke="rgba(232,32,32,0.1)"    stroke-width="1.5"/>
-      <line x1="1200" y1="520" x2="-100" y2="340"  stroke="rgba(255,255,255,0.035)" stroke-width="1"/>
-      <line x1="1200" y1="520" x2="-100" y2="460"  stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-      <line x1="1200" y1="520" x2="200"  y2="560"  stroke="rgba(232,32,32,0.07)"   stroke-width="1"/>
-      <line x1="1200" y1="520" x2="500"  y2="580"  stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-      <!-- concentric arc rings -->
-      <ellipse cx="1200" cy="520" rx="380"  ry="380"  fill="none" stroke="rgba(255,255,255,0.04)"  stroke-width="1"/>
-      <ellipse cx="1200" cy="520" rx="620"  ry="620"  fill="none" stroke="rgba(232,32,32,0.08)"    stroke-width="1"/>
-      <ellipse cx="1200" cy="520" rx="860"  ry="860"  fill="none" stroke="rgba(255,255,255,0.03)"  stroke-width="1"/>
-      <ellipse cx="1200" cy="520" rx="1100" ry="1100" fill="none" stroke="rgba(232,32,32,0.05)"    stroke-width="1"/>
-      <!-- small focal dot -->
-      <circle cx="1200" cy="520" r="4" fill="rgba(232,32,32,0.5)"/>
-      <circle cx="1200" cy="520" r="10" fill="none" stroke="rgba(232,32,32,0.25)" stroke-width="1"/>
-      <circle cx="1200" cy="520" r="18" fill="none" stroke="rgba(232,32,32,0.12)" stroke-width="1"/>
-    </svg>
+    <!-- conic beam from top-LEFT (mirrored from hero) -->
+    <div class="bento-beam"></div>
+    <!-- left edge light -->
+    <div class="bento-edge-light"></div>
+    <!-- subtle horizontal glow line mid-height -->
+    <div class="bento-glow-line"></div>
   </div>
 
   <div class="container" style="position:relative;z-index:2">
@@ -1227,13 +1208,53 @@ h1 em {
 .bento-section { position:relative; overflow:hidden; }
 .bento-bg { position:absolute; inset:0; pointer-events:none; overflow:hidden; }
 .bento-orb { position:absolute; border-radius:50%; }
-.bento-orb-1 { width:600px;height:600px;background:radial-gradient(circle,rgba(232,32,32,0.1) 0%,transparent 65%);top:-200px;right:-150px; }
-.bento-orb-2 { width:500px;height:500px;background:radial-gradient(circle,rgba(26,110,240,0.08) 0%,transparent 65%);bottom:-200px;left:-100px; }
-.bento-grid-lines {
-  position:absolute; inset:0;
-  /* dot grid hidden — circuit SVG handles the texture */
+/* large red orb — bottom-right */
+.bento-orb-1 {
+  width:700px; height:700px;
+  background:radial-gradient(circle,rgba(232,32,32,0.18) 0%,rgba(232,32,32,0.06) 40%,transparent 70%);
+  bottom:-280px; right:-160px;
+  filter:blur(20px);
+  animation:orbPulse 8s ease-in-out infinite;
 }
-.bento-circuit { position:absolute; inset:0; width:100%; height:100%; }
+/* soft blue orb — top-left */
+.bento-orb-2 {
+  width:500px; height:500px;
+  background:radial-gradient(circle,rgba(26,110,240,0.12) 0%,transparent 65%);
+  top:-180px; left:-100px;
+  filter:blur(18px);
+}
+/* conic beam — top-LEFT corner (mirrored from hero) */
+.bento-beam {
+  position:absolute;
+  top:0; left:0;
+  width:65%; height:100%;
+  background:conic-gradient(
+    from 345deg at 0% 0%,
+    transparent 0deg,
+    rgba(232,32,32,0.14) 20deg,
+    rgba(232,32,32,0.05) 38deg,
+    transparent 56deg
+  );
+}
+/* thin red edge light — left side */
+.bento-edge-light {
+  position:absolute;
+  top:0; left:0;
+  width:1px; height:100%;
+  background:linear-gradient(
+    180deg,
+    rgba(232,32,32,0.75) 0%,
+    rgba(232,32,32,0.2) 50%,
+    transparent 100%
+  );
+}
+/* subtle horizontal red glow line mid-height */
+.bento-glow-line {
+  position:absolute;
+  top:42%; left:0;
+  width:35%; height:1px;
+  background:linear-gradient(90deg, rgba(232,32,32,0.2), transparent);
+}
 
 /* ── BENTO GRID ── */
 .bento-grid {
