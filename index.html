@@ -43,16 +43,11 @@
 
   <!-- atmospheric background -->
   <div class="hero-bg" aria-hidden="true">
-    <!-- layer 1: dark cityscape photo at low opacity -->
-    <div class="hero-photo"></div>
-    <!-- layer 2: dark overlay to keep text readable -->
-    <div class="hero-overlay"></div>
-    <!-- layer 3: red conic beam from top-right corner -->
+    <div class="hero-orb-red"></div>
+    <div class="hero-orb-blue"></div>
     <div class="hero-beam"></div>
-    <!-- layer 4: red edge light line on the right -->
     <div class="hero-edge-light"></div>
-    <!-- layer 5: soft blue ambient bottom-left -->
-    <div class="hero-ambient"></div>
+    <div class="hero-glow-line"></div>
   </div>
 
   <div class="container hero-inner">
@@ -787,62 +782,61 @@
 /* ── HERO ── */
 .hero {
   position: relative;
-  background: #060d1a;
+  background: #04080f;
   padding: 0;
 }
 .hero-bg {
   position: absolute; inset: 0; pointer-events: none; overflow: hidden;
 }
-/* photo layer — dark cityscape, very subtle */
-.hero-photo {
-  position: absolute; inset: 0;
-  background: url('images/hero-bg.avif') center/cover no-repeat;
-  opacity: 0.15;
+/* large dramatic red orb — bleeds off bottom-right */
+.hero-orb-red {
+  position: absolute;
+  width: 700px; height: 700px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(232,32,32,0.22) 0%, rgba(232,32,32,0.08) 40%, transparent 70%);
+  bottom: -280px; right: -160px;
+  filter: blur(20px);
+  animation: orbPulse 8s ease-in-out infinite;
 }
-/* dark gradient overlay — keeps content readable */
-.hero-overlay {
-  position: absolute; inset: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(6,13,26,0.92) 0%,
-    rgba(6,13,26,0.78) 40%,
-    rgba(6,13,26,0.82) 70%,
-    rgba(6,13,26,0.92) 100%
-  );
+@keyframes orbPulse { 0%,100%{opacity:1;} 50%{opacity:0.7;} }
+/* soft blue orb — top-left */
+.hero-orb-blue {
+  position: absolute;
+  width: 500px; height: 500px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(26,110,240,0.14) 0%, transparent 65%);
+  top: -160px; left: -100px;
+  filter: blur(15px);
 }
-/* red conic beam from top-right — D option */
+/* red conic beam from top-right */
 .hero-beam {
   position: absolute;
   top: 0; right: 0;
-  width: 70%; height: 100%;
+  width: 65%; height: 100%;
   background: conic-gradient(
     from 195deg at 100% 0%,
     transparent 0deg,
-    rgba(232,32,32,0.13) 18deg,
-    rgba(232,32,32,0.06) 35deg,
-    transparent 55deg
+    rgba(232,32,32,0.16) 20deg,
+    rgba(232,32,32,0.06) 38deg,
+    transparent 58deg
   );
-  filter: blur(1px);
 }
 /* thin red edge light — right side */
 .hero-edge-light {
   position: absolute;
   top: 0; right: 0;
-  width: 2px; height: 100%;
+  width: 1px; height: 100%;
   background: linear-gradient(
     180deg,
-    rgba(232,32,32,0.7) 0%,
-    rgba(232,32,32,0.3) 40%,
+    rgba(232,32,32,0.8) 0%,
+    rgba(232,32,32,0.2) 50%,
     transparent 100%
   );
 }
-/* soft blue ambient — bottom-left */
-.hero-ambient {
+/* subtle horizontal red glow line mid-height */
+.hero-glow-line {
   position: absolute;
-  bottom: -100px; left: -100px;
-  width: 500px; height: 500px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(26,110,240,0.1) 0%, transparent 65%);
+  top: 45%; right: 0;
+  width: 40%; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(232,32,32,0.2));
 }
 
 /* floating notification pills */
