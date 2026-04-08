@@ -43,68 +43,16 @@
 
   <!-- atmospheric background -->
   <div class="hero-bg" aria-hidden="true">
-    <div class="hero-orb hero-orb-1"></div>
-    <div class="hero-orb hero-orb-2"></div>
-    <div class="hero-orb hero-orb-3"></div>
-    <div class="hero-grid"></div>
-    <svg class="hero-circuit" viewBox="0 0 1200 620" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-      <!--
-        Layout map (1200px viewBox, content starts at x=24px container padding):
-        Copy col:    x 24  → 470
-        Mascot col:  x 510 → 740  (220px wide)
-        Calc col:    x 780 → 1176
-        Vertical:    content ~y80 (eyebrow) → y480 (stat strip)
-      -->
-
-      <!-- ① Copy CTA area → Mascot feet
-           From bottom of CTA buttons (x≈280, y≈380) to mascot base (x≈620, y≈500) -->
-      <path d="M 300 375 L 300 420 L 540 420 L 540 500"
-            fill="none" stroke="rgba(232,32,32,0.35)" stroke-width="1.5"
-            stroke-dasharray="none"/>
-      <!-- node at CTA -->
-      <circle cx="300" cy="375" r="3.5" fill="rgba(232,32,32,0.7)">
-        <animate attributeName="opacity" values="1;0.3;1" dur="2.4s" repeatCount="indefinite"/>
-      </circle>
-      <!-- node at mascot base -->
-      <circle cx="540" cy="500" r="3" fill="rgba(232,32,32,0.5)"/>
-      <!-- corner square at bend -->
-      <rect x="537" y="417" width="6" height="6" rx="1" fill="none" stroke="rgba(232,32,32,0.4)" stroke-width="1"/>
-
-      <!-- ② Mascot shoulder → Calc card top-left
-           From mascot upper area (x≈660, y≈180) to calc card (x≈800, y≈120) -->
-      <path d="M 660 190 L 720 190 L 720 130 L 800 130"
-            fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
-      <!-- node at mascot shoulder -->
-      <circle cx="660" cy="190" r="3" fill="rgba(255,255,255,0.3)">
-        <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
-      </circle>
-      <!-- node at calc entry -->
-      <circle cx="800" cy="130" r="3" fill="rgba(255,255,255,0.25)"/>
-      <!-- corner square -->
-      <rect x="717" y="127" width="6" height="6" rx="1" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
-
-      <!-- ③ Trust pills → Calc card bottom
-           From trust pills row (x≈380, y≈440) down and across to calc bottom (x≈800, y≈480) -->
-      <path d="M 380 435 L 380 480 L 800 480"
-            fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
-      <circle cx="380" cy="435" r="2.5" fill="rgba(255,255,255,0.2)"/>
-      <circle cx="800" cy="480" r="2.5" fill="rgba(255,255,255,0.2)"/>
-
-      <!-- ④ H1 headline right edge → Mascot head
-           From headline area (x≈470, y≈200) to mascot head (x≈570, y≈120) -->
-      <path d="M 465 195 L 510 195 L 510 130 L 570 130"
-            fill="none" stroke="rgba(232,32,32,0.2)" stroke-width="1"/>
-      <circle cx="465" cy="195" r="2.5" fill="rgba(232,32,32,0.45)">
-        <animate attributeName="opacity" values="1;0.2;1" dur="3s" repeatCount="indefinite"/>
-      </circle>
-      <rect x="507" y="127" width="6" height="6" rx="1" fill="none" stroke="rgba(232,32,32,0.25)" stroke-width="1"/>
-
-      <!-- ⑤ Eyebrow pill → top trace (subtle horizontal run) -->
-      <path d="M 300 105 L 470 105"
-            fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-      <circle cx="300" cy="105" r="2" fill="rgba(255,255,255,0.15)"/>
-      <circle cx="470" cy="105" r="2" fill="rgba(255,255,255,0.1)"/>
-    </svg>
+    <!-- layer 1: dark cityscape photo at low opacity -->
+    <div class="hero-photo"></div>
+    <!-- layer 2: dark overlay to keep text readable -->
+    <div class="hero-overlay"></div>
+    <!-- layer 3: red conic beam from top-right corner -->
+    <div class="hero-beam"></div>
+    <!-- layer 4: red edge light line on the right -->
+    <div class="hero-edge-light"></div>
+    <!-- layer 5: soft blue ambient bottom-left -->
+    <div class="hero-ambient"></div>
   </div>
 
   <div class="container hero-inner">
@@ -845,40 +793,56 @@
 .hero-bg {
   position: absolute; inset: 0; pointer-events: none; overflow: hidden;
 }
-.hero-orb {
-  position: absolute; border-radius: 50%;
-}
-.hero-orb-1 {
-  width: 600px; height: 600px;
-  background: radial-gradient(circle, rgba(232,32,32,0.18) 0%, transparent 65%);
-  top: -200px; left: -150px;
-  animation: orbDrift 16s ease-in-out infinite;
-}
-.hero-orb-2 {
-  width: 700px; height: 700px;
-  background: radial-gradient(circle, rgba(26,110,240,0.12) 0%, transparent 65%);
-  bottom: -250px; right: -200px;
-  animation: orbDrift 20s ease-in-out infinite reverse;
-}
-.hero-orb-3 {
-  width: 400px; height: 400px;
-  background: radial-gradient(circle, rgba(232,32,32,0.07) 0%, transparent 65%);
-  top: 40%; left: 38%;
-  animation: orbDrift 24s ease-in-out infinite 4s;
-}
-@keyframes orbDrift {
-  0%,100% { transform: translate(0,0) scale(1); }
-  33%     { transform: translate(30px,-40px) scale(1.06); }
-  66%     { transform: translate(-20px,20px) scale(0.97); }
-}
-.hero-grid {
+/* photo layer — dark cityscape, very subtle */
+.hero-photo {
   position: absolute; inset: 0;
-  /* dot grid hidden — circuit SVG handles the texture */
+  background: url('https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1920&q=60') center/cover no-repeat;
+  opacity: 0.07;
 }
-.hero-circuit {
+/* dark gradient overlay — keeps content readable */
+.hero-overlay {
   position: absolute; inset: 0;
-  width: 100%; height: 100%;
-  pointer-events: none;
+  background: linear-gradient(
+    135deg,
+    rgba(6,13,26,0.97) 0%,
+    rgba(6,13,26,0.82) 40%,
+    rgba(6,13,26,0.88) 70%,
+    rgba(6,13,26,0.97) 100%
+  );
+}
+/* red conic beam from top-right — D option */
+.hero-beam {
+  position: absolute;
+  top: 0; right: 0;
+  width: 70%; height: 100%;
+  background: conic-gradient(
+    from 195deg at 100% 0%,
+    transparent 0deg,
+    rgba(232,32,32,0.13) 18deg,
+    rgba(232,32,32,0.06) 35deg,
+    transparent 55deg
+  );
+  filter: blur(1px);
+}
+/* thin red edge light — right side */
+.hero-edge-light {
+  position: absolute;
+  top: 0; right: 0;
+  width: 2px; height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(232,32,32,0.7) 0%,
+    rgba(232,32,32,0.3) 40%,
+    transparent 100%
+  );
+}
+/* soft blue ambient — bottom-left */
+.hero-ambient {
+  position: absolute;
+  bottom: -100px; left: -100px;
+  width: 500px; height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(26,110,240,0.1) 0%, transparent 65%);
 }
 
 /* floating notification pills */
