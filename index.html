@@ -41,8 +41,13 @@
       </div>
       <div class="container hero-inner">
         <div class="hero-content">
+          <div class="hero-headline-row">
+            <div class="hero-headline-text">
           <span class="hero-eyebrow"><span class="hero-pulse" aria-hidden="true"></span> Trusted Canadian lender since 2015</span>
           <h1>Cash in your account <em>today.</em><span class="hero-sub-headline">No credit check. No paperwork. No waiting.</span></h1>
+            </div>
+            <img src="images/mascot.webp" alt="Captain Cash mascot — a Canadian superhero holding a maple leaf shield" class="hero-mascot" width="180" height="220" loading="eager">
+          </div>
           <p>Get $500–$1,000 by Interac e-Transfer the same business day. Repay over 90–150 days in instalments that fit your schedule. Apply in 5 minutes from your phone.</p>
           <div class="hero-actions">
             <a href="claim-your-cash.html" class="btn btn-primary btn-lg btn-glow">Claim your cash <span aria-hidden="true" class="btn-arrow">&rarr;</span></a>
@@ -381,6 +386,7 @@
   <!-- CTA BANNER -->
   <section class="cta-banner" aria-label="Apply for a loan">
     <div class="container cta-banner-inner">
+      <img src="images/mascot.webp" alt="" aria-hidden="true" class="cta-mascot" width="140" height="170" loading="lazy">
       <div>
         <h2>Ready to get your cash?</h2>
         <p>Apply in 5 minutes. Get approved today. No credit check required.</p>
@@ -398,7 +404,10 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="/" class="site-logo">Captain<span>Cash</span></a>
-          <p>A fast, fair alternative to payday loans for Canadians who need cash today. Serving Canada since 2015.</p>
+          <div class="footer-mascot-row">
+            <img src="images/mascot.webp" alt="Captain Cash mascot" class="footer-mascot" width="72" height="88" loading="lazy">
+            <p>A fast, fair alternative to payday loans for Canadians who need cash today. Serving Canada since 2015.</p>
+          </div>
           <address style="margin-top:1rem;font-size:0.8rem;color:var(--gray-500);font-style:normal;line-height:1.6;">
             1701 Hollis Street W. Suite 800<br>
             Halifax, NS B3J 2T9<br>
@@ -601,6 +610,16 @@
     .cta-banner p { color:#a0aab8; }
     .cta-banner-actions { display:flex; gap:1rem; flex-wrap:wrap; }
 
+    /* ===== MASCOT ===== */
+    .hero-headline-row { display:flex; align-items:flex-end; gap:1.25rem; margin-bottom:0; }
+    .hero-headline-text { flex:1; }
+    .hero-mascot { width:180px; height:auto; flex-shrink:0; filter:drop-shadow(0 12px 24px rgba(0,0,0,0.45)); animation:mascotFloat 5s ease-in-out infinite; transform-origin:bottom center; }
+    @keyframes mascotFloat { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-10px);} }
+    .cta-mascot { width:130px; height:auto; flex-shrink:0; filter:drop-shadow(0 8px 20px rgba(0,0,0,0.5)) brightness(1.05); animation:mascotFloat 5s ease-in-out infinite; }
+    .footer-mascot-row { display:flex; align-items:center; gap:1rem; margin-top:1rem; }
+    .footer-mascot { width:64px; height:auto; flex-shrink:0; opacity:0.9; filter:drop-shadow(0 4px 8px rgba(0,0,0,0.4)); }
+    .footer-mascot-row p { margin:0; }
+
     /* ===== RESPONSIVE ===== */
     @media (max-width:900px) {
       .hero { padding:4rem 0 5rem; }
@@ -613,6 +632,8 @@
       .compare-grid { grid-template-columns:1fr; }
       .faq-preview-grid { grid-template-columns:1fr; }
       .cta-banner-inner { flex-direction:column; text-align:center; }
+      .hero-mascot { width:130px; }
+      .cta-mascot { display:none; }
     }
     @media (max-width:600px) {
       .cost-table th:nth-child(3),.cost-table td:nth-child(3) { display:none; }
