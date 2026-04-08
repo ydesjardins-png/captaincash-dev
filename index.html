@@ -284,7 +284,7 @@
       </div>
     </div>
     <div class="text-center" style="margin-top:3rem">
-      <a href="how-it-works.html" class="btn-ghost-dark">See the full process</a>
+      <a href="how-it-works.html" class="btn-steps-cta">See the full process</a>
     </div>
   </div>
 </section>
@@ -1400,6 +1400,37 @@ h1 em {
   margin-top:16px;
 }
 .step-time-dot { width:5px; height:5px; border-radius:50%; background:#4ade80; box-shadow:0 0 5px #4ade80; flex-shrink:0; }
+.btn-steps-cta {
+  display:inline-flex; align-items:center; gap:10px;
+  background: linear-gradient(135deg, #e82020, #c41515);
+  color: #fff; border-radius: 9999px;
+  padding: 14px 32px; font-size: 1rem; font-weight: 700;
+  text-decoration: none; border: none;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.15) inset,
+    0 -3px 0 rgba(0,0,0,0.3) inset,
+    0 8px 24px rgba(232,32,32,0.4),
+    0 4px 0 #8b0000;
+  transform: perspective(400px) translateZ(0px) translateY(0px);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  position: relative;
+}
+.btn-steps-cta:hover {
+  transform: perspective(400px) translateZ(6px) translateY(-2px);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.18) inset,
+    0 -3px 0 rgba(0,0,0,0.3) inset,
+    0 16px 36px rgba(232,32,32,0.55),
+    0 6px 0 #8b0000;
+}
+.btn-steps-cta:active {
+  transform: perspective(400px) translateZ(0px) translateY(2px);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.1) inset,
+    0 -1px 0 rgba(0,0,0,0.3) inset,
+    0 4px 12px rgba(232,32,32,0.3),
+    0 2px 0 #8b0000;
+}
 
 /* ── CTA BANNER ── */
 .cta-banner {
