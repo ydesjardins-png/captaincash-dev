@@ -548,32 +548,100 @@
 </section>
 
 <!-- ═══════════════════════════════════════
-     COST TRANSPARENCY — soft
+     COST TRANSPARENCY — white interactive
 ═══════════════════════════════════════ -->
-<section class="section bg-soft">
+<section class="section section--cost">
   <div class="container">
     <div class="section-header">
       <span class="badge badge-red">Full transparency</span>
       <h2>What does it actually cost?</h2>
-      <p>We believe you should know the full cost before you apply. No surprises, no hidden fees.</p>
+      <p>Adjust the sliders to see your exact repayment schedule before you apply. No surprises, no hidden fees.</p>
     </div>
-    <div class="cost-table-wrap animate">
-      <table class="cost-table" aria-label="Loan repayment examples">
-        <thead>
-          <tr>
-            <th scope="col">Loan amount</th>
-            <th scope="col">Total repayment</th>
-            <th scope="col">APR</th>
-            <th scope="col">Term</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>$500</td><td><strong>~$750</strong></td><td>23%</td><td>90–150 days</td></tr>
-          <tr><td>$750</td><td><strong>~$1,125</strong></td><td>23%</td><td>90–150 days</td></tr>
-          <tr><td>$1,000</td><td><strong>~$1,500</strong></td><td>23%</td><td>90–150 days</td></tr>
-        </tbody>
-      </table>
-      <p class="cost-disclaimer">These are representative examples. Your actual repayment amounts depend on your approved term and payment frequency. APR 23%. An NSF fee of $45 applies for failed payments. A deferral fee of $25 applies with 48 hours' notice. Full terms disclosed before acceptance.</p>
+
+    <div class="cost-widget animate">
+
+      <!-- controls + summary row -->
+      <div class="cost-top">
+
+        <!-- LEFT: controls -->
+        <div class="cost-controls">
+          <div class="cost-ctrl-label">Configure your loan</div>
+
+          <div class="cost-ctrl-row">
+            <div class="cost-ctrl-meta">
+              <span>Loan amount</span>
+              <span class="cost-ctrl-val" id="lbl-amt">$700</span>
+            </div>
+            <input type="range" id="sl-amt" min="500" max="1000" step="100" value="700"
+                   aria-label="Loan amount" aria-valuemin="500" aria-valuemax="1000" aria-valuenow="700">
+            <div class="cost-slider-marks" aria-hidden="true"><span>$500</span><span>$1,000</span></div>
+          </div>
+
+          <div class="cost-ctrl-row">
+            <div class="cost-ctrl-meta">
+              <span>Repayment term</span>
+              <span class="cost-ctrl-val" id="lbl-term">120 days</span>
+            </div>
+            <input type="range" id="sl-term" min="90" max="150" step="15" value="120"
+                   aria-label="Repayment term" aria-valuemin="90" aria-valuemax="150" aria-valuenow="120">
+            <div class="cost-slider-marks" aria-hidden="true"><span>90 days</span><span>150 days</span></div>
+          </div>
+
+          <div class="cost-ctrl-row">
+            <div class="cost-ctrl-meta"><span>Payment frequency</span></div>
+            <div class="cost-freq-btns" role="group" aria-label="Payment frequency">
+              <button class="cost-freq-btn" data-f="weekly">Weekly</button>
+              <button class="cost-freq-btn cost-freq-btn--active" data-f="biweekly">Bi-weekly</button>
+              <button class="cost-freq-btn" data-f="monthly">Monthly</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: summary -->
+        <div class="cost-summary" aria-live="polite" aria-label="Loan summary">
+          <div class="cost-sum-grid">
+            <div class="cost-sum-item">
+              <div class="cost-sum-label">Loan amount</div>
+              <div class="cost-sum-val" id="s-amt">$700</div>
+            </div>
+            <div class="cost-sum-item">
+              <div class="cost-sum-label">Per payment</div>
+              <div class="cost-sum-val cost-sum-val--red" id="s-per">$150.00</div>
+            </div>
+            <div class="cost-sum-item">
+              <div class="cost-sum-label">Total repayment</div>
+              <div class="cost-sum-val" id="s-total">$1,050</div>
+              <div class="cost-sum-note">APR 23%</div>
+            </div>
+            <div class="cost-sum-item">
+              <div class="cost-sum-label">Cost of borrowing</div>
+              <div class="cost-sum-val cost-sum-val--green" id="s-cost">$350</div>
+              <div class="cost-sum-note" id="s-numpay">7 payments</div>
+            </div>
+          </div>
+          <div class="cost-progress-block">
+            <div class="cost-sum-label">Repayment timeline</div>
+            <div class="cost-progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+              <div class="cost-progress-fill" id="cost-prog"></div>
+            </div>
+            <div class="cost-sum-note" id="cost-prog-lbl">0 of 7 payments made</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- schedule table -->
+      <div class="cost-schedule" role="region" aria-label="Payment schedule">
+        <div class="cost-sched-header" aria-hidden="true">
+          <span class="col-num">#</span>
+          <span class="col-date">Payment date</span>
+          <span class="col-right">Amount</span>
+          <span class="col-right">Balance</span>
+          <span class="col-right">Status</span>
+        </div>
+        <div class="cost-sched-body" id="sched-body" role="list"></div>
+      </div>
+
+      <p class="cost-disclaimer-new">Representative example only. Actual amounts depend on your approved terms. APR 23%. NSF fee $45 applies for failed payments. Deferral available with 48-hour notice ($25 fee). Full terms disclosed before you sign — no obligation to accept.</p>
     </div>
   </div>
 </section>
@@ -1643,14 +1711,57 @@ h1 em {
 .elig-cta-footer { display:flex; flex-direction:column; gap:0.6rem; }
 .elig-disclaimer { font-size:0.6875rem; color:rgba(255,255,255,0.28); text-align:center; line-height:1.5; }
 
-/* ── COST TABLE ── */
-.cost-table-wrap { max-width:720px; margin:0 auto; }
-.cost-table { width:100%; border-collapse:collapse; background:white; border-radius:var(--radius-xl); overflow:hidden; box-shadow:var(--shadow-sm); border:1px solid var(--color-border); }
-.cost-table th { background:var(--navy-900); color:white; padding:1rem 1.25rem; text-align:left; font-size:0.875rem; font-weight:600; }
-.cost-table td { padding:1rem 1.25rem; font-size:0.9375rem; border-bottom:1px solid var(--color-border); color:var(--color-text-secondary); }
-.cost-table tr:last-child td { border-bottom:none; }
-.cost-table td strong { color:var(--color-text-primary); }
-.cost-disclaimer { margin-top:1.25rem; font-size:0.8125rem; color:var(--color-text-muted); line-height:1.6; }
+/* ── COST TRANSPARENCY INTERACTIVE ── */
+.section--cost { background:#fff; position:relative; }
+.section--cost::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; background:linear-gradient(90deg,transparent,#e82020 30%,#ff6a4d 50%,#e82020 70%,transparent); }
+.cost-widget { max-width:960px; margin:0 auto; }
+.cost-top { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-bottom:1.5rem; }
+/* controls */
+.cost-controls { background:#f8f9fb; border:1px solid #e2e6ed; border-radius:16px; padding:1.5rem; }
+.cost-ctrl-label { font-size:0.6875rem; font-weight:700; color:#6b7789; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:1.25rem; }
+.cost-ctrl-row { margin-bottom:1.25rem; }
+.cost-ctrl-row:last-child { margin-bottom:0; }
+.cost-ctrl-meta { display:flex; justify-content:space-between; align-items:baseline; font-size:0.875rem; color:#374151; font-weight:500; margin-bottom:6px; }
+.cost-ctrl-val { font-size:1rem; font-weight:800; color:#e82020; }
+.cost-controls input[type=range] { width:100%; accent-color:#e82020; cursor:pointer; }
+.cost-slider-marks { display:flex; justify-content:space-between; font-size:0.6875rem; color:#9ca3af; margin-top:4px; }
+.cost-freq-btns { display:flex; gap:6px; margin-top:6px; }
+.cost-freq-btn { flex:1; padding:7px; border-radius:8px; border:1px solid #e2e6ed; background:#fff; font-size:0.8125rem; font-weight:600; color:#6b7789; cursor:pointer; transition:all 0.15s; font-family:inherit; }
+.cost-freq-btn:hover { border-color:#e82020; color:#e82020; }
+.cost-freq-btn--active { background:#e82020; border-color:#e82020; color:#fff; }
+/* summary */
+.cost-summary { background:#0b1a33; border-radius:16px; padding:1.5rem; display:flex; flex-direction:column; gap:1.25rem; }
+.cost-sum-grid { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+.cost-sum-item { display:flex; flex-direction:column; gap:3px; }
+.cost-sum-label { font-size:0.6875rem; text-transform:uppercase; letter-spacing:0.07em; color:rgba(255,255,255,0.4); font-weight:600; }
+.cost-sum-val { font-size:1.5rem; font-weight:800; color:#fff; line-height:1; }
+.cost-sum-val--red { color:#e82020; }
+.cost-sum-val--green { color:#4ade80; }
+.cost-sum-note { font-size:0.6875rem; color:rgba(255,255,255,0.35); }
+.cost-progress-block { border-top:1px solid rgba(255,255,255,0.08); padding-top:1rem; }
+.cost-progress-bar { height:6px; background:rgba(255,255,255,0.12); border-radius:9999px; margin:6px 0 4px; overflow:hidden; }
+.cost-progress-fill { height:100%; background:linear-gradient(90deg,#e82020,#ff6a4d); border-radius:9999px; width:0%; transition:width 0.4s ease; }
+/* schedule */
+.cost-schedule { border:1px solid #e2e6ed; border-radius:16px; overflow:hidden; margin-bottom:1rem; }
+.cost-sched-header { display:grid; grid-template-columns:36px 1fr 90px 90px 80px; background:#0b1a33; padding:10px 16px; gap:0; }
+.cost-sched-header span { font-size:0.6875rem; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:rgba(255,255,255,0.45); }
+.col-num { }
+.col-date { }
+.col-right { text-align:right; }
+.cost-sched-body { max-height:300px; overflow-y:auto; }
+.cost-sched-row { display:grid; grid-template-columns:36px 1fr 90px 90px 80px; padding:10px 16px; border-bottom:1px solid #f1f3f7; align-items:center; transition:background 0.15s; cursor:default; }
+.cost-sched-row:last-child { border-bottom:none; }
+.cost-sched-row:hover { background:#fef2f2; }
+.cs-num { width:24px; height:24px; border-radius:50%; background:#f3f4f6; display:flex; align-items:center; justify-content:center; font-size:0.6875rem; font-weight:700; color:#9ca3af; }
+.cs-date { font-size:0.875rem; color:#374151; font-weight:500; }
+.cs-date small { display:block; font-size:0.6875rem; color:#9ca3af; font-weight:400; }
+.cs-amt { text-align:right; font-size:0.875rem; font-weight:700; color:#e82020; }
+.cs-bal { text-align:right; font-size:0.875rem; color:#6b7789; }
+.cs-status { text-align:right; }
+.cs-pill { display:inline-block; padding:2px 8px; border-radius:9999px; font-size:0.6875rem; font-weight:600; }
+.cs-pill--next { background:#fef3c7; color:#d97706; }
+.cs-pill--upcoming { background:#f0fdf4; color:#16a34a; }
+.cost-disclaimer-new { font-size:0.75rem; color:#9ca3af; line-height:1.6; padding:1rem; background:#f8f9fb; border-radius:10px; border:1px solid #e2e6ed; }
 
 /* ── GLASS TESTIMONIALS ── */
 .testimonials-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; }
@@ -1916,5 +2027,77 @@ h1 em {
   .hero-trust-pills li { font-size:0.75rem; padding:4px 10px; }
 }
 </style>
+
+  <script>
+  (function() {
+    var costFreq = 'biweekly';
+    function fmt(n) { return '$' + Math.round(n).toLocaleString('en-CA'); }
+    function fmtD(n) { return '$' + parseFloat(n).toFixed(2); }
+    function addDays(d, n) { var r = new Date(d); r.setDate(r.getDate() + n); return r; }
+    function fmtDate(d) { return d.toLocaleDateString('en-CA', {month:'short', day:'numeric', year:'numeric'}); }
+    function updateCost() {
+      var slAmt = document.getElementById('sl-amt');
+      var slTerm = document.getElementById('sl-term');
+      if (!slAmt) return;
+      var amt = parseInt(slAmt.value);
+      var days = parseInt(slTerm.value);
+      var total = Math.round(amt * 1.5);
+      var cost = total - amt;
+      var interval = costFreq === 'weekly' ? 7 : costFreq === 'biweekly' ? 14 : 30;
+      var nPay = Math.max(1, Math.round(days / interval));
+      var perPay = total / nPay;
+      document.getElementById('lbl-amt').textContent = fmt(amt);
+      document.getElementById('lbl-term').textContent = days + ' days';
+      document.getElementById('s-amt').textContent = fmt(amt);
+      document.getElementById('s-total').textContent = fmt(total);
+      document.getElementById('s-cost').textContent = fmt(cost);
+      document.getElementById('s-per').textContent = fmtD(perPay);
+      document.getElementById('s-numpay').textContent = nPay + ' payments';
+      document.getElementById('cost-prog').style.width = '0%';
+      document.getElementById('cost-prog-lbl').textContent = '0 of ' + nPay + ' payments made';
+      slAmt.setAttribute('aria-valuenow', amt);
+      slTerm.setAttribute('aria-valuenow', days);
+      var today = new Date();
+      var start = addDays(today, 14);
+      var body = document.getElementById('sched-body');
+      if (!body) return;
+      body.innerHTML = '';
+      var balance = total;
+      var freqLabel = costFreq === 'weekly' ? 'Weekly' : costFreq === 'biweekly' ? 'Bi-weekly' : 'Monthly';
+      for (var i = 1; i <= nPay; i++) {
+        var payDate = addDays(start, (i - 1) * interval);
+        balance = Math.max(0, balance - perPay);
+        var row = document.createElement('div');
+        row.className = 'cost-sched-row';
+        row.setAttribute('role', 'listitem');
+        var pillHtml = i === 1
+          ? '<span class="cs-pill cs-pill--next">Next</span>'
+          : '<span class="cs-pill cs-pill--upcoming">Upcoming</span>';
+        row.innerHTML =
+          '<div class="cs-num">' + i + '</div>' +
+          '<div class="cs-date">' + fmtDate(payDate) + '<small>' + freqLabel + '</small></div>' +
+          '<div class="cs-amt">' + fmtD(perPay) + '</div>' +
+          '<div class="cs-bal">' + fmt(Math.round(balance)) + '</div>' +
+          '<div class="cs-status">' + pillHtml + '</div>';
+        body.appendChild(row);
+      }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+      var slAmt = document.getElementById('sl-amt');
+      var slTerm = document.getElementById('sl-term');
+      if (slAmt) slAmt.addEventListener('input', updateCost);
+      if (slTerm) slTerm.addEventListener('input', updateCost);
+      document.querySelectorAll('.cost-freq-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          document.querySelectorAll('.cost-freq-btn').forEach(function(b) { b.classList.remove('cost-freq-btn--active'); });
+          btn.classList.add('cost-freq-btn--active');
+          costFreq = btn.dataset.f;
+          updateCost();
+        });
+      });
+      updateCost();
+    });
+  })();
+  </script>
 </body>
 </html>
