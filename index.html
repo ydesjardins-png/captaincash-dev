@@ -270,24 +270,30 @@
     <div class="bento-orb bento-orb-2"></div>
     <div class="bento-grid-lines"></div>
     <svg class="bento-circuit" viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-      <line x1="0" y1="130" x2="1200" y2="130" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-      <line x1="0" y1="260" x2="1200" y2="260" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-      <line x1="0" y1="390" x2="1200" y2="390" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-      <line x1="200"  y1="0" x2="200"  y2="520" stroke="rgba(255,255,255,0.025)" stroke-width="1"/>
-      <line x1="450"  y1="0" x2="450"  y2="520" stroke="rgba(255,255,255,0.025)" stroke-width="1"/>
-      <line x1="750"  y1="0" x2="750"  y2="520" stroke="rgba(255,255,255,0.025)" stroke-width="1"/>
-      <line x1="1000" y1="0" x2="1000" y2="520" stroke="rgba(255,255,255,0.025)" stroke-width="1"/>
-      <path d="M200 130 L325 130 L325 260 L450 260" fill="none" stroke="rgba(232,32,32,0.2)" stroke-width="1.5"/>
-      <path d="M750 260 L875 260 L875 130 L1000 130" fill="none" stroke="rgba(232,32,32,0.18)" stroke-width="1.5"/>
-      <path d="M450 390 L600 390 L600 260 L750 260" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
-      <circle cx="200"  cy="130" r="3.5" fill="rgba(232,32,32,0.7)"><animate attributeName="opacity" values="1;0.2;1" dur="2.3s" repeatCount="indefinite"/></circle>
-      <circle cx="450"  cy="260" r="3.5" fill="rgba(232,32,32,0.6)"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.8s" repeatCount="indefinite"/></circle>
-      <circle cx="750"  cy="260" r="3.5" fill="rgba(232,32,32,0.7)"><animate attributeName="opacity" values="1;0.25;1" dur="2.7s" repeatCount="indefinite"/></circle>
-      <circle cx="1000" cy="130" r="3.5" fill="rgba(232,32,32,0.6)"><animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/></circle>
-      <rect x="197" y="127" width="6" height="6" rx="1" fill="none" stroke="rgba(232,32,32,0.4)" stroke-width="1"/>
-      <rect x="447" y="127" width="6" height="6" rx="1" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-      <rect x="747" y="387" width="6" height="6" rx="1" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-      <rect x="997" y="257" width="6" height="6" rx="1" fill="none" stroke="rgba(232,32,32,0.3)" stroke-width="1"/>
+      <!-- radial burst from bottom-right focal point -->
+      <!-- spoke lines -->
+      <line x1="1200" y1="520" x2="-100" y2="-80"  stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+      <line x1="1200" y1="520" x2="0"    y2="-40"  stroke="rgba(255,255,255,0.035)" stroke-width="1"/>
+      <line x1="1200" y1="520" x2="120"  y2="-60"  stroke="rgba(232,32,32,0.1)"    stroke-width="1.5"/>
+      <line x1="1200" y1="520" x2="280"  y2="-70"  stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+      <line x1="1200" y1="520" x2="460"  y2="-80"  stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+      <line x1="1200" y1="520" x2="640"  y2="-80"  stroke="rgba(232,32,32,0.08)"   stroke-width="1.5"/>
+      <line x1="1200" y1="520" x2="820"  y2="-60"  stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+      <line x1="1200" y1="520" x2="-100" y2="80"   stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+      <line x1="1200" y1="520" x2="-100" y2="200"  stroke="rgba(232,32,32,0.1)"    stroke-width="1.5"/>
+      <line x1="1200" y1="520" x2="-100" y2="340"  stroke="rgba(255,255,255,0.035)" stroke-width="1"/>
+      <line x1="1200" y1="520" x2="-100" y2="460"  stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+      <line x1="1200" y1="520" x2="200"  y2="560"  stroke="rgba(232,32,32,0.07)"   stroke-width="1"/>
+      <line x1="1200" y1="520" x2="500"  y2="580"  stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+      <!-- concentric arc rings -->
+      <ellipse cx="1200" cy="520" rx="380"  ry="380"  fill="none" stroke="rgba(255,255,255,0.04)"  stroke-width="1"/>
+      <ellipse cx="1200" cy="520" rx="620"  ry="620"  fill="none" stroke="rgba(232,32,32,0.08)"    stroke-width="1"/>
+      <ellipse cx="1200" cy="520" rx="860"  ry="860"  fill="none" stroke="rgba(255,255,255,0.03)"  stroke-width="1"/>
+      <ellipse cx="1200" cy="520" rx="1100" ry="1100" fill="none" stroke="rgba(232,32,32,0.05)"    stroke-width="1"/>
+      <!-- small focal dot -->
+      <circle cx="1200" cy="520" r="4" fill="rgba(232,32,32,0.5)"/>
+      <circle cx="1200" cy="520" r="10" fill="none" stroke="rgba(232,32,32,0.25)" stroke-width="1"/>
+      <circle cx="1200" cy="520" r="18" fill="none" stroke="rgba(232,32,32,0.12)" stroke-width="1"/>
     </svg>
   </div>
 
