@@ -47,49 +47,63 @@
     <div class="hero-orb hero-orb-2"></div>
     <div class="hero-orb hero-orb-3"></div>
     <div class="hero-grid"></div>
-    <svg class="hero-circuit" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-      <!-- horizontal rails -->
-      <line x1="0" y1="110" x2="1200" y2="110" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
-      <line x1="0" y1="220" x2="1200" y2="220" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
-      <line x1="0" y1="330" x2="1200" y2="330" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
-      <line x1="0" y1="440" x2="1200" y2="440" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-      <!-- vertical rails -->
-      <line x1="160"  y1="0" x2="160"  y2="600" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-      <line x1="340"  y1="0" x2="340"  y2="600" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-      <line x1="560"  y1="0" x2="560"  y2="600" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-      <line x1="760"  y1="0" x2="760"  y2="600" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-      <line x1="960"  y1="0" x2="960"  y2="600" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-      <line x1="1100" y1="0" x2="1100" y2="600" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-      <!-- L-bend paths red -->
-      <path d="M160 220 L250 220 L250 110 L340 110" fill="none" stroke="rgba(232,32,32,0.28)" stroke-width="1.5"/>
-      <path d="M560 330 L660 330 L660 220 L760 220" fill="none" stroke="rgba(232,32,32,0.22)" stroke-width="1.5"/>
-      <path d="M960 110 L1030 110 L1030 220 L1100 220" fill="none" stroke="rgba(232,32,32,0.24)" stroke-width="1.5"/>
-      <path d="M340 440 L440 440 L440 330 L560 330" fill="none" stroke="rgba(232,32,32,0.16)" stroke-width="1.5"/>
-      <!-- L-bend paths white -->
-      <path d="M340 110 L450 110 L450 220 L560 220" fill="none" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
-      <path d="M760 220 L860 220 L860 330 L960 330" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-      <path d="M160 440 L260 440 L260 330 L340 330" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
-      <path d="M760 440 L860 440 L860 330 L960 330" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
-      <!-- corner squares -->
-      <rect x="157"  y="107"  width="7" height="7" rx="1" fill="none" stroke="rgba(232,32,32,0.45)" stroke-width="1"/>
-      <rect x="337"  y="107"  width="7" height="7" rx="1" fill="none" stroke="rgba(232,32,32,0.35)" stroke-width="1"/>
-      <rect x="557"  y="217"  width="7" height="7" rx="1" fill="none" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
-      <rect x="757"  y="217"  width="7" height="7" rx="1" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-      <rect x="957"  y="107"  width="7" height="7" rx="1" fill="none" stroke="rgba(232,32,32,0.3)"  stroke-width="1"/>
-      <rect x="1097" y="217"  width="7" height="7" rx="1" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-      <!-- pulsing signal nodes red -->
-      <circle cx="160"  cy="220" r="4.5" fill="rgba(232,32,32,0.85)"><animate attributeName="opacity" values="1;0.25;1" dur="2.2s" repeatCount="indefinite"/></circle>
-      <circle cx="340"  cy="110" r="4.5" fill="rgba(232,32,32,0.8)"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.9s" repeatCount="indefinite"/></circle>
-      <circle cx="560"  cy="330" r="4.5" fill="rgba(232,32,32,0.85)"><animate attributeName="opacity" values="1;0.2;1" dur="2.6s" repeatCount="indefinite"/></circle>
-      <circle cx="960"  cy="110" r="4.5" fill="rgba(232,32,32,0.8)"><animate attributeName="opacity" values="0.4;1;0.4" dur="1.7s" repeatCount="indefinite"/></circle>
-      <circle cx="340"  cy="440" r="4"   fill="rgba(232,32,32,0.65)"><animate attributeName="opacity" values="1;0.3;1" dur="3s" repeatCount="indefinite"/></circle>
-      <!-- static white nodes -->
-      <circle cx="560"  cy="220" r="3" fill="rgba(255,255,255,0.28)"/>
-      <circle cx="760"  cy="220" r="3" fill="rgba(255,255,255,0.22)"/>
-      <circle cx="960"  cy="330" r="3" fill="rgba(255,255,255,0.18)"/>
-      <circle cx="1100" cy="220" r="3" fill="rgba(255,255,255,0.18)"/>
-      <circle cx="160"  cy="440" r="3" fill="rgba(255,255,255,0.15)"/>
-      <circle cx="760"  cy="440" r="3" fill="rgba(255,255,255,0.15)"/>
+    <svg class="hero-circuit" viewBox="0 0 1200 620" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <!--
+        Layout map (1200px viewBox, content starts at x=24px container padding):
+        Copy col:    x 24  → 470
+        Mascot col:  x 510 → 740  (220px wide)
+        Calc col:    x 780 → 1176
+        Vertical:    content ~y80 (eyebrow) → y480 (stat strip)
+      -->
+
+      <!-- ① Copy CTA area → Mascot feet
+           From bottom of CTA buttons (x≈280, y≈380) to mascot base (x≈620, y≈500) -->
+      <path d="M 300 375 L 300 420 L 540 420 L 540 500"
+            fill="none" stroke="rgba(232,32,32,0.35)" stroke-width="1.5"
+            stroke-dasharray="none"/>
+      <!-- node at CTA -->
+      <circle cx="300" cy="375" r="3.5" fill="rgba(232,32,32,0.7)">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2.4s" repeatCount="indefinite"/>
+      </circle>
+      <!-- node at mascot base -->
+      <circle cx="540" cy="500" r="3" fill="rgba(232,32,32,0.5)"/>
+      <!-- corner square at bend -->
+      <rect x="537" y="417" width="6" height="6" rx="1" fill="none" stroke="rgba(232,32,32,0.4)" stroke-width="1"/>
+
+      <!-- ② Mascot shoulder → Calc card top-left
+           From mascot upper area (x≈660, y≈180) to calc card (x≈800, y≈120) -->
+      <path d="M 660 190 L 720 190 L 720 130 L 800 130"
+            fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+      <!-- node at mascot shoulder -->
+      <circle cx="660" cy="190" r="3" fill="rgba(255,255,255,0.3)">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <!-- node at calc entry -->
+      <circle cx="800" cy="130" r="3" fill="rgba(255,255,255,0.25)"/>
+      <!-- corner square -->
+      <rect x="717" y="127" width="6" height="6" rx="1" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+
+      <!-- ③ Trust pills → Calc card bottom
+           From trust pills row (x≈380, y≈440) down and across to calc bottom (x≈800, y≈480) -->
+      <path d="M 380 435 L 380 480 L 800 480"
+            fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+      <circle cx="380" cy="435" r="2.5" fill="rgba(255,255,255,0.2)"/>
+      <circle cx="800" cy="480" r="2.5" fill="rgba(255,255,255,0.2)"/>
+
+      <!-- ④ H1 headline right edge → Mascot head
+           From headline area (x≈470, y≈200) to mascot head (x≈570, y≈120) -->
+      <path d="M 465 195 L 510 195 L 510 130 L 570 130"
+            fill="none" stroke="rgba(232,32,32,0.2)" stroke-width="1"/>
+      <circle cx="465" cy="195" r="2.5" fill="rgba(232,32,32,0.45)">
+        <animate attributeName="opacity" values="1;0.2;1" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <rect x="507" y="127" width="6" height="6" rx="1" fill="none" stroke="rgba(232,32,32,0.25)" stroke-width="1"/>
+
+      <!-- ⑤ Eyebrow pill → top trace (subtle horizontal run) -->
+      <path d="M 300 105 L 470 105"
+            fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <circle cx="300" cy="105" r="2" fill="rgba(255,255,255,0.15)"/>
+      <circle cx="470" cy="105" r="2" fill="rgba(255,255,255,0.1)"/>
     </svg>
   </div>
 
