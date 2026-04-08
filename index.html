@@ -14,7 +14,9 @@
 ═══════════════════════════════════════ -->
 <header class="site-header site-header--dark" id="site-header">
   <div class="container header-inner">
-    <a href="/" class="site-logo">Captain<span>Cash</span></a>
+    <a href="/" class="site-logo-img">
+      <img src="images/mascot/sprites/logo-lockup-small.webp" alt="Captain Cash — Here to save the day" width="160" height="40" loading="eager">
+    </a>
     <nav class="nav-links" aria-label="Main navigation">
       <a href="how-it-works.html">How it works</a>
       <a href="support.html">FAQ</a>
@@ -486,7 +488,9 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="/" class="site-logo">Captain<span>Cash</span></a>
+        <a href="/" class="site-logo-img site-logo-img--footer">
+          <img src="images/mascot/sprites/logo-lockup-small.webp" alt="Captain Cash" width="140" height="35" loading="lazy">
+        </a>
         <div class="footer-mascot-row">
           <img src="images/mascot.webp" alt="Captain Cash mascot" class="footer-mascot" width="64" height="78" loading="lazy">
           <p>A fast, fair alternative to payday loans for Canadians who need cash today. Serving Canada since 2015.</p>
@@ -607,8 +611,9 @@
 }
 .site-header--dark .nav-links a { color: rgba(255,255,255,0.65); }
 .site-header--dark .nav-links a:hover { color: #fff; }
-.site-header--dark .site-logo { color: var(--color-primary); }
-.site-header--dark .site-logo span { color: var(--color-accent); }
+.site-logo-img { display:flex; align-items:center; }
+.site-logo-img img { height:36px; width:auto; display:block; }
+.site-logo-img--footer img { height:32px; width:auto; opacity:0.92; }
 .nav-phone--dark { color: rgba(255,255,255,0.8) !important; }
 .hamburger--dark span { background: rgba(255,255,255,0.85); }
 @media (max-width:768px) {
