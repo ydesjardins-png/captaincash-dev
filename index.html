@@ -1081,64 +1081,91 @@ h1 em {
 .section-header--dark { text-align:center; max-width:640px; margin:0 auto var(--space-12); }
 .section-header--dark p { margin-top:var(--space-4); font-size:var(--text-lg); }
 
+/* ── BENTO SECTION BACKGROUND ── */
+.bento-section { position:relative; overflow:hidden; }
+.bento-bg { position:absolute; inset:0; pointer-events:none; overflow:hidden; }
+.bento-orb { position:absolute; border-radius:50%; }
+.bento-orb-1 { width:600px;height:600px;background:radial-gradient(circle,rgba(232,32,32,0.1) 0%,transparent 65%);top:-200px;right:-150px; }
+.bento-orb-2 { width:500px;height:500px;background:radial-gradient(circle,rgba(26,110,240,0.08) 0%,transparent 65%);bottom:-200px;left:-100px; }
+.bento-grid-lines {
+  position:absolute; inset:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size:44px 44px;
+}
+.bento-circuit { position:absolute; inset:0; width:100%; height:100%; }
+
 /* ── BENTO GRID ── */
 .bento-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto;
-  gap: 1.25rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
 }
 .bento-card {
   position: relative; overflow: hidden;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 20px; padding: 2rem;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.09);
+  border-radius: 20px; padding: 1.75rem;
   transition: border-color 0.3s, background 0.3s;
+  display: flex; flex-direction: column;
 }
 .bento-card:hover {
-  background: rgba(255,255,255,0.08);
-  border-color: rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.07);
+  border-color: rgba(255,255,255,0.16);
 }
 .bento-card-shine {
   position: absolute; top: 0; left: 0; right: 0; height: 40%;
-  background: linear-gradient(180deg, rgba(255,255,255,0.06) 0%, transparent 100%);
+  background: linear-gradient(180deg, rgba(255,255,255,0.05) 0%, transparent 100%);
   pointer-events: none;
 }
-.bento-card--large { grid-column: span 2; }
-.bento-card--wide  { grid-column: span 2; }
+.bento-card--tall { grid-row: span 2; }
+.bento-card--wide { grid-column: span 2; }
+.bento-card--full { grid-column: span 4; }
 .bento-icon {
-  width: 52px; height: 52px; border-radius: 14px;
-  background: rgba(232,32,32,0.15);
+  width: 48px; height: 48px; border-radius: 13px;
+  background: rgba(232,32,32,0.14);
   border: 1px solid rgba(232,32,32,0.25);
   display: flex; align-items: center; justify-content: center;
-  color: #ff6a6a; margin-bottom: 1.25rem;
+  color: #ff6a6a; margin-bottom: 1.1rem; flex-shrink: 0;
 }
 .bento-icon--amber { background:rgba(251,191,36,0.12); border-color:rgba(251,191,36,0.2); color:#fbbf24; }
 .bento-icon--blue  { background:rgba(26,110,240,0.12); border-color:rgba(26,110,240,0.2); color:#6aadff; }
 .bento-icon--green { background:rgba(22,163,74,0.12); border-color:rgba(22,163,74,0.2); color:#4ade80; }
 .bento-icon--red   { background:rgba(232,32,32,0.12); border-color:rgba(232,32,32,0.2); color:#ff6a6a; }
-.bento-card h4 { font-size: 1.1rem; font-weight: 700; color: #fff; margin-bottom: 0.6rem; }
-.bento-card p  { font-size: 0.9375rem; color: rgba(255,255,255,0.5); line-height: 1.6; margin: 0; }
-.bento-badge-row { display:flex; gap:8px; flex-wrap:wrap; margin-top:1.25rem; }
+.bento-card h4 { font-size:1rem; font-weight:700; color:#fff; margin-bottom:0.5rem; }
+.bento-card p  { font-size:0.875rem; color:rgba(255,255,255,0.5); line-height:1.6; margin:0; }
+.bento-badge-row { display:flex; gap:8px; flex-wrap:wrap; }
 .bento-tag {
-  background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 9999px; padding: 4px 12px;
-  font-size: 0.75rem; font-weight: 600; color: rgba(255,255,255,0.55);
+  background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.12);
+  border-radius:9999px; padding:4px 12px;
+  font-size:0.75rem; font-weight:600; color:rgba(255,255,255,0.55);
 }
-.bento-freq-demo {
-  display: flex; gap: 8px; margin-top: 1.25rem; flex-wrap: wrap;
+.bento-stat-block {
+  display:flex; flex-direction:column; margin-top:auto; padding-top:1.25rem;
+  border-top:1px solid rgba(255,255,255,0.08);
 }
+.bento-stat-num   { font-size:2.2rem; font-weight:800; color:#e82020; line-height:1; }
+.bento-stat-label { font-size:0.75rem; color:rgba(255,255,255,0.4); margin-top:2px; }
+.bento-freq-demo  { display:flex; gap:8px; margin-top:1.25rem; flex-wrap:wrap; }
 .bento-freq-demo span {
-  padding: 6px 14px; border-radius: 9999px;
-  font-size: 0.8125rem; font-weight: 600;
-  background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
-  color: rgba(255,255,255,0.4);
+  padding:5px 14px; border-radius:9999px;
+  font-size:0.8125rem; font-weight:600;
+  background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1);
+  color:rgba(255,255,255,0.4);
 }
 .bento-freq-active {
-  background: rgba(22,163,74,0.2) !important;
-  border-color: rgba(22,163,74,0.35) !important;
-  color: #4ade80 !important;
+  background:rgba(22,163,74,0.2) !important;
+  border-color:rgba(22,163,74,0.35) !important;
+  color:#4ade80 !important;
 }
+.bento-full-inner {
+  display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap;
+}
+.bento-full-inner > div:nth-child(2) { flex:1; min-width:200px; }
+.bento-ca-stats { display:flex; gap:2rem; flex-shrink:0; flex-wrap:wrap; }
+.bento-ca-stat strong { display:block; font-size:1.1rem; font-weight:800; color:#e82020; }
+.bento-ca-stat span   { font-size:0.75rem; color:rgba(255,255,255,0.4); }
 
 /* ── COMPARISON (dark) ── */
 .compare-grid {
