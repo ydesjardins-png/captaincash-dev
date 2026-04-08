@@ -369,37 +369,84 @@
 </section>
 
 <!-- ═══════════════════════════════════════
-     COMPARISON — dark
+     COMPARISON — light
 ═══════════════════════════════════════ -->
-<section class="section section--dark section--darker">
+<section class="section section--compare-light">
   <div class="container">
-    <div class="section-header section-header--dark">
-      <span class="badge badge-blue-dark">A smarter choice</span>
-      <h2>Not a payday loan — here's the difference</h2>
-      <p>Most short-term lenders demand full repayment on your next paycheque. That can leave you worse off. Captain Cash works differently.</p>
+    <div class="section-header">
+      <span class="badge badge-red">Why it matters</span>
+      <h2>Not a payday loan — a smarter alternative</h2>
+      <p>Payday loans can trap you in a cycle of debt. One lump-sum repayment on your next paycheque often leaves you short — and borrowing again. Captain Cash is built differently, on purpose.</p>
     </div>
-    <div class="compare-grid">
-      <div class="compare-card compare-card--them animate">
-        <div class="compare-label compare-label--them">Typical payday loan</div>
-        <ul class="compare-list">
-          <li class="compare-bad">Full repayment on your next payday</li>
-          <li class="compare-bad">Leaves you short again next month</li>
-          <li class="compare-bad">No flexibility on repayment date</li>
-          <li class="compare-bad">Implied APR often 300–600%</li>
+
+    <div class="compare-layout">
+
+      <!-- THEM card -->
+      <div class="compare-card-them animate">
+        <div class="cmp-label cmp-label--them">
+          <span class="cmp-dot cmp-dot--them" aria-hidden="true"></span>Typical payday loan
+        </div>
+        <h3 class="cmp-title">Repay everything at once</h3>
+        <p class="cmp-sub">Your full balance is due on your next paycheque — often just 14 days away.</p>
+        <ul class="cmp-rows">
+          <li class="cmp-row">
+            <span class="cmp-icon cmp-icon--bad" aria-hidden="true">✕</span>
+            <div><strong>Lump-sum due on next payday</strong><span>Full amount owed in 14–31 days</span></div>
+          </li>
+          <li class="cmp-row">
+            <span class="cmp-icon cmp-icon--bad" aria-hidden="true">✕</span>
+            <div><strong>Can leave you short again</strong><span>Many borrowers re-borrow immediately</span></div>
+          </li>
+          <li class="cmp-row">
+            <span class="cmp-icon cmp-icon--bad" aria-hidden="true">✕</span>
+            <div><strong>Implied APR often 300–600%</strong><span>$15 per $100 = ~391% annualised</span></div>
+          </li>
+          <li class="cmp-row">
+            <span class="cmp-icon cmp-icon--bad" aria-hidden="true">✕</span>
+            <div><strong>No flexibility on timing</strong><span>Miss your due date, face steep fees</span></div>
+          </li>
         </ul>
       </div>
-      <div class="compare-card compare-card--us animate">
-        <div class="compare-label compare-label--us">Captain Cash instalment loan</div>
-        <ul class="compare-list">
-          <li class="compare-good">Repay over 90–150 days</li>
-          <li class="compare-good">Smaller, manageable instalments</li>
-          <li class="compare-good">Weekly, bi-weekly, or monthly</li>
-          <li class="compare-good">23% APR — transparent cost</li>
+
+      <!-- VS divider -->
+      <div class="cmp-vs-col" aria-hidden="true">
+        <div class="cmp-vs-line"></div>
+        <div class="cmp-vs-badge">VS</div>
+        <div class="cmp-vs-line"></div>
+      </div>
+
+      <!-- US card -->
+      <div class="compare-card-us animate">
+        <div class="cmp-label cmp-label--us">
+          <span class="cmp-dot cmp-dot--us" aria-hidden="true"></span>Captain Cash instalment loan
+        </div>
+        <h3 class="cmp-title">Repay at your pace</h3>
+        <p class="cmp-sub">Spread repayment over 90–150 days. Smaller payments, less pressure on your budget.</p>
+        <ul class="cmp-rows">
+          <li class="cmp-row">
+            <span class="cmp-icon cmp-icon--good" aria-hidden="true">✓</span>
+            <div><strong>Repay over 90–150 days</strong><span>Weekly, bi-weekly, or monthly instalments</span></div>
+          </li>
+          <li class="cmp-row">
+            <span class="cmp-icon cmp-icon--good" aria-hidden="true">✓</span>
+            <div><strong>Breaks the borrowing cycle</strong><span>Smaller payments fit within your budget</span></div>
+          </li>
+          <li class="cmp-row">
+            <span class="cmp-icon cmp-icon--good" aria-hidden="true">✓</span>
+            <div><strong>23% APR — disclosed upfront</strong><span>$500 loan → ~$750 total repayment</span></div>
+          </li>
+          <li class="cmp-row">
+            <span class="cmp-icon cmp-icon--good" aria-hidden="true">✓</span>
+            <div><strong>Deferral available</strong><span>48-hour notice, $25 fee — we work with you</span></div>
+          </li>
         </ul>
       </div>
+
     </div>
-    <div class="text-center" style="margin-top:2.5rem">
-      <a href="pages/installment-loans.html" class="btn-ghost-dark">Learn about instalment loans</a>
+
+    <div class="text-center" style="margin-top:2.5rem;display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap">
+      <a href="claim-your-cash.html" class="btn-steps-cta">Claim your cash</a>
+      <span class="cmp-savings-pill">A smarter choice than payday</span>
     </div>
   </div>
 </section>
@@ -1344,45 +1391,112 @@ h1 em {
   box-shadow:0 0 6px rgba(74,222,128,0.6); flex-shrink:0;
 }
 
-/* ── COMPARISON (dark) ── */
-.compare-grid {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 1.5rem; max-width: 860px; margin: 0 auto;
+/* ── COMPARISON — light ── */
+.section--compare-light {
+  background: #fff;
+  position: relative;
 }
-.compare-card {
-  position: relative; overflow: hidden;
-  border-radius: 20px; padding: 2rem;
-  border: 1px solid rgba(255,255,255,0.08);
-  background: rgba(255,255,255,0.03);
+.section--compare-light::before {
+  content:''; position:absolute; top:0; left:0; right:0; height:3px;
+  background:linear-gradient(90deg,transparent,#e82020 30%,#ff6a4d 50%,#e82020 70%,transparent);
 }
-.compare-card--us {
-  border-color: rgba(22,163,74,0.3);
-  background: rgba(22,163,74,0.04);
+/* 3-col layout: them | vs | us */
+.compare-layout {
+  display: grid;
+  grid-template-columns: 1fr 64px 1fr;
+  gap: 0;
+  max-width: 920px;
+  margin: 0 auto;
+  align-items: stretch;
 }
-.compare-label {
-  display: inline-block; border-radius: 9999px;
-  padding: 5px 14px; font-size: 0.75rem; font-weight: 700;
-  text-transform: uppercase; letter-spacing: 0.06em;
-  margin-bottom: 1.5rem;
+/* THEM card */
+.compare-card-them {
+  background: #f8f9fb;
+  border: 1px solid #e2e6ed;
+  border-top: 3px solid #e2e6ed;
+  border-radius: 20px 0 0 20px;
+  padding: 2rem;
+  transition: transform 0.25s, box-shadow 0.25s;
 }
-.compare-label--them { background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.45); }
-.compare-label--us   { background: rgba(22,163,74,0.15); color: #4ade80; }
-.compare-list { padding: 0; list-style: none; display: flex; flex-direction: column; gap: 0.85rem; }
-.compare-bad,.compare-good {
-  font-size: 0.9375rem; padding-left: 1.6rem; position: relative;
-  color: rgba(255,255,255,0.55); line-height: 1.5;
+.compare-card-them:hover {
+  transform: perspective(600px) translateZ(6px) translateY(-3px);
+  box-shadow: 0 12px 32px rgba(11,26,51,0.08);
+  z-index: 1; position: relative;
 }
-.compare-bad::before  { content:"✕"; position:absolute; left:0; color:#e82020; font-weight:700; }
-.compare-good::before { content:"✓"; position:absolute; left:0; color:#4ade80; font-weight:700; }
-.btn-ghost-dark {
-  display: inline-block;
-  background: rgba(255,255,255,0.07);
-  border: 1px solid rgba(255,255,255,0.18);
-  color: rgba(255,255,255,0.75); border-radius: 9999px;
-  padding: 12px 28px; font-size: 0.9375rem; font-weight: 600;
-  text-decoration: none; transition: all 0.25s;
+/* US card */
+.compare-card-us {
+  background: #fff;
+  border: 2px solid #e82020;
+  border-top: 3px solid #e82020;
+  border-radius: 0 20px 20px 0;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(232,32,32,0.1);
+  position: relative;
+  transition: transform 0.25s, box-shadow 0.25s;
 }
-.btn-ghost-dark:hover { background: rgba(255,255,255,0.13); color: #fff; }
+.compare-card-us:hover {
+  transform: perspective(600px) translateZ(10px) translateY(-3px);
+  box-shadow: 0 20px 48px rgba(232,32,32,0.18);
+}
+/* VS divider column */
+.cmp-vs-col {
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 0; padding: 2rem 0;
+}
+.cmp-vs-line {
+  flex: 1; width: 1px;
+  background: linear-gradient(180deg, transparent, #e2e6ed 30%, #e2e6ed 70%, transparent);
+}
+.cmp-vs-badge {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: #0b1a33; color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.6875rem; font-weight: 800; letter-spacing: 0.04em;
+  box-shadow: 0 4px 16px rgba(11,26,51,0.2);
+  flex-shrink: 0; margin: 8px 0;
+}
+/* card labels */
+.cmp-label {
+  display: inline-flex; align-items: center; gap: 7px;
+  border-radius: 9999px; padding: 5px 14px;
+  font-size: 0.6875rem; font-weight: 800;
+  text-transform: uppercase; letter-spacing: 0.07em;
+  margin-bottom: 1.25rem;
+}
+.cmp-label--them { background: #e2e6ed; color: #6b7789; }
+.cmp-label--us   { background: rgba(232,32,32,0.08); color: #c41515; }
+.cmp-dot { width:6px; height:6px; border-radius:50%; flex-shrink:0; }
+.cmp-dot--them { background: #9ca3af; }
+.cmp-dot--us   { background: #e82020; box-shadow: 0 0 6px rgba(232,32,32,0.5); }
+/* card titles */
+.cmp-title { font-size: 1.0625rem; font-weight: 800; color: #0b1a33; margin-bottom: 6px; }
+.cmp-sub   { font-size: 0.8125rem; color: #6b7789; margin-bottom: 1.25rem; line-height: 1.6; }
+/* rows */
+.cmp-rows { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0; }
+.cmp-row {
+  display: flex; align-items: flex-start; gap: 10px;
+  padding: 11px 0; border-bottom: 1px solid #f1f3f7;
+}
+.cmp-row:last-child { border-bottom: none; }
+.cmp-row > div { display: flex; flex-direction: column; gap: 2px; }
+.cmp-row strong { font-size: 0.875rem; font-weight: 600; color: #0b1a33; line-height: 1.4; }
+.cmp-row span   { font-size: 0.75rem; color: #9ca3af; line-height: 1.4; }
+.cmp-icon {
+  width: 20px; height: 20px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.625rem; font-weight: 800; flex-shrink: 0; margin-top: 2px;
+}
+.cmp-icon--bad  { background: rgba(220,38,38,0.1); color: #dc2626; }
+.cmp-icon--good { background: rgba(22,163,74,0.1); color: #16a34a; }
+/* savings pill */
+.cmp-savings-pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #f0fdf4; border: 1px solid #bbf7d0;
+  border-radius: 9999px; padding: 8px 18px;
+  font-size: 0.875rem; font-weight: 600; color: #16a34a;
+}
+.cmp-savings-pill::before { content:"✓"; font-size:0.75rem; }
 
 /* ── ELIGIBILITY (light) ── */
 .eligibility-inner { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:start; }
@@ -1640,8 +1754,12 @@ h1 em {
   .steps-connector { display:none; }
   .bento-grid { grid-template-columns:1fr; }
   .bento-card--tall,.bento-card--wide,.bento-card--full { grid-column:span 1; grid-row:span 1; }
-  .bento-card,.compare-card { padding:1.5rem; }
-  .compare-grid { grid-template-columns:1fr; }
+  .bento-card { padding:1.5rem; }
+  .compare-layout { grid-template-columns:1fr; gap:0; }
+  .cmp-vs-col { flex-direction:row; padding:0 1rem; }
+  .cmp-vs-line { flex:1; width:auto; height:1px; background:linear-gradient(90deg,transparent,#e2e6ed 30%,#e2e6ed 70%,transparent); }
+  .compare-card-them { border-radius:20px 20px 0 0; border-bottom:none; border-top:3px solid #e2e6ed; }
+  .compare-card-us { border-radius:0 0 20px 20px; border-top:2px solid #e82020; }
   .testimonials-grid { grid-template-columns:1fr; }
   .faq-preview-grid { grid-template-columns:1fr; }
   .cost-table th:nth-child(3),.cost-table td:nth-child(3) { display:none; }
