@@ -385,6 +385,21 @@
         </div>
       </div>
 
+      <!-- ROW 2 col 4: trust signal card -->
+      <div class="bento-card bento-card--trust animate">
+        <div class="bento-card-shine" aria-hidden="true"></div>
+        <div class="bento-icon bento-icon--green" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h4>CLA member since 2015</h4>
+        <p>Licensed in 9 provinces. Member of the Canadian Lenders Association. Regulated, accountable, transparent.</p>
+        <div class="bento-trust-seals">
+          <div class="bento-seal"><span class="bento-seal-dot"></span>Provincially licensed</div>
+          <div class="bento-seal"><span class="bento-seal-dot"></span>Direct lender</div>
+          <div class="bento-seal"><span class="bento-seal-dot"></span>SSL encrypted</div>
+        </div>
+      </div>
+
       <!-- ROW 3: full-width Canadian strip -->
       <div class="bento-card bento-card--full animate">
         <div class="bento-card-shine" aria-hidden="true"></div>
@@ -1203,6 +1218,18 @@ h1 em {
 .bento-ca-stats { display:flex; gap:2rem; flex-shrink:0; flex-wrap:wrap; }
 .bento-ca-stat strong { display:block; font-size:1.1rem; font-weight:800; color:#e82020; }
 .bento-ca-stat span   { font-size:0.75rem; color:rgba(255,255,255,0.4); }
+.bento-trust-seals {
+  display:flex; flex-direction:column; gap:8px; margin-top:auto; padding-top:1.25rem;
+  border-top:1px solid rgba(255,255,255,0.08);
+}
+.bento-seal {
+  display:flex; align-items:center; gap:8px;
+  font-size:0.8125rem; font-weight:500; color:rgba(255,255,255,0.55);
+}
+.bento-seal-dot {
+  width:6px; height:6px; border-radius:50%; background:#4ade80;
+  box-shadow:0 0 6px rgba(74,222,128,0.6); flex-shrink:0;
+}
 
 /* ── COMPARISON (dark) ── */
 .compare-grid {
