@@ -452,43 +452,97 @@
 </section>
 
 <!-- ═══════════════════════════════════════
-     ELIGIBILITY — light
+     ELIGIBILITY — dark
 ═══════════════════════════════════════ -->
-<section class="section">
-  <div class="container eligibility-inner">
-    <div class="eligibility-text">
-      <span class="badge badge-green">Eligibility</span>
-      <h2>Do you qualify?</h2>
-      <p>Most Canadians do. Here is what you need to apply:</p>
-      <ul class="eligibility-list" aria-label="Eligibility requirements">
-        <li>Canadian resident, 18 years or older</li>
-        <li>Monthly income of at least $1,200</li>
-        <li>Employed for at least 3 months</li>
-        <li>Active Canadian bank account (3+ months old)</li>
-        <li>Not currently bankrupt or in a consumer proposal</li>
-      </ul>
-      <a href="claim-your-cash.html" class="btn btn-primary btn-lg" style="margin-top:2rem">Check if I qualify</a>
-      <p style="margin-top:1rem;font-size:0.875rem">Approval is subject to eligibility verification. Free to apply — no obligation.</p>
+<section class="section section--dark section--eligibility">
+  <!-- background layers matching hero direction -->
+  <div class="elig-bg" aria-hidden="true">
+    <div class="elig-beam"></div>
+    <div class="elig-edge"></div>
+    <div class="elig-orb"></div>
+  </div>
+  <div class="container" style="position:relative;z-index:2">
+    <div class="section-header section-header--dark">
+      <span class="badge badge-green-dark">Eligibility</span>
+      <h2>Most Canadians qualify — check yours in seconds</h2>
+      <p>We assess your application based on income and banking activity — not your credit score. Here is exactly what you need to apply.</p>
     </div>
-    <div class="eligibility-provinces">
-      <h3>Available across Canada</h3>
-      <div class="province-tags" role="list" aria-label="Provinces and territories served">
-        <span role="listitem">Ontario</span>
-        <span role="listitem">British Columbia</span>
-        <span role="listitem">Alberta</span>
-        <span role="listitem">Nova Scotia</span>
-        <span role="listitem">New Brunswick</span>
-        <span role="listitem">PEI</span>
-        <span role="listitem">Newfoundland</span>
-        <span role="listitem">Nunavut</span>
-        <span role="listitem">NWT</span>
+
+    <div class="elig-grid">
+
+      <!-- col 1: criteria -->
+      <div class="elig-card animate">
+        <div class="bento-card-shine" aria-hidden="true"></div>
+        <div class="elig-card-label">You need to</div>
+        <ul class="elig-list">
+          <li class="elig-item">
+            <span class="elig-icon elig-icon--good" aria-hidden="true">✓</span>
+            <div><strong>Be a Canadian resident, 18+</strong><span>Valid ID required at verification</span></div>
+          </li>
+          <li class="elig-item">
+            <span class="elig-icon elig-icon--good" aria-hidden="true">✓</span>
+            <div><strong>Earn at least $1,200/month</strong><span>Employment, EI, CPP or other regular income</span></div>
+          </li>
+          <li class="elig-item">
+            <span class="elig-icon elig-icon--good" aria-hidden="true">✓</span>
+            <div><strong>3+ months at your current job</strong><span>Or consistent income for 3+ months</span></div>
+          </li>
+          <li class="elig-item">
+            <span class="elig-icon elig-icon--good" aria-hidden="true">✓</span>
+            <div><strong>Active bank account (3+ months)</strong><span>Any Canadian chequing account</span></div>
+          </li>
+          <li class="elig-item">
+            <span class="elig-icon elig-icon--bad" aria-hidden="true">✕</span>
+            <div><strong class="elig-bad-text">Not eligible if currently bankrupt</strong><span>Or in an active consumer proposal</span></div>
+          </li>
+        </ul>
       </div>
-      <p style="margin-top:1.25rem;font-size:0.875rem;color:var(--color-text-secondary)">Not currently available in Quebec, Manitoba, or Saskatchewan.</p>
-      <div class="eligibility-creds">
-        <div class="cred-item"><span aria-hidden="true">🏛️</span><span>CLA member</span></div>
-        <div class="cred-item"><span aria-hidden="true">🔒</span><span>SSL encrypted</span></div>
-        <div class="cred-item"><span aria-hidden="true">📋</span><span>Provincially licensed</span></div>
+
+      <!-- col 2: provinces -->
+      <div class="elig-card animate">
+        <div class="bento-card-shine" aria-hidden="true"></div>
+        <div class="elig-card-label">Available in</div>
+        <div class="elig-province-tags" role="list" aria-label="Provinces and territories served">
+          <span role="listitem">Ontario</span>
+          <span role="listitem">British Columbia</span>
+          <span role="listitem">Alberta</span>
+          <span role="listitem">Nova Scotia</span>
+          <span role="listitem">New Brunswick</span>
+          <span role="listitem">PEI</span>
+          <span role="listitem">Newfoundland</span>
+          <span role="listitem">Nunavut</span>
+          <span role="listitem">NWT</span>
+        </div>
+        <p class="elig-unavail">Not available in Quebec, Manitoba, or Saskatchewan.</p>
+        <div class="elig-seals-block">
+          <div class="elig-card-label" style="margin-bottom:0.75rem">Credentials</div>
+          <div class="elig-seals">
+            <div class="elig-seal"><span class="elig-seal-dot" aria-hidden="true"></span>CLA member</div>
+            <div class="elig-seal"><span class="elig-seal-dot" aria-hidden="true"></span>SSL encrypted</div>
+            <div class="elig-seal"><span class="elig-seal-dot" aria-hidden="true"></span>Provincially licensed</div>
+          </div>
+        </div>
       </div>
+
+      <!-- col 3: CTA card -->
+      <div class="elig-cta-card animate">
+        <div class="bento-card-shine" aria-hidden="true"></div>
+        <div class="elig-cta-body">
+          <h3>Ready to find out if you qualify?</h3>
+          <p>Applying is free. It takes 5 minutes. Your credit score will not be affected. You are under no obligation to accept any offer.</p>
+          <ul class="elig-reassure">
+            <li><span class="elig-seal-dot" aria-hidden="true"></span>Free to apply, no cost</li>
+            <li><span class="elig-seal-dot" aria-hidden="true"></span>No credit check</li>
+            <li><span class="elig-seal-dot" aria-hidden="true"></span>No obligation to accept</li>
+            <li><span class="elig-seal-dot" aria-hidden="true"></span>Answer within same business day</li>
+          </ul>
+        </div>
+        <div class="elig-cta-footer">
+          <a href="claim-your-cash.html" class="btn-steps-cta" style="display:block;text-align:center">Check if I qualify →</a>
+          <p class="elig-disclaimer">Approval subject to eligibility verification. APR 23%. Not available in QC, MB, SK.</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -1498,17 +1552,96 @@ h1 em {
 }
 .cmp-savings-pill::before { content:"✓"; font-size:0.75rem; }
 
-/* ── ELIGIBILITY (light) ── */
-.eligibility-inner { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:start; }
-.eligibility-text h2 { margin:0.75rem 0; }
-.eligibility-list { display:flex; flex-direction:column; gap:0.75rem; margin-top:1.5rem; padding:0; list-style:none; }
-.eligibility-list li { font-size:1rem; font-weight:500; color:var(--color-success); }
-.eligibility-list li::before { content:"✓ "; }
-.eligibility-provinces h3 { font-size:var(--text-xl); margin-bottom:1rem; }
-.province-tags { display:flex; flex-wrap:wrap; gap:0.5rem; }
-.province-tags span { background:white; border:1px solid var(--color-border); border-radius:9999px; padding:0.25rem 1rem; font-size:0.875rem; font-weight:500; }
-.eligibility-creds { display:flex; gap:1rem; flex-wrap:wrap; margin-top:1.5rem; }
-.cred-item { display:flex; align-items:center; gap:0.4rem; font-size:0.875rem; font-weight:500; color:var(--color-text-secondary); }
+/* ── ELIGIBILITY — dark ── */
+.section--eligibility { position:relative; overflow:hidden; }
+.elig-bg { position:absolute; inset:0; pointer-events:none; overflow:hidden; }
+.elig-beam {
+  position:absolute; top:0; left:0; width:55%; height:100%;
+  background:conic-gradient(from 345deg at 0% 0%, transparent 0deg, rgba(232,32,32,0.12) 20deg, transparent 50deg);
+}
+.elig-edge {
+  position:absolute; top:0; left:0; width:1px; height:100%;
+  background:linear-gradient(180deg, rgba(232,32,32,0.7) 0%, rgba(232,32,32,0.15) 50%, transparent 100%);
+}
+.elig-orb {
+  position:absolute; width:500px; height:500px; border-radius:50%;
+  background:radial-gradient(circle, rgba(232,32,32,0.16) 0%, transparent 65%);
+  bottom:-220px; right:-100px; filter:blur(22px);
+}
+.badge-green-dark { background:rgba(22,163,74,0.12); border:1px solid rgba(22,163,74,0.25); color:#4ade80; }
+.elig-grid {
+  display:grid; grid-template-columns:repeat(3,1fr);
+  gap:1.25rem;
+}
+.elig-card {
+  background:#0d1829;
+  border:1px solid rgba(255,255,255,0.09);
+  border-radius:20px; padding:1.75rem;
+  display:flex; flex-direction:column; gap:0;
+  position:relative; overflow:hidden;
+  transition:transform 0.3s ease, border-color 0.3s, box-shadow 0.3s;
+  box-shadow:0 2px 0 rgba(255,255,255,0.04) inset, 0 8px 32px rgba(0,0,0,0.3);
+  transform:perspective(600px) translateZ(0px);
+}
+.elig-card:hover {
+  transform:perspective(600px) translateZ(12px) translateY(-4px);
+  border-color:rgba(255,255,255,0.16);
+  box-shadow:0 2px 0 rgba(255,255,255,0.06) inset, 0 24px 48px rgba(0,0,0,0.45);
+}
+.elig-cta-card {
+  background:linear-gradient(135deg, rgba(232,32,32,0.14), rgba(232,32,32,0.05));
+  border:1px solid rgba(232,32,32,0.28);
+  border-radius:20px; padding:1.75rem;
+  display:flex; flex-direction:column; justify-content:space-between;
+  position:relative; overflow:hidden;
+  transition:transform 0.3s ease, box-shadow 0.3s;
+  box-shadow:0 2px 0 rgba(255,255,255,0.04) inset, 0 8px 32px rgba(232,32,32,0.12);
+  transform:perspective(600px) translateZ(0px);
+}
+.elig-cta-card:hover {
+  transform:perspective(600px) translateZ(14px) translateY(-4px);
+  box-shadow:0 2px 0 rgba(255,255,255,0.06) inset, 0 24px 48px rgba(232,32,32,0.22);
+}
+.elig-card-label {
+  font-size:0.6875rem; font-weight:700; color:rgba(255,255,255,0.35);
+  text-transform:uppercase; letter-spacing:0.1em; margin-bottom:1rem;
+}
+.elig-list { list-style:none; padding:0; display:flex; flex-direction:column; }
+.elig-item {
+  display:flex; align-items:flex-start; gap:10px;
+  padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.06);
+}
+.elig-item:last-child { border-bottom:none; }
+.elig-item > div { display:flex; flex-direction:column; gap:2px; }
+.elig-item strong { font-size:0.875rem; font-weight:600; color:#fff; line-height:1.4; }
+.elig-item span   { font-size:0.75rem; color:rgba(255,255,255,0.38); line-height:1.4; }
+.elig-bad-text { color:rgba(255,255,255,0.45) !important; }
+.elig-icon {
+  width:22px; height:22px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  font-size:0.625rem; font-weight:800; flex-shrink:0; margin-top:2px;
+}
+.elig-icon--good { background:rgba(22,163,74,0.12); border:1px solid rgba(22,163,74,0.25); color:#4ade80; }
+.elig-icon--bad  { background:rgba(220,38,38,0.1);  border:1px solid rgba(220,38,38,0.2);  color:#f87171; }
+.elig-province-tags {
+  display:flex; flex-wrap:wrap; gap:6px; margin-bottom:0.75rem;
+}
+.elig-province-tags span {
+  background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1);
+  border-radius:9999px; padding:4px 12px;
+  font-size:0.75rem; font-weight:500; color:rgba(255,255,255,0.6);
+}
+.elig-unavail { font-size:0.75rem; color:rgba(255,255,255,0.3); margin-bottom:1.25rem; }
+.elig-seals-block { padding-top:1.25rem; border-top:1px solid rgba(255,255,255,0.07); margin-top:auto; }
+.elig-seals { display:flex; flex-wrap:wrap; gap:0.75rem; }
+.elig-seal { display:flex; align-items:center; gap:5px; font-size:0.75rem; color:rgba(255,255,255,0.45); font-weight:500; }
+.elig-seal-dot { width:5px; height:5px; border-radius:50%; background:#4ade80; box-shadow:0 0 5px rgba(74,222,128,0.5); flex-shrink:0; }
+.elig-cta-body h3 { font-size:1.1rem; font-weight:800; color:#fff; line-height:1.35; margin-bottom:0.75rem; }
+.elig-cta-body p  { font-size:0.875rem; color:rgba(255,255,255,0.55); line-height:1.65; margin-bottom:1.25rem; }
+.elig-reassure { list-style:none; padding:0; display:flex; flex-direction:column; gap:7px; margin-bottom:1.5rem; }
+.elig-reassure li { display:flex; align-items:center; gap:7px; font-size:0.8125rem; font-weight:500; color:rgba(255,255,255,0.65); }
+.elig-cta-footer { display:flex; flex-direction:column; gap:0.6rem; }
+.elig-disclaimer { font-size:0.6875rem; color:rgba(255,255,255,0.28); text-align:center; line-height:1.5; }
 
 /* ── COST TABLE ── */
 .cost-table-wrap { max-width:720px; margin:0 auto; }
@@ -1737,7 +1870,7 @@ h1 em {
   .steps-grid { grid-template-columns:repeat(2,1fr); gap:1rem; }
   .testimonials-grid { grid-template-columns:repeat(2,1fr); }
   .faq-preview-grid { grid-template-columns:repeat(2,1fr); }
-  .eligibility-inner { grid-template-columns:1fr; gap:2.5rem; }
+  .elig-grid { grid-template-columns:1fr; }
   .cta-banner-inner { flex-direction:column; text-align:center; align-items:center; }
   .cta-banner-actions { justify-content:center; }
   .cta-mascot { display:none; }
