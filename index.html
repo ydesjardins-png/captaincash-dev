@@ -974,12 +974,28 @@ h1 em {
   color: #fff; border-radius: 9999px;
   padding: 14px 28px; font-size: 1rem; font-weight: 700;
   border: none; cursor: pointer; text-decoration: none;
-  box-shadow: 0 0 32px rgba(232,32,32,0.4), 0 4px 16px rgba(0,0,0,0.3);
-  transition: all 0.25s ease;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.15) inset,
+    0 -3px 0 rgba(0,0,0,0.3) inset,
+    0 8px 28px rgba(232,32,32,0.45),
+    0 4px 0 #8b0000;
+  transform: perspective(500px) translateZ(0px) translateY(0px);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 .btn-hero-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 0 44px rgba(232,32,32,0.55), 0 8px 24px rgba(0,0,0,0.3);
+  transform: perspective(500px) translateZ(8px) translateY(-2px);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.18) inset,
+    0 -3px 0 rgba(0,0,0,0.3) inset,
+    0 20px 40px rgba(232,32,32,0.6),
+    0 6px 0 #8b0000;
+}
+.btn-hero-primary:active {
+  transform: perspective(500px) translateZ(0px) translateY(2px);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.1) inset,
+    0 6px 14px rgba(232,32,32,0.3),
+    0 2px 0 #8b0000;
 }
 .btn-hero-arrow { transition: transform 0.25s; }
 .btn-hero-primary:hover .btn-hero-arrow { transform: translateX(4px); }
@@ -989,10 +1005,30 @@ h1 em {
   border: 1px solid rgba(255,255,255,0.18);
   color: rgba(255,255,255,0.82); border-radius: 9999px;
   padding: 14px 24px; font-size: 1rem; font-weight: 500;
-  text-decoration: none; transition: all 0.25s;
+  text-decoration: none;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.08) inset,
+    0 -2px 0 rgba(0,0,0,0.25) inset,
+    0 4px 16px rgba(0,0,0,0.3),
+    0 3px 0 rgba(0,0,0,0.4);
+  transform: perspective(500px) translateZ(0px) translateY(0px);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s, color 0.15s;
 }
 .btn-hero-ghost:hover {
   background: rgba(255,255,255,0.12); color: #fff;
+  transform: perspective(500px) translateZ(8px) translateY(-2px);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.12) inset,
+    0 -2px 0 rgba(0,0,0,0.25) inset,
+    0 10px 28px rgba(0,0,0,0.4),
+    0 4px 0 rgba(0,0,0,0.5);
+}
+.btn-hero-ghost:active {
+  transform: perspective(500px) translateZ(0px) translateY(2px);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.06) inset,
+    0 3px 8px rgba(0,0,0,0.25),
+    0 1px 0 rgba(0,0,0,0.4);
 }
 .hero-trust-pills {
   display: flex; flex-wrap: wrap; gap: 8px;
