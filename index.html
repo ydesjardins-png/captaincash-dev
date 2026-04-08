@@ -47,6 +47,50 @@
     <div class="hero-orb hero-orb-2"></div>
     <div class="hero-orb hero-orb-3"></div>
     <div class="hero-grid"></div>
+    <svg class="hero-circuit" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <!-- horizontal rails -->
+      <line x1="0" y1="110" x2="1200" y2="110" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+      <line x1="0" y1="220" x2="1200" y2="220" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+      <line x1="0" y1="330" x2="1200" y2="330" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+      <line x1="0" y1="440" x2="1200" y2="440" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+      <!-- vertical rails -->
+      <line x1="160"  y1="0" x2="160"  y2="600" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+      <line x1="340"  y1="0" x2="340"  y2="600" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+      <line x1="560"  y1="0" x2="560"  y2="600" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+      <line x1="760"  y1="0" x2="760"  y2="600" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+      <line x1="960"  y1="0" x2="960"  y2="600" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+      <line x1="1100" y1="0" x2="1100" y2="600" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+      <!-- L-bend paths red -->
+      <path d="M160 220 L250 220 L250 110 L340 110" fill="none" stroke="rgba(232,32,32,0.28)" stroke-width="1.5"/>
+      <path d="M560 330 L660 330 L660 220 L760 220" fill="none" stroke="rgba(232,32,32,0.22)" stroke-width="1.5"/>
+      <path d="M960 110 L1030 110 L1030 220 L1100 220" fill="none" stroke="rgba(232,32,32,0.24)" stroke-width="1.5"/>
+      <path d="M340 440 L440 440 L440 330 L560 330" fill="none" stroke="rgba(232,32,32,0.16)" stroke-width="1.5"/>
+      <!-- L-bend paths white -->
+      <path d="M340 110 L450 110 L450 220 L560 220" fill="none" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+      <path d="M760 220 L860 220 L860 330 L960 330" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+      <path d="M160 440 L260 440 L260 330 L340 330" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+      <path d="M760 440 L860 440 L860 330 L960 330" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+      <!-- corner squares -->
+      <rect x="157"  y="107"  width="7" height="7" rx="1" fill="none" stroke="rgba(232,32,32,0.45)" stroke-width="1"/>
+      <rect x="337"  y="107"  width="7" height="7" rx="1" fill="none" stroke="rgba(232,32,32,0.35)" stroke-width="1"/>
+      <rect x="557"  y="217"  width="7" height="7" rx="1" fill="none" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+      <rect x="757"  y="217"  width="7" height="7" rx="1" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+      <rect x="957"  y="107"  width="7" height="7" rx="1" fill="none" stroke="rgba(232,32,32,0.3)"  stroke-width="1"/>
+      <rect x="1097" y="217"  width="7" height="7" rx="1" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+      <!-- pulsing signal nodes red -->
+      <circle cx="160"  cy="220" r="4.5" fill="rgba(232,32,32,0.85)"><animate attributeName="opacity" values="1;0.25;1" dur="2.2s" repeatCount="indefinite"/></circle>
+      <circle cx="340"  cy="110" r="4.5" fill="rgba(232,32,32,0.8)"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.9s" repeatCount="indefinite"/></circle>
+      <circle cx="560"  cy="330" r="4.5" fill="rgba(232,32,32,0.85)"><animate attributeName="opacity" values="1;0.2;1" dur="2.6s" repeatCount="indefinite"/></circle>
+      <circle cx="960"  cy="110" r="4.5" fill="rgba(232,32,32,0.8)"><animate attributeName="opacity" values="0.4;1;0.4" dur="1.7s" repeatCount="indefinite"/></circle>
+      <circle cx="340"  cy="440" r="4"   fill="rgba(232,32,32,0.65)"><animate attributeName="opacity" values="1;0.3;1" dur="3s" repeatCount="indefinite"/></circle>
+      <!-- static white nodes -->
+      <circle cx="560"  cy="220" r="3" fill="rgba(255,255,255,0.28)"/>
+      <circle cx="760"  cy="220" r="3" fill="rgba(255,255,255,0.22)"/>
+      <circle cx="960"  cy="330" r="3" fill="rgba(255,255,255,0.18)"/>
+      <circle cx="1100" cy="220" r="3" fill="rgba(255,255,255,0.18)"/>
+      <circle cx="160"  cy="440" r="3" fill="rgba(255,255,255,0.15)"/>
+      <circle cx="760"  cy="440" r="3" fill="rgba(255,255,255,0.15)"/>
+    </svg>
   </div>
 
   <div class="container hero-inner">
@@ -668,6 +712,11 @@
     linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
   background-size: 44px 44px;
+}
+.hero-circuit {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
 }
 
 /* floating notification pills */
