@@ -196,7 +196,12 @@
           <div class="step-num-solid" aria-hidden="true">01</div>
         </div>
         <h3>Apply in 5 minutes</h3>
-        <p>Fill out our quick online form from your phone. No documents, no credit check, no branch visit.</p>
+        <p>Fill out our simple online form from any device — phone, tablet, or computer. We ask for basic personal and banking details. No documents to upload, no credit check, no branch visit required. Your information is encrypted and never shared.</p>
+        <ul class="step-detail-list">
+          <li>100% online — no paperwork</li>
+          <li>No hard credit inquiry</li>
+          <li>Bank-level encryption</li>
+        </ul>
         <div class="step-time-badge step-time-badge--light"><span class="step-time-dot" aria-hidden="true"></span> Takes 5 minutes</div>
       </div>
       <div class="step-card-light animate">
@@ -204,7 +209,12 @@
           <div class="step-num-solid" aria-hidden="true">02</div>
         </div>
         <h3>Get approved the same day</h3>
-        <p>Our team reviews your file fast. 92% of applicants hear back the same business day.</p>
+        <p>Our team reviews your income and banking history — not your credit score. 92% of applicants receive a decision the same business day. If approved, you will review your repayment schedule before accepting. No obligation until you sign.</p>
+        <ul class="step-detail-list">
+          <li>Income-based review, not credit score</li>
+          <li>Clear repayment terms upfront</li>
+          <li>No obligation to accept</li>
+        </ul>
         <div class="step-time-badge step-time-badge--light"><span class="step-time-dot" aria-hidden="true"></span> Same business day</div>
       </div>
       <div class="step-card-light animate">
@@ -212,7 +222,12 @@
           <div class="step-num-solid" aria-hidden="true">03</div>
         </div>
         <h3>Money in your account</h3>
-        <p>Approved before 2 PM ET? Funds arrive by Interac e-Transfer the same day — straight to your bank.</p>
+        <p>Once you accept your loan agreement, funds are sent by Interac e-Transfer directly to your Canadian bank account. Approved before 2 PM ET on a business day? You can receive your money the same day. Then repay over 90–150 days in instalments that match your pay schedule.</p>
+        <ul class="step-detail-list">
+          <li>Interac e-Transfer to any Canadian bank</li>
+          <li>Repay weekly, bi-weekly, or monthly</li>
+          <li>APR 23% — full cost shown before you sign</li>
+        </ul>
         <div class="step-time-badge step-time-badge--light"><span class="step-time-dot" aria-hidden="true"></span> Same day if before 2 PM ET</div>
       </div>
     </div>
@@ -1449,6 +1464,17 @@ h1 em {
   margin-top:16px;
 }
 .step-time-dot { width:5px; height:5px; border-radius:50%; background:#16a34a; flex-shrink:0; }
+.step-detail-list {
+  list-style:none; padding:0; margin:1rem 0 0;
+  display:flex; flex-direction:column; gap:6px; text-align:left;
+}
+.step-detail-list li {
+  font-size:0.8125rem; color:#4a5568; padding-left:1.25rem; position:relative;
+}
+.step-detail-list li::before {
+  content:"✓"; position:absolute; left:0;
+  color:#16a34a; font-weight:700; font-size:0.75rem;
+}
 .btn-steps-cta {
   display:inline-flex; align-items:center; gap:10px;
   background: linear-gradient(135deg, #e82020, #c41515);
