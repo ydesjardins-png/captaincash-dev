@@ -174,56 +174,46 @@
 </section>
 
 <!-- ═══════════════════════════════════════
-     HOW IT WORKS — dark glass
+     HOW IT WORKS — light
 ═══════════════════════════════════════ -->
-<section class="section section--dark section--steps">
-  <div class="steps-orb steps-orb-1" aria-hidden="true"></div>
-  <div class="steps-orb steps-orb-2" aria-hidden="true"></div>
+<section class="section section--steps-light">
   <div class="container">
-    <div class="section-header section-header--dark">
-      <span class="badge badge-blue-dark">Simple process</span>
-      <h2>Get your cash in 3 steps</h2>
-      <p>The fastest way to get money when you need it most. Apply in minutes, get your answer the same day.</p>
+    <div class="section-header">
+      <span class="badge badge-red">How it works</span>
+      <h2>Your cash in 3 simple steps</h2>
+      <p>From application to e-Transfer in as little as a few hours. No branch visit, no paperwork, no credit check.</p>
     </div>
     <div class="steps-grid">
       <!-- pixel-perfect connector — threads between circles, never through them -->
       <svg class="steps-connector" viewBox="0 0 1152 116" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <!-- segment 1: right edge of circle 01 → left edge of circle 02 -->
-        <line x1="217" y1="58" x2="550" y2="58"
-              stroke="rgba(232,32,32,0.5)" stroke-width="1.5"/>
-        <!-- segment 2: right edge of circle 02 → left edge of circle 03 -->
-        <line x1="602" y1="58" x2="935" y2="58"
-              stroke="rgba(232,32,32,0.5)" stroke-width="1.5"/>
-        <!-- arrowhead at end of segment 1 pointing right -->
-        <polyline points="545,54 550,58 545,62"
-                  fill="none" stroke="rgba(232,32,32,0.5)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <!-- arrowhead at end of segment 2 pointing right -->
-        <polyline points="930,54 935,58 930,62"
-                  fill="none" stroke="rgba(232,32,32,0.5)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="217" y1="58" x2="550" y2="58" stroke="rgba(232,32,32,0.4)" stroke-width="2"/>
+        <line x1="602" y1="58" x2="935" y2="58" stroke="rgba(232,32,32,0.4)" stroke-width="2"/>
+        <polyline points="545,53 550,58 545,63" fill="none" stroke="rgba(232,32,32,0.4)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <polyline points="930,53 935,58 930,63" fill="none" stroke="rgba(232,32,32,0.4)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
-      <div class="step-card-dark animate">
+      <div class="step-card-light animate">
         <div class="step-num-wrap">
-          <div class="step-num-circle step-num-circle--active" aria-hidden="true">01</div>
+          <div class="step-num-solid" aria-hidden="true">01</div>
         </div>
-        <h3>Apply online in 5 minutes</h3>
-        <p>No documents to upload, no credit check, no branch visit. Do it from your phone in minutes.</p>
-        <div class="step-time-badge"><span class="step-time-dot" aria-hidden="true"></span> Takes 5 minutes</div>
+        <h3>Apply in 5 minutes</h3>
+        <p>Fill out our quick online form from your phone. No documents, no credit check, no branch visit.</p>
+        <div class="step-time-badge step-time-badge--light"><span class="step-time-dot" aria-hidden="true"></span> Takes 5 minutes</div>
       </div>
-      <div class="step-card-dark animate">
+      <div class="step-card-light animate">
         <div class="step-num-wrap">
-          <div class="step-num-circle" aria-hidden="true">02</div>
+          <div class="step-num-solid" aria-hidden="true">02</div>
         </div>
-        <h3>Get your answer the same day</h3>
-        <p>92% of applicants hear back the same business day. Our team reviews your file and confirms your schedule.</p>
-        <div class="step-time-badge"><span class="step-time-dot" aria-hidden="true"></span> Same business day</div>
+        <h3>Get approved the same day</h3>
+        <p>Our team reviews your file fast. 92% of applicants hear back the same business day.</p>
+        <div class="step-time-badge step-time-badge--light"><span class="step-time-dot" aria-hidden="true"></span> Same business day</div>
       </div>
-      <div class="step-card-dark animate">
+      <div class="step-card-light animate">
         <div class="step-num-wrap">
-          <div class="step-num-circle" aria-hidden="true">03</div>
+          <div class="step-num-solid" aria-hidden="true">03</div>
         </div>
-        <h3>Receive cash by e-Transfer</h3>
-        <p>Approved before 2 PM ET? Money arrives by Interac e-Transfer the same business day — straight to your bank.</p>
-        <div class="step-time-badge"><span class="step-time-dot" aria-hidden="true"></span> Before 2 PM ET</div>
+        <h3>Money in your account</h3>
+        <p>Approved before 2 PM ET? Funds arrive by Interac e-Transfer the same day — straight to your bank.</p>
+        <div class="step-time-badge step-time-badge--light"><span class="step-time-dot" aria-hidden="true"></span> Same day if before 2 PM ET</div>
       </div>
     </div>
     <div class="text-center" style="margin-top:3rem">
@@ -1401,72 +1391,64 @@ h1 em {
 .faq-preview-item { padding:var(--space-8); background:white; border:1px solid var(--color-border); border-radius:var(--radius-xl); }
 .faq-preview-item h3 { font-size:var(--text-lg); margin-bottom:0.75rem; }
 
-/* ── HOW IT WORKS — dark glass ── */
-.section--steps { position:relative; overflow:hidden; }
-.steps-orb { position:absolute; border-radius:50%; pointer-events:none; }
-.steps-orb-1 { width:500px;height:500px;background:radial-gradient(circle,rgba(232,32,32,0.1) 0%,transparent 65%);top:-200px;right:-80px; }
-.steps-orb-2 { width:400px;height:400px;background:radial-gradient(circle,rgba(26,110,240,0.07) 0%,transparent 65%);bottom:-150px;left:-60px; }
+/* ── HOW IT WORKS — light ── */
+.section--steps-light {
+  background: #f8f9fb;
+  position: relative;
+}
+.section--steps-light::before {
+  content:''; position:absolute; top:0; left:0; right:0; height:3px;
+  background:linear-gradient(90deg, transparent, #e82020 30%, #ff6a4d 50%, #e82020 70%, transparent);
+}
 .steps-grid {
   display:grid; grid-template-columns:repeat(3,1fr);
-  gap:2px; position:relative;
+  gap:1.5rem; position:relative;
 }
 .steps-connector {
-  position:absolute;
-  top:0; left:0;
+  position:absolute; top:0; left:0;
   width:100%; height:116px;
-  pointer-events:none;
-  z-index:3;
-  overflow:visible;
+  pointer-events:none; z-index:3; overflow:visible;
 }
-/* steps connector drawn via SVG overlay — no pseudo element */
-/* steps section — no dot grid needed */
-.step-card-dark {
+.step-card-light {
   position:relative; z-index:1;
-  background:rgba(255,255,255,0.04);
-  border:1px solid rgba(255,255,255,0.08);
+  background:#fff;
+  border:1px solid #e2e6ed;
   border-radius:20px; padding:32px 24px 28px;
-  text-align:center; margin:0 1px;
-  transition:transform 0.3s ease, border-color 0.3s, background 0.3s, box-shadow 0.3s;
-  box-shadow: 0 2px 0 rgba(255,255,255,0.04) inset, 0 8px 32px rgba(0,0,0,0.3);
+  text-align:center;
+  transition:transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s;
+  box-shadow: 0 2px 0 #e2e6ed, 0 4px 16px rgba(11,26,51,0.06);
   transform: perspective(600px) translateZ(0px);
 }
-.step-card-dark::before {
-  content:'';
-  position:absolute; top:0; left:10%; right:10%; height:1px;
-  background:linear-gradient(90deg,transparent,rgba(255,255,255,0.1),transparent);
-  border-radius:9999px;
+.step-card-light::before {
+  content:''; position:absolute; top:0; left:10%; right:10%; height:2px;
+  background:linear-gradient(90deg,transparent,rgba(232,32,32,0.35),transparent);
+  border-radius:9999px; opacity:0; transition:opacity 0.25s;
 }
-.step-card-dark:hover {
-  background:rgba(255,255,255,0.07); border-color:rgba(255,255,255,0.16);
-  transform: perspective(600px) translateZ(16px) translateY(-4px);
-  box-shadow: 0 2px 0 rgba(255,255,255,0.06) inset, 0 24px 48px rgba(0,0,0,0.45);
+.step-card-light:hover {
+  transform: perspective(600px) translateZ(14px) translateY(-4px);
+  box-shadow: 0 2px 0 #e82020, 0 16px 36px rgba(232,32,32,0.12);
+  border-color: rgba(232,32,32,0.25);
 }
-.step-card-dark h3 { font-size:1rem; font-weight:700; color:#fff; margin-bottom:10px; }
-.step-card-dark p  { font-size:0.875rem; color:rgba(255,255,255,0.5); line-height:1.65; }
+.step-card-light:hover::before { opacity:1; }
+.step-card-light h3 { font-size:1rem; font-weight:700; color:#0b1a33; margin-bottom:10px; }
+.step-card-light p  { font-size:0.875rem; color:#6b7789; line-height:1.65; }
 .step-num-wrap { display:flex; justify-content:center; margin-bottom:20px; }
-.step-num-circle {
+.step-num-solid {
   width:52px; height:52px; border-radius:50%;
-  background:rgba(232,32,32,0.1); border:1px solid rgba(232,32,32,0.3);
+  background:#e82020; color:#fff;
   display:flex; align-items:center; justify-content:center;
-  font-size:1rem; font-weight:800; color:#e82020;
+  font-size:1rem; font-weight:800;
   position:relative; z-index:2;
-  box-shadow:0 0 20px rgba(232,32,32,0.15);
+  box-shadow: 0 4px 0 #8b0000, 0 8px 20px rgba(232,32,32,0.3);
 }
-.step-num-circle--active::after {
-  content:'';
-  position:absolute; inset:-6px; border-radius:50%;
-  border:1px solid rgba(232,32,32,0.3);
-  animation:stepRingPulse 2.5s ease-out infinite;
-}
-@keyframes stepRingPulse { 0%{transform:scale(1);opacity:0.8;} 100%{transform:scale(1.6);opacity:0;} }
 .step-time-badge {
   display:inline-flex; align-items:center; gap:6px;
-  background:rgba(74,222,128,0.08); border:1px solid rgba(74,222,128,0.18);
+  background:rgba(22,163,74,0.08); border:1px solid rgba(22,163,74,0.2);
   border-radius:9999px; padding:4px 12px;
-  font-size:0.6875rem; font-weight:700; color:#4ade80;
+  font-size:0.6875rem; font-weight:700; color:#16a34a;
   margin-top:16px;
 }
-.step-time-dot { width:5px; height:5px; border-radius:50%; background:#4ade80; box-shadow:0 0 5px #4ade80; flex-shrink:0; }
+.step-time-dot { width:5px; height:5px; border-radius:50%; background:#16a34a; flex-shrink:0; }
 .btn-steps-cta {
   display:inline-flex; align-items:center; gap:10px;
   background: linear-gradient(135deg, #e82020, #c41515);
@@ -1603,7 +1585,7 @@ h1 em {
   .calc-display-row > div:last-child { text-align:left; }
   .calc-display-amount { font-size:1.8rem; }
   .steps-grid { grid-template-columns:1fr; gap:0.75rem; }
-  .steps-grid::before { display:none; }
+  .steps-connector { display:none; }
   .bento-grid { grid-template-columns:1fr; }
   .bento-card--tall,.bento-card--wide,.bento-card--full { grid-column:span 1; grid-row:span 1; }
   .bento-card,.compare-card { padding:1.5rem; }
