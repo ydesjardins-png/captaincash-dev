@@ -35,7 +35,7 @@ p  { font-size: var(--text-base); line-height: var(--leading-normal); color: var
 .nav-links.nav-open { display: flex; flex-direction: column; position: absolute; top: var(--header-height); left: 0; right: 0; background: var(--color-bg); border-bottom: 1px solid var(--color-border); padding: var(--space-6); gap: var(--space-4); box-shadow: var(--shadow-md); }
 @media (max-width: 900px) { .nav-links { display: none; } .hamburger { display: flex; } }
 
-.site-footer { background: var(--navy-900); color: white; padding: var(--space-16) 0 var(--space-8); }
+.site-footer { background: #000; color: white; padding: var(--space-16) 0 var(--space-8); }
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: var(--space-12); margin-bottom: var(--space-12); }
 .footer-brand p { color: var(--gray-400); font-size: var(--text-sm); line-height: 1.8; margin-top: var(--space-4); max-width: 280px; }
 .footer-col h4 { font-size: var(--text-sm); font-weight: var(--weight-semi); color: var(--gray-400); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: var(--space-4); }
