@@ -871,7 +871,7 @@
   background:radial-gradient(ellipse,rgba(22,163,74,0.3) 0%,transparent 70%);
   filter:blur(8px);
 }
-@media(max-width:900px){ .pmt-hero-visual { display:none; } .pmt-hero-inner { grid-template-columns:1fr; padding:3rem 0 3.5rem; } }
+@media(max-width:900px){ .pmt-hero-visual { display:none; } .pmt-hero-inner { grid-template-columns:1fr !important; padding:3rem 0 3.5rem !important; } }
 
 
 /* ── Before you start banner ── */
@@ -973,7 +973,7 @@
 .pmt-orb-b { position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(26,110,240,0.12) 0%,transparent 65%);top:-160px;left:-100px;filter:blur(18px); }
 
 .pmt-edge { position:absolute;top:0;right:0;width:1px;height:100%;background:linear-gradient(180deg,rgba(232,32,32,0.7) 0%,rgba(232,32,32,0.15) 50%,transparent 100%); }
-.pmt-hero-inner { position:relative;z-index:2;display:grid;grid-template-columns:1fr 300px;gap:3.5rem;align-items:center;padding:5rem 0 5.5rem; }
+@media(min-width:901px){.pmt-hero-inner { position:relative;z-index:2;display:grid;grid-template-columns:1fr 300px;gap:3.5rem;align-items:center;padding:5rem 0 5.5rem; }}
 .pmt-hero-content .badge { display:inline-block;margin-bottom:0.875rem; }
 .pmt-hero-content h1 { font-size:clamp(2rem,4vw,3rem);font-weight:900;color:#fff;letter-spacing:-0.04em;line-height:1.15;margin-bottom:1.125rem; }
 .pmt-hero-sub { font-size:1rem;color:rgba(255,255,255,0.85);line-height:1.7;max-width:520px;margin-bottom:1.5rem; }
