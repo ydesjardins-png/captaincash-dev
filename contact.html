@@ -200,9 +200,63 @@
 ═══════════════════════════════════════ -->
 <section class="section section--dark cnt-hero">
   <div class="cnt-hero-bg" aria-hidden="true">
-    <div class="cnt-orb-r"></div>
-    <div class="cnt-orb-b"></div>
-    <div class="cnt-beam"></div>
+    <svg class="cnt-bubbles-bg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+
+      <!-- Central large bubble (hero zone) -->
+      <rect x="370" y="180" width="220" height="90" rx="18" fill="rgba(232,32,32,0.07)" stroke="rgba(232,32,32,0.22)" stroke-width="1"/>
+      <path d="M410,270 L396,292 L428,270" fill="rgba(232,32,32,0.07)" stroke="rgba(232,32,32,0.22)" stroke-width="1"/>
+      <!-- 3 typing dots inside -->
+      <circle cx="456" cy="225" r="5" fill="rgba(232,32,32,0.45)"/>
+      <circle cx="476" cy="225" r="5" fill="rgba(232,32,32,0.28)"/>
+      <circle cx="496" cy="225" r="5" fill="rgba(232,32,32,0.15)"/>
+
+      <!-- Medium bubble — top left -->
+      <rect x="80" y="100" width="160" height="65" rx="14" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <path d="M120,165 L108,182 L136,165" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <line x1="100" y1="125" x2="222" y2="125" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="100" y1="140" x2="200" y2="140" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="100" y1="155" x2="180" y2="155" stroke="rgba(255,255,255,0.05)" stroke-width="1.5" stroke-linecap="round"/>
+
+      <!-- Medium bubble — top right -->
+      <rect x="760" y="80" width="150" height="60" rx="14" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+      <path d="M870,140 L882,156 L858,140" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+      <line x1="778" y1="103" x2="892" y2="103" stroke="rgba(255,255,255,0.1)" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="778" y1="118" x2="860" y2="118" stroke="rgba(255,255,255,0.06)" stroke-width="1.5" stroke-linecap="round"/>
+
+      <!-- Medium bubble — bottom right -->
+      <rect x="820" y="340" width="180" height="70" rx="14" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+      <path d="M840,410 L826,428 L858,410" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+      <line x1="840" y1="363" x2="980" y2="363" stroke="rgba(255,255,255,0.09)" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="840" y1="378" x2="950" y2="378" stroke="rgba(255,255,255,0.06)" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="840" y1="393" x2="910" y2="393" stroke="rgba(255,255,255,0.04)" stroke-width="1.5" stroke-linecap="round"/>
+
+      <!-- Small bubble — far left -->
+      <rect x="30" y="310" width="110" height="48" rx="11" fill="rgba(255,255,255,0.015)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+      <path d="M70,358 L60,372 L82,358" fill="rgba(255,255,255,0.015)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+      <line x1="48" y1="328" x2="122" y2="328" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="48" y1="342" x2="108" y2="342" stroke="rgba(255,255,255,0.05)" stroke-width="1.5" stroke-linecap="round"/>
+
+      <!-- Small bubble — bottom centre left -->
+      <rect x="200" y="420" width="130" height="50" rx="11" fill="rgba(255,255,255,0.015)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+      <path d="M280,470 L292,486 L268,470" fill="rgba(255,255,255,0.015)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+      <line x1="218" y1="440" x2="312" y2="440" stroke="rgba(255,255,255,0.07)" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="218" y1="454" x2="290" y2="454" stroke="rgba(255,255,255,0.04)" stroke-width="1.5" stroke-linecap="round"/>
+
+      <!-- Tiny bubble — top centre -->
+      <rect x="480" y="50" width="80" height="38" rx="9" fill="rgba(232,32,32,0.04)" stroke="rgba(232,32,32,0.12)" stroke-width="1"/>
+      <path d="M502,88 L492,100 L514,88" fill="rgba(232,32,32,0.04)" stroke="rgba(232,32,32,0.12)" stroke-width="1"/>
+      <line x1="496" y1="66" x2="544" y2="66" stroke="rgba(232,32,32,0.15)" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="496" y1="78" x2="534" y2="78" stroke="rgba(232,32,32,0.1)" stroke-width="1.5" stroke-linecap="round"/>
+
+      <!-- Tiny bubble — far right top -->
+      <rect x="1020" y="160" width="75" height="35" rx="8" fill="rgba(255,255,255,0.01)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <!-- Tiny bubble — far left bottom -->
+      <rect x="20" y="460" width="65" height="30" rx="8" fill="rgba(255,255,255,0.01)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+      <!-- Tiny bubble — bottom right corner -->
+      <rect x="1060" y="420" width="90" height="36" rx="9" fill="rgba(255,255,255,0.01)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+
+    </svg>
+    <!-- Keep only the left edge line for brand consistency -->
     <div class="cnt-edge"></div>
   </div>
   <div class="container cnt-hero-inner">
@@ -660,10 +714,8 @@
 /* Hero */
 .cnt-hero { position:relative;overflow:hidden; }
 .cnt-hero-bg { position:absolute;inset:0;pointer-events:none;overflow:hidden; }
-.cnt-orb-r { position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(232,32,32,0.18) 0%,transparent 65%);bottom:-280px;right:-160px;filter:blur(20px);animation:orbPulse 8s ease-in-out infinite; }
-.cnt-orb-b { position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(26,110,240,0.12) 0%,transparent 65%);top:-160px;left:-100px;filter:blur(18px); }
-.cnt-beam { position:absolute;top:0;right:0;width:65%;height:100%;background:conic-gradient(from 200deg at 100% 0%,transparent 0deg,rgba(232,32,32,0.14) 22deg,transparent 52deg); }
-.cnt-edge { position:absolute;top:0;right:0;width:1px;height:100%;background:linear-gradient(180deg,rgba(232,32,32,0.7) 0%,rgba(232,32,32,0.15) 50%,transparent 100%); }
+.cnt-bubbles-bg { position:absolute;inset:0;width:100%;height:100%; }
+.cnt-edge { position:absolute;top:0;left:0;width:1px;height:100%;background:linear-gradient(180deg,rgba(232,32,32,0.6) 0%,rgba(232,32,32,0.1) 60%,transparent 100%); }
 .cnt-hero-inner { position:relative;z-index:2;display:grid;grid-template-columns:1fr 360px;gap:3.5rem;align-items:center;padding:4rem 0 5rem; }
 .cnt-hero-content .badge { display:inline-block;margin-bottom:0.875rem; }
 .cnt-hero-content h1 { font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:800;color:#fff;letter-spacing:-0.03em;line-height:1.2;margin-bottom:1rem; }
