@@ -90,10 +90,18 @@ button, input[type="submit"], input[type="button"], input[type="reset"] {
 ══════════════════════════════════════ */
 
 /* Hero text left padding on small screens */
-@media (max-width: 479px) {
-  .container {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+/* Hero inner horizontal padding — prevents text flush against screen edge.
+   All *-hero-inner classes set padding:Xrem 0 Yrem which zeros out horizontal.
+   This restores 1.25rem (20px) side padding on mobile for all of them. */
+@media (max-width: 767px) {
+  [class*="-hero-inner"] {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+  /* Also catch the shared .hero-inner on homepage */
+  .hero-inner {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
   }
 }
 
