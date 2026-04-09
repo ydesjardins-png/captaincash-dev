@@ -1324,7 +1324,7 @@ h1 em {
 /* ── large phone (≤767px) ── */
 @media (max-width:767px) {
   /* hero */
-  .hero-inner { padding-top:3rem; padding-bottom:1.5rem; }
+  .hero-inner { padding-top:3rem; padding-bottom:1rem; }
   .hero-mascot-mobile { display:flex; }
   h1 { font-size:2rem !important; }
   .hero-trust-pills { gap:6px; }
@@ -1404,7 +1404,7 @@ h1 em {
 ══════════════════════════════════════ */
 .funnel-progress-wrap{background:#000;border-bottom:1px solid rgba(255,255,255,0.06);padding:0}
 .funnel-steps{display:flex;align-items:stretch;max-width:680px;margin:0 auto;padding:0 1.5rem}
-.funnel-step{display:flex;align-items:center;gap:10px;padding:1.125rem 0;flex:1;position:relative}
+.funnel-step{display:flex;align-items:center;gap:10px;padding:0.75rem 0;flex:1;position:relative}
 .funnel-step:not(:last-child)::after{content:"";position:absolute;right:0;top:50%;transform:translateY(-50%);width:1px;height:24px;background:rgba(255,255,255,0.1)}
 .funnel-step-circle{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.75rem;font-weight:800;flex-shrink:0;transition:all .2s}
 .funnel-step--done .funnel-step-circle{background:#16a34a;color:#fff}
@@ -1420,18 +1420,18 @@ h1 em {
 @media(max-width:600px){.funnel-step-desc{display:none}.funnel-step-name{font-size:0.75rem}.funnel-step{gap:7px}}
 
 /* Funnel page layout */
-.funnel-page{background:#f8f9fb;min-height:calc(100vh - 140px);padding:2.5rem 0 5rem}
-.funnel-card{background:#fff;border:1px solid #e2e6ed;border-radius:20px;padding:2.25rem;box-shadow:0 1px 4px rgba(11,26,51,0.06);max-width:680px;margin:0 auto}
-.funnel-card-header{margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:1px solid #f0f2f5}
+.funnel-page{background:#f8f9fb;min-height:calc(100vh - 140px);padding:1.5rem 0 3rem}
+.funnel-card{background:#fff;border:1px solid #e2e6ed;border-radius:20px;padding:1.5rem;box-shadow:0 1px 4px rgba(11,26,51,0.06);max-width:680px;margin:0 auto}
+.funnel-card-header{margin-bottom:1.25rem;padding-bottom:1rem;border-bottom:1px solid #f0f2f5}
 .funnel-card-eyebrow{font-size:0.6875rem;font-weight:700;color:#e82020;text-transform:uppercase;letter-spacing:0.09em;margin-bottom:6px}
 .funnel-card-title{font-size:1.5rem;font-weight:800;color:#0b1a33;line-height:1.2;margin-bottom:6px}
 .funnel-card-sub{font-size:0.875rem;color:#6b7789;line-height:1.6}
 
 /* Form fields */
-.funnel-fieldset{border:none;padding:0;margin:0 0 1.75rem}
-.funnel-legend{font-size:0.6875rem;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:.09em;margin-bottom:1rem;padding:0;display:block;width:100%}
-.funnel-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-.funnel-grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem}
+.funnel-fieldset{border:none;padding:0;margin:0 0 1.1rem}
+.funnel-legend{font-size:0.6875rem;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:.09em;margin-bottom:0.625rem;padding:0;display:block;width:100%}
+.funnel-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem}
+.funnel-grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.75rem}
 @media(max-width:560px){.funnel-grid,.funnel-grid-3{grid-template-columns:1fr}}
 .funnel-field{display:flex;flex-direction:column;gap:5px}
 .funnel-field.full{grid-column:1/-1}
@@ -1459,30 +1459,30 @@ h1 em {
 .funnel-freq-btn.selected{border-color:#e82020;background:#fef2f2;color:#e82020}
 
 /* Checkbox */
-.funnel-check-row{display:flex;align-items:flex-start;gap:10px;margin-bottom:10px}
+.funnel-check-row{display:flex;align-items:flex-start;gap:10px;margin-bottom:6px}
 .funnel-check-row input[type=checkbox]{width:18px;height:18px;border:1.5px solid #e2e6ed;border-radius:4px;cursor:pointer;flex-shrink:0;margin-top:2px;accent-color:#e82020}
 .funnel-check-label{font-size:0.875rem;color:#4a5568;line-height:1.6}
 .funnel-check-label a{color:#e82020;text-decoration:none}
 .funnel-check-label a:hover{text-decoration:underline}
 
 /* Submit button */
-.funnel-submit{width:100%;padding:15px;border-radius:9999px;border:none;background:linear-gradient(135deg,#e82020,#c41515);color:#fff;font-size:1rem;font-weight:700;cursor:pointer;box-shadow:0 1px 0 rgba(255,255,255,0.15) inset,0 -3px 0 rgba(0,0,0,0.25) inset,0 6px 20px rgba(232,32,32,0.35),0 3px 0 #8b0000;transform:perspective(400px) translateZ(0);transition:transform .15s,box-shadow .15s;margin-top:0.5rem;display:flex;align-items:center;justify-content:center;gap:8px}
+.funnel-submit{width:100%;padding:15px;border-radius:9999px;border:none;background:linear-gradient(135deg,#e82020,#c41515);color:#fff;font-size:1rem;font-weight:700;cursor:pointer;box-shadow:0 1px 0 rgba(255,255,255,0.15) inset,0 -3px 0 rgba(0,0,0,0.25) inset,0 6px 20px rgba(232,32,32,0.35),0 3px 0 #8b0000;transform:perspective(400px) translateZ(0);transition:transform .15s,box-shadow .15s;margin-top:0.375rem;display:flex;align-items:center;justify-content:center;gap:8px}
 .funnel-submit:hover:not(:disabled){transform:perspective(400px) translateZ(5px) translateY(-1px);box-shadow:0 1px 0 rgba(255,255,255,0.18) inset,0 -3px 0 rgba(0,0,0,0.25) inset,0 12px 28px rgba(232,32,32,0.45),0 4px 0 #8b0000}
 .funnel-submit:disabled{opacity:.6;cursor:not-allowed;transform:none}
 .funnel-submit-blue{background:linear-gradient(135deg,#1a6ef0,#1258cc);box-shadow:0 1px 0 rgba(255,255,255,0.15) inset,0 -3px 0 rgba(0,0,0,0.25) inset,0 6px 20px rgba(26,110,240,0.35),0 3px 0 #0d44a8}
 .funnel-submit-blue:hover:not(:disabled){box-shadow:0 1px 0 rgba(255,255,255,0.18) inset,0 -3px 0 rgba(0,0,0,0.25) inset,0 12px 28px rgba(26,110,240,0.45),0 4px 0 #0d44a8}
-.funnel-disclaimer{font-size:0.75rem;color:#9ca3af;text-align:center;margin-top:0.75rem;line-height:1.6}
+.funnel-disclaimer{font-size:0.75rem;color:#9ca3af;text-align:center;margin-top:0.5rem;line-height:1.6}
 .funnel-disclaimer a{color:#9ca3af}
 
 /* Loan summary pill */
-.funnel-loan-pill{background:#f8f9fb;border:1px solid #e2e6ed;border-radius:12px;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:1.5rem}
+.funnel-loan-pill{background:#f8f9fb;border:1px solid #e2e6ed;border-radius:12px;padding:9px 14px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:1rem}
 .funnel-loan-pill-item{display:flex;flex-direction:column;gap:2px;align-items:center}
 .funnel-loan-pill-val{font-size:1rem;font-weight:800;color:#0b1a33}
 .funnel-loan-pill-lbl{font-size:0.625rem;font-weight:600;color:#9ca3af;text-transform:uppercase;letter-spacing:.06em}
 .funnel-loan-pill-div{width:1px;height:28px;background:#e2e6ed}
 
 /* Section dividers */
-.funnel-section-divider{height:1px;background:#f0f2f5;margin:1.75rem 0}
+.funnel-section-divider{height:1px;background:#f0f2f5;margin:1rem 0}
 
   
 /* ── Funnel two-column layout ── */
