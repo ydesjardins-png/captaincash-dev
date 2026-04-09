@@ -532,6 +532,9 @@
       <!-- col 3: CTA card -->
       <div class="elig-cta-card animate">
         <div class="bento-card-shine" aria-hidden="true"></div>
+        <div class="elig-cta-mascot" aria-hidden="true">
+          <img src="images/mascot/mascot-canada-shield.webp" alt="" width="100" height="120" loading="lazy">
+        </div>
         <div class="elig-cta-body">
           <h3>Ready to find out if you qualify?</h3>
           <p>Applying is free. It takes 5 minutes. Your credit score will not be affected. You are under no obligation to accept any offer.</p>
@@ -1725,6 +1728,14 @@ h1 em {
 .elig-seals { display:flex; flex-wrap:wrap; gap:0.75rem; }
 .elig-seal { display:flex; align-items:center; gap:5px; font-size:0.75rem; color:rgba(255,255,255,0.45); font-weight:500; }
 .elig-seal-dot { width:5px; height:5px; border-radius:50%; background:#4ade80; box-shadow:0 0 5px rgba(74,222,128,0.5); flex-shrink:0; }
+.elig-cta-mascot {
+  display:flex; justify-content:center; margin-bottom:1rem;
+}
+.elig-cta-mascot img {
+  width:90px; height:auto;
+  filter: drop-shadow(-8px 0 20px rgba(232,32,32,0.3)) drop-shadow(0 12px 24px rgba(0,0,0,0.5));
+  animation: mascotFloat 5s ease-in-out infinite;
+}
 .elig-cta-body h3 { font-size:1.1rem; font-weight:800; color:#fff; line-height:1.35; margin-bottom:0.75rem; }
 .elig-cta-body p  { font-size:0.875rem; color:rgba(255,255,255,0.55); line-height:1.65; margin-bottom:1.25rem; }
 .elig-reassure { list-style:none; padding:0; display:flex; flex-direction:column; gap:7px; margin-bottom:1.5rem; }
