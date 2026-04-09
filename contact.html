@@ -212,59 +212,57 @@
         </linearGradient>
         <linearGradient id="pulseGrad" x1="0" y1="0" x2="1" y2="0">
           <stop offset="0%" stop-color="rgba(232,32,32,0)" />
-          <stop offset="30%" stop-color="rgba(232,32,32,0.7)" />
-          <stop offset="70%" stop-color="rgba(232,32,32,0.7)" />
+          <stop offset="30%" stop-color="rgba(232,32,32,0.6)" />
+          <stop offset="70%" stop-color="rgba(232,32,32,0.6)" />
           <stop offset="100%" stop-color="rgba(232,32,32,0)" />
         </linearGradient>
       </defs>
 
       <!-- Flat line left -->
-      <line x1="0" y1="300" x2="360" y2="300" stroke="url(#lineLeft)" stroke-width="1.5"/>
+      <line x1="0" y1="510" x2="360" y2="510" stroke="url(#lineLeft)" stroke-width="1.5"/>
 
-      <!-- Main heartbeat pulse — centred -->
+      <!-- Main heartbeat pulse — bottom of hero -->
       <polyline
-        points="360,300 420,300 460,300 490,180 520,420 550,240 580,340 610,300 680,300"
+        points="360,510 420,510 460,510 490,390 520,600 550,440 580,540 610,510 680,510"
         fill="none" stroke="url(#pulseGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 
-      <!-- Second smaller echo pulse to the right -->
+      <!-- Second echo -->
       <polyline
-        points="680,300 730,300 755,260 780,340 805,300 850,300"
-        fill="none" stroke="rgba(232,32,32,0.22)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        points="680,510 730,510 755,470 780,550 805,510 850,510"
+        fill="none" stroke="rgba(232,32,32,0.2)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 
-      <!-- Third fading echo -->
+      <!-- Third echo -->
       <polyline
-        points="850,300 890,300 905,278 920,322 935,300 980,300"
-        fill="none" stroke="rgba(232,32,32,0.1)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+        points="850,510 890,510 905,490 920,530 935,510 980,510"
+        fill="none" stroke="rgba(232,32,32,0.09)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
 
       <!-- Flat line right -->
-      <line x1="980" y1="300" x2="1400" y2="300" stroke="url(#lineRight)" stroke-width="1.5"/>
+      <line x1="980" y1="510" x2="1400" y2="510" stroke="url(#lineRight)" stroke-width="1.5"/>
 
-      <!-- Glowing dot at peak of first pulse -->
-      <circle cx="490" cy="180" r="5" fill="#e82020" opacity="0.9">
+      <!-- Glowing dot at peak -->
+      <circle cx="490" cy="390" r="5" fill="#e82020" opacity="0.9">
         <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2s" repeatCount="indefinite"/>
         <animate attributeName="r" values="5;7;5" dur="2s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="490" cy="180" r="16" fill="rgba(232,32,32,0.08)" stroke="rgba(232,32,32,0.18)" stroke-width="1">
-        <animate attributeName="r" values="16;22;16" dur="2s" repeatCount="indefinite"/>
+      <circle cx="490" cy="390" r="16" fill="rgba(232,32,32,0.08)" stroke="rgba(232,32,32,0.15)" stroke-width="1">
+        <animate attributeName="r" values="16;24;16" dur="2s" repeatCount="indefinite"/>
         <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite"/>
       </circle>
 
-      <!-- Heart icon floating above peak -->
-      <path d="M490,152 C490,148 485,144 480,146 C475,148 475,153 480,158 L490,168 L500,158 C505,153 505,148 500,146 C495,144 490,148 490,152Z"
-        fill="rgba(232,32,32,0.25)" stroke="rgba(232,32,32,0.5)" stroke-width="1">
-        <animate attributeName="opacity" values="0.8;0.4;0.8" dur="2s" repeatCount="indefinite"/>
+      <!-- Heart icon above peak -->
+      <path d="M490,362 C490,358 485,354 480,356 C475,358 475,363 480,368 L490,378 L500,368 C505,363 505,358 500,356 C495,354 490,358 490,362Z"
+        fill="rgba(232,32,32,0.3)" stroke="rgba(232,32,32,0.55)" stroke-width="1">
+        <animate attributeName="opacity" values="0.8;0.35;0.8" dur="2s" repeatCount="indefinite"/>
       </path>
 
-      <!-- Subtle horizontal grid lines for depth -->
-      <line x1="0" y1="200" x2="1400" y2="200" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
-      <line x1="0" y1="400" x2="1400" y2="400" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
-      <line x1="0" y1="100" x2="1400" y2="100" stroke="rgba(255,255,255,0.015)" stroke-width="1"/>
-      <line x1="0" y1="500" x2="1400" y2="500" stroke="rgba(255,255,255,0.015)" stroke-width="1"/>
+      <!-- Subtle horizontal grid lines — bottom half only -->
+      <line x1="0" y1="420" x2="1400" y2="420" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+      <line x1="0" y1="560" x2="1400" y2="560" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
 
-      <!-- Travelling dot animation along the pulse path -->
+      <!-- Travelling dot -->
       <circle r="3" fill="#e82020" opacity="0.7">
         <animateMotion dur="3s" repeatCount="indefinite"
-          path="M360,300 L420,300 L460,300 L490,180 L520,420 L550,240 L580,340 L610,300 L680,300 L730,300 L755,260 L780,340 L805,300 L980,300"/>
+          path="M360,510 L420,510 L460,510 L490,390 L520,600 L550,440 L580,540 L610,510 L680,510 L730,510 L755,470 L780,550 L805,510 L980,510"/>
         <animate attributeName="opacity" values="0;0.9;0.9;0" dur="3s" repeatCount="indefinite"/>
       </circle>
 
