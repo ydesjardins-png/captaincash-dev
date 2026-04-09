@@ -1808,15 +1808,16 @@ h1 em {
       <!-- Amount -->
       <div class="funnel-fieldset">
         <span class="funnel-legend">How much do you need?</span>
-        <select class="funnel-select" id="amount" name="amount" required style="max-width:200px">
-          <option value="500">$500</option>
-          <option value="600">$600</option>
-          <option value="700">$700</option>
-          <option value="800">$800</option>
-          <option value="900">$900</option>
-          <option value="1000">$1,000</option>
-        </select>
-        <p class="funnel-hint" style="margin-top:8px">APR 23% · $500 = ~$750 total repayment</p>
+        <div class="funnel-amounts">
+          <button type="button" class="funnel-amount-btn selected" data-amount="500">$500</button>
+          <button type="button" class="funnel-amount-btn" data-amount="600">$600</button>
+          <button type="button" class="funnel-amount-btn" data-amount="700">$700</button>
+          <button type="button" class="funnel-amount-btn" data-amount="800">$800</button>
+          <button type="button" class="funnel-amount-btn" data-amount="900">$900</button>
+          <button type="button" class="funnel-amount-btn" data-amount="1000">$1,000</button>
+        </div>
+        <input type="hidden" id="amount" name="amount" value="500">
+        <p class="funnel-hint">APR 23% · $500 = ~$750 total repayment</p>
       </div>
 
       <!-- Loan summary pill -->
@@ -2301,16 +2302,25 @@ h1 em {
   document.addEventListener('click',closeAll);
   document.addEventListener('keydown',function(e){if(e.key==='Escape')closeAll();});
   
-  // Amount select sync
-  document.getElementById('amount').addEventListener('change',function(){
-    var amt = parseInt(this.value)||500;
+  // Amount pill buttons
+  document.querySelectorAll('.funnel-amount-btn').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      document.querySelectorAll('.funnel-amount-btn').forEach(function(b){b.classList.remove('selected')});
+      btn.classList.add('selected');
+      document.getElementById('amount').value = btn.dataset.amount;
+      updateSummary();
+    });
+  });
+  function updateSummary(){
+    var amt = parseInt(document.getElementById('amount').value)||500;
     var total = Math.round(amt*1.5);
     document.getElementById('sum-amount').textContent = '$'+amt.toLocaleString();
     document.getElementById('sum-total').textContent = '~$'+total.toLocaleString();
     var sbAmt=document.getElementById('sb-amount'), sbTot=document.getElementById('sb-total');
     if(sbAmt) sbAmt.textContent = '$'+amt.toLocaleString();
     if(sbTot) sbTot.textContent = '~$'+total.toLocaleString();
-  });
+  }
+  updateSummary();
 
   // Same address toggle
   document.querySelectorAll('[name="same-address"]').forEach(function(r){
@@ -2385,9 +2395,13 @@ h1 em {
       email:'marc.leblanc@test.com'
     };
     Object.keys(f).forEach(function(id){var el=document.getElementById(id);if(el)el.value=f[id];});
-    var sel={b_year:'1985',b_month:'09',b_day:'22',amount:'600',income:'employee',
+    var sel={b_year:'1985',b_month:'09',b_day:'22',income:'employee',
       pay_frequency:'TWOWEEK'};
     Object.keys(sel).forEach(function(id){var el=document.getElementById(id);if(el)el.value=sel[id];});
+    // Set amount pill
+    document.querySelectorAll('.funnel-amount-btn').forEach(function(b){b.classList.remove('selected')});
+    var b600=document.querySelector('.funnel-amount-btn[data-amount="600"]');
+    if(b600){b600.classList.add('selected'); document.getElementById('amount').value='600';}
     // Radios
     document.getElementById('same-address-no').checked=true;
     document.getElementById('same-job-no').checked=true;
