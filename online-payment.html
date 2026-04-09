@@ -231,14 +231,28 @@
       </div>
     </div>
     <div class="pmt-hero-visual" aria-hidden="true">
-      <div class="pmt-etransfer-badge">
-        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#e82020" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
-        <div>
-          <strong>Interac</strong>
-          <span>e-Transfer</span>
+      <div class="pmt-hero-card">
+        <div class="pmt-hero-card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e82020" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+        </div>
+        <div class="pmt-hero-card-label">Interac e&#8209;Transfer</div>
+        <div class="pmt-hero-card-steps">
+          <div class="pmt-hero-card-step">
+            <span class="pmt-hero-card-dot pmt-hero-card-dot--done">✓</span>Log into banking
+          </div>
+          <div class="pmt-hero-card-step">
+            <span class="pmt-hero-card-dot pmt-hero-card-dot--done">✓</span>Enter recipient details
+          </div>
+          <div class="pmt-hero-card-step">
+            <span class="pmt-hero-card-dot pmt-hero-card-dot--active">→</span>Send &amp; confirm
+          </div>
+        </div>
+        <div class="pmt-hero-card-footer">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Free · Same-day · Secure
         </div>
       </div>
-      <img src="images/mascot/mascot-canada-shield.webp" alt="" width="120" height="147" loading="eager" class="pmt-hero-mascot">
+      <img src="images/mascot/mascot-canada-shield.webp" alt="" width="100" height="122" loading="eager" class="pmt-hero-mascot">
       <div class="pmt-hero-glow"></div>
     </div>
   </div>
@@ -255,7 +269,40 @@
       <p>Follow these steps exactly — especially the security question and answer — to ensure your payment is applied to your account correctly.</p>
     </div>
 
-    <div class="pmt-steps-grid">
+    <!-- Before you start banner -->
+    <div class="pmt-before-banner animate">
+      <div class="pmt-before-item">
+        <div class="pmt-before-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        </div>
+        <div>
+          <strong>Have your banking app ready</strong>
+          <span>Open your online banking before you start — you'll need it open alongside these instructions.</span>
+        </div>
+      </div>
+      <div class="pmt-before-divider" aria-hidden="true"></div>
+      <div class="pmt-before-item">
+        <div class="pmt-before-icon pmt-before-icon--red" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </div>
+        <div>
+          <strong>Copy the email address exactly</strong>
+          <span>A single typo means your payment won't reach us. Use the copy button in Step 2 to avoid errors.</span>
+        </div>
+      </div>
+      <div class="pmt-before-divider" aria-hidden="true"></div>
+      <div class="pmt-before-item">
+        <div class="pmt-before-icon pmt-before-icon--amber" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        <div>
+          <strong>Security answer: lowercase, no spaces</strong>
+          <span>The answer <code>captaincash</code> must be entered exactly — no capitals, no spaces.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="pmt-steps-grid pmt-steps-grid--connected">
 
       <div class="pmt-step-card animate">
         <div class="pmt-step-num" aria-hidden="true">01</div>
@@ -298,9 +345,9 @@
             <span class="pmt-detail-label">Security question</span>
             <span class="pmt-detail-val pmt-detail-exact">Who do I owe</span>
           </div>
-          <div class="pmt-detail-row pmt-detail-row--highlight">
+          <div class="pmt-detail-row pmt-detail-row--highlight pmt-detail-row--answer">
             <span class="pmt-detail-label">Security answer</span>
-            <span class="pmt-detail-val pmt-detail-exact">captaincash</span>
+            <span class="pmt-detail-val pmt-detail-exact pmt-detail-exact--big">captaincash</span>
           </div>
         </div>
         <div class="pmt-step-note pmt-step-note--warn">
@@ -460,6 +507,19 @@
   </div>
 </section>
 
+<!-- Sticky mobile payment bar -->
+<div class="pmt-sticky-bar" id="pmt-sticky-bar" aria-label="Payment email — tap to copy">
+  <div class="pmt-sticky-label">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    Payment email
+  </div>
+  <button class="pmt-sticky-copy" data-copy="receivables@diamondfinancialone.com" aria-label="Copy payment email address">
+    <span>receivables@diamondfinancialone.com</span>
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+    <span class="pmt-copy-confirm" aria-live="polite">Copied!</span>
+  </button>
+</div>
+
 </main>
 
 <section class="cta-banner" aria-label="Apply for a loan">
@@ -607,6 +667,85 @@
 ══════════════════════════════════════ */
 
 /* Hero */
+
+/* ── Hero card ── */
+.pmt-hero-visual { gap:0.875rem; }
+.pmt-hero-card { background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:18px;padding:1.25rem;width:100%; }
+.pmt-hero-card-icon { width:48px;height:48px;border-radius:14px;background:rgba(232,32,32,0.12);border:1px solid rgba(232,32,32,0.22);display:flex;align-items:center;justify-content:center;margin-bottom:0.875rem; }
+.pmt-hero-card-label { font-size:0.875rem;font-weight:700;color:#fff;margin-bottom:1rem; }
+.pmt-hero-card-steps { display:flex;flex-direction:column;gap:8px;margin-bottom:1rem; }
+.pmt-hero-card-step { display:flex;align-items:center;gap:8px;font-size:0.8125rem;color:rgba(255,255,255,0.6); }
+.pmt-hero-card-dot { width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.625rem;font-weight:800;flex-shrink:0; }
+.pmt-hero-card-dot--done { background:rgba(22,163,74,0.15);border:1px solid rgba(22,163,74,0.3);color:#4ade80; }
+.pmt-hero-card-dot--active { background:rgba(232,32,32,0.15);border:1px solid rgba(232,32,32,0.3);color:#e82020;animation:orbPulse 2s ease-in-out infinite; }
+.pmt-hero-card-footer { display:flex;align-items:center;gap:6px;font-size:0.6875rem;color:rgba(255,255,255,0.35);padding-top:0.875rem;border-top:1px solid rgba(255,255,255,0.08); }
+
+/* ── Before you start banner ── */
+.pmt-before-banner { display:flex;align-items:stretch;background:#fff;border:1.5px solid #e2e6ed;border-radius:16px;margin-bottom:2rem;overflow:hidden; }
+@media(max-width:768px){ .pmt-before-banner { flex-direction:column; } }
+.pmt-before-item { display:flex;align-items:flex-start;gap:12px;padding:1.25rem 1.5rem;flex:1; }
+.pmt-before-divider { width:1px;background:#e2e6ed;flex-shrink:0; }
+@media(max-width:768px){ .pmt-before-divider { width:100%;height:1px; } }
+.pmt-before-icon { width:36px;height:36px;border-radius:10px;background:rgba(22,163,74,0.08);border:1px solid rgba(22,163,74,0.2);color:#16a34a;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px; }
+.pmt-before-icon--red { background:rgba(220,38,38,0.07);border-color:rgba(220,38,38,0.18);color:#dc2626; }
+.pmt-before-icon--amber { background:rgba(245,158,11,0.08);border-color:rgba(245,158,11,0.2);color:#d97706; }
+.pmt-before-item strong { display:block;font-size:0.875rem;font-weight:700;color:#0b1a33;margin-bottom:3px; }
+.pmt-before-item span { font-size:0.8125rem;color:#6b7789;line-height:1.55; }
+.pmt-before-item code { font-family:monospace;background:#fef2f2;color:#e82020;padding:1px 5px;border-radius:4px;font-size:0.8125rem; }
+
+/* ── Step cards equal height + connectors ── */
+.pmt-steps-grid--connected { position:relative; }
+.pmt-steps-grid { align-items:stretch; }
+.pmt-step-card { display:flex;flex-direction:column; }
+.pmt-step-card p { flex:1; }
+
+/* Arrow connectors — desktop only */
+@media(min-width:901px) {
+  .pmt-steps-grid--connected::before,
+  .pmt-steps-grid--connected::after {
+    content:"→";
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:1.5rem;
+    color:rgba(232,32,32,0.35);
+    font-weight:700;
+    pointer-events:none;
+    z-index:2;
+  }
+  .pmt-steps-grid--connected::before { left:calc(33.333% - 10px); }
+  .pmt-steps-grid--connected::after  { left:calc(66.666% - 10px); }
+}
+
+/* ── Security answer big ── */
+.pmt-detail-row--answer { flex-direction:column;align-items:flex-start;gap:6px; }
+.pmt-detail-exact--big { font-size:1.125rem;padding:6px 16px;background:#fff8f8;border:2px solid rgba(232,32,32,0.35);letter-spacing:0.05em; }
+
+/* ── Sticky mobile bar ── */
+.pmt-sticky-bar {
+  display:none;
+  position:fixed;bottom:0;left:0;right:0;z-index:90;
+  background:#0b1a33;border-top:1px solid rgba(255,255,255,0.1);
+  padding:10px 16px 12px;
+  box-shadow:0 -4px 20px rgba(0,0,0,0.3);
+  align-items:center;gap:10px;
+}
+@media(max-width:768px){ .pmt-sticky-bar { display:flex; } }
+.pmt-sticky-label { display:flex;align-items:center;gap:5px;font-size:0.6875rem;font-weight:700;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:0.07em;white-space:nowrap; }
+.pmt-sticky-copy {
+  flex:1;display:flex;align-items:center;justify-content:space-between;gap:8px;
+  background:rgba(232,32,32,0.12);border:1px solid rgba(232,32,32,0.3);
+  border-radius:9999px;padding:8px 14px;
+  font-size:0.75rem;font-weight:600;color:#fff;font-family:inherit;cursor:pointer;
+  transition:background 0.15s;min-width:0;
+}
+.pmt-sticky-copy:hover { background:rgba(232,32,32,0.22); }
+.pmt-sticky-copy span:first-child { overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1; }
+.pmt-sticky-copy svg { flex-shrink:0; }
+
+/* Add bottom padding on mobile so sticky bar doesn't cover content */
+@media(max-width:768px){ main { padding-bottom:60px; } }
+
 .pmt-hero { position:relative;overflow:hidden; }
 .pmt-hero-bg { position:absolute;inset:0;pointer-events:none;overflow:hidden; }
 .pmt-orb-r { position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(232,32,32,0.18) 0%,transparent 65%);bottom:-280px;right:-160px;filter:blur(20px);animation:orbPulse 8s ease-in-out infinite; }
