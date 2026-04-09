@@ -619,23 +619,13 @@
             <div class="cyc-error" id="bank_id_error" role="alert" aria-live="polite"></div>
           </div>
 
-          <!-- Cheque reference image -->
-          <div class="cyc-cheque-guide" aria-label="How to find your transit and account numbers on a cheque">
+          <!-- Cheque specimen image -->
+          <div class="cyc-cheque-guide" aria-label="Cheque specimen showing where to find transit and account numbers">
             <div class="cyc-cheque-label">Find these numbers on a void cheque or your banking app</div>
-            <div class="cyc-cheque-diagram">
-              <div class="cyc-cheque-box cyc-cheque-box--transit">
-                <span>Transit</span>
-                <span>5 digits</span>
-              </div>
-              <div class="cyc-cheque-box cyc-cheque-box--bank">
-                <span>Bank</span>
-                <span>3 digits</span>
-              </div>
-              <div class="cyc-cheque-box cyc-cheque-box--account">
-                <span>Account</span>
-                <span>7–12 digits</span>
-              </div>
-            </div>
+            <img src="images/bank-cheque-specimen.webp"
+                 alt="Cheque specimen: the 5-digit transit number and 7-to-12-digit account number are highlighted at the bottom of the cheque"
+                 class="cyc-cheque-img"
+                 width="680" height="272" loading="lazy">
           </div>
 
           <div class="cyc-field-row">
@@ -2450,16 +2440,11 @@ h1 em {
 /* Cheque diagram */
 .cyc-cheque-guide { margin:0.5rem 0 1.25rem; }
 .cyc-cheque-label { font-size:0.75rem; color:rgba(255,255,255,0.35); margin-bottom:8px; }
-.cyc-cheque-diagram { display:flex; gap:4px; }
-.cyc-cheque-box {
-  flex:1; border-radius:8px; padding:10px 8px; text-align:center;
-  display:flex; flex-direction:column; gap:3px;
+.cyc-cheque-img {
+  width:100%; height:auto; border-radius:12px;
+  border:1px solid rgba(255,255,255,0.1);
+  display:block;
 }
-.cyc-cheque-box span:first-child { font-size:0.75rem; font-weight:700; }
-.cyc-cheque-box span:last-child  { font-size:0.6875rem; opacity:0.6; }
-.cyc-cheque-box--transit { background:rgba(232,32,32,0.1); border:1px solid rgba(232,32,32,0.2); color:#ff8080; }
-.cyc-cheque-box--bank    { background:rgba(26,110,240,0.1); border:1px solid rgba(26,110,240,0.2); color:#7ab8ff; }
-.cyc-cheque-box--account { background:rgba(22,163,74,0.1); border:1px solid rgba(22,163,74,0.2); color:#4ade80; }
 
 /* Declarations */
 .cyc-declarations { background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:1.25rem; margin-bottom:1.25rem; }
