@@ -84,3 +84,41 @@ button, input[type="submit"], input[type="button"], input[type="reset"] {
 [style*="overflow: scroll"] {
   -webkit-overflow-scrolling: touch;
 }
+
+/* ══════════════════════════════════════
+   HERO PADDING + BREADCRUMB — Mobile
+══════════════════════════════════════ */
+
+/* Hero text left padding on small screens */
+@media (max-width: 479px) {
+  .container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+/* Breadcrumb — white text on dark hero backgrounds */
+.hiw-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  font-size: 0.8125rem;
+  margin-bottom: 1.25rem;
+}
+.hiw-breadcrumb a {
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.hiw-breadcrumb a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.hiw-breadcrumb span[aria-hidden="true"] {
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 0.75rem;
+}
+.hiw-breadcrumb span[aria-current="page"] {
+  color: rgba(255, 255, 255, 0.45);
+}
