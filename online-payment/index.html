@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Make an Interac e-Transfer payment to Captain Cash in 3 simple steps. Send to receivables@diamondfinancialone.com — quick, secure, and free.">
-  <title>Online Payment — Make an e-Transfer in 3 Steps | Captain Cash</title>
+  <title>Online Payment — e-Transfer Guide | Captain Cash</title>
   <link rel="canonical" href="https://captaincash.ca/online-payment/">
-  <meta property="og:title" content="Online Payment | Captain Cash">
+  <meta property="og:title" content="Online Payment — e-Transfer Guide | Captain Cash">
   <meta property="og:description" content="Pay your Captain Cash loan by Interac e-Transfer in 3 steps. Free, instant, and secure.">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <script type="application/ld+json">
@@ -28,8 +28,43 @@
   }
   </script>
   <link rel="stylesheet" href="/css/main.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://captaincash.ca/#organization",
+        "name": "Captain Cash",
+        "url": "https://captaincash.ca/",
+        "logo": "https://captaincash.ca/images/mascot/sprites/logo-lockup-small.webp",
+        "telephone": "1-888-226-1026",
+        "email": "support@captaincash.ca",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1701 Hollis Street W. Suite 800",
+          "addressLocality": "Halifax",
+          "addressRegion": "NS",
+          "postalCode": "B3J 2T9",
+          "addressCountry": "CA"
+        },
+        "foundingDate": "2015",
+        "numberOfEmployees": 50,
+        "memberOf": {"@type":"Organization","name":"Canadian Lenders Association"}
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://captaincash.ca/#website",
+        "url": "https://captaincash.ca/",
+        "name": "Captain Cash",
+        "publisher": {"@id": "https://captaincash.ca/#organization"}
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to content</a>
 
 <header class="site-header site-header--dark" id="site-header">
   <div class="container header-inner">
@@ -741,6 +776,9 @@
 </script>
 
 <style>
+/* Skip to content link */
+.skip-link { position:absolute;top:-100px;left:1rem;padding:8px 16px;background:#e82020;color:#fff;font-size:0.875rem;font-weight:700;border-radius:0 0 8px 8px;text-decoration:none;z-index:9999;transition:top 0.1s; }
+.skip-link:focus { top:0; }
 /* ══════════════════════════════════════
    ONLINE PAYMENT — Page Styles
 ══════════════════════════════════════ */

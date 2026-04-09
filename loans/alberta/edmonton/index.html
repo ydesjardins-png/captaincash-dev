@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Online loans in Edmonton, Alberta — $500–$1,000, no credit check, same-day Interac e-Transfer. Captain Cash is a licensed AB lender. APR 23%. Apply in 5 minutes.">
+  <meta name="description" content="Online loans in Edmonton, Alberta — $500–$1,000, no credit check, same-day Interac e-Transfer. Captain Cash is a licensed AB lender. APR 23%. Apply in.">
   <title>Online Loans Edmonton AB — No Credit Check | Captain Cash</title>
   <link rel="canonical" href="https://captaincash.ca/loans/alberta/edmonton/">
   <meta property="og:title" content="Online Loans Edmonton — No Credit Check | Captain Cash">
@@ -13,6 +13,33 @@
   {
     "@context": "https://schema.org",
     "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://captaincash.ca/#organization",
+        "name": "Captain Cash",
+        "url": "https://captaincash.ca/",
+        "logo": "https://captaincash.ca/images/mascot/sprites/logo-lockup-small.webp",
+        "telephone": "1-888-226-1026",
+        "email": "support@captaincash.ca",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1701 Hollis Street W. Suite 800",
+          "addressLocality": "Halifax",
+          "addressRegion": "NS",
+          "postalCode": "B3J 2T9",
+          "addressCountry": "CA"
+        },
+        "foundingDate": "2015",
+        "numberOfEmployees": 50,
+        "memberOf": {"@type":"Organization","name":"Canadian Lenders Association"}
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://captaincash.ca/#website",
+        "url": "https://captaincash.ca/",
+        "name": "Captain Cash",
+        "publisher": {"@id": "https://captaincash.ca/#organization"}
+      },
       {
         "@type": "WebPage",
         "@id": "https://captaincash.ca/loans/alberta/edmonton/",
@@ -58,6 +85,9 @@
   </script>
   <link rel="stylesheet" href="/css/main.css">
   <style>
+/* Skip to content link */
+.skip-link { position:absolute;top:-100px;left:1rem;padding:8px 16px;background:#e82020;color:#fff;font-size:0.875rem;font-weight:700;border-radius:0 0 8px 8px;text-decoration:none;z-index:9999;transition:top 0.1s; }
+.skip-link:focus { top:0; }
 /* ── DARK HEADER ── */
 .site-header--dark {
   background: #000;
@@ -1506,6 +1536,7 @@ h1 em {
   </style>
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to content</a>
 
 <header class="site-header site-header--dark" id="site-header">
   <div class="container header-inner">

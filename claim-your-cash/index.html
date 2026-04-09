@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Apply for a $500–$1,000 installment loan in 5 minutes. No credit check, same-day Interac e-Transfer if approved before 2 PM ET. Free to apply — no obligation.">
+  <meta name="description" content="Apply for a $500–$1,000 installment loan in 5 minutes. No credit check, same-day Interac e-Transfer if approved before 2 PM ET. Free to apply — no.">
   <title>Claim Your Cash — Apply in 5 Minutes | Captain Cash</title>
   <link rel="canonical" href="https://captaincash.ca/claim-your-cash/">
   <meta property="og:title" content="Claim Your Cash — Apply in 5 Minutes | Captain Cash">
@@ -22,8 +22,43 @@
     "isPartOf": { "@id": "https://captaincash.ca/#website" }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://captaincash.ca/#organization",
+        "name": "Captain Cash",
+        "url": "https://captaincash.ca/",
+        "logo": "https://captaincash.ca/images/mascot/sprites/logo-lockup-small.webp",
+        "telephone": "1-888-226-1026",
+        "email": "support@captaincash.ca",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1701 Hollis Street W. Suite 800",
+          "addressLocality": "Halifax",
+          "addressRegion": "NS",
+          "postalCode": "B3J 2T9",
+          "addressCountry": "CA"
+        },
+        "foundingDate": "2015",
+        "numberOfEmployees": 50,
+        "memberOf": {"@type":"Organization","name":"Canadian Lenders Association"}
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://captaincash.ca/#website",
+        "url": "https://captaincash.ca/",
+        "name": "Captain Cash",
+        "publisher": {"@id": "https://captaincash.ca/#organization"}
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to content</a>
 
 <!-- HEADER -->
 <header class="site-header site-header--dark" id="site-header">
@@ -549,7 +584,7 @@
 
           <div class="cyc-field">
             <label class="cyc-field-label" for="income">Source of income <span class="cyc-required" aria-hidden="true">*</span></label>
-            <select class="cyc-select" id="income" name="income" required aria-required="true" aria-controls="income-employed income-ei income-other-wrap">
+            <select class="cyc-select" id="income" name="income" required aria-required="true" aria-controls="income-type-panel">
               <option value="">Select income source</option>
               <option value="employed">Employed (full-time or part-time)</option>
               <option value="self-employed">Self-employed</option>
@@ -916,6 +951,9 @@
 
 <script src="/js/main.js"></script>
 <style>
+/* Skip to content link */
+.skip-link { position:absolute;top:-100px;left:1rem;padding:8px 16px;background:#e82020;color:#fff;font-size:0.875rem;font-weight:700;border-radius:0 0 8px 8px;text-decoration:none;z-index:9999;transition:top 0.1s; }
+.skip-link:focus { top:0; }
 /* ── DARK HEADER ── */
 .site-header--dark {
   background: #000;
