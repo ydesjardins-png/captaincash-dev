@@ -282,7 +282,7 @@
             <span class="pmt-detail-label">Recipient name</span>
             <span class="pmt-detail-val">Captain Cash <span class="pmt-copy-note">(or your choice)</span></span>
           </div>
-          <div class="pmt-detail-row pmt-detail-row--highlight">
+          <div class="pmt-detail-row pmt-detail-row--highlight pmt-detail-row--email">
             <span class="pmt-detail-label">Recipient email</span>
             <button class="pmt-copy-btn" data-copy="receivables@diamondfinancialone.com" aria-label="Copy email address">
               <span class="pmt-copy-email">receivables@diamondfinancialone.com</span>
@@ -653,9 +653,10 @@
 .pmt-detail-val { color:#0b1a33;font-weight:500;text-align:right; }
 .pmt-detail-exact { font-family:monospace;background:#fff;border:1px solid #e2e6ed;border-radius:6px;padding:2px 8px;color:#e82020;font-weight:700; }
 .pmt-copy-note { font-size:0.6875rem;color:#9ca3af;font-weight:400; }
-.pmt-copy-btn { display:flex;align-items:center;gap:6px;background:rgba(232,32,32,0.06);border:1px solid rgba(232,32,32,0.18);border-radius:8px;padding:4px 10px;cursor:pointer;font-size:0.75rem;font-family:inherit;color:#e82020;font-weight:600;transition:all 0.15s; }
+.pmt-detail-row--email { flex-direction:column;align-items:flex-start;gap:6px; }
+.pmt-copy-btn { display:flex;align-items:center;gap:6px;background:rgba(232,32,32,0.06);border:1px solid rgba(232,32,32,0.18);border-radius:8px;padding:6px 12px;cursor:pointer;font-size:0.8125rem;font-family:inherit;color:#e82020;font-weight:600;transition:all 0.15s;width:100%;justify-content:space-between; }
 .pmt-copy-btn:hover { background:rgba(232,32,32,0.12); }
-.pmt-copy-email { font-size:0.6875rem; }
+.pmt-copy-email { font-size:0.8125rem;word-break:break-all;flex:1; }
 .pmt-copy-confirm { display:none;color:#16a34a;font-size:0.6875rem;font-weight:700; }
 
 /* Quick reference */
