@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Renew your Captain Cash loan. Returning customers — confirm your details and get funded same day.">
+  <meta name="description" content="Review and sign your Captain Cash loan agreement.">
   <meta name="robots" content="noindex, nofollow">
-  <title>Renew Your Loan — Step 1 of 4 | Captain Cash</title>
-  <link rel="canonical" href="https://captaincash.ca/renew-your-loan/">
+  <title>Sign Your Loan Contract — Step 2 of 4 | Captain Cash</title>
+  <link rel="canonical" href="https://captaincash.ca/signature/">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
   <link rel="stylesheet" href="/css/main.css">
@@ -1483,6 +1483,29 @@ h1 em {
 
 /* Section dividers */
 .funnel-section-divider{height:1px;background:#f0f2f5;margin:1.75rem 0}
+
+.sig-contract{background:#f8f9fb;border:1px solid #e2e6ed;border-radius:14px;padding:1.75rem;margin:1.5rem 0;max-height:320px;overflow-y:auto;font-size:0.875rem;color:#4a5568;line-height:1.8}
+.sig-contract h3{font-size:0.9375rem;font-weight:700;color:#0b1a33;margin:1rem 0 0.375rem}
+.sig-contract h3:first-child{margin-top:0}
+.sig-contract p{margin-bottom:0.625rem}
+.sig-contract .sig-amount{font-size:1.25rem;font-weight:800;color:#0b1a33}
+.sig-contract table{width:100%;border-collapse:collapse;margin:0.75rem 0}
+.sig-contract table td{padding:7px 12px;border:1px solid #e2e6ed;font-size:0.8125rem}
+.sig-contract table td:first-child{font-weight:600;color:#0b1a33;background:#f8f9fb;width:45%}
+.sig-scroll-note{font-size:0.75rem;color:#9ca3af;text-align:center;margin-bottom:1rem;display:flex;align-items:center;justify-content:center;gap:5px}
+.sig-canvas-wrap{border:1.5px solid #e2e6ed;border-radius:14px;background:#fff;overflow:hidden;position:relative;margin-bottom:0.75rem}
+.sig-canvas-wrap canvas{display:block;width:100%;touch-action:none;cursor:crosshair}
+.sig-canvas-label{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);font-size:0.75rem;color:#d1d5db;pointer-events:none;white-space:nowrap;display:flex;align-items:center;gap:5px}
+.sig-canvas-label.hidden{display:none}
+.sig-canvas-actions{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem}
+.sig-clear-btn{font-size:0.8125rem;font-weight:600;color:#9ca3af;background:none;border:1px solid #e2e6ed;border-radius:9999px;padding:5px 14px;cursor:pointer;transition:all .15s}
+.sig-clear-btn:hover{color:#e82020;border-color:rgba(232,32,32,0.3)}
+.sig-status{font-size:0.8125rem;color:#16a34a;font-weight:600;display:flex;align-items:center;gap:5px;opacity:0;transition:opacity .3s}
+.sig-status.visible{opacity:1}
+.sig-confirm-row{background:#f0fdf4;border:1px solid rgba(22,163,74,0.2);border-radius:10px;padding:12px 14px;margin-bottom:1.5rem;display:flex;align-items:flex-start;gap:10px}
+.sig-confirm-row input{accent-color:#16a34a;width:16px;height:16px;flex-shrink:0;margin-top:2px;cursor:pointer}
+.sig-confirm-row label{font-size:0.875rem;color:#166534;line-height:1.55;cursor:pointer}
+
   </style>
 </head>
 <body>
@@ -1649,156 +1672,102 @@ h1 em {
 </div>
 
 <main>
-<div class="funnel-progress-wrap"><div class="funnel-steps"><div class="funnel-step funnel-step--active"><div class="funnel-step-circle">1</div><div class="funnel-step-label"><span class="funnel-step-name">Renewal form</span><span class="funnel-step-desc">Your information</span></div></div><div class="funnel-step funnel-step--pending"><div class="funnel-step-circle">2</div><div class="funnel-step-label"><span class="funnel-step-name">Signature</span><span class="funnel-step-desc">Review & sign</span></div></div><div class="funnel-step funnel-step--pending"><div class="funnel-step-circle">3</div><div class="funnel-step-label"><span class="funnel-step-name">Verify banking</span><span class="funnel-step-desc">Connect your bank</span></div></div><div class="funnel-step funnel-step--pending"><div class="funnel-step-circle">4</div><div class="funnel-step-label"><span class="funnel-step-name">Confirmation</span><span class="funnel-step-desc">All done</span></div></div></div></div>
+<div class="funnel-progress-wrap"><div class="funnel-steps"><div class="funnel-step funnel-step--done"><div class="funnel-step-circle"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><div class="funnel-step-label"><span class="funnel-step-name">Application</span><span class="funnel-step-desc">Your information</span></div></div><div class="funnel-step funnel-step--active"><div class="funnel-step-circle">2</div><div class="funnel-step-label"><span class="funnel-step-name">Signature</span><span class="funnel-step-desc">Review & sign</span></div></div><div class="funnel-step funnel-step--pending"><div class="funnel-step-circle">3</div><div class="funnel-step-label"><span class="funnel-step-name">Verify banking</span><span class="funnel-step-desc">Connect your bank</span></div></div><div class="funnel-step funnel-step--pending"><div class="funnel-step-circle">4</div><div class="funnel-step-label"><span class="funnel-step-name">Confirmation</span><span class="funnel-step-desc">All done</span></div></div></div></div>
 <main id="main" class="funnel-page">
 <div class="container">
   <div class="funnel-card">
     <div class="funnel-card-header">
-      <div class="funnel-card-eyebrow">Step 1 of 4 — Returning customer</div>
-      <h1 class="funnel-card-title">Renew your loan</h1>
-      <p class="funnel-card-sub">Welcome back. Since you've borrowed with us before, the renewal form is shorter — we just need a few updated details.</p>
+      <div class="funnel-card-eyebrow" id="sig-eyebrow">Step 2 of 4</div>
+      <h1 class="funnel-card-title" id="sig-title">Sign your loan contract</h1>
+      <p class="funnel-card-sub">Please read your loan agreement carefully, then sign below. You are under no obligation to sign.</p>
     </div>
 
-    <!-- Returning customer callout -->
-    <div style="background:#eff6ff;border:1px solid rgba(26,110,240,0.2);border-left:4px solid #1a6ef0;border-radius:0 12px 12px 0;padding:1rem 1.25rem;margin-bottom:1.75rem;display:flex;gap:12px;align-items:flex-start">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1a6ef0" stroke-width="2" style="flex-shrink:0;margin-top:1px"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-      <p style="margin:0;font-size:0.875rem;color:#1e3a62;line-height:1.65"><strong>Returning customers</strong> in good standing may use Employment Insurance (EI) or other government benefits as qualifying income. Your previous repayment history has been noted.</p>
+    <!-- Loan summary pill -->
+    <div class="funnel-loan-pill">
+      <div class="funnel-loan-pill-item"><span class="funnel-loan-pill-val" id="c-amount">$500</span><span class="funnel-loan-pill-lbl">Loan amount</span></div>
+      <div class="funnel-loan-pill-div"></div>
+      <div class="funnel-loan-pill-item"><span class="funnel-loan-pill-val">23%</span><span class="funnel-loan-pill-lbl">APR</span></div>
+      <div class="funnel-loan-pill-div"></div>
+      <div class="funnel-loan-pill-item"><span class="funnel-loan-pill-val">90–150 days</span><span class="funnel-loan-pill-lbl">Term</span></div>
+      <div class="funnel-loan-pill-div"></div>
+      <div class="funnel-loan-pill-item"><span class="funnel-loan-pill-val" id="c-total">~$750</span><span class="funnel-loan-pill-lbl">Total repayment</span></div>
     </div>
 
-    <form id="renew-form" novalidate>
+    <!-- Contract -->
+    <p class="sig-scroll-note">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      Scroll to read the full agreement before signing
+    </p>
+    <div class="sig-contract" id="contract-body">
+      <h3>LOAN AGREEMENT</h3>
+      <p><strong>Borrower:</strong> <span id="c-name">—</span><br>
+      <strong>Lender:</strong> Captain Cash, a division of Opal Financial<br>
+      <strong>Date:</strong> <span id="c-date">—</span><br>
+      <strong>Reference:</strong> <span id="c-ref">—</span><br>
+      <strong>Province:</strong> <span id="c-province">—</span></p>
 
-      <!-- Loan amount -->
-      <div class="funnel-fieldset">
-        <span class="funnel-legend">How much would you like to borrow?</span>
-        <div class="funnel-amounts">
-          <button type="button" class="funnel-amount-btn selected" data-amount="500">$500</button>
-          <button type="button" class="funnel-amount-btn" data-amount="600">$600</button>
-          <button type="button" class="funnel-amount-btn" data-amount="700">$700</button>
-          <button type="button" class="funnel-amount-btn" data-amount="800">$800</button>
-          <button type="button" class="funnel-amount-btn" data-amount="900">$900</button>
-          <button type="button" class="funnel-amount-btn" data-amount="1000">$1,000</button>
-        </div>
-        <input type="hidden" id="loan-amount-hidden" value="500">
-      </div>
+      <h3>1. Loan details</h3>
+      <table>
+        <tr><td>Principal amount</td><td><strong id="c-amount2">$500</strong></td></tr>
+        <tr><td>Annual Percentage Rate (APR)</td><td>23%</td></tr>
+        <tr><td>Transaction fee</td><td>$0.50</td></tr>
+        <tr><td>Repayment term</td><td>90–150 days</td></tr>
+        <tr><td>Payment frequency</td><td><span id="c-freq">weekly</span></td></tr>
+        <tr><td>Estimated total repayment</td><td><strong id="c-total2">~$750</strong></td></tr>
+        <tr><td>Disbursement method</td><td>Interac e-Transfer</td></tr>
+      </table>
+      <p style="font-size:0.8125rem;color:#9ca3af">Your exact repayment schedule will be confirmed once your application is reviewed. The amounts shown are estimates based on a 90–150 day term at APR 23%.</p>
 
-      <!-- Frequency -->
-      <div class="funnel-fieldset">
-        <span class="funnel-legend">Preferred repayment frequency</span>
-        <div class="funnel-freq">
-          <button type="button" class="funnel-freq-btn selected" data-freq="weekly">Weekly</button>
-          <button type="button" class="funnel-freq-btn" data-freq="biweekly">Bi-weekly</button>
-          <button type="button" class="funnel-freq-btn" data-freq="monthly">Monthly</button>
-        </div>
-        <input type="hidden" id="frequency-hidden" value="weekly">
-      </div>
+      <h3>2. Repayment</h3>
+      <p>You agree to repay the principal amount plus all accrued interest in scheduled installments via pre-authorized debit (PAD) from your registered bank account. Payments will be processed on your pay dates.</p>
+      <p>A non-sufficient funds (NSF) fee of <strong>$45</strong> applies to any returned payment. You may defer a payment with 48 hours advance notice for a fee of <strong>$25</strong>.</p>
 
-      <!-- Loan summary pill -->
-      <div class="funnel-loan-pill">
-        <div class="funnel-loan-pill-item"><span class="funnel-loan-pill-val" id="sum-amount">$500</span><span class="funnel-loan-pill-lbl">Loan amount</span></div>
-        <div class="funnel-loan-pill-div"></div>
-        <div class="funnel-loan-pill-item"><span class="funnel-loan-pill-val">23%</span><span class="funnel-loan-pill-lbl">APR</span></div>
-        <div class="funnel-loan-pill-div"></div>
-        <div class="funnel-loan-pill-item"><span class="funnel-loan-pill-val">90–150 days</span><span class="funnel-loan-pill-lbl">Term</span></div>
-        <div class="funnel-loan-pill-div"></div>
-        <div class="funnel-loan-pill-item"><span class="funnel-loan-pill-val" id="sum-total">~$750</span><span class="funnel-loan-pill-lbl">Est. total</span></div>
-      </div>
+      <h3>3. Prepayment</h3>
+      <p>You may repay the full outstanding balance at any time without penalty. Contact Captain Cash before making an early repayment to stop any scheduled PAD withdrawals.</p>
 
-      <div class="funnel-section-divider"></div>
+      <h3>4. Cancellation rights</h3>
+      <p>Where applicable provincial legislation provides a cooling-off period, you have the right to cancel this agreement within 2 business days of signing without penalty, provided you return the full loan amount.</p>
 
-      <!-- Confirm details -->
-      <div class="funnel-fieldset">
-        <span class="funnel-legend">Confirm your details</span>
-        <div class="funnel-grid">
-          <div class="funnel-field">
-            <label class="funnel-label" for="first-name">First name<span>*</span></label>
-            <input class="funnel-input" type="text" id="first-name" name="first_name" autocomplete="given-name" placeholder="Jane" required>
-            <span class="funnel-error-msg">Please enter your first name</span>
-          </div>
-          <div class="funnel-field">
-            <label class="funnel-label" for="last-name">Last name<span>*</span></label>
-            <input class="funnel-input" type="text" id="last-name" name="last_name" autocomplete="family-name" placeholder="Smith" required>
-            <span class="funnel-error-msg">Please enter your last name</span>
-          </div>
-          <div class="funnel-field">
-            <label class="funnel-label" for="email">Email address<span>*</span></label>
-            <input class="funnel-input" type="email" id="email" name="email" autocomplete="email" placeholder="jane@example.com" required>
-            <span class="funnel-error-msg">Please enter a valid email</span>
-          </div>
-          <div class="funnel-field">
-            <label class="funnel-label" for="phone">Phone number<span>*</span></label>
-            <input class="funnel-input" type="tel" id="phone" name="phone" autocomplete="tel" placeholder="(555) 555-5555" required>
-            <span class="funnel-error-msg">Please enter your phone number</span>
-          </div>
-          <div class="funnel-field">
-            <label class="funnel-label" for="province">Province<span>*</span></label>
-            <select class="funnel-select" id="province" name="province" required>
-              <option value="">Select province</option>
-              <option value="ON">Ontario</option>
-              <option value="BC">British Columbia</option>
-              <option value="AB">Alberta</option>
-              <option value="NS">Nova Scotia</option>
-              <option value="NB">New Brunswick</option>
-              <option value="PE">Prince Edward Island</option>
-              <option value="NL">Newfoundland and Labrador</option>
-              <option value="NU">Nunavut</option>
-              <option value="NT">Northwest Territories</option>
-            </select>
-            <span class="funnel-error-msg">Please select your province</span>
-          </div>
+      <h3>5. Default</h3>
+      <p>Failure to make a scheduled payment constitutes default. Upon default, the full outstanding balance becomes immediately due. Captain Cash uses responsible collection practices and will contact you directly before escalating.</p>
+
+      <h3>6. Governing law</h3>
+      <p>This agreement is governed by the laws of the Province of Nova Scotia and applicable federal laws of Canada. By signing below, you confirm you have read, understood, and agree to all terms of this agreement.</p>
+
+      <p style="font-size:0.8125rem;color:#9ca3af;margin-top:1rem">Captain Cash · 1701 Hollis Street W. Suite 800, Halifax, NS B3J 2T9 · 1-888-226-1026 · support@captaincash.ca</p>
+    </div>
+
+    <!-- Signature -->
+    <form id="sig-form" novalidate>
+      <label class="funnel-label" style="margin-bottom:8px;display:block">Your signature<span style="color:#e82020;margin-left:2px">*</span></label>
+      <div class="sig-canvas-wrap">
+        <canvas id="sig-canvas"></canvas>
+        <div class="sig-canvas-label">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+          Draw your signature here
         </div>
       </div>
-
-      <!-- Updated income -->
-      <div class="funnel-fieldset">
-        <span class="funnel-legend">Income update</span>
-        <div class="funnel-grid">
-          <div class="funnel-field">
-            <label class="funnel-label" for="income-source">Income source<span>*</span></label>
-            <select class="funnel-select" id="income-source" name="income_source" required>
-              <option value="">Select source</option>
-              <option value="employment">Employment</option>
-              <option value="ei">Employment Insurance (EI)</option>
-              <option value="disability">Disability benefits</option>
-              <option value="pension">Pension / CPP / OAS</option>
-              <option value="self">Self-employment</option>
-              <option value="other">Other government benefits</option>
-            </select>
-            <span class="funnel-error-msg">Please select your income source</span>
-          </div>
-          <div class="funnel-field">
-            <label class="funnel-label" for="income">Monthly net income<span>*</span></label>
-            <input class="funnel-input" type="number" id="income" name="monthly_income" placeholder="2400" min="1200" required>
-            <span class="funnel-error-msg">Minimum $1,200/month required</span>
-          </div>
-          <div class="funnel-field">
-            <label class="funnel-label" for="next-pay">Next pay date<span>*</span></label>
-            <input class="funnel-input" type="date" id="next-pay" name="next_pay_date" required>
-            <span class="funnel-error-msg">Please enter your next pay date</span>
-          </div>
-        </div>
+      <div class="sig-canvas-actions">
+        <button type="button" class="sig-clear-btn" id="sig-clear">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:4px"><path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a1 1 0 011-1h4a1 1 0 011 1v2"/></svg>
+          Clear
+        </button>
+        <span class="sig-status" id="sig-status">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Signature captured
+        </span>
       </div>
 
-      <div class="funnel-section-divider"></div>
-
-      <!-- Consent -->
-      <div class="funnel-fieldset">
-        <div class="funnel-check-row">
-          <input type="checkbox" id="agree-terms" name="agree_terms">
-          <label class="funnel-check-label" for="agree-terms">I have read and agree to the <a href="/terms-conditions/" target="_blank">Terms &amp; Conditions</a> and <a href="/privacy-policy/" target="_blank">Privacy Policy</a>. I consent to Captain Cash collecting and using my personal information.<span style="color:#dc2626;margin-left:3px">*</span></label>
-        </div>
-        <div class="funnel-check-row">
-          <input type="checkbox" id="agree-pad" name="agree_pad">
-          <label class="funnel-check-label" for="agree-pad">I authorize Captain Cash to debit my bank account for scheduled repayments via pre-authorized debit (PAD).</label>
-        </div>
-        <p id="terms-error" style="display:none;font-size:0.75rem;color:#dc2626;margin-top:4px">You must agree to the Terms &amp; Conditions to continue</p>
+      <div class="sig-confirm-row">
+        <input type="checkbox" id="sig-agree" name="sig_agree">
+        <label for="sig-agree">I confirm I have read the full loan agreement above and I agree to be bound by its terms. My electronic signature above constitutes a legally binding signature.</label>
       </div>
 
-      <button type="submit" class="funnel-submit funnel-submit-blue" id="renew-submit">
-        Continue to renewal contract
+      <button type="submit" class="funnel-submit" id="sig-submit" disabled>
+        Confirm &amp; continue to bank verification
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </button>
-      <p class="funnel-disclaimer">APR 23% · Free to apply · Not available in QC, MB, or SK</p>
-
+      <p class="funnel-disclaimer">Your signature is encrypted and stored securely. <a href="/terms-conditions/" style="color:#9ca3af">Terms &amp; Conditions</a></p>
     </form>
   </div>
 </div>
@@ -1871,59 +1840,112 @@ h1 em {
   document.addEventListener('click',closeAll);
   document.addEventListener('keydown',function(e){if(e.key==='Escape')closeAll();});
   
-  document.querySelectorAll('.funnel-amount-btn').forEach(function(btn){
-    btn.addEventListener('click',function(){
-      document.querySelectorAll('.funnel-amount-btn').forEach(function(b){b.classList.remove('selected')});
-      btn.classList.add('selected');
-      document.getElementById('loan-amount-hidden').value=btn.dataset.amount;
-      updateSummary();
-    });
+  // Load session data
+  var app = JSON.parse(sessionStorage.getItem('cc_application')||'{}');
+  var isRenew = app.type === 'renew';
+  var amount = parseInt(app.amount)||500;
+  var total = Math.round(amount*1.5);
+  var freq = (app.frequency||'weekly');
+  var freqLabel = {weekly:'weekly',biweekly:'bi-weekly',monthly:'monthly'}[freq]||freq;
+  var firstName = app.firstName||'Client';
+  var lastName = app.lastName||'';
+  var province = app.province||'ON';
+  var today = new Date().toLocaleDateString('en-CA',{year:'numeric',month:'long',day:'numeric'});
+  var ref = sessionStorage.getItem('cc_ref')||'CC000000';
+
+  // Inject contract values
+  ['c-amount','c-amount2'].forEach(function(id){
+    var el=document.getElementById(id); if(el)el.textContent='$'+amount.toLocaleString();
   });
-  document.querySelectorAll('.funnel-freq-btn').forEach(function(btn){
-    btn.addEventListener('click',function(){
-      document.querySelectorAll('.funnel-freq-btn').forEach(function(b){b.classList.remove('selected')});
-      btn.classList.add('selected');
-      document.getElementById('frequency-hidden').value=btn.dataset.freq;
-    });
+  ['c-total','c-total2'].forEach(function(id){
+    var el=document.getElementById(id); if(el)el.textContent='~$'+total.toLocaleString();
   });
-  function updateSummary(){
-    var amt=parseInt(document.getElementById('loan-amount-hidden').value)||500;
-    var total=Math.round(amt*1.5);
-    document.getElementById('sum-amount').textContent='$'+amt.toLocaleString();
-    document.getElementById('sum-total').textContent='~$'+total.toLocaleString();
+  var el; 
+  if(el=document.getElementById('c-name'))el.textContent=firstName+' '+lastName;
+  if(el=document.getElementById('c-freq'))el.textContent=freqLabel;
+  if(el=document.getElementById('c-date'))el.textContent=today;
+  if(el=document.getElementById('c-ref'))el.textContent=ref;
+  if(el=document.getElementById('c-province'))el.textContent=province;
+  if(el=document.getElementById('sig-eyebrow'))el.textContent=isRenew?'Step 2 of 4 — Renewal':'Step 2 of 4';
+  if(el=document.getElementById('sig-title'))el.textContent=isRenew?'Sign your renewal contract':'Sign your loan contract';
+
+  // Canvas signature
+  var canvas = document.getElementById('sig-canvas');
+  var ctx = canvas.getContext('2d');
+  var drawing = false, hasSig = false;
+  var label = document.querySelector('.sig-canvas-label');
+  var status = document.getElementById('sig-status');
+  var submitBtn = document.getElementById('sig-submit');
+
+  function resizeCanvas(){
+    var rect = canvas.getBoundingClientRect();
+    var dpr = window.devicePixelRatio||1;
+    var imgData = ctx.getImageData(0,0,canvas.width,canvas.height);
+    canvas.width = rect.width * dpr;
+    canvas.height = 150 * dpr;
+    canvas.style.height = '150px';
+    ctx.scale(dpr,dpr);
+    ctx.strokeStyle='#0b1a33';
+    ctx.lineWidth=2.5;
+    ctx.lineCap='round';
+    ctx.lineJoin='round';
   }
-  document.getElementById('renew-form').addEventListener('submit',function(e){
+  resizeCanvas();
+  window.addEventListener('resize', resizeCanvas);
+
+  function getPos(e){
+    var rect=canvas.getBoundingClientRect();
+    var dpr=window.devicePixelRatio||1;
+    var src=e.touches?e.touches[0]:e;
+    return {x:(src.clientX-rect.left),y:(src.clientY-rect.top)};
+  }
+  function startDraw(e){e.preventDefault();drawing=true;var p=getPos(e);ctx.beginPath();ctx.moveTo(p.x,p.y);}
+  function draw(e){
+    if(!drawing)return;
     e.preventDefault();
-    var valid=true;
-    this.querySelectorAll('[required]').forEach(function(field){
-      var wrap=field.closest('.funnel-field');
-      if(!field.value.trim()){valid=false;if(wrap)wrap.classList.add('has-error');}
-      else{if(wrap)wrap.classList.remove('has-error');}
-    });
-    if(!document.getElementById('agree-terms').checked){
-      valid=false;
-      document.getElementById('terms-error').style.display='block';
-    } else { document.getElementById('terms-error').style.display='none'; }
-    if(!valid)return;
-    var data={
-      type:'renew',
-      amount:document.getElementById('loan-amount-hidden').value,
-      frequency:document.getElementById('frequency-hidden').value,
-      firstName:document.getElementById('first-name').value,
-      lastName:document.getElementById('last-name').value,
-      email:document.getElementById('email').value,
-      phone:document.getElementById('phone').value,
-      province:document.getElementById('province').value,
-    };
-    sessionStorage.setItem('cc_application',JSON.stringify(data));
-    var ref='CC'+Date.now().toString(36).toUpperCase().slice(-6);
-    sessionStorage.setItem('cc_ref',ref);
-    window.location.href='/signature/';
+    var p=getPos(e);
+    ctx.lineTo(p.x,p.y);
+    ctx.stroke();
+    if(!hasSig){
+      hasSig=true;
+      if(label)label.classList.add('hidden');
+      status.classList.add('visible');
+      submitBtn.disabled=false;
+    }
+  }
+  function stopDraw(){drawing=false;}
+
+  canvas.addEventListener('mousedown',startDraw);
+  canvas.addEventListener('mousemove',draw);
+  canvas.addEventListener('mouseup',stopDraw);
+  canvas.addEventListener('mouseleave',stopDraw);
+  canvas.addEventListener('touchstart',startDraw,{passive:false});
+  canvas.addEventListener('touchmove',draw,{passive:false});
+  canvas.addEventListener('touchend',stopDraw);
+
+  document.getElementById('sig-clear').addEventListener('click',function(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    hasSig=false;
+    if(label)label.classList.remove('hidden');
+    status.classList.remove('visible');
+    submitBtn.disabled=true;
+    document.getElementById('sig-agree').checked=false;
   });
-  document.querySelectorAll('.funnel-input,.funnel-select').forEach(function(el){
-    el.addEventListener('input',function(){var w=this.closest('.funnel-field');if(w)w.classList.remove('has-error');});
+
+  document.getElementById('sig-agree').addEventListener('change',function(){
+    if(hasSig && this.checked) submitBtn.disabled=false;
+    else if(!hasSig || !this.checked) submitBtn.disabled=true;
   });
-  updateSummary();
+
+  document.getElementById('sig-form').addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!hasSig){alert('Please sign the contract to continue.');return;}
+    if(!document.getElementById('sig-agree').checked){alert('Please confirm you have read the contract.');return;}
+    // Save signature as data URL
+    sessionStorage.setItem('cc_signed', '1');
+    sessionStorage.setItem('cc_sign_date', today);
+    window.location.href='/verify-banking/';
+  });
 
 })();
 </script>
