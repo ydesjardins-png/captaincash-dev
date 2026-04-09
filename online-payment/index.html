@@ -2458,6 +2458,28 @@ h1 em {
     padding-bottom:3.5rem !important;
   }
 }
+
+/* ── Stat bar + CTA mobile fixes ── */
+@media(max-width:900px){
+  /* Stat bar: proper padding and wrap */
+  .pmt-hero-stats{
+    padding:1rem 1.25rem;
+    gap:0.75rem;
+    flex-wrap:wrap;
+    margin-bottom:1.5rem;
+  }
+  .pmt-hero-stat{padding:0;}
+  .pmt-hero-stat:first-child{padding-left:0;}
+  .pmt-stat-div{display:none;}
+
+  /* CTA: full width, centered */
+  .pmt-hero-cta{
+    display:flex;
+    width:100%;
+    justify-content:center;
+    text-align:center;
+  }
+}
 </style>
 </body>
 </html>
