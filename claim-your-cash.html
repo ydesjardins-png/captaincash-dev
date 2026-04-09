@@ -150,6 +150,52 @@
   </div>
 </header>
 
+
+<!-- ═══════════════════════════════════════
+     ELIGIBILITY BANNER — full width
+═══════════════════════════════════════ -->
+<div class="cyc-elig-banner" role="note" aria-label="Eligibility criteria">
+  <div class="container cyc-elig-banner-inner">
+
+    <div class="cyc-elig-col cyc-elig-col--good">
+      <div class="cyc-elig-col-hdr">
+        <span class="cyc-elig-dot cyc-elig-dot--good" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+        </span>
+        <strong>To qualify, you must</strong>
+      </div>
+      <ul>
+        <li>Be a Canadian resident, 18+, in a served province</li>
+        <li>Earn at least $1,200/month by direct deposit</li>
+        <li>Have 3+ months stable employment or income</li>
+        <li>Have an active Canadian bank account (3+ months)</li>
+        <li>Have few or no NSF transactions</li>
+        <li>Not be bankrupt or in a consumer proposal</li>
+      </ul>
+    </div>
+
+    <div class="cyc-elig-divider" aria-hidden="true"></div>
+
+    <div class="cyc-elig-col cyc-elig-col--bad">
+      <div class="cyc-elig-col-hdr">
+        <span class="cyc-elig-dot cyc-elig-dot--bad" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </span>
+        <strong>We do not accept these income sources</strong>
+      </div>
+      <ul>
+        <li>Social assistance &amp; welfare</li>
+        <li>Student loans</li>
+        <li>Child tax benefit</li>
+        <li>CPP / Private pension</li>
+        <li>Disability income</li>
+        <li>Other insurance income</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
 <main>
 <section class="cyc-section">
 
@@ -260,49 +306,7 @@
         <span class="cyc-progress-label" id="cyc-progress-label">Step 1 of 5</span>
       </div>
 
-      <!-- Eligibility criteria boxes -->
-    <div class="cyc-elig-boxes">
-
-      <!-- Green: you must meet -->
-      <div class="cyc-elig-box cyc-elig-box--good">
-        <div class="cyc-elig-box-header">
-          <div class="cyc-elig-badge cyc-elig-badge--good" aria-hidden="true">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-          </div>
-          <h2 class="cyc-elig-box-title">To be eligible for the loan, you must meet the following criteria</h2>
-        </div>
-        <ul class="cyc-elig-list">
-          <li>Be a Canadian resident aged 18 or older, in a <a href="how-it-works.html#eligibility">served province</a></li>
-          <li>Have a Canadian bank account open for at least 3 months with consistent direct deposits</li>
-          <li>Have stable income for at least 3 months and a minimum of $1,200/month deposited directly</li>
-          <li>Have few or no non-sufficient fund (NSF) transactions in your account</li>
-          <li>Not currently considering bankruptcy, consumer proposal, or debt management</li>
-          <li>Have a low short-term debt ratio — minimal other active payday or short-term loans</li>
-        </ul>
-      </div>
-
-      <!-- Red: not accepted -->
-      <div class="cyc-elig-box cyc-elig-box--bad">
-        <div class="cyc-elig-box-header">
-          <div class="cyc-elig-badge cyc-elig-badge--bad" aria-hidden="true">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-          </div>
-          <h2 class="cyc-elig-box-title">We do not accept the following as valid income sources</h2>
-        </div>
-        <ul class="cyc-elig-list">
-          <li>Social assistance</li>
-          <li>Student loan</li>
-          <li>Child tax benefit</li>
-          <li>CPP (Canada Pension Plan)</li>
-          <li>Private pension</li>
-          <li>Disability income</li>
-          <li>Other insurance income</li>
-        </ul>
-      </div>
-
-    </div>
-
-    <!-- DEV ONLY: dummy data button -->
+      <!-- DEV ONLY: dummy data button -->
       <div class="cyc-dev-bar" id="cyc-dev-bar">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
         Dev mode
@@ -2265,84 +2269,62 @@ h1 em {
 .cyc-dev-btn--ghost:hover { background:rgba(255,200,0,0.08); color:rgba(255,200,0,0.8); }
 
 
-/* ── ELIGIBILITY BOXES ── */
-.cyc-elig-boxes {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.25rem;
-  margin-bottom: 1.5rem;
+/* ── ELIGIBILITY BANNER ── */
+.cyc-elig-banner {
+  background: #000;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding: 1rem 0;
 }
-@media(max-width: 640px) {
-  .cyc-elig-boxes { grid-template-columns: 1fr; }
-}
-.cyc-elig-box {
-  border-radius: 16px;
-  padding: 1.25rem 1.25rem 1.25rem 1.25rem;
-  position: relative;
-}
-.cyc-elig-box--good {
-  background: rgba(22,163,74,0.06);
-  border: 1.5px solid rgba(22,163,74,0.3);
-}
-.cyc-elig-box--bad {
-  background: rgba(220,38,38,0.06);
-  border: 1.5px solid rgba(220,38,38,0.28);
-}
-.cyc-elig-box-header {
+.cyc-elig-banner-inner {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
-  margin-bottom: 1rem;
+  gap: 0;
 }
-.cyc-elig-badge {
-  width: 32px; height: 32px; border-radius: 50%;
+.cyc-elig-col {
+  flex: 1;
+  padding: 0 1.5rem;
+}
+.cyc-elig-col:first-child { padding-left: 0; }
+.cyc-elig-col:last-child  { padding-right: 0; }
+.cyc-elig-col-hdr {
+  display: flex; align-items: center; gap: 8px;
+  margin-bottom: 0.625rem;
+}
+.cyc-elig-col-hdr strong {
+  font-size: 0.8125rem; font-weight: 700;
+}
+.cyc-elig-col--good .cyc-elig-col-hdr strong { color: #4ade80; }
+.cyc-elig-col--bad  .cyc-elig-col-hdr strong { color: #f87171; }
+.cyc-elig-dot {
+  width: 22px; height: 22px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  flex-shrink: 0; margin-top: 1px;
+  flex-shrink: 0;
 }
-.cyc-elig-badge--good {
-  background: rgba(22,163,74,0.15);
-  border: 1.5px solid rgba(22,163,74,0.4);
-  color: #4ade80;
+.cyc-elig-dot--good { background: rgba(22,163,74,0.15); border: 1px solid rgba(22,163,74,0.35); color: #4ade80; }
+.cyc-elig-dot--bad  { background: rgba(220,38,38,0.12); border: 1px solid rgba(220,38,38,0.35); color: #f87171; }
+.cyc-elig-col ul {
+  list-style: none; padding: 0;
+  display: flex; flex-direction: column; gap: 3px;
 }
-.cyc-elig-badge--bad {
-  background: rgba(220,38,38,0.12);
-  border: 1.5px solid rgba(220,38,38,0.35);
-  color: #f87171;
+.cyc-elig-col ul li {
+  font-size: 0.75rem; line-height: 1.5;
+  padding-left: 0.875rem; position: relative;
 }
-.cyc-elig-box-title {
-  font-size: 0.875rem;
-  font-weight: 700;
-  line-height: 1.4;
+.cyc-elig-col--good ul li { color: rgba(255,255,255,0.55); }
+.cyc-elig-col--bad  ul li { color: rgba(255,255,255,0.45); }
+.cyc-elig-col--good ul li::before { content:"✓"; position:absolute; left:0; color:#4ade80; font-size:0.625rem; top:2px; font-weight:700; }
+.cyc-elig-col--bad  ul li::before { content:"✕"; position:absolute; left:0; color:#f87171; font-size:0.625rem; top:2px; font-weight:700; }
+.cyc-elig-divider {
+  width: 1px; align-self: stretch;
+  background: rgba(255,255,255,0.1);
+  flex-shrink: 0;
+  margin: 0 0.5rem;
 }
-.cyc-elig-box--good .cyc-elig-box-title { color: #4ade80; }
-.cyc-elig-box--bad  .cyc-elig-box-title { color: #f87171; }
-.cyc-elig-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+@media(max-width:768px) {
+  .cyc-elig-banner-inner { flex-direction:column; gap:1rem; }
+  .cyc-elig-col { padding:0; }
+  .cyc-elig-divider { width:100%; height:1px; margin:0; }
 }
-.cyc-elig-list li {
-  font-size: 0.8125rem;
-  line-height: 1.55;
-  padding-left: 1.1rem;
-  position: relative;
-}
-.cyc-elig-box--good .cyc-elig-list li { color: rgba(255,255,255,0.7); }
-.cyc-elig-box--bad  .cyc-elig-list li { color: rgba(255,255,255,0.6); }
-.cyc-elig-box--good .cyc-elig-list li::before {
-  content: "·";
-  position: absolute; left: 0;
-  color: #4ade80; font-weight: 700;
-}
-.cyc-elig-box--bad .cyc-elig-list li::before {
-  content: "·";
-  position: absolute; left: 0;
-  color: #f87171; font-weight: 700;
-}
-.cyc-elig-box--good .cyc-elig-list a { color: #4ade80; }
-.cyc-elig-box--bad  .cyc-elig-list a { color: #f87171; }
 
 /* ── CLAIM YOUR CASH — Page Styles ── */
 /* ══════════════════════════════════════
