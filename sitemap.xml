@@ -125,4 +125,6 @@
   <url><loc>https://captaincash.ca/loans/northwest-territories/fort-mcpherson/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://captaincash.ca/loans/northwest-territories/deline/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://captaincash.ca/loans/northwest-territories/tulita/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://captaincash.ca/terms-conditions/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://captaincash.ca/privacy-policy/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
 </urlset>
