@@ -200,73 +200,9 @@
 ═══════════════════════════════════════ -->
 <section class="section section--dark cnt-hero">
   <div class="cnt-hero-bg" aria-hidden="true">
-    <svg class="cnt-heartbeat-bg" viewBox="0 0 1400 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="lineLeft" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0%" stop-color="rgba(255,255,255,0)" />
-          <stop offset="100%" stop-color="rgba(255,255,255,0.08)" />
-        </linearGradient>
-        <linearGradient id="lineRight" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0%" stop-color="rgba(255,255,255,0.06)" />
-          <stop offset="100%" stop-color="rgba(255,255,255,0)" />
-        </linearGradient>
-        <linearGradient id="pulseGrad" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0%" stop-color="rgba(232,32,32,0)" />
-          <stop offset="30%" stop-color="rgba(232,32,32,0.6)" />
-          <stop offset="70%" stop-color="rgba(232,32,32,0.6)" />
-          <stop offset="100%" stop-color="rgba(232,32,32,0)" />
-        </linearGradient>
-      </defs>
-
-      <!-- Flat line left -->
-      <line x1="0" y1="510" x2="360" y2="510" stroke="url(#lineLeft)" stroke-width="1.5"/>
-
-      <!-- Main heartbeat pulse — bottom of hero -->
-      <polyline
-        points="360,510 420,510 460,510 490,390 520,600 550,440 580,540 610,510 680,510"
-        fill="none" stroke="url(#pulseGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-
-      <!-- Second echo -->
-      <polyline
-        points="680,510 730,510 755,470 780,550 805,510 850,510"
-        fill="none" stroke="rgba(232,32,32,0.2)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-
-      <!-- Third echo -->
-      <polyline
-        points="850,510 890,510 905,490 920,530 935,510 980,510"
-        fill="none" stroke="rgba(232,32,32,0.09)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-
-      <!-- Flat line right -->
-      <line x1="980" y1="510" x2="1400" y2="510" stroke="url(#lineRight)" stroke-width="1.5"/>
-
-      <!-- Glowing dot at peak -->
-      <circle cx="490" cy="390" r="5" fill="#e82020" opacity="0.9">
-        <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2s" repeatCount="indefinite"/>
-        <animate attributeName="r" values="5;7;5" dur="2s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="490" cy="390" r="16" fill="rgba(232,32,32,0.08)" stroke="rgba(232,32,32,0.15)" stroke-width="1">
-        <animate attributeName="r" values="16;24;16" dur="2s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite"/>
-      </circle>
-
-      <!-- Heart icon above peak -->
-      <path d="M490,362 C490,358 485,354 480,356 C475,358 475,363 480,368 L490,378 L500,368 C505,363 505,358 500,356 C495,354 490,358 490,362Z"
-        fill="rgba(232,32,32,0.3)" stroke="rgba(232,32,32,0.55)" stroke-width="1">
-        <animate attributeName="opacity" values="0.8;0.35;0.8" dur="2s" repeatCount="indefinite"/>
-      </path>
-
-      <!-- Subtle horizontal grid lines — bottom half only -->
-      <line x1="0" y1="420" x2="1400" y2="420" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
-      <line x1="0" y1="560" x2="1400" y2="560" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
-
-      <!-- Travelling dot -->
-      <circle r="3" fill="#e82020" opacity="0.7">
-        <animateMotion dur="3s" repeatCount="indefinite"
-          path="M360,510 L420,510 L460,510 L490,390 L520,600 L550,440 L580,540 L610,510 L680,510 L730,510 L755,470 L780,550 L805,510 L980,510"/>
-        <animate attributeName="opacity" values="0;0.9;0.9;0" dur="3s" repeatCount="indefinite"/>
-      </circle>
-
-    </svg>
+    <div class="cnt-orb-r"></div>
+    <div class="cnt-orb-b"></div>
+    <div class="cnt-beam"></div>
     <div class="cnt-edge"></div>
   </div>
   <div class="container cnt-hero-inner">
@@ -724,8 +660,10 @@
 /* Hero */
 .cnt-hero { position:relative;overflow:hidden; }
 .cnt-hero-bg { position:absolute;inset:0;pointer-events:none;overflow:hidden; }
-.cnt-heartbeat-bg { position:absolute;inset:0;width:100%;height:100%; }
-.cnt-edge { position:absolute;top:0;left:0;width:1px;height:100%;background:linear-gradient(180deg,rgba(232,32,32,0.6) 0%,rgba(232,32,32,0.1) 60%,transparent 100%); }
+.cnt-orb-r { position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(232,32,32,0.18) 0%,transparent 65%);bottom:-280px;right:-160px;filter:blur(20px);animation:orbPulse 8s ease-in-out infinite; }
+.cnt-orb-b { position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(26,110,240,0.12) 0%,transparent 65%);top:-160px;left:-100px;filter:blur(18px); }
+.cnt-beam { position:absolute;top:0;right:0;width:65%;height:100%;background:conic-gradient(from 200deg at 100% 0%,transparent 0deg,rgba(232,32,32,0.14) 22deg,transparent 52deg); }
+.cnt-edge { position:absolute;top:0;right:0;width:1px;height:100%;background:linear-gradient(180deg,rgba(232,32,32,0.7) 0%,rgba(232,32,32,0.15) 50%,transparent 100%); }
 .cnt-hero-inner { position:relative;z-index:2;display:grid;grid-template-columns:1fr 360px;gap:3.5rem;align-items:center;padding:4rem 0 5rem; }
 .cnt-hero-content .badge { display:inline-block;margin-bottom:0.875rem; }
 .cnt-hero-content h1 { font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:800;color:#fff;letter-spacing:-0.03em;line-height:1.2;margin-bottom:1rem; }
