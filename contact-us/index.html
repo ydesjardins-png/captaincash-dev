@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Contact Captain Cash — call 1-888-226-1026, email support@captaincash.ca, or send a message. Halifax-based team available Mon–Fri 8 AM–5 PM ET.">
   <title>Contact Us — We're Here to Help | Captain Cash</title>
@@ -1147,8 +1146,6 @@ a.cnt-info-value:hover { color:#e82020; }
 .hero-float-dot--amber { background:#fbbf24; box-shadow:0 0 8px #fbbf24; animation:dotPulse 2.4s infinite; }
 @keyframes dotPulse { 0%,100%{opacity:1;} 50%{opacity:0.45;} }
 
-
-
 /* hero layout */
 .hero-inner {
   position: relative; z-index: 2;
@@ -2145,7 +2142,6 @@ h1 em {
    ≤479      small phone
 ══════════════════════════════════════ */
 
-
 /* ── small laptop (900–1199px) ── */
 /* ══════════════════════════════════════
    RESPONSIVE — 4 breakpoints
@@ -2242,7 +2238,6 @@ h1 em {
   /* testimonials + faq */
   .testimonials-grid { grid-template-columns:1fr; }
   .faq-cols { grid-template-columns:1fr; gap:0; }
-
 
   /* CTA banner */
   .cta-banner-text { text-align:center; }

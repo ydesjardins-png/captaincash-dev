@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Make an Interac e-Transfer payment to Captain Cash in 3 simple steps. Send to receivables@diamondfinancialone.com — quick, secure, and free.">
   <title>Online Payment — e-Transfer Guide | Captain Cash</title>
@@ -793,7 +792,6 @@
 
 /* Hero */
 
-
 /* ── Transaction card ── */
 .pmt-hero-visual { position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center; }
 .pmt-txn-card {
@@ -873,7 +871,6 @@
 }
 @media(max-width:900px){ .pmt-hero-visual { display:none; } }
 
-
 /* ── Before you start banner ── */
 .pmt-before-banner { display:flex;align-items:stretch;background:#fff;border:1.5px solid #e2e6ed;border-radius:16px;margin-bottom:2rem;overflow:hidden; }
 @media(max-width:768px){ .pmt-before-banner { flex-direction:column; } }
@@ -939,7 +936,6 @@
 
 /* Add bottom padding on mobile so sticky bar doesn't cover content */
 @media(max-width:768px){ main { padding-bottom:60px; } }
-
 
 /* Hero stat bar */
 .pmt-hero-stats { display:flex;align-items:center;flex-wrap:wrap;gap:0;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:0.875rem 1.5rem;margin-bottom:2rem; }
@@ -1313,8 +1309,6 @@
 .hero-float-dot--green { background:#4ade80; box-shadow:0 0 8px #4ade80; animation:dotPulse 2s infinite; }
 .hero-float-dot--amber { background:#fbbf24; box-shadow:0 0 8px #fbbf24; animation:dotPulse 2.4s infinite; }
 @keyframes dotPulse { 0%,100%{opacity:1;} 50%{opacity:0.45;} }
-
-
 
 /* hero layout */
 .hero-inner {
@@ -2312,7 +2306,6 @@ h1 em {
    ≤479      small phone
 ══════════════════════════════════════ */
 
-
 /* ── small laptop (900–1199px) ── */
 /* ══════════════════════════════════════
    RESPONSIVE — 4 breakpoints
@@ -2409,7 +2402,6 @@ h1 em {
   /* testimonials + faq */
   .testimonials-grid { grid-template-columns:1fr; }
   .faq-cols { grid-template-columns:1fr; gap:0; }
-
 
   /* CTA banner */
   .cta-banner-text { text-align:center; }

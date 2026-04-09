@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Answers to every question about Captain Cash loans — eligibility, costs, repayment, deferral, banking security and more. APR 23%. Licensed Canadian.">
   <title>Support & FAQ — Your Questions Answered | Captain Cash</title>
@@ -248,7 +247,6 @@
     </div>
   </div>
 </div>
-
 
 <main>
 
@@ -880,7 +878,6 @@
     });
   });
 
-
   /* ── Sticky side nav show/hide + active tracking ── */
   (function() {
     var stickyNav = document.getElementById('faq-sticky-nav');
@@ -954,7 +951,6 @@
 /* ══════════════════════════════════════
    SUPPORT & FAQ — Page Styles
 ══════════════════════════════════════ */
-
 
 /* Hero right column */
 .faq-hero-right { display:flex;flex-direction:column;align-items:center;gap:1.5rem; }
@@ -1330,8 +1326,6 @@
 .hero-float-dot--green { background:#4ade80; box-shadow:0 0 8px #4ade80; animation:dotPulse 2s infinite; }
 .hero-float-dot--amber { background:#fbbf24; box-shadow:0 0 8px #fbbf24; animation:dotPulse 2.4s infinite; }
 @keyframes dotPulse { 0%,100%{opacity:1;} 50%{opacity:0.45;} }
-
-
 
 /* hero layout */
 .hero-inner {
@@ -2329,7 +2323,6 @@ h1 em {
    ≤479      small phone
 ══════════════════════════════════════ */
 
-
 /* ── small laptop (900–1199px) ── */
 /* ══════════════════════════════════════
    RESPONSIVE — 4 breakpoints
@@ -2426,7 +2419,6 @@ h1 em {
   /* testimonials + faq */
   .testimonials-grid { grid-template-columns:1fr; }
   .faq-cols { grid-template-columns:1fr; gap:0; }
-
 
   /* CTA banner */
   .cta-banner-text { text-align:center; }

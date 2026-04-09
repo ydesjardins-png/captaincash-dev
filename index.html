@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Get $500–$1,000 by Interac e-Transfer today. No credit check, flexible repayment over 90–150 days. Apply in 5 minutes. Trusted Canadian lender since.">
   <title>Online Loans Canada — No Credit Check | Captain Cash</title>
@@ -22,19 +24,31 @@
   <!-- preload LCP assets -->
   <link rel="preload" as="image" href="/images/mascot/sprites/logo-lockup-small.webp" type="image/webp">
   <link rel="preload" as="image" href="/images/mascot.webp" type="image/webp">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
   <!-- preload LCP assets -->
-  <link rel="preload" as="image" href="/images/mascot/sprites/logo-lockup-small.webp" type="image/webp">
-  <link rel="preload" as="image" href="/images/mascot.webp" type="image/webp">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  
+  
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">  <link rel="preload" href="/css/main.css" as="style">
   <link rel="stylesheet" href="/css/main.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://captaincash.ca/",
+        "url": "https://captaincash.ca/",
+        "name": "Online Loans Canada — No Credit Check | Captain Cash",
+        "description": "Get $500–$1,000 by Interac e-Transfer today. No credit check, flexible repayment over 90–150 days. Apply in 5 minutes. Trusted Canadian lender since 2015.",
+        "isPartOf": {"@id": "https://captaincash.ca/#website"},
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type":"ListItem","position":1,"name":"Home","item":"https://captaincash.ca/"}
+          ]
+        }
+      },
       {
         "@type": "Organization",
         "@id": "https://captaincash.ca/#organization",
@@ -136,6 +150,23 @@
         "publisher": { "@id": "https://captaincash.ca/#organization" }
       }
     ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://captaincash.ca/#website-search",
+    "url": "https://captaincash.ca/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://captaincash.ca/support/?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
   }
   </script>
 </head>
@@ -1282,7 +1313,6 @@
    ≤479      small phone
 ══════════════════════════════════════ */
 
-
 /* ── small laptop (900–1199px) ── */
 /* ══════════════════════════════════════
    RESPONSIVE — 4 breakpoints
@@ -1379,7 +1409,6 @@
   /* testimonials + faq */
   .testimonials-grid { grid-template-columns:1fr; }
   .faq-cols { grid-template-columns:1fr; gap:0; }
-
 
   /* CTA banner */
   .cta-banner-text { text-align:center; }
