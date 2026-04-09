@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Make an Interac e-Transfer payment to Captain Cash in 3 simple steps. Send to receivables@diamondfinancialone.com — quick, secure, and free.">
   <title>Online Payment — e-Transfer Guide | Captain Cash</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="canonical" href="https://captaincash.ca/online-payment/">
   <meta property="og:title" content="Online Payment — e-Transfer Guide | Captain Cash">
   <meta property="og:description" content="Pay your Captain Cash loan by Interac e-Transfer in 3 steps. Free, instant, and secure.">
@@ -14,10 +15,9 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Captain Cash — Online loans in Canada. Get cash today. No credit check.">
+  <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://captaincash-redesign.netlify.app/images/og-image.jpg">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -36,7 +36,6 @@
     }
   }
   </script>
-  <link rel="preload" href="/css/main.css" as="style">
   <link rel="stylesheet" href="/css/main.css">
   <script type="application/ld+json">
   {
@@ -72,8 +71,730 @@
     ]
   }
   </script>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header site-header--dark" id="site-header">
+  <div class="container header-inner">
+    <a href="/" class="site-logo-img">
+      <img src="/images/mascot/sprites/logo-lockup-small.webp" alt="Captain Cash — Here to save the day" width="192" height="48" loading="eager">
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+
+      <!-- Products dropdown -->
+      <div class="nav-item nav-item--dropdown">
+        <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+          Products
+          <svg class="nav-chev" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
+        </button>
+        <div class="nav-dropdown" role="menu">
+          <a href="/claim-your-cash/" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--red" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>Get a loan</strong>
+              <span>$500–$1,000, same business day</span>
+            </span>
+          </a>
+          <a href="/renew-your-loan/" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--amber" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>Renew your loan</strong>
+              <span>Fast track for returning customers</span>
+            </span>
+          </a>
+          <a href="/online-payment/" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--blue" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>Online payment</strong>
+              <span>Pay or manage your existing loan</span>
+            </span>
+          </a>
+          <div class="nav-drop-sep" aria-hidden="true"></div>
+          
+        </div>
+      </div>
+
+      <!-- Learn dropdown -->
+      <div class="nav-item nav-item--dropdown">
+        <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+          Learn
+          <svg class="nav-chev" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
+        </button>
+        <div class="nav-dropdown" role="menu">
+          <a href="/how-does-it-work/" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--blue" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>How it works</strong>
+              <span>Apply, approve, get funded</span>
+            </span>
+          </a>
+          <a href="/support/" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--green" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>FAQ</strong>
+              <span>Common questions answered</span>
+            </span>
+          </a>
+          <a href="/about-us/" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--red" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>About Captain Cash</strong>
+              <span>Canadian lender since 2015</span>
+            </span>
+          </a>
+          <a href="/testimonials/" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--amber" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>Reviews</strong>
+              <span>What customers say</span>
+            </span>
+          </a>
+          <div class="nav-drop-sep" aria-hidden="true"></div>
+          <a href="/blog/" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--amber" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>Blog</strong>
+              <span>Tips for Canadian borrowers</span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Direct links -->
+      <a href="/contact-us/" class="nav-link-plain">Contact</a>
+
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:18882261026" class="nav-phone nav-phone--dark" aria-label="Call us at 1-888-226-1026">
+        <span class="nav-phone-icon" aria-hidden="true">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#e82020" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        </span>
+        <span class="nav-phone-text">
+          <span class="nav-phone-label">Call us</span>
+          <span class="nav-phone-num">1-888-226-1026</span>
+        </span>
+      </a>
+      <a href="/claim-your-cash/" class="btn-header-red">Get a loan</a>
+      <a href="/renew-your-loan/" class="btn-header-amber">Renew</a>
+    </div>
+    <button class="hamburger hamburger--dark" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════
+     TRUST BAR
+═══════════════════════════════════════ -->
+<div class="trust-bar" role="complementary" aria-label="Trust credentials">
+  <div class="container trust-bar-inner">
+    <div class="trust-bar-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <span>CLA member since 2015</span>
+    </div>
+    <div class="trust-bar-divider" aria-hidden="true"></div>
+    <div class="trust-bar-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      <span>SSL encrypted</span>
+    </div>
+    <div class="trust-bar-divider" aria-hidden="true"></div>
+    <div class="trust-bar-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      <span>12,000+ Canadians served</span>
+    </div>
+    <div class="trust-bar-divider" aria-hidden="true"></div>
+    <div class="trust-bar-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+      <span>Provincially licensed</span>
+    </div>
+    <div class="trust-bar-divider" aria-hidden="true"></div>
+    <div class="trust-bar-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      <span>Same-day e-Transfer</span>
+    </div>
+    <div class="trust-bar-divider" aria-hidden="true"></div>
+    <div class="trust-bar-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+      <span>APR 23% — transparent</span>
+    </div>
+  </div>
+</div>
+
+<main>
+<main>
+
+<!-- ═══════════════════════════════════════
+     HERO — dark
+═══════════════════════════════════════ -->
+<section class="section section--dark pmt-hero">
+  <div class="pmt-hero-bg" aria-hidden="true">
+    <!-- Option A: diagonal data streams -->
+    <svg class="pmt-bg-streams" viewBox="0 0 1400 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#e82020" opacity="0.055" font-family="monospace" font-size="11">
+        <text transform="rotate(-20,0,40)" x="-40" y="40">8291 4402 1837 9901 2210 5543 8871 3320 6654 1129 8801 4432 9910 2287 5561 8830 3319 6641 1108</text>
+        <text transform="rotate(-20,0,100)" x="-40" y="100">1100 9928 4471 8833 2201 6677 3312 9988 1144 5521 8849 2290 6631 9900 3341 6682 0019 4401 7763</text>
+        <text transform="rotate(-20,0,160)" x="-40" y="160">5532 2291 8849 1102 7763 3318 9900 4421 8832 2211 6643 9912 3341 6682 0019 4401 8836 2210 5543</text>
+        <text transform="rotate(-20,0,220)" x="-40" y="220">3398 6621 9900 1137 8842 2291 5563 8814 3320 9912 3341 6682 0019 4401 8836 2210 5543 7791 1100</text>
+        <text transform="rotate(-20,0,280)" x="-40" y="280">9912 3341 6682 0019 4401 8836 2210 5543 7791 2201 5523 8889 1198 4420 7762 3341 9901 6643 3312</text>
+        <text transform="rotate(-20,0,340)" x="-40" y="340">2201 5523 8889 1198 4420 7762 3341 9901 6643 8291 4402 1837 9901 2210 5543 8871 3320 6654 1129</text>
+        <text transform="rotate(-20,0,400)" x="-40" y="400">6631 9920 3312 8841 1100 4492 7723 2298 5561 3398 6621 9900 1137 8842 2291 5563 8814 3320 9912</text>
+        <text transform="rotate(-20,0,460)" x="-40" y="460">4420 7762 3341 9901 6643 1100 9928 4471 8833 2201 6677 3312 9988 1144 5521 8849 2290 6631 9900</text>
+        <text transform="rotate(-20,0,520)" x="-40" y="520">8832 2211 6643 9912 5532 2291 8849 1102 7763 3318 9900 4421 8832 2211 6643 9912 3341 6682 0019</text>
+        <text transform="rotate(-20,0,580)" x="-40" y="580">1837 9901 2210 5543 6631 9920 3312 8841 1100 4492 7723 2298 5561 4420 7762 3341 9901 6643 1100</text>
+      </g>
+    </svg>    <!-- Existing atmospheric elements -->
+    <div class="pmt-orb-r"></div>
+    <div class="pmt-orb-b"></div>
+    <div class="pmt-edge"></div>
+  </div>
+  <div class="container pmt-hero-inner">
+    <div class="pmt-hero-content">
+      <nav aria-label="Breadcrumb" class="hiw-breadcrumb">
+        <a href="/">Home</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Online payment</span>
+      </nav>
+      <span class="badge badge-red-dark">Make a payment</span>
+      <h1>Pay your Captain Cash<br>loan in 3 steps</h1>
+      <p class="pmt-hero-sub">All you need is your online banking app. Send by Interac e-Transfer — free, secure, and processed same day if received before 2 PM ET.</p>
+
+      <!-- Stat bar -->
+      <div class="pmt-hero-stats">
+        <div class="pmt-hero-stat">
+          <strong>Free</strong>
+          <span>No fees to send</span>
+        </div>
+        <div class="pmt-stat-div" aria-hidden="true"></div>
+        <div class="pmt-hero-stat">
+          <strong>Same day</strong>
+          <span>Before 2 PM ET</span>
+        </div>
+        <div class="pmt-stat-div" aria-hidden="true"></div>
+        <div class="pmt-hero-stat">
+          <strong>3 steps</strong>
+          <span>Takes under 2 minutes</span>
+        </div>
+        <div class="pmt-stat-div" aria-hidden="true"></div>
+        <div class="pmt-hero-stat">
+          <strong>All banks</strong>
+          <span>Works with any Canadian bank</span>
+        </div>
+      </div>
+
+      <a href="#steps" class="pmt-hero-cta">
+        See the steps
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div class="pmt-hero-visual">
+      <!-- Transaction card -->
+      <div class="pmt-txn-card" aria-label="Example of a successful payment confirmation">
+        <!-- Bank app header -->
+        <div class="pmt-txn-header">
+          <div class="pmt-txn-header-dot"></div>
+          <div class="pmt-txn-header-dot"></div>
+          <div class="pmt-txn-header-dot pmt-txn-header-dot--green"></div>
+          <span class="pmt-txn-header-label">Interac e&#8209;Transfer</span>
+        </div>
+        <!-- Status badge -->
+        <div class="pmt-txn-status">
+          <div class="pmt-txn-status-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div>
+            <strong>Transfer sent</strong>
+            <span>Processing same day</span>
+          </div>
+        </div>
+        <!-- Amount -->
+        <div class="pmt-txn-amount" aria-label="Payment amount">
+          <span class="pmt-txn-currency">CAD</span>
+          <span class="pmt-txn-value">$150.00</span>
+        </div>
+        <!-- Details rows -->
+        <div class="pmt-txn-details">
+          <div class="pmt-txn-row">
+            <span>To</span>
+            <span class="pmt-txn-to">receivables@<wbr>diamondfinancialone.com</span>
+          </div>
+          <div class="pmt-txn-row">
+            <span>Reference</span>
+            <span>Captain Cash</span>
+          </div>
+          <div class="pmt-txn-row">
+            <span>Date</span>
+            <span id="pmt-txn-date">Today</span>
+          </div>
+          <div class="pmt-txn-row pmt-txn-row--status">
+            <span>Status</span>
+            <span class="pmt-txn-badge">
+              <span class="pmt-txn-badge-dot" aria-hidden="true"></span>
+              Applied to your loan
+            </span>
+          </div>
+        </div>
+        <!-- Footer -->
+        <div class="pmt-txn-footer">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Payment confirmed · No fees charged
+        </div>
+      </div>
+      <div class="pmt-txn-glow" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     3 STEPS — white
+═══════════════════════════════════════ -->
+<section class="section pmt-steps" id="steps">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge badge-red">How to pay</span>
+      <h2>3 steps to send your payment</h2>
+      <p>Follow these steps exactly — especially the security question and answer — to ensure your payment is applied to your account correctly.</p>
+    </div>
+
+    <!-- Before you start banner -->
+    <div class="pmt-before-banner animate">
+      <div class="pmt-before-item">
+        <div class="pmt-before-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        </div>
+        <div>
+          <strong>Have your banking app ready</strong>
+          <span>Open your online banking before you start — you'll need it open alongside these instructions.</span>
+        </div>
+      </div>
+      <div class="pmt-before-divider" aria-hidden="true"></div>
+      <div class="pmt-before-item">
+        <div class="pmt-before-icon pmt-before-icon--red" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </div>
+        <div>
+          <strong>Copy the email address exactly</strong>
+          <span>A single typo means your payment won't reach us. Use the copy button in Step 2 to avoid errors.</span>
+        </div>
+      </div>
+      <div class="pmt-before-divider" aria-hidden="true"></div>
+      <div class="pmt-before-item">
+        <div class="pmt-before-icon pmt-before-icon--amber" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        <div>
+          <strong>Security answer: lowercase, no spaces</strong>
+          <span>The answer <code>captaincash</code> must be entered exactly — no capitals, no spaces.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="pmt-steps-grid pmt-steps-grid--connected">
+
+      <div class="pmt-step-card animate">
+        <div class="pmt-step-num" aria-hidden="true">01</div>
+        <div class="pmt-step-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3>Log into your online banking</h3>
+        <p>Sign in to your Canadian bank's online banking portal or mobile app. Navigate to the <strong>Interac e-Transfer</strong> or <strong>Send Money</strong> section. This is available on all major Canadian banks.</p>
+        <div class="pmt-step-note">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          Works with BMO, Scotiabank, RBC, TD, CIBC, National Bank, Tangerine, and most other Canadian banks.
+        </div>
+      </div>
+
+      <div class="pmt-step-card animate">
+        <div class="pmt-step-num" aria-hidden="true">02</div>
+        <div class="pmt-step-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <h3>Fill in the recipient details</h3>
+        <p>Enter the following details exactly as shown. The security question and answer are required to ensure your payment reaches the right account.</p>
+        <div class="pmt-detail-box">
+          <div class="pmt-detail-row">
+            <span class="pmt-detail-label">Recipient name</span>
+            <span class="pmt-detail-val">Captain Cash <span class="pmt-copy-note">(or your choice)</span></span>
+          </div>
+          <div class="pmt-detail-row pmt-detail-row--highlight pmt-detail-row--email">
+            <span class="pmt-detail-label">Email</span>
+            <button class="pmt-copy-btn" data-copy="receivables@diamondfinancialone.com" aria-label="Copy recipient email address">
+              <span class="pmt-copy-email">receivables@<br>diamondfinancialone.com</span>
+              <span class="pmt-copy-right">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                <span class="pmt-copy-confirm" aria-live="polite">Copied!</span>
+                <span class="pmt-copy-tap">Tap to copy</span>
+              </span>
+            </button>
+          </div>
+          <div class="pmt-detail-row">
+            <span class="pmt-detail-label">Transfer amount</span>
+            <span class="pmt-detail-val">Your payment amount</span>
+          </div>
+          <div class="pmt-detail-row pmt-detail-row--highlight">
+            <span class="pmt-detail-label">Security question</span>
+            <span class="pmt-detail-val pmt-detail-exact">Who do I owe</span>
+          </div>
+          <div class="pmt-detail-row pmt-detail-row--highlight pmt-detail-row--answer">
+            <span class="pmt-detail-label">Security answer</span>
+            <span class="pmt-detail-val pmt-detail-exact pmt-detail-exact--big">captaincash</span>
+          </div>
+        </div>
+        <div class="pmt-step-note pmt-step-note--warn">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          The security answer <strong>captaincash</strong> must be lowercase with no spaces or capitals — exactly as shown.
+        </div>
+      </div>
+
+      <div class="pmt-step-card animate">
+        <div class="pmt-step-num" aria-hidden="true">03</div>
+        <div class="pmt-step-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3>Submit and confirm</h3>
+        <p>Review the details, confirm the transfer, and submit. You will receive a confirmation email from Interac once the payment has been sent. Keep this confirmation for your records.</p>
+        <div class="pmt-step-note pmt-step-note--success">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Payments received before 2 PM ET on a business day are processed the same day.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     QUICK REFERENCE — dark
+═══════════════════════════════════════ -->
+<section class="section section--dark pmt-ref">
+  <div class="pmt-ref-bg" aria-hidden="true">
+    <div class="pmt-ref-orb-r"></div>
+    <div class="pmt-ref-orb-b"></div>
+    <div class="pmt-ref-beam"></div>
+    <div class="pmt-ref-edge"></div>
+  </div>
+  <div class="container pmt-ref-inner">
+    <div class="pmt-ref-content">
+      <div class="section-header section-header--dark" style="text-align:left;align-items:flex-start">
+        <span class="badge badge-red-dark">Quick reference</span>
+        <h2>Save these details</h2>
+        <p style="color:rgba(255,255,255,0.5)">Screenshot or bookmark this page. You will need these details every time you make a manual payment.</p>
+      </div>
+      <div class="pmt-ref-card animate">
+        <div class="pmt-ref-row">
+          <span class="pmt-ref-label">Recipient email</span>
+          <div class="pmt-ref-val-wrap">
+            <span class="pmt-ref-val">receivables@diamondfinancialone.com</span>
+            <button class="pmt-ref-copy" data-copy="receivables@diamondfinancialone.com" aria-label="Copy email">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+              <span class="pmt-copy-confirm" aria-live="polite">Copied!</span>
+            </button>
+          </div>
+        </div>
+        <div class="pmt-ref-row">
+          <span class="pmt-ref-label">Security question</span>
+          <span class="pmt-ref-val pmt-ref-val--exact">Who do I owe</span>
+        </div>
+        <div class="pmt-ref-row">
+          <span class="pmt-ref-label">Security answer</span>
+          <span class="pmt-ref-val pmt-ref-val--exact">captaincash</span>
+        </div>
+        <div class="pmt-ref-row">
+          <span class="pmt-ref-label">Processing cut-off</span>
+          <span class="pmt-ref-val">2:00 PM ET — same-day processing</span>
+        </div>
+        <div class="pmt-ref-row">
+          <span class="pmt-ref-label">Questions?</span>
+          <span class="pmt-ref-val"><a href="tel:18882261026">1-888-226-1026</a> · Mon–Fri 8 AM–5 PM ET</span>
+        </div>
+      </div>
+    </div>
+    <div class="pmt-ref-faq animate">
+      <h3 class="pmt-ref-faq-title">Common questions</h3>
+      <div class="faq-list" role="list">
+        <div class="faq-item" role="listitem">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="pmt-faq-1">
+            <span>When will my payment be applied?</span><span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-body" id="pmt-faq-1" role="region">
+            <p>Payments received before 2:00 PM ET on a business day are processed the same day. Payments received after 2:00 PM ET, or on weekends and holidays, are processed the next business day.</p>
+          </div>
+        </div>
+        <div class="faq-item" role="listitem">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="pmt-faq-2">
+            <span>Can I make a partial early payment?</span><span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-body" id="pmt-faq-2" role="region">
+            <p>Yes. You can make a partial or full early repayment at any time after your first scheduled payment. Your first payment must be processed as originally scheduled. Contact us at least 48 hours in advance so we can stop the scheduled withdrawal.</p>
+          </div>
+        </div>
+        <div class="faq-item" role="listitem">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="pmt-faq-3">
+            <span>What if I sent to the wrong email?</span><span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-body" id="pmt-faq-3" role="region">
+            <p>Contact us immediately at 1-888-226-1026 or <a href="mailto:support@captaincash.ca" style="color:#e82020">support@captaincash.ca</a>. If the e-Transfer has not yet been deposited, it may be possible to cancel it through your bank.</p>
+          </div>
+        </div>
+        <div class="faq-item" role="listitem">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="pmt-faq-4">
+            <span>Do I need to notify Captain Cash before sending?</span><span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-body" id="pmt-faq-4" role="region">
+            <p>For regular scheduled payments, no notification is needed. For early repayments or payments outside your normal schedule, contact us at least 48 hours in advance so we can stop any overlapping scheduled withdrawal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     NEED HELP — white
+═══════════════════════════════════════ -->
+<section class="section pmt-help">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge badge-red">Need help?</span>
+      <h2>Having trouble with your payment?</h2>
+      <p>Our Halifax-based team is here Monday to Friday. Do not wait — contact us before your payment date to avoid NSF fees.</p>
+    </div>
+    <div class="pmt-help-grid">
+      <a href="tel:18882261026" class="pmt-help-card pmt-help-card--link animate">
+        <div class="pmt-help-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        </div>
+        <div>
+          <strong>Call us</strong>
+          <span>1-888-226-1026</span>
+          <small>Mon–Fri · 8 AM–5 PM ET · Fastest response</small>
+        </div>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="pmt-help-arrow" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="mailto:support@captaincash.ca" class="pmt-help-card pmt-help-card--link animate">
+        <div class="pmt-help-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div>
+          <strong>Email us</strong>
+          <span>support@captaincash.ca</span>
+          <small>Reply within 1 business day</small>
+        </div>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="pmt-help-arrow" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="/support/#costs" class="pmt-help-card animate">
+        <div class="pmt-help-icon pmt-help-icon--blue" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </div>
+        <div>
+          <strong>Payment FAQ</strong>
+          <span>Deferral, NSF, early repayment</span>
+          <small>Answers to common payment questions</small>
+        </div>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="pmt-help-arrow" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Sticky mobile payment bar -->
+<div class="pmt-sticky-bar" id="pmt-sticky-bar" aria-label="Payment email — tap to copy">
+  <div class="pmt-sticky-label">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    Payment email
+  </div>
+  <button class="pmt-sticky-copy" data-copy="receivables@diamondfinancialone.com" aria-label="Copy payment email address">
+    <span>receivables@diamondfinancialone.com</span>
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+    <span class="pmt-copy-confirm" aria-live="polite">Copied!</span>
+  </button>
+</div>
+
+</main>
+
+<section class="cta-banner" aria-label="Apply for a loan">
+  <div class="cta-banner-orb cta-banner-orb-1" aria-hidden="true"></div>
+  <div class="cta-banner-orb cta-banner-orb-2" aria-hidden="true"></div>
+  <div class="container cta-banner-inner">
+    <img src="/images/mascot/mascot-fists.webp" alt="" aria-hidden="true" class="cta-mascot" width="140" height="170" loading="lazy">
+    <div class="cta-banner-text">
+      <h2>Ready to get your cash?</h2>
+      <p>Apply in 5 minutes. Get approved today. No credit check required.</p>
+    </div>
+    <div class="cta-banner-actions">
+      <a href="/claim-your-cash/" class="btn btn-primary btn-lg">Claim your cash</a>
+      <a href="tel:18882261026" class="btn-cta-phone">Call 1-888-226-1026</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer site-footer--dark">
+  <div class="footer-bg" aria-hidden="true">
+    <div class="footer-orb-1"></div>
+    <div class="footer-orb-2"></div>
+    <div class="footer-beam"></div>
+    <div class="footer-edge"></div>
+  </div>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="site-logo-img site-logo-img--footer">
+          <img src="/images/mascot/sprites/logo-lockup-small.webp" alt="Captain Cash" width="140" height="35" loading="lazy">
+        </a>
+        <p style="margin-top:1rem;color:var(--gray-400);font-size:0.875rem;line-height:1.7">A fast, fair alternative to payday loans for Canadians who need cash today. Serving Canada since 2015.</p>
+        <address style="margin-top:1rem;font-size:0.8rem;color:var(--gray-500);font-style:normal;line-height:1.7">
+          1701 Hollis Street W. Suite 800<br>
+          Halifax, NS B3J 2T9<br>
+          <a href="tel:18882261026" style="color:var(--gray-400)">1-888-226-1026</a>
+        </address>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="/loans-in-canada/">Loans in Canada</a></li>
+          <li><a href="/payday-loans/">Payday loans</a></li>
+          <li><a href="/bad-credit-loans-canada/">Bad credit loans</a></li>
+          <li><a href="/installment-loans-canada/">Instalment loans</a></li>
+          <li><a href="/no-credit-check-loans-canada/">No credit check</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about-us/">About us</a></li>
+          <li><a href="/testimonials/">Reviews</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/terms-conditions/">Terms and conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="/how-does-it-work/">How it works</a></li>
+          <li><a href="/support/">FAQ</a></li>
+          <li><a href="/online-payment/">Online payment</a></li>
+          <li><a href="/contact-us/">Contact us</a></li>
+          <li><a href="/renew-your-loan/">Renew your loan</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Captain Cash &copy; 2026, a division of Opal Financial. All Rights Reserved.</p>
+      <p>APR 23% &mdash; <a href="/terms-conditions/" style="color:var(--gray-500)">Privacy Policy</a> &mdash; Borrow responsibly</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+<script>
+(function() {
+  /* Smooth scroll for hero CTA */
+  var heroCta = document.querySelector('.pmt-hero-cta');
+  if (heroCta) {
+    heroCta.addEventListener('click', function(e) {
+      var target = document.getElementById('steps');
+      if (!target) { target = document.querySelector('.pmt-steps'); }
+      if (target) { e.preventDefault(); window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 90, behavior: 'smooth' }); }
+    });
+  }
+
+  /* Transaction card date */
+  var dateEl = document.getElementById('pmt-txn-date');
+  if (dateEl) {
+    var d = new Date();
+    dateEl.textContent = d.toLocaleDateString('en-CA', { month:'short', day:'numeric', year:'numeric' });
+  }
+
+  /* header scroll */
+  var header = document.getElementById('site-header');
+  if (header) window.addEventListener('scroll', function() {
+    header.classList.toggle('site-header--scrolled', window.scrollY > 60);
+  }, { passive:true });
+
+  /* nav dropdowns */
+  var triggers = document.querySelectorAll('.nav-dropdown-trigger');
+  function closeAll() {
+    triggers.forEach(function(t) {
+      t.setAttribute('aria-expanded','false');
+      var dd = t.nextElementSibling;
+      if (dd) dd.classList.remove('nav-dropdown--open');
+    });
+  }
+  triggers.forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var isOpen = trigger.getAttribute('aria-expanded') === 'true';
+      closeAll();
+      if (!isOpen) {
+        trigger.setAttribute('aria-expanded','true');
+        var dd = trigger.nextElementSibling;
+        if (dd) dd.classList.add('nav-dropdown--open');
+      }
+    });
+  });
+  document.addEventListener('click', closeAll);
+  document.addEventListener('keydown', function(e) { if (e.key==='Escape') closeAll(); });
+
+  /* FAQ accordion */
+  document.querySelectorAll('.faq-trigger').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      var body = document.getElementById(btn.getAttribute('aria-controls'));
+      btn.setAttribute('aria-expanded', !expanded);
+      body.classList.toggle('faq-open', !expanded);
+    });
+  });
+
+  /* Copy buttons */
+  document.querySelectorAll('[data-copy]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var text = btn.dataset.copy;
+      navigator.clipboard.writeText(text).then(function() {
+        var confirm = btn.querySelector('.pmt-copy-confirm');
+        if (!confirm) return;
+        confirm.style.display = 'inline';
+        setTimeout(function() { confirm.style.display = 'none'; }, 2000);
+      }).catch(function() {
+        /* fallback: select text */
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+      });
+    });
+  });
+})();
+</script>
+
 <style>
-/* ══ ONLINE-PAYMENT — page-specific styles ══ */
+/* Skip to content link */
+.skip-link { position:absolute;top:-100px;left:1rem;padding:8px 16px;background:#e82020;color:#fff;font-size:0.875rem;font-weight:700;border-radius:0 0 8px 8px;text-decoration:none;z-index:9999;transition:top 0.1s; }
+.skip-link:focus { top:0; }
+/* ══════════════════════════════════════
+   ONLINE PAYMENT — Page Styles
+══════════════════════════════════════ */
+
+/* Hero */
+
+/* ── Transaction card ── */
 .pmt-hero-visual { position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center; }
 .pmt-txn-card {
   width:100%;max-width:320px;
@@ -152,7 +873,6 @@
 }
 @media(max-width:900px){ .pmt-hero-visual { display:none; } }
 
-
 /* ── Before you start banner ── */
 .pmt-before-banner { display:flex;align-items:stretch;background:#fff;border:1.5px solid #e2e6ed;border-radius:16px;margin-bottom:2rem;overflow:hidden; }
 @media(max-width:768px){ .pmt-before-banner { flex-direction:column; } }
@@ -218,7 +938,6 @@
 
 /* Add bottom padding on mobile so sticky bar doesn't cover content */
 @media(max-width:768px){ main { padding-bottom:60px; } }
-
 
 /* Hero stat bar */
 .pmt-hero-stats { display:flex;align-items:center;flex-wrap:wrap;gap:0;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:0.875rem 1.5rem;margin-bottom:2rem; }
@@ -592,8 +1311,6 @@
 .hero-float-dot--green { background:#4ade80; box-shadow:0 0 8px #4ade80; animation:dotPulse 2s infinite; }
 .hero-float-dot--amber { background:#fbbf24; box-shadow:0 0 8px #fbbf24; animation:dotPulse 2.4s infinite; }
 @keyframes dotPulse { 0%,100%{opacity:1;} 50%{opacity:0.45;} }
-
-
 
 /* hero layout */
 .hero-inner {
@@ -1591,7 +2308,6 @@ h1 em {
    ≤479      small phone
 ══════════════════════════════════════ */
 
-
 /* ── small laptop (900–1199px) ── */
 /* ══════════════════════════════════════
    RESPONSIVE — 4 breakpoints
@@ -1689,7 +2405,6 @@ h1 em {
   .testimonials-grid { grid-template-columns:1fr; }
   .faq-cols { grid-template-columns:1fr; gap:0; }
 
-
   /* CTA banner */
   .cta-banner-text { text-align:center; }
   .cta-banner h2 { font-size:1.5rem; }
@@ -1727,717 +2442,5 @@ h1 em {
   .cta-banner-actions .btn,.cta-banner-actions .btn-cta-phone { width:100%; text-align:center; justify-content:center; }
 }
 </style>
-</head>
-<body>
-<a href="#main" class="skip-link">Skip to content</a>
-
-<header class="site-header site-header--dark" id="site-header">
-  <div class="container header-inner">
-    <a href="/" class="site-logo-img">
-      <img src="/images/mascot/sprites/logo-lockup-small.webp" alt="Captain Cash — Here to save the day" width="192" height="48" loading="eager">
-    </a>
-    <nav class="nav-links" aria-label="Main navigation">
-
-      <!-- Products dropdown -->
-      <div class="nav-item nav-item--dropdown">
-        <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">
-          Products
-          <svg class="nav-chev" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
-        </button>
-        <div class="nav-dropdown" role="menu">
-          <a href="/claim-your-cash/" class="nav-drop-item" role="menuitem">
-            <span class="nav-drop-icon nav-drop-icon--red" aria-hidden="true">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
-            </span>
-            <span class="nav-drop-text">
-              <strong>Get a loan</strong>
-              <span>$500–$1,000, same business day</span>
-            </span>
-          </a>
-          <a href="/renew-your-loan/" class="nav-drop-item" role="menuitem">
-            <span class="nav-drop-icon nav-drop-icon--amber" aria-hidden="true">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg>
-            </span>
-            <span class="nav-drop-text">
-              <strong>Renew your loan</strong>
-              <span>Fast track for returning customers</span>
-            </span>
-          </a>
-          <a href="/online-payment/" class="nav-drop-item" role="menuitem">
-            <span class="nav-drop-icon nav-drop-icon--blue" aria-hidden="true">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
-            </span>
-            <span class="nav-drop-text">
-              <strong>Online payment</strong>
-              <span>Pay or manage your existing loan</span>
-            </span>
-          </a>
-          <div class="nav-drop-sep" aria-hidden="true"></div>
-          
-        </div>
-      </div>
-
-      <!-- Learn dropdown -->
-      <div class="nav-item nav-item--dropdown">
-        <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">
-          Learn
-          <svg class="nav-chev" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
-        </button>
-        <div class="nav-dropdown" role="menu">
-          <a href="/how-does-it-work/" class="nav-drop-item" role="menuitem">
-            <span class="nav-drop-icon nav-drop-icon--blue" aria-hidden="true">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            </span>
-            <span class="nav-drop-text">
-              <strong>How it works</strong>
-              <span>Apply, approve, get funded</span>
-            </span>
-          </a>
-          <a href="/support/" class="nav-drop-item" role="menuitem">
-            <span class="nav-drop-icon nav-drop-icon--green" aria-hidden="true">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-            </span>
-            <span class="nav-drop-text">
-              <strong>FAQ</strong>
-              <span>Common questions answered</span>
-            </span>
-          </a>
-          <a href="/about-us/" class="nav-drop-item" role="menuitem">
-            <span class="nav-drop-icon nav-drop-icon--red" aria-hidden="true">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
-            </span>
-            <span class="nav-drop-text">
-              <strong>About Captain Cash</strong>
-              <span>Canadian lender since 2015</span>
-            </span>
-          </a>
-          <a href="/testimonials/" class="nav-drop-item" role="menuitem">
-            <span class="nav-drop-icon nav-drop-icon--amber" aria-hidden="true">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-            </span>
-            <span class="nav-drop-text">
-              <strong>Reviews</strong>
-              <span>What customers say</span>
-            </span>
-          </a>
-          <div class="nav-drop-sep" aria-hidden="true"></div>
-          <a href="/blog/" class="nav-drop-item" role="menuitem">
-            <span class="nav-drop-icon nav-drop-icon--amber" aria-hidden="true">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
-            </span>
-            <span class="nav-drop-text">
-              <strong>Blog</strong>
-              <span>Tips for Canadian borrowers</span>
-            </span>
-          </a>
-        </div>
-      </div>
-
-      <!-- Direct links -->
-      <a href="/contact-us/" class="nav-link-plain">Contact</a>
-
-    </nav>
-    <div class="nav-cta">
-      <a href="tel:18882261026" class="nav-phone nav-phone--dark" aria-label="Call us at 1-888-226-1026">
-        <span class="nav-phone-icon" aria-hidden="true">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#e82020" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-        </span>
-        <span class="nav-phone-text">
-          <span class="nav-phone-label">Call us</span>
-          <span class="nav-phone-num">1-888-226-1026</span>
-        </span>
-      </a>
-      <a href="/claim-your-cash/" class="btn-header-red">Get a loan</a>
-      <a href="/renew-your-loan/" class="btn-header-amber">Renew</a>
-    </div>
-    <button class="hamburger hamburger--dark" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
-
-<!-- ═══════════════════════════════════════
-     TRUST BAR
-═══════════════════════════════════════ -->
-<div class="trust-bar" role="complementary" aria-label="Trust credentials">
-  <div class="container trust-bar-inner">
-    <div class="trust-bar-item">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-      <span>CLA member since 2015</span>
-    </div>
-    <div class="trust-bar-divider" aria-hidden="true"></div>
-    <div class="trust-bar-item">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-      <span>SSL encrypted</span>
-    </div>
-    <div class="trust-bar-divider" aria-hidden="true"></div>
-    <div class="trust-bar-item">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-      <span>12,000+ Canadians served</span>
-    </div>
-    <div class="trust-bar-divider" aria-hidden="true"></div>
-    <div class="trust-bar-item">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-      <span>Provincially licensed</span>
-    </div>
-    <div class="trust-bar-divider" aria-hidden="true"></div>
-    <div class="trust-bar-item">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-      <span>Same-day e-Transfer</span>
-    </div>
-    <div class="trust-bar-divider" aria-hidden="true"></div>
-    <div class="trust-bar-item">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-      <span>APR 23% — transparent</span>
-    </div>
-  </div>
-</div>
-
-<main>
-<main>
-
-<!-- ═══════════════════════════════════════
-     HERO — dark
-═══════════════════════════════════════ -->
-<section class="section section--dark pmt-hero">
-  <div class="pmt-hero-bg" aria-hidden="true">
-    <!-- Option A: diagonal data streams -->
-    <svg class="pmt-bg-streams" viewBox="0 0 1400 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#e82020" opacity="0.055" font-family="monospace" font-size="11">
-        <text transform="rotate(-20,0,40)" x="-40" y="40">8291 4402 1837 9901 2210 5543 8871 3320 6654 1129 8801 4432 9910 2287 5561 8830 3319 6641 1108</text>
-        <text transform="rotate(-20,0,100)" x="-40" y="100">1100 9928 4471 8833 2201 6677 3312 9988 1144 5521 8849 2290 6631 9900 3341 6682 0019 4401 7763</text>
-        <text transform="rotate(-20,0,160)" x="-40" y="160">5532 2291 8849 1102 7763 3318 9900 4421 8832 2211 6643 9912 3341 6682 0019 4401 8836 2210 5543</text>
-        <text transform="rotate(-20,0,220)" x="-40" y="220">3398 6621 9900 1137 8842 2291 5563 8814 3320 9912 3341 6682 0019 4401 8836 2210 5543 7791 1100</text>
-        <text transform="rotate(-20,0,280)" x="-40" y="280">9912 3341 6682 0019 4401 8836 2210 5543 7791 2201 5523 8889 1198 4420 7762 3341 9901 6643 3312</text>
-        <text transform="rotate(-20,0,340)" x="-40" y="340">2201 5523 8889 1198 4420 7762 3341 9901 6643 8291 4402 1837 9901 2210 5543 8871 3320 6654 1129</text>
-        <text transform="rotate(-20,0,400)" x="-40" y="400">6631 9920 3312 8841 1100 4492 7723 2298 5561 3398 6621 9900 1137 8842 2291 5563 8814 3320 9912</text>
-        <text transform="rotate(-20,0,460)" x="-40" y="460">4420 7762 3341 9901 6643 1100 9928 4471 8833 2201 6677 3312 9988 1144 5521 8849 2290 6631 9900</text>
-        <text transform="rotate(-20,0,520)" x="-40" y="520">8832 2211 6643 9912 5532 2291 8849 1102 7763 3318 9900 4421 8832 2211 6643 9912 3341 6682 0019</text>
-        <text transform="rotate(-20,0,580)" x="-40" y="580">1837 9901 2210 5543 6631 9920 3312 8841 1100 4492 7723 2298 5561 4420 7762 3341 9901 6643 1100</text>
-      </g>
-    </svg>    <!-- Existing atmospheric elements -->
-    <div class="pmt-orb-r"></div>
-    <div class="pmt-orb-b"></div>
-    <div class="pmt-edge"></div>
-  </div>
-  <div class="container pmt-hero-inner">
-    <div class="pmt-hero-content">
-      <nav aria-label="Breadcrumb" class="hiw-breadcrumb">
-        <a href="/">Home</a>
-        <span aria-hidden="true">›</span>
-        <span aria-current="page">Online payment</span>
-      </nav>
-      <span class="badge badge-red-dark">Make a payment</span>
-      <h1>Pay your Captain Cash<br>loan in 3 steps</h1>
-      <p class="pmt-hero-sub">All you need is your online banking app. Send by Interac e-Transfer — free, secure, and processed same day if received before 2 PM ET.</p>
-
-      <!-- Stat bar -->
-      <div class="pmt-hero-stats">
-        <div class="pmt-hero-stat">
-          <strong>Free</strong>
-          <span>No fees to send</span>
-        </div>
-        <div class="pmt-stat-div" aria-hidden="true"></div>
-        <div class="pmt-hero-stat">
-          <strong>Same day</strong>
-          <span>Before 2 PM ET</span>
-        </div>
-        <div class="pmt-stat-div" aria-hidden="true"></div>
-        <div class="pmt-hero-stat">
-          <strong>3 steps</strong>
-          <span>Takes under 2 minutes</span>
-        </div>
-        <div class="pmt-stat-div" aria-hidden="true"></div>
-        <div class="pmt-hero-stat">
-          <strong>All banks</strong>
-          <span>Works with any Canadian bank</span>
-        </div>
-      </div>
-
-      <a href="#steps" class="pmt-hero-cta">
-        See the steps
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-    </div>
-    <div class="pmt-hero-visual">
-      <!-- Transaction card -->
-      <div class="pmt-txn-card" aria-label="Example of a successful payment confirmation">
-        <!-- Bank app header -->
-        <div class="pmt-txn-header">
-          <div class="pmt-txn-header-dot"></div>
-          <div class="pmt-txn-header-dot"></div>
-          <div class="pmt-txn-header-dot pmt-txn-header-dot--green"></div>
-          <span class="pmt-txn-header-label">Interac e&#8209;Transfer</span>
-        </div>
-        <!-- Status badge -->
-        <div class="pmt-txn-status">
-          <div class="pmt-txn-status-icon" aria-hidden="true">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-          </div>
-          <div>
-            <strong>Transfer sent</strong>
-            <span>Processing same day</span>
-          </div>
-        </div>
-        <!-- Amount -->
-        <div class="pmt-txn-amount" aria-label="Payment amount">
-          <span class="pmt-txn-currency">CAD</span>
-          <span class="pmt-txn-value">$150.00</span>
-        </div>
-        <!-- Details rows -->
-        <div class="pmt-txn-details">
-          <div class="pmt-txn-row">
-            <span>To</span>
-            <span class="pmt-txn-to">receivables@<wbr>diamondfinancialone.com</span>
-          </div>
-          <div class="pmt-txn-row">
-            <span>Reference</span>
-            <span>Captain Cash</span>
-          </div>
-          <div class="pmt-txn-row">
-            <span>Date</span>
-            <span id="pmt-txn-date">Today</span>
-          </div>
-          <div class="pmt-txn-row pmt-txn-row--status">
-            <span>Status</span>
-            <span class="pmt-txn-badge">
-              <span class="pmt-txn-badge-dot" aria-hidden="true"></span>
-              Applied to your loan
-            </span>
-          </div>
-        </div>
-        <!-- Footer -->
-        <div class="pmt-txn-footer">
-          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-          Payment confirmed · No fees charged
-        </div>
-      </div>
-      <div class="pmt-txn-glow" aria-hidden="true"></div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     3 STEPS — white
-═══════════════════════════════════════ -->
-<section class="section pmt-steps" id="steps">
-  <div class="container">
-    <div class="section-header">
-      <span class="badge badge-red">How to pay</span>
-      <h2>3 steps to send your payment</h2>
-      <p>Follow these steps exactly — especially the security question and answer — to ensure your payment is applied to your account correctly.</p>
-    </div>
-
-    <!-- Before you start banner -->
-    <div class="pmt-before-banner animate">
-      <div class="pmt-before-item">
-        <div class="pmt-before-icon" aria-hidden="true">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
-        </div>
-        <div>
-          <strong>Have your banking app ready</strong>
-          <span>Open your online banking before you start — you'll need it open alongside these instructions.</span>
-        </div>
-      </div>
-      <div class="pmt-before-divider" aria-hidden="true"></div>
-      <div class="pmt-before-item">
-        <div class="pmt-before-icon pmt-before-icon--red" aria-hidden="true">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-        </div>
-        <div>
-          <strong>Copy the email address exactly</strong>
-          <span>A single typo means your payment won't reach us. Use the copy button in Step 2 to avoid errors.</span>
-        </div>
-      </div>
-      <div class="pmt-before-divider" aria-hidden="true"></div>
-      <div class="pmt-before-item">
-        <div class="pmt-before-icon pmt-before-icon--amber" aria-hidden="true">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-        </div>
-        <div>
-          <strong>Security answer: lowercase, no spaces</strong>
-          <span>The answer <code>captaincash</code> must be entered exactly — no capitals, no spaces.</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="pmt-steps-grid pmt-steps-grid--connected">
-
-      <div class="pmt-step-card animate">
-        <div class="pmt-step-num" aria-hidden="true">01</div>
-        <div class="pmt-step-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-        </div>
-        <h3>Log into your online banking</h3>
-        <p>Sign in to your Canadian bank's online banking portal or mobile app. Navigate to the <strong>Interac e-Transfer</strong> or <strong>Send Money</strong> section. This is available on all major Canadian banks.</p>
-        <div class="pmt-step-note">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-          Works with BMO, Scotiabank, RBC, TD, CIBC, National Bank, Tangerine, and most other Canadian banks.
-        </div>
-      </div>
-
-      <div class="pmt-step-card animate">
-        <div class="pmt-step-num" aria-hidden="true">02</div>
-        <div class="pmt-step-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        </div>
-        <h3>Fill in the recipient details</h3>
-        <p>Enter the following details exactly as shown. The security question and answer are required to ensure your payment reaches the right account.</p>
-        <div class="pmt-detail-box">
-          <div class="pmt-detail-row">
-            <span class="pmt-detail-label">Recipient name</span>
-            <span class="pmt-detail-val">Captain Cash <span class="pmt-copy-note">(or your choice)</span></span>
-          </div>
-          <div class="pmt-detail-row pmt-detail-row--highlight pmt-detail-row--email">
-            <span class="pmt-detail-label">Email</span>
-            <button class="pmt-copy-btn" data-copy="receivables@diamondfinancialone.com" aria-label="Copy recipient email address">
-              <span class="pmt-copy-email">receivables@<br>diamondfinancialone.com</span>
-              <span class="pmt-copy-right">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
-                <span class="pmt-copy-confirm" aria-live="polite">Copied!</span>
-                <span class="pmt-copy-tap">Tap to copy</span>
-              </span>
-            </button>
-          </div>
-          <div class="pmt-detail-row">
-            <span class="pmt-detail-label">Transfer amount</span>
-            <span class="pmt-detail-val">Your payment amount</span>
-          </div>
-          <div class="pmt-detail-row pmt-detail-row--highlight">
-            <span class="pmt-detail-label">Security question</span>
-            <span class="pmt-detail-val pmt-detail-exact">Who do I owe</span>
-          </div>
-          <div class="pmt-detail-row pmt-detail-row--highlight pmt-detail-row--answer">
-            <span class="pmt-detail-label">Security answer</span>
-            <span class="pmt-detail-val pmt-detail-exact pmt-detail-exact--big">captaincash</span>
-          </div>
-        </div>
-        <div class="pmt-step-note pmt-step-note--warn">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-          The security answer <strong>captaincash</strong> must be lowercase with no spaces or capitals — exactly as shown.
-        </div>
-      </div>
-
-      <div class="pmt-step-card animate">
-        <div class="pmt-step-num" aria-hidden="true">03</div>
-        <div class="pmt-step-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-        </div>
-        <h3>Submit and confirm</h3>
-        <p>Review the details, confirm the transfer, and submit. You will receive a confirmation email from Interac once the payment has been sent. Keep this confirmation for your records.</p>
-        <div class="pmt-step-note pmt-step-note--success">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-          Payments received before 2 PM ET on a business day are processed the same day.
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     QUICK REFERENCE — dark
-═══════════════════════════════════════ -->
-<section class="section section--dark pmt-ref">
-  <div class="pmt-ref-bg" aria-hidden="true">
-    <div class="pmt-ref-orb-r"></div>
-    <div class="pmt-ref-orb-b"></div>
-    <div class="pmt-ref-beam"></div>
-    <div class="pmt-ref-edge"></div>
-  </div>
-  <div class="container pmt-ref-inner">
-    <div class="pmt-ref-content">
-      <div class="section-header section-header--dark" style="text-align:left;align-items:flex-start">
-        <span class="badge badge-red-dark">Quick reference</span>
-        <h2>Save these details</h2>
-        <p style="color:rgba(255,255,255,0.5)">Screenshot or bookmark this page. You will need these details every time you make a manual payment.</p>
-      </div>
-      <div class="pmt-ref-card animate">
-        <div class="pmt-ref-row">
-          <span class="pmt-ref-label">Recipient email</span>
-          <div class="pmt-ref-val-wrap">
-            <span class="pmt-ref-val">receivables@diamondfinancialone.com</span>
-            <button class="pmt-ref-copy" data-copy="receivables@diamondfinancialone.com" aria-label="Copy email">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
-              <span class="pmt-copy-confirm" aria-live="polite">Copied!</span>
-            </button>
-          </div>
-        </div>
-        <div class="pmt-ref-row">
-          <span class="pmt-ref-label">Security question</span>
-          <span class="pmt-ref-val pmt-ref-val--exact">Who do I owe</span>
-        </div>
-        <div class="pmt-ref-row">
-          <span class="pmt-ref-label">Security answer</span>
-          <span class="pmt-ref-val pmt-ref-val--exact">captaincash</span>
-        </div>
-        <div class="pmt-ref-row">
-          <span class="pmt-ref-label">Processing cut-off</span>
-          <span class="pmt-ref-val">2:00 PM ET — same-day processing</span>
-        </div>
-        <div class="pmt-ref-row">
-          <span class="pmt-ref-label">Questions?</span>
-          <span class="pmt-ref-val"><a href="tel:18882261026">1-888-226-1026</a> · Mon–Fri 8 AM–5 PM ET</span>
-        </div>
-      </div>
-    </div>
-    <div class="pmt-ref-faq animate">
-      <h3 class="pmt-ref-faq-title">Common questions</h3>
-      <div class="faq-list" role="list">
-        <div class="faq-item" role="listitem">
-          <button class="faq-trigger" aria-expanded="false" aria-controls="pmt-faq-1">
-            <span>When will my payment be applied?</span><span class="faq-icon" aria-hidden="true"></span>
-          </button>
-          <div class="faq-body" id="pmt-faq-1" role="region">
-            <p>Payments received before 2:00 PM ET on a business day are processed the same day. Payments received after 2:00 PM ET, or on weekends and holidays, are processed the next business day.</p>
-          </div>
-        </div>
-        <div class="faq-item" role="listitem">
-          <button class="faq-trigger" aria-expanded="false" aria-controls="pmt-faq-2">
-            <span>Can I make a partial early payment?</span><span class="faq-icon" aria-hidden="true"></span>
-          </button>
-          <div class="faq-body" id="pmt-faq-2" role="region">
-            <p>Yes. You can make a partial or full early repayment at any time after your first scheduled payment. Your first payment must be processed as originally scheduled. Contact us at least 48 hours in advance so we can stop the scheduled withdrawal.</p>
-          </div>
-        </div>
-        <div class="faq-item" role="listitem">
-          <button class="faq-trigger" aria-expanded="false" aria-controls="pmt-faq-3">
-            <span>What if I sent to the wrong email?</span><span class="faq-icon" aria-hidden="true"></span>
-          </button>
-          <div class="faq-body" id="pmt-faq-3" role="region">
-            <p>Contact us immediately at 1-888-226-1026 or <a href="mailto:support@captaincash.ca" style="color:#e82020">support@captaincash.ca</a>. If the e-Transfer has not yet been deposited, it may be possible to cancel it through your bank.</p>
-          </div>
-        </div>
-        <div class="faq-item" role="listitem">
-          <button class="faq-trigger" aria-expanded="false" aria-controls="pmt-faq-4">
-            <span>Do I need to notify Captain Cash before sending?</span><span class="faq-icon" aria-hidden="true"></span>
-          </button>
-          <div class="faq-body" id="pmt-faq-4" role="region">
-            <p>For regular scheduled payments, no notification is needed. For early repayments or payments outside your normal schedule, contact us at least 48 hours in advance so we can stop any overlapping scheduled withdrawal.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     NEED HELP — white
-═══════════════════════════════════════ -->
-<section class="section pmt-help">
-  <div class="container">
-    <div class="section-header">
-      <span class="badge badge-red">Need help?</span>
-      <h2>Having trouble with your payment?</h2>
-      <p>Our Halifax-based team is here Monday to Friday. Do not wait — contact us before your payment date to avoid NSF fees.</p>
-    </div>
-    <div class="pmt-help-grid">
-      <a href="tel:18882261026" class="pmt-help-card pmt-help-card--link animate">
-        <div class="pmt-help-icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-        </div>
-        <div>
-          <strong>Call us</strong>
-          <span>1-888-226-1026</span>
-          <small>Mon–Fri · 8 AM–5 PM ET · Fastest response</small>
-        </div>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="pmt-help-arrow" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-      <a href="mailto:support@captaincash.ca" class="pmt-help-card pmt-help-card--link animate">
-        <div class="pmt-help-icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        </div>
-        <div>
-          <strong>Email us</strong>
-          <span>support@captaincash.ca</span>
-          <small>Reply within 1 business day</small>
-        </div>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="pmt-help-arrow" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-      <a href="/support/#costs" class="pmt-help-card animate">
-        <div class="pmt-help-icon pmt-help-icon--blue" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-        </div>
-        <div>
-          <strong>Payment FAQ</strong>
-          <span>Deferral, NSF, early repayment</span>
-          <small>Answers to common payment questions</small>
-        </div>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="pmt-help-arrow" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- Sticky mobile payment bar -->
-<div class="pmt-sticky-bar" id="pmt-sticky-bar" aria-label="Payment email — tap to copy">
-  <div class="pmt-sticky-label">
-    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-    Payment email
-  </div>
-  <button class="pmt-sticky-copy" data-copy="receivables@diamondfinancialone.com" aria-label="Copy payment email address">
-    <span>receivables@diamondfinancialone.com</span>
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
-    <span class="pmt-copy-confirm" aria-live="polite">Copied!</span>
-  </button>
-</div>
-
-</main>
-
-<section class="cta-banner" aria-label="Apply for a loan">
-  <div class="cta-banner-orb cta-banner-orb-1" aria-hidden="true"></div>
-  <div class="cta-banner-orb cta-banner-orb-2" aria-hidden="true"></div>
-  <div class="container cta-banner-inner">
-    <img src="/images/mascot/mascot-fists.webp" alt="" aria-hidden="true" class="cta-mascot" width="140" height="170" loading="lazy">
-    <div class="cta-banner-text">
-      <h2>Ready to get your cash?</h2>
-      <p>Apply in 5 minutes. Get approved today. No credit check required.</p>
-    </div>
-    <div class="cta-banner-actions">
-      <a href="/claim-your-cash/" class="btn btn-primary btn-lg">Claim your cash</a>
-      <a href="tel:18882261026" class="btn-cta-phone">Call 1-888-226-1026</a>
-    </div>
-  </div>
-</section>
-
-<footer class="site-footer site-footer--dark">
-  <div class="footer-bg" aria-hidden="true">
-    <div class="footer-orb-1"></div>
-    <div class="footer-orb-2"></div>
-    <div class="footer-beam"></div>
-    <div class="footer-edge"></div>
-  </div>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="/" class="site-logo-img site-logo-img--footer">
-          <img src="/images/mascot/sprites/logo-lockup-small.webp" alt="Captain Cash" width="140" height="35" loading="eager">
-        </a>
-        <p style="margin-top:1rem;color:var(--gray-400);font-size:0.875rem;line-height:1.7">A fast, fair alternative to payday loans for Canadians who need cash today. Serving Canada since 2015.</p>
-        <address style="margin-top:1rem;font-size:0.8rem;color:var(--gray-500);font-style:normal;line-height:1.7">
-          1701 Hollis Street W. Suite 800<br>
-          Halifax, NS B3J 2T9<br>
-          <a href="tel:18882261026" style="color:var(--gray-400)">1-888-226-1026</a>
-        </address>
-      </div>
-      <div class="footer-col">
-        <h4>Products</h4>
-        <ul>
-          <li><a href="/loans-in-canada/">Loans in Canada</a></li>
-          <li><a href="/payday-loans/">Payday loans</a></li>
-          <li><a href="/bad-credit-loans-canada/">Bad credit loans</a></li>
-          <li><a href="/installment-loans-canada/">Instalment loans</a></li>
-          <li><a href="/no-credit-check-loans-canada/">No credit check</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="/about-us/">About us</a></li>
-          <li><a href="/testimonials/">Reviews</a></li>
-          <li><a href="/blog/">Blog</a></li>
-          <li><a href="/terms-conditions/">Terms and conditions</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Support</h4>
-        <ul>
-          <li><a href="/how-does-it-work/">How it works</a></li>
-          <li><a href="/support/">FAQ</a></li>
-          <li><a href="/online-payment/">Online payment</a></li>
-          <li><a href="/contact-us/">Contact us</a></li>
-          <li><a href="/renew-your-loan/">Renew your loan</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>Captain Cash &copy; 2026, a division of Opal Financial. All Rights Reserved.</p>
-      <p>APR 23% &mdash; <a href="/terms-conditions/" style="color:var(--gray-500)">Privacy Policy</a> &mdash; Borrow responsibly</p>
-    </div>
-  </div>
-</footer>
-
-<script src="/js/main.js" defer></script>
-<script>
-(function() {
-  /* Smooth scroll for hero CTA */
-  var heroCta = document.querySelector('.pmt-hero-cta');
-  if (heroCta) {
-    heroCta.addEventListener('click', function(e) {
-      var target = document.getElementById('steps');
-      if (!target) { target = document.querySelector('.pmt-steps'); }
-      if (target) { e.preventDefault(); window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 90, behavior: 'smooth' }); }
-    });
-  }
-
-  /* Transaction card date */
-  var dateEl = document.getElementById('pmt-txn-date');
-  if (dateEl) {
-    var d = new Date();
-    dateEl.textContent = d.toLocaleDateString('en-CA', { month:'short', day:'numeric', year:'numeric' });
-  }
-
-  /* header scroll */
-  var header = document.getElementById('site-header');
-  if (header) window.addEventListener('scroll', function() {
-    header.classList.toggle('site-header--scrolled', window.scrollY > 60);
-  }, { passive:true });
-
-  /* nav dropdowns */
-  var triggers = document.querySelectorAll('.nav-dropdown-trigger');
-  function closeAll() {
-    triggers.forEach(function(t) {
-      t.setAttribute('aria-expanded','false');
-      var dd = t.nextElementSibling;
-      if (dd) dd.classList.remove('nav-dropdown--open');
-    });
-  }
-  triggers.forEach(function(trigger) {
-    trigger.addEventListener('click', function(e) {
-      e.stopPropagation();
-      var isOpen = trigger.getAttribute('aria-expanded') === 'true';
-      closeAll();
-      if (!isOpen) {
-        trigger.setAttribute('aria-expanded','true');
-        var dd = trigger.nextElementSibling;
-        if (dd) dd.classList.add('nav-dropdown--open');
-      }
-    });
-  });
-  document.addEventListener('click', closeAll);
-  document.addEventListener('keydown', function(e) { if (e.key==='Escape') closeAll(); });
-
-  /* FAQ accordion */
-  document.querySelectorAll('.faq-trigger').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var expanded = btn.getAttribute('aria-expanded') === 'true';
-      var body = document.getElementById(btn.getAttribute('aria-controls'));
-      btn.setAttribute('aria-expanded', !expanded);
-      body.classList.toggle('faq-open', !expanded);
-    });
-  });
-
-  /* Copy buttons */
-  document.querySelectorAll('[data-copy]').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var text = btn.dataset.copy;
-      navigator.clipboard.writeText(text).then(function() {
-        var confirm = btn.querySelector('.pmt-copy-confirm');
-        if (!confirm) return;
-        confirm.style.display = 'inline';
-        setTimeout(function() { confirm.style.display = 'none'; }, 2000);
-      }).catch(function() {
-        /* fallback: select text */
-        var ta = document.createElement('textarea');
-        ta.value = text;
-        document.body.appendChild(ta);
-        ta.select();
-        document.execCommand('copy');
-        document.body.removeChild(ta);
-      });
-    });
-  });
-})();
-</script>
 </body>
 </html>

@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Captain Cash is a licensed Canadian lender founded in 2015. 50-person team. 12,000+ customers. CLA member. Headquartered in Halifax, NS. Learn our.">
   <title>About Captain Cash — Licensed Since 2015 | Captain Cash</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="canonical" href="https://captaincash.ca/about-us/">
   <meta property="og:title" content="About Captain Cash — Licensed Since 2015 | Captain Cash">
   <meta property="og:description" content="Founded in 2015 to give Canadians an alternative to bank rejections. 50-person team, 12,000+ customers, CLA member, licensed in 9 provinces.">
@@ -14,10 +15,9 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Captain Cash — Online loans in Canada. Get cash today. No credit check.">
+  <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://captaincash-redesign.netlify.app/images/og-image.jpg">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -63,10 +63,635 @@
     ]
   }
   </script>
-  <link rel="preload" href="/css/main.css" as="style">
   <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header site-header--dark" id="site-header">
+  <div class="container header-inner">
+    <a href="/" class="site-logo-img">
+      <img src="/images/mascot/sprites/logo-lockup-small.webp" alt="Captain Cash — Here to save the day" width="192" height="48" loading="eager">
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+
+      <!-- Products dropdown -->
+      <div class="nav-item nav-item--dropdown">
+        <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+          Products
+          <svg class="nav-chev" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
+        </button>
+        <div class="nav-dropdown" role="menu">
+          <a href="/claim-your-cash/" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--red" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>Get a loan</strong>
+              <span>$500–$1,000, same business day</span>
+            </span>
+          </a>
+          <a href="/renew-your-loan/" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--amber" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>Renew your loan</strong>
+              <span>Fast track for returning customers</span>
+            </span>
+          </a>
+          <a href="/online-payment/" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--blue" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>Online payment</strong>
+              <span>Pay or manage your existing loan</span>
+            </span>
+          </a>
+          <div class="nav-drop-sep" aria-hidden="true"></div>
+          
+        </div>
+      </div>
+
+      <!-- Learn dropdown -->
+      <div class="nav-item nav-item--dropdown">
+        <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+          Learn
+          <svg class="nav-chev" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
+        </button>
+        <div class="nav-dropdown" role="menu">
+          <a href="/how-does-it-work/" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--blue" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>How it works</strong>
+              <span>Apply, approve, get funded</span>
+            </span>
+          </a>
+          <a href="/support/" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--green" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>FAQ</strong>
+              <span>Common questions answered</span>
+            </span>
+          </a>
+          <a href="/about-us/" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--red" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>About Captain Cash</strong>
+              <span>Canadian lender since 2015</span>
+            </span>
+          </a>
+          <a href="/testimonials/" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--amber" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>Reviews</strong>
+              <span>What customers say</span>
+            </span>
+          </a>
+          <div class="nav-drop-sep" aria-hidden="true"></div>
+          <a href="/blog/" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--amber" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>Blog</strong>
+              <span>Tips for Canadian borrowers</span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Direct links -->
+      <a href="/contact-us/" class="nav-link-plain">Contact</a>
+
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:18882261026" class="nav-phone nav-phone--dark" aria-label="Call us at 1-888-226-1026">
+        <span class="nav-phone-icon" aria-hidden="true">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#e82020" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        </span>
+        <span class="nav-phone-text">
+          <span class="nav-phone-label">Call us</span>
+          <span class="nav-phone-num">1-888-226-1026</span>
+        </span>
+      </a>
+      <a href="/claim-your-cash/" class="btn-header-red">Get a loan</a>
+      <a href="/renew-your-loan/" class="btn-header-amber">Renew</a>
+    </div>
+    <button class="hamburger hamburger--dark" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════
+     TRUST BAR
+═══════════════════════════════════════ -->
+<div class="trust-bar" role="complementary" aria-label="Trust credentials">
+  <div class="container trust-bar-inner">
+    <div class="trust-bar-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <span>CLA member since 2015</span>
+    </div>
+    <div class="trust-bar-divider" aria-hidden="true"></div>
+    <div class="trust-bar-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      <span>SSL encrypted</span>
+    </div>
+    <div class="trust-bar-divider" aria-hidden="true"></div>
+    <div class="trust-bar-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      <span>12,000+ Canadians served</span>
+    </div>
+    <div class="trust-bar-divider" aria-hidden="true"></div>
+    <div class="trust-bar-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+      <span>Provincially licensed</span>
+    </div>
+    <div class="trust-bar-divider" aria-hidden="true"></div>
+    <div class="trust-bar-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      <span>Same-day e-Transfer</span>
+    </div>
+    <div class="trust-bar-divider" aria-hidden="true"></div>
+    <div class="trust-bar-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+      <span>APR 23% — transparent</span>
+    </div>
+  </div>
+</div>
+
+<main>
+<main>
+
+<!-- ═══════════════════════════════════════
+     HERO — dark
+═══════════════════════════════════════ -->
+<section class="section section--dark abt-hero">
+  <div class="abt-hero-bg" aria-hidden="true">
+    <div class="abt-orb-r"></div>
+    <div class="abt-orb-b"></div>
+    <div class="abt-beam"></div>
+    <div class="abt-edge"></div>
+  </div>
+  <div class="container abt-hero-inner">
+    <div class="abt-hero-content">
+      <nav aria-label="Breadcrumb" class="hiw-breadcrumb">
+        <a href="/">Home</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">About us</span>
+      </nav>
+      <span class="badge badge-red-dark">Our story</span>
+      <h1>A team of 50 Canadians helping Canadians since 2015</h1>
+      <p class="abt-hero-sub">Captain Cash was founded with a single purpose: to give Canadians a fair, fast alternative when traditional banks say no. We have been doing it for over a decade — and we are just getting started.</p>
+      <div class="abt-hero-stats">
+        <div class="abt-stat animate">
+          <strong>2015</strong>
+          <span>Year founded</span>
+        </div>
+        <div class="abt-stat-div" aria-hidden="true"></div>
+        <div class="abt-stat animate">
+          <strong>50</strong>
+          <span>Team members</span>
+        </div>
+        <div class="abt-stat-div" aria-hidden="true"></div>
+        <div class="abt-stat animate">
+          <strong>12,000+</strong>
+          <span>Canadians helped</span>
+        </div>
+        <div class="abt-stat-div" aria-hidden="true"></div>
+        <div class="abt-stat animate">
+          <strong>9</strong>
+          <span>Provinces &amp; territories</span>
+        </div>
+        <div class="abt-stat-div" aria-hidden="true"></div>
+        <div class="abt-stat animate">
+          <strong>CLA</strong>
+          <span>Member since 2015</span>
+        </div>
+      </div>
+    </div>
+    <div class="abt-hero-visual" aria-hidden="true">
+      <img src="/images/mascot.webp" alt="" width="210" height="256" loading="eager" class="abt-hero-mascot">
+      <div class="abt-hero-glow"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     OUR STORY — white
+═══════════════════════════════════════ -->
+<section class="section abt-story">
+  <div class="container abt-story-inner">
+    <div class="abt-story-text animate">
+      <span class="badge badge-red">How it started</span>
+      <h2>Built for Canadians the banks turned away</h2>
+      <p>Captain Cash was incorporated in British Columbia in January 2015. The idea was straightforward — millions of Canadians have steady jobs and pay their bills on time, but a thin or imperfect credit file is enough for a traditional bank to turn them down. We believed that was wrong.</p>
+      <p>We built a lending model based on income and banking activity, not credit scores. From day one, that meant reviewing pay history, account stability, and debt load — factors that actually reflect whether someone can repay a loan, rather than a three-digit number from a reporting agency.</p>
+      <p>Over the following decade, we relocated our headquarters to Halifax, Nova Scotia, grew our team to 50 people, and expanded our lending licence to nine provinces and territories. We joined the Canadian Lenders Association — a commitment to industry standards, responsible lending, and consumer protection that we take seriously.</p>
+      <p>Today Captain Cash is a division of Opal Financial. The ownership has evolved, but the mission has not: provide fair, fast, transparent lending to Canadians who need a short-term bridge — and treat every customer with the respect they deserve.</p>
+    </div>
+    <div class="abt-story-milestones animate">
+      <h3 class="abt-milestones-title">Key milestones</h3>
+      <div class="abt-timeline">
+        <div class="abt-tl-item">
+          <div class="abt-tl-dot"></div>
+          <div class="abt-tl-body">
+            <strong>January 2015</strong>
+            <span>Founded in British Columbia — first loans issued</span>
+          </div>
+        </div>
+        <div class="abt-tl-item">
+          <div class="abt-tl-dot"></div>
+          <div class="abt-tl-body">
+            <strong>2015</strong>
+            <span>Joined the Canadian Lenders Association (CLA)</span>
+          </div>
+        </div>
+        <div class="abt-tl-item">
+          <div class="abt-tl-dot"></div>
+          <div class="abt-tl-body">
+            <strong>2017–2019</strong>
+            <span>Expanded licensing to Ontario, Alberta, and Atlantic provinces</span>
+          </div>
+        </div>
+        <div class="abt-tl-item">
+          <div class="abt-tl-dot"></div>
+          <div class="abt-tl-body">
+            <strong>2020</strong>
+            <span>Headquarters relocated to Halifax, Nova Scotia</span>
+          </div>
+        </div>
+        <div class="abt-tl-item">
+          <div class="abt-tl-dot"></div>
+          <div class="abt-tl-body">
+            <strong>2021–2024</strong>
+            <span>Team grew to 50 · surpassed 10,000 customers served</span>
+          </div>
+        </div>
+        <div class="abt-tl-item">
+          <div class="abt-tl-dot abt-tl-dot--active"></div>
+          <div class="abt-tl-body">
+            <strong>Today</strong>
+            <span>12,000+ customers across 9 provinces &amp; territories</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     WHAT WE STAND FOR — dark
+═══════════════════════════════════════ -->
+<section class="section section--dark abt-values">
+  <div class="abt-values-bg" aria-hidden="true">
+    <div class="abt-v-orb-r"></div>
+    <div class="abt-v-orb-b"></div>
+    <div class="abt-v-beam"></div>
+    <div class="abt-v-edge"></div>
+  </div>
+  <div class="container" style="position:relative;z-index:2">
+    <div class="section-header section-header--dark">
+      <span class="badge badge-red-dark">What we stand for</span>
+      <h2>Four principles we never compromise on</h2>
+      <p>These are not marketing statements. They are commitments that shape every decision we make — from product design to how we handle a missed payment.</p>
+    </div>
+    <div class="abt-values-grid">
+      <div class="bento-card animate">
+        <div class="bento-card-shine" aria-hidden="true"></div>
+        <div class="bento-icon bento-icon--green" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <h4>Transparency</h4>
+        <p>Every fee, every rate, every repayment amount — shown before you sign. No hidden costs, no teaser rates. You see the full picture before you make a decision.</p>
+      </div>
+      <div class="bento-card animate">
+        <div class="bento-card-shine" aria-hidden="true"></div>
+        <div class="bento-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h4>Speed</h4>
+        <p>A 5-minute application. Same-day decisions. Funds by Interac e-Transfer the same business day if approved before 2 PM ET. We respect that your time is valuable.</p>
+      </div>
+      <div class="bento-card animate">
+        <div class="bento-card-shine" aria-hidden="true"></div>
+        <div class="bento-icon bento-icon--blue" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h4>Fairness</h4>
+        <p>We assess income and banking history — not a credit score. A difficult financial past should not permanently close the door on someone who is in a stable situation today.</p>
+      </div>
+      <div class="bento-card animate">
+        <div class="bento-card-shine" aria-hidden="true"></div>
+        <div class="bento-icon bento-icon--amber" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </div>
+        <h4>Responsibility</h4>
+        <p>We actively discourage borrowing as a long-term habit. We refer customers to credit counselling when it is the right choice. Our goal is to help — not to trap anyone in a cycle of debt.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     BY THE NUMBERS — white
+═══════════════════════════════════════ -->
+<section class="section abt-numbers">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge badge-red">By the numbers</span>
+      <h2>A decade of responsible lending</h2>
+      <p>The numbers behind ten years of serving Canadians — honestly and transparently.</p>
+    </div>
+    <div class="abt-numbers-grid">
+      <div class="abt-number-card animate">
+        <div class="abt-number-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        </div>
+        <strong>10+ years</strong>
+        <span>In operation since January 2015</span>
+      </div>
+      <div class="abt-number-card animate">
+        <div class="abt-number-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <strong>12,000+</strong>
+        <span>Canadians helped with a loan</span>
+      </div>
+      <div class="abt-number-card animate">
+        <div class="abt-number-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <strong>50 people</strong>
+        <span>In-house team in Halifax, NS</span>
+      </div>
+      <div class="abt-number-card animate">
+        <div class="abt-number-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <strong>9 provinces</strong>
+        <span>Provincially licensed across Canada</span>
+      </div>
+      <div class="abt-number-card animate">
+        <div class="abt-number-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <strong>5 minutes</strong>
+        <span>Average time to complete an application</span>
+      </div>
+      <div class="abt-number-card animate">
+        <div class="abt-number-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <strong>Same day</strong>
+        <span>Funding if approved before 2 PM ET</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     COMMITMENT — dark
+═══════════════════════════════════════ -->
+<section class="section section--dark abt-commit">
+  <div class="abt-commit-bg" aria-hidden="true">
+    <div class="abt-c-orb-r"></div>
+    <div class="abt-c-orb-b"></div>
+    <div class="abt-c-beam"></div>
+    <div class="abt-c-edge"></div>
+  </div>
+  <div class="container abt-commit-inner">
+    <div class="abt-commit-text animate">
+      <span class="badge badge-red-dark">Our commitment</span>
+      <h2>We are lenders — not debt traps</h2>
+      <p>Short-term loans carry higher interest rates than traditional bank products. We acknowledge that directly. A $500 loan repays approximately $750 — an APR of 23%. That cost is real, and it is justified only when the need is genuine and the repayment is manageable.</p>
+      <p>We do not want customers to borrow repeatedly for everyday expenses. We do not design our products to encourage dependency. If a customer contacts us because they are struggling, our team's first priority is to find the most workable solution — which sometimes means suggesting free credit counselling rather than another loan.</p>
+      <p>We believe a lender's reputation is built over years, not marketing campaigns. Our reputation is built on 12,000+ customers who were treated fairly, received their money on time, and knew exactly what they were signing.</p>
+      <div class="abt-commit-resource">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07"/><path d="M3.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3"/></svg>
+        Struggling with debt? Free help is available from the <a href="https://nomoredebts.org" target="_blank" rel="noopener">Credit Counselling Society</a> at 1-888-527-8999.
+      </div>
+    </div>
+    <div class="abt-commit-card animate">
+      <h3>Our lending standards</h3>
+      <div class="abt-standard-row">
+        <span class="abt-standard-icon abt-standard-icon--green" aria-hidden="true">✓</span>
+        <div>
+          <strong>APR disclosed upfront</strong>
+          <span>23% APR on all loans — shown before you apply</span>
+        </div>
+      </div>
+      <div class="abt-standard-row">
+        <span class="abt-standard-icon abt-standard-icon--green" aria-hidden="true">✓</span>
+        <div>
+          <strong>No hard credit inquiry</strong>
+          <span>Your score is not affected by applying</span>
+        </div>
+      </div>
+      <div class="abt-standard-row">
+        <span class="abt-standard-icon abt-standard-icon--green" aria-hidden="true">✓</span>
+        <div>
+          <strong>No prepayment penalty</strong>
+          <span>Repay early at any time — free of charge</span>
+        </div>
+      </div>
+      <div class="abt-standard-row">
+        <span class="abt-standard-icon abt-standard-icon--green" aria-hidden="true">✓</span>
+        <div>
+          <strong>Direct lender</strong>
+          <span>Your data never sold or shared</span>
+        </div>
+      </div>
+      <div class="abt-standard-row">
+        <span class="abt-standard-icon abt-standard-icon--green" aria-hidden="true">✓</span>
+        <div>
+          <strong>CLA member</strong>
+          <span>Held to Canadian Lenders Association standards</span>
+        </div>
+      </div>
+      <div class="abt-standard-row">
+        <span class="abt-standard-icon abt-standard-icon--green" aria-hidden="true">✓</span>
+        <div>
+          <strong>Provincially licensed</strong>
+          <span>Regulated in every province we operate</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     WHERE WE OPERATE — white
+═══════════════════════════════════════ -->
+<section class="section abt-provinces">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge badge-green">Where we operate</span>
+      <h2>Licensed across Canada</h2>
+      <p>Captain Cash is provincially licensed and regulated in every province and territory where we lend.</p>
+    </div>
+    <div class="abt-provinces-inner animate">
+      <div class="abt-province-tags" role="list" aria-label="Provinces and territories served">
+        <span role="listitem" class="abt-province-tag abt-province-tag--active">Ontario</span>
+        <span role="listitem" class="abt-province-tag abt-province-tag--active">British Columbia</span>
+        <span role="listitem" class="abt-province-tag abt-province-tag--active">Alberta</span>
+        <span role="listitem" class="abt-province-tag abt-province-tag--active">Nova Scotia</span>
+        <span role="listitem" class="abt-province-tag abt-province-tag--active">New Brunswick</span>
+        <span role="listitem" class="abt-province-tag abt-province-tag--active">PEI</span>
+        <span role="listitem" class="abt-province-tag abt-province-tag--active">Newfoundland &amp; Labrador</span>
+        <span role="listitem" class="abt-province-tag abt-province-tag--active">Nunavut</span>
+        <span role="listitem" class="abt-province-tag abt-province-tag--active">Northwest Territories</span>
+        <span role="listitem" class="abt-province-tag abt-province-tag--inactive">Quebec <span class="abt-province-tag-note">not available</span></span>
+        <span role="listitem" class="abt-province-tag abt-province-tag--inactive">Manitoba <span class="abt-province-tag-note">not available</span></span>
+        <span role="listitem" class="abt-province-tag abt-province-tag--inactive">Saskatchewan <span class="abt-province-tag-note">not available</span></span>
+      </div>
+      <div class="abt-hq-card">
+        <div class="abt-hq-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div>
+          <strong>Headquarters</strong>
+          <address>
+            1701 Hollis Street W. Suite 800<br>
+            Halifax, NS &nbsp;B3J 2T9<br>
+            <a href="tel:18882261026">1-888-226-1026</a><br>
+            <a href="mailto:support@captaincash.ca">support@captaincash.ca</a>
+          </address>
+          <p class="abt-hq-hours">Mon–Fri · 8:00 AM–5:00 PM ET</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<section class="cta-banner" aria-label="Apply for a loan">
+  <div class="cta-banner-orb cta-banner-orb-1" aria-hidden="true"></div>
+  <div class="cta-banner-orb cta-banner-orb-2" aria-hidden="true"></div>
+  <div class="container cta-banner-inner">
+    <img src="/images/mascot/mascot-fists.webp" alt="" aria-hidden="true" class="cta-mascot" width="140" height="170" loading="lazy">
+    <div class="cta-banner-text">
+      <h2>Ready to get your cash?</h2>
+      <p>Apply in 5 minutes. Get approved today. No credit check required.</p>
+    </div>
+    <div class="cta-banner-actions">
+      <a href="/claim-your-cash/" class="btn btn-primary btn-lg">Claim your cash</a>
+      <a href="tel:18882261026" class="btn-cta-phone">Call 1-888-226-1026</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer site-footer--dark">
+  <div class="footer-bg" aria-hidden="true">
+    <div class="footer-orb-1"></div>
+    <div class="footer-orb-2"></div>
+    <div class="footer-beam"></div>
+    <div class="footer-edge"></div>
+  </div>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="site-logo-img site-logo-img--footer">
+          <img src="/images/mascot/sprites/logo-lockup-small.webp" alt="Captain Cash" width="140" height="35" loading="lazy">
+        </a>
+        <p style="margin-top:1rem;color:var(--gray-400);font-size:0.875rem;line-height:1.7">A fast, fair alternative to payday loans for Canadians who need cash today. Serving Canada since 2015.</p>
+        <address style="margin-top:1rem;font-size:0.8rem;color:var(--gray-500);font-style:normal;line-height:1.7">
+          1701 Hollis Street W. Suite 800<br>
+          Halifax, NS B3J 2T9<br>
+          <a href="tel:18882261026" style="color:var(--gray-400)">1-888-226-1026</a>
+        </address>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="/loans-in-canada/">Loans in Canada</a></li>
+          <li><a href="/payday-loans/">Payday loans</a></li>
+          <li><a href="/bad-credit-loans-canada/">Bad credit loans</a></li>
+          <li><a href="/installment-loans-canada/">Instalment loans</a></li>
+          <li><a href="/no-credit-check-loans-canada/">No credit check</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about-us/">About us</a></li>
+          <li><a href="/testimonials/">Reviews</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/terms-conditions/">Terms and conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="/how-does-it-work/">How it works</a></li>
+          <li><a href="/support/">FAQ</a></li>
+          <li><a href="/online-payment/">Online payment</a></li>
+          <li><a href="/contact-us/">Contact us</a></li>
+          <li><a href="/renew-your-loan/">Renew your loan</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Captain Cash &copy; 2026, a division of Opal Financial. All Rights Reserved.</p>
+      <p>APR 23% &mdash; <a href="/terms-conditions/" style="color:var(--gray-500)">Privacy Policy</a> &mdash; Borrow responsibly</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+<script>
+(function() {
+  var header = document.getElementById('site-header');
+  if (header) {
+    window.addEventListener('scroll', function() {
+      header.classList.toggle('site-header--scrolled', window.scrollY > 60);
+    }, { passive: true });
+  }
+  var triggers = document.querySelectorAll('.nav-dropdown-trigger');
+  function closeAll() {
+    triggers.forEach(function(t) {
+      t.setAttribute('aria-expanded','false');
+      var dd = t.nextElementSibling;
+      if (dd) dd.classList.remove('nav-dropdown--open');
+    });
+  }
+  triggers.forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var isOpen = trigger.getAttribute('aria-expanded') === 'true';
+      closeAll();
+      if (!isOpen) {
+        trigger.setAttribute('aria-expanded','true');
+        var dd = trigger.nextElementSibling;
+        if (dd) dd.classList.add('nav-dropdown--open');
+      }
+    });
+  });
+  document.addEventListener('click', closeAll);
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeAll(); });
+})();
+</script>
+
 <style>
-/* ══ ABOUT-US — page-specific styles ══ */
+/* Skip to content link */
+.skip-link { position:absolute;top:-100px;left:1rem;padding:8px 16px;background:#e82020;color:#fff;font-size:0.875rem;font-weight:700;border-radius:0 0 8px 8px;text-decoration:none;z-index:9999;transition:top 0.1s; }
+.skip-link:focus { top:0; }
+/* ══════════════════════════════════════
+   ABOUT — Page Styles
+══════════════════════════════════════ */
+
+/* Hero */
 .abt-hero { position:relative;overflow:hidden; }
 .abt-hero-bg,.abt-values-bg,.abt-commit-bg { position:absolute;inset:0;pointer-events:none;overflow:hidden; }
 .abt-orb-r,.abt-v-orb-r,.abt-c-orb-r { position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(232,32,32,0.18) 0%,transparent 65%);bottom:-280px;right:-160px;filter:blur(20px);animation:orbPulse 8s ease-in-out infinite; }
@@ -424,8 +1049,6 @@
 .hero-float-dot--green { background:#4ade80; box-shadow:0 0 8px #4ade80; animation:dotPulse 2s infinite; }
 .hero-float-dot--amber { background:#fbbf24; box-shadow:0 0 8px #fbbf24; animation:dotPulse 2.4s infinite; }
 @keyframes dotPulse { 0%,100%{opacity:1;} 50%{opacity:0.45;} }
-
-
 
 /* hero layout */
 .hero-inner {
@@ -1423,7 +2046,6 @@ h1 em {
    ≤479      small phone
 ══════════════════════════════════════ */
 
-
 /* ── small laptop (900–1199px) ── */
 /* ══════════════════════════════════════
    RESPONSIVE — 4 breakpoints
@@ -1521,7 +2143,6 @@ h1 em {
   .testimonials-grid { grid-template-columns:1fr; }
   .faq-cols { grid-template-columns:1fr; gap:0; }
 
-
   /* CTA banner */
   .cta-banner-text { text-align:center; }
   .cta-banner h2 { font-size:1.5rem; }
@@ -1559,623 +2180,5 @@ h1 em {
   .cta-banner-actions .btn,.cta-banner-actions .btn-cta-phone { width:100%; text-align:center; justify-content:center; }
 }
 </style>
-</head>
-<body>
-<a href="#main" class="skip-link">Skip to content</a>
-
-<header class="site-header site-header--dark" id="site-header">
-  <div class="container header-inner">
-    <a href="/" class="site-logo-img">
-      <img src="/images/mascot/sprites/logo-lockup-small.webp" alt="Captain Cash — Here to save the day" width="192" height="48" loading="eager">
-    </a>
-    <nav class="nav-links" aria-label="Main navigation">
-
-      <!-- Products dropdown -->
-      <div class="nav-item nav-item--dropdown">
-        <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">
-          Products
-          <svg class="nav-chev" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
-        </button>
-        <div class="nav-dropdown" role="menu">
-          <a href="/claim-your-cash/" class="nav-drop-item" role="menuitem">
-            <span class="nav-drop-icon nav-drop-icon--red" aria-hidden="true">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
-            </span>
-            <span class="nav-drop-text">
-              <strong>Get a loan</strong>
-              <span>$500–$1,000, same business day</span>
-            </span>
-          </a>
-          <a href="/renew-your-loan/" class="nav-drop-item" role="menuitem">
-            <span class="nav-drop-icon nav-drop-icon--amber" aria-hidden="true">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg>
-            </span>
-            <span class="nav-drop-text">
-              <strong>Renew your loan</strong>
-              <span>Fast track for returning customers</span>
-            </span>
-          </a>
-          <a href="/online-payment/" class="nav-drop-item" role="menuitem">
-            <span class="nav-drop-icon nav-drop-icon--blue" aria-hidden="true">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
-            </span>
-            <span class="nav-drop-text">
-              <strong>Online payment</strong>
-              <span>Pay or manage your existing loan</span>
-            </span>
-          </a>
-          <div class="nav-drop-sep" aria-hidden="true"></div>
-          
-        </div>
-      </div>
-
-      <!-- Learn dropdown -->
-      <div class="nav-item nav-item--dropdown">
-        <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">
-          Learn
-          <svg class="nav-chev" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
-        </button>
-        <div class="nav-dropdown" role="menu">
-          <a href="/how-does-it-work/" class="nav-drop-item" role="menuitem">
-            <span class="nav-drop-icon nav-drop-icon--blue" aria-hidden="true">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            </span>
-            <span class="nav-drop-text">
-              <strong>How it works</strong>
-              <span>Apply, approve, get funded</span>
-            </span>
-          </a>
-          <a href="/support/" class="nav-drop-item" role="menuitem">
-            <span class="nav-drop-icon nav-drop-icon--green" aria-hidden="true">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-            </span>
-            <span class="nav-drop-text">
-              <strong>FAQ</strong>
-              <span>Common questions answered</span>
-            </span>
-          </a>
-          <a href="/about-us/" class="nav-drop-item" role="menuitem">
-            <span class="nav-drop-icon nav-drop-icon--red" aria-hidden="true">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
-            </span>
-            <span class="nav-drop-text">
-              <strong>About Captain Cash</strong>
-              <span>Canadian lender since 2015</span>
-            </span>
-          </a>
-          <a href="/testimonials/" class="nav-drop-item" role="menuitem">
-            <span class="nav-drop-icon nav-drop-icon--amber" aria-hidden="true">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-            </span>
-            <span class="nav-drop-text">
-              <strong>Reviews</strong>
-              <span>What customers say</span>
-            </span>
-          </a>
-          <div class="nav-drop-sep" aria-hidden="true"></div>
-          <a href="/blog/" class="nav-drop-item" role="menuitem">
-            <span class="nav-drop-icon nav-drop-icon--amber" aria-hidden="true">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
-            </span>
-            <span class="nav-drop-text">
-              <strong>Blog</strong>
-              <span>Tips for Canadian borrowers</span>
-            </span>
-          </a>
-        </div>
-      </div>
-
-      <!-- Direct links -->
-      <a href="/contact-us/" class="nav-link-plain">Contact</a>
-
-    </nav>
-    <div class="nav-cta">
-      <a href="tel:18882261026" class="nav-phone nav-phone--dark" aria-label="Call us at 1-888-226-1026">
-        <span class="nav-phone-icon" aria-hidden="true">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#e82020" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-        </span>
-        <span class="nav-phone-text">
-          <span class="nav-phone-label">Call us</span>
-          <span class="nav-phone-num">1-888-226-1026</span>
-        </span>
-      </a>
-      <a href="/claim-your-cash/" class="btn-header-red">Get a loan</a>
-      <a href="/renew-your-loan/" class="btn-header-amber">Renew</a>
-    </div>
-    <button class="hamburger hamburger--dark" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
-
-<!-- ═══════════════════════════════════════
-     TRUST BAR
-═══════════════════════════════════════ -->
-<div class="trust-bar" role="complementary" aria-label="Trust credentials">
-  <div class="container trust-bar-inner">
-    <div class="trust-bar-item">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-      <span>CLA member since 2015</span>
-    </div>
-    <div class="trust-bar-divider" aria-hidden="true"></div>
-    <div class="trust-bar-item">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-      <span>SSL encrypted</span>
-    </div>
-    <div class="trust-bar-divider" aria-hidden="true"></div>
-    <div class="trust-bar-item">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-      <span>12,000+ Canadians served</span>
-    </div>
-    <div class="trust-bar-divider" aria-hidden="true"></div>
-    <div class="trust-bar-item">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-      <span>Provincially licensed</span>
-    </div>
-    <div class="trust-bar-divider" aria-hidden="true"></div>
-    <div class="trust-bar-item">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-      <span>Same-day e-Transfer</span>
-    </div>
-    <div class="trust-bar-divider" aria-hidden="true"></div>
-    <div class="trust-bar-item">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-      <span>APR 23% — transparent</span>
-    </div>
-  </div>
-</div>
-
-<main>
-<main>
-
-<!-- ═══════════════════════════════════════
-     HERO — dark
-═══════════════════════════════════════ -->
-<section class="section section--dark abt-hero">
-  <div class="abt-hero-bg" aria-hidden="true">
-    <div class="abt-orb-r"></div>
-    <div class="abt-orb-b"></div>
-    <div class="abt-beam"></div>
-    <div class="abt-edge"></div>
-  </div>
-  <div class="container abt-hero-inner">
-    <div class="abt-hero-content">
-      <nav aria-label="Breadcrumb" class="hiw-breadcrumb">
-        <a href="/">Home</a>
-        <span aria-hidden="true">›</span>
-        <span aria-current="page">About us</span>
-      </nav>
-      <span class="badge badge-red-dark">Our story</span>
-      <h1>A team of 50 Canadians helping Canadians since 2015</h1>
-      <p class="abt-hero-sub">Captain Cash was founded with a single purpose: to give Canadians a fair, fast alternative when traditional banks say no. We have been doing it for over a decade — and we are just getting started.</p>
-      <div class="abt-hero-stats">
-        <div class="abt-stat animate">
-          <strong>2015</strong>
-          <span>Year founded</span>
-        </div>
-        <div class="abt-stat-div" aria-hidden="true"></div>
-        <div class="abt-stat animate">
-          <strong>50</strong>
-          <span>Team members</span>
-        </div>
-        <div class="abt-stat-div" aria-hidden="true"></div>
-        <div class="abt-stat animate">
-          <strong>12,000+</strong>
-          <span>Canadians helped</span>
-        </div>
-        <div class="abt-stat-div" aria-hidden="true"></div>
-        <div class="abt-stat animate">
-          <strong>9</strong>
-          <span>Provinces &amp; territories</span>
-        </div>
-        <div class="abt-stat-div" aria-hidden="true"></div>
-        <div class="abt-stat animate">
-          <strong>CLA</strong>
-          <span>Member since 2015</span>
-        </div>
-      </div>
-    </div>
-    <div class="abt-hero-visual" aria-hidden="true">
-      <img src="/images/mascot.webp" alt="" width="210" height="256" loading="eager" fetchpriority="high" class="abt-hero-mascot">
-      <div class="abt-hero-glow"></div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     OUR STORY — white
-═══════════════════════════════════════ -->
-<section class="section abt-story">
-  <div class="container abt-story-inner">
-    <div class="abt-story-text animate">
-      <span class="badge badge-red">How it started</span>
-      <h2>Built for Canadians the banks turned away</h2>
-      <p>Captain Cash was incorporated in British Columbia in January 2015. The idea was straightforward — millions of Canadians have steady jobs and pay their bills on time, but a thin or imperfect credit file is enough for a traditional bank to turn them down. We believed that was wrong.</p>
-      <p>We built a lending model based on income and banking activity, not credit scores. From day one, that meant reviewing pay history, account stability, and debt load — factors that actually reflect whether someone can repay a loan, rather than a three-digit number from a reporting agency.</p>
-      <p>Over the following decade, we relocated our headquarters to Halifax, Nova Scotia, grew our team to 50 people, and expanded our lending licence to nine provinces and territories. We joined the Canadian Lenders Association — a commitment to industry standards, responsible lending, and consumer protection that we take seriously.</p>
-      <p>Today Captain Cash is a division of Opal Financial. The ownership has evolved, but the mission has not: provide fair, fast, transparent lending to Canadians who need a short-term bridge — and treat every customer with the respect they deserve.</p>
-    </div>
-    <div class="abt-story-milestones animate">
-      <h3 class="abt-milestones-title">Key milestones</h3>
-      <div class="abt-timeline">
-        <div class="abt-tl-item">
-          <div class="abt-tl-dot"></div>
-          <div class="abt-tl-body">
-            <strong>January 2015</strong>
-            <span>Founded in British Columbia — first loans issued</span>
-          </div>
-        </div>
-        <div class="abt-tl-item">
-          <div class="abt-tl-dot"></div>
-          <div class="abt-tl-body">
-            <strong>2015</strong>
-            <span>Joined the Canadian Lenders Association (CLA)</span>
-          </div>
-        </div>
-        <div class="abt-tl-item">
-          <div class="abt-tl-dot"></div>
-          <div class="abt-tl-body">
-            <strong>2017–2019</strong>
-            <span>Expanded licensing to Ontario, Alberta, and Atlantic provinces</span>
-          </div>
-        </div>
-        <div class="abt-tl-item">
-          <div class="abt-tl-dot"></div>
-          <div class="abt-tl-body">
-            <strong>2020</strong>
-            <span>Headquarters relocated to Halifax, Nova Scotia</span>
-          </div>
-        </div>
-        <div class="abt-tl-item">
-          <div class="abt-tl-dot"></div>
-          <div class="abt-tl-body">
-            <strong>2021–2024</strong>
-            <span>Team grew to 50 · surpassed 10,000 customers served</span>
-          </div>
-        </div>
-        <div class="abt-tl-item">
-          <div class="abt-tl-dot abt-tl-dot--active"></div>
-          <div class="abt-tl-body">
-            <strong>Today</strong>
-            <span>12,000+ customers across 9 provinces &amp; territories</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     WHAT WE STAND FOR — dark
-═══════════════════════════════════════ -->
-<section class="section section--dark abt-values">
-  <div class="abt-values-bg" aria-hidden="true">
-    <div class="abt-v-orb-r"></div>
-    <div class="abt-v-orb-b"></div>
-    <div class="abt-v-beam"></div>
-    <div class="abt-v-edge"></div>
-  </div>
-  <div class="container" style="position:relative;z-index:2">
-    <div class="section-header section-header--dark">
-      <span class="badge badge-red-dark">What we stand for</span>
-      <h2>Four principles we never compromise on</h2>
-      <p>These are not marketing statements. They are commitments that shape every decision we make — from product design to how we handle a missed payment.</p>
-    </div>
-    <div class="abt-values-grid">
-      <div class="bento-card animate">
-        <div class="bento-card-shine" aria-hidden="true"></div>
-        <div class="bento-icon bento-icon--green" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-        </div>
-        <h4>Transparency</h4>
-        <p>Every fee, every rate, every repayment amount — shown before you sign. No hidden costs, no teaser rates. You see the full picture before you make a decision.</p>
-      </div>
-      <div class="bento-card animate">
-        <div class="bento-card-shine" aria-hidden="true"></div>
-        <div class="bento-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        </div>
-        <h4>Speed</h4>
-        <p>A 5-minute application. Same-day decisions. Funds by Interac e-Transfer the same business day if approved before 2 PM ET. We respect that your time is valuable.</p>
-      </div>
-      <div class="bento-card animate">
-        <div class="bento-card-shine" aria-hidden="true"></div>
-        <div class="bento-icon bento-icon--blue" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        </div>
-        <h4>Fairness</h4>
-        <p>We assess income and banking history — not a credit score. A difficult financial past should not permanently close the door on someone who is in a stable situation today.</p>
-      </div>
-      <div class="bento-card animate">
-        <div class="bento-card-shine" aria-hidden="true"></div>
-        <div class="bento-icon bento-icon--amber" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
-        </div>
-        <h4>Responsibility</h4>
-        <p>We actively discourage borrowing as a long-term habit. We refer customers to credit counselling when it is the right choice. Our goal is to help — not to trap anyone in a cycle of debt.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     BY THE NUMBERS — white
-═══════════════════════════════════════ -->
-<section class="section abt-numbers">
-  <div class="container">
-    <div class="section-header">
-      <span class="badge badge-red">By the numbers</span>
-      <h2>A decade of responsible lending</h2>
-      <p>The numbers behind ten years of serving Canadians — honestly and transparently.</p>
-    </div>
-    <div class="abt-numbers-grid">
-      <div class="abt-number-card animate">
-        <div class="abt-number-icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-        </div>
-        <strong>10+ years</strong>
-        <span>In operation since January 2015</span>
-      </div>
-      <div class="abt-number-card animate">
-        <div class="abt-number-icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
-        </div>
-        <strong>12,000+</strong>
-        <span>Canadians helped with a loan</span>
-      </div>
-      <div class="abt-number-card animate">
-        <div class="abt-number-icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-        </div>
-        <strong>50 people</strong>
-        <span>In-house team in Halifax, NS</span>
-      </div>
-      <div class="abt-number-card animate">
-        <div class="abt-number-icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-        </div>
-        <strong>9 provinces</strong>
-        <span>Provincially licensed across Canada</span>
-      </div>
-      <div class="abt-number-card animate">
-        <div class="abt-number-icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-        </div>
-        <strong>5 minutes</strong>
-        <span>Average time to complete an application</span>
-      </div>
-      <div class="abt-number-card animate">
-        <div class="abt-number-icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        </div>
-        <strong>Same day</strong>
-        <span>Funding if approved before 2 PM ET</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     COMMITMENT — dark
-═══════════════════════════════════════ -->
-<section class="section section--dark abt-commit">
-  <div class="abt-commit-bg" aria-hidden="true">
-    <div class="abt-c-orb-r"></div>
-    <div class="abt-c-orb-b"></div>
-    <div class="abt-c-beam"></div>
-    <div class="abt-c-edge"></div>
-  </div>
-  <div class="container abt-commit-inner">
-    <div class="abt-commit-text animate">
-      <span class="badge badge-red-dark">Our commitment</span>
-      <h2>We are lenders — not debt traps</h2>
-      <p>Short-term loans carry higher interest rates than traditional bank products. We acknowledge that directly. A $500 loan repays approximately $750 — an APR of 23%. That cost is real, and it is justified only when the need is genuine and the repayment is manageable.</p>
-      <p>We do not want customers to borrow repeatedly for everyday expenses. We do not design our products to encourage dependency. If a customer contacts us because they are struggling, our team's first priority is to find the most workable solution — which sometimes means suggesting free credit counselling rather than another loan.</p>
-      <p>We believe a lender's reputation is built over years, not marketing campaigns. Our reputation is built on 12,000+ customers who were treated fairly, received their money on time, and knew exactly what they were signing.</p>
-      <div class="abt-commit-resource">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07"/><path d="M3.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3"/></svg>
-        Struggling with debt? Free help is available from the <a href="https://nomoredebts.org" target="_blank" rel="noopener">Credit Counselling Society</a> at 1-888-527-8999.
-      </div>
-    </div>
-    <div class="abt-commit-card animate">
-      <h3>Our lending standards</h3>
-      <div class="abt-standard-row">
-        <span class="abt-standard-icon abt-standard-icon--green" aria-hidden="true">✓</span>
-        <div>
-          <strong>APR disclosed upfront</strong>
-          <span>23% APR on all loans — shown before you apply</span>
-        </div>
-      </div>
-      <div class="abt-standard-row">
-        <span class="abt-standard-icon abt-standard-icon--green" aria-hidden="true">✓</span>
-        <div>
-          <strong>No hard credit inquiry</strong>
-          <span>Your score is not affected by applying</span>
-        </div>
-      </div>
-      <div class="abt-standard-row">
-        <span class="abt-standard-icon abt-standard-icon--green" aria-hidden="true">✓</span>
-        <div>
-          <strong>No prepayment penalty</strong>
-          <span>Repay early at any time — free of charge</span>
-        </div>
-      </div>
-      <div class="abt-standard-row">
-        <span class="abt-standard-icon abt-standard-icon--green" aria-hidden="true">✓</span>
-        <div>
-          <strong>Direct lender</strong>
-          <span>Your data never sold or shared</span>
-        </div>
-      </div>
-      <div class="abt-standard-row">
-        <span class="abt-standard-icon abt-standard-icon--green" aria-hidden="true">✓</span>
-        <div>
-          <strong>CLA member</strong>
-          <span>Held to Canadian Lenders Association standards</span>
-        </div>
-      </div>
-      <div class="abt-standard-row">
-        <span class="abt-standard-icon abt-standard-icon--green" aria-hidden="true">✓</span>
-        <div>
-          <strong>Provincially licensed</strong>
-          <span>Regulated in every province we operate</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     WHERE WE OPERATE — white
-═══════════════════════════════════════ -->
-<section class="section abt-provinces">
-  <div class="container">
-    <div class="section-header">
-      <span class="badge badge-green">Where we operate</span>
-      <h2>Licensed across Canada</h2>
-      <p>Captain Cash is provincially licensed and regulated in every province and territory where we lend.</p>
-    </div>
-    <div class="abt-provinces-inner animate">
-      <div class="abt-province-tags" role="list" aria-label="Provinces and territories served">
-        <span role="listitem" class="abt-province-tag abt-province-tag--active">Ontario</span>
-        <span role="listitem" class="abt-province-tag abt-province-tag--active">British Columbia</span>
-        <span role="listitem" class="abt-province-tag abt-province-tag--active">Alberta</span>
-        <span role="listitem" class="abt-province-tag abt-province-tag--active">Nova Scotia</span>
-        <span role="listitem" class="abt-province-tag abt-province-tag--active">New Brunswick</span>
-        <span role="listitem" class="abt-province-tag abt-province-tag--active">PEI</span>
-        <span role="listitem" class="abt-province-tag abt-province-tag--active">Newfoundland &amp; Labrador</span>
-        <span role="listitem" class="abt-province-tag abt-province-tag--active">Nunavut</span>
-        <span role="listitem" class="abt-province-tag abt-province-tag--active">Northwest Territories</span>
-        <span role="listitem" class="abt-province-tag abt-province-tag--inactive">Quebec <span class="abt-province-tag-note">not available</span></span>
-        <span role="listitem" class="abt-province-tag abt-province-tag--inactive">Manitoba <span class="abt-province-tag-note">not available</span></span>
-        <span role="listitem" class="abt-province-tag abt-province-tag--inactive">Saskatchewan <span class="abt-province-tag-note">not available</span></span>
-      </div>
-      <div class="abt-hq-card">
-        <div class="abt-hq-icon" aria-hidden="true">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        </div>
-        <div>
-          <strong>Headquarters</strong>
-          <address>
-            1701 Hollis Street W. Suite 800<br>
-            Halifax, NS &nbsp;B3J 2T9<br>
-            <a href="tel:18882261026">1-888-226-1026</a><br>
-            <a href="mailto:support@captaincash.ca">support@captaincash.ca</a>
-          </address>
-          <p class="abt-hq-hours">Mon–Fri · 8:00 AM–5:00 PM ET</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<section class="cta-banner" aria-label="Apply for a loan">
-  <div class="cta-banner-orb cta-banner-orb-1" aria-hidden="true"></div>
-  <div class="cta-banner-orb cta-banner-orb-2" aria-hidden="true"></div>
-  <div class="container cta-banner-inner">
-    <img src="/images/mascot/mascot-fists.webp" alt="" aria-hidden="true" class="cta-mascot" width="140" height="170" loading="lazy">
-    <div class="cta-banner-text">
-      <h2>Ready to get your cash?</h2>
-      <p>Apply in 5 minutes. Get approved today. No credit check required.</p>
-    </div>
-    <div class="cta-banner-actions">
-      <a href="/claim-your-cash/" class="btn btn-primary btn-lg">Claim your cash</a>
-      <a href="tel:18882261026" class="btn-cta-phone">Call 1-888-226-1026</a>
-    </div>
-  </div>
-</section>
-
-<footer class="site-footer site-footer--dark">
-  <div class="footer-bg" aria-hidden="true">
-    <div class="footer-orb-1"></div>
-    <div class="footer-orb-2"></div>
-    <div class="footer-beam"></div>
-    <div class="footer-edge"></div>
-  </div>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="/" class="site-logo-img site-logo-img--footer">
-          <img src="/images/mascot/sprites/logo-lockup-small.webp" alt="Captain Cash" width="140" height="35" loading="eager">
-        </a>
-        <p style="margin-top:1rem;color:var(--gray-400);font-size:0.875rem;line-height:1.7">A fast, fair alternative to payday loans for Canadians who need cash today. Serving Canada since 2015.</p>
-        <address style="margin-top:1rem;font-size:0.8rem;color:var(--gray-500);font-style:normal;line-height:1.7">
-          1701 Hollis Street W. Suite 800<br>
-          Halifax, NS B3J 2T9<br>
-          <a href="tel:18882261026" style="color:var(--gray-400)">1-888-226-1026</a>
-        </address>
-      </div>
-      <div class="footer-col">
-        <h4>Products</h4>
-        <ul>
-          <li><a href="/loans-in-canada/">Loans in Canada</a></li>
-          <li><a href="/payday-loans/">Payday loans</a></li>
-          <li><a href="/bad-credit-loans-canada/">Bad credit loans</a></li>
-          <li><a href="/installment-loans-canada/">Instalment loans</a></li>
-          <li><a href="/no-credit-check-loans-canada/">No credit check</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="/about-us/">About us</a></li>
-          <li><a href="/testimonials/">Reviews</a></li>
-          <li><a href="/blog/">Blog</a></li>
-          <li><a href="/terms-conditions/">Terms and conditions</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Support</h4>
-        <ul>
-          <li><a href="/how-does-it-work/">How it works</a></li>
-          <li><a href="/support/">FAQ</a></li>
-          <li><a href="/online-payment/">Online payment</a></li>
-          <li><a href="/contact-us/">Contact us</a></li>
-          <li><a href="/renew-your-loan/">Renew your loan</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>Captain Cash &copy; 2026, a division of Opal Financial. All Rights Reserved.</p>
-      <p>APR 23% &mdash; <a href="/terms-conditions/" style="color:var(--gray-500)">Privacy Policy</a> &mdash; Borrow responsibly</p>
-    </div>
-  </div>
-</footer>
-
-<script src="/js/main.js" defer></script>
-<script>
-(function() {
-  var header = document.getElementById('site-header');
-  if (header) {
-    window.addEventListener('scroll', function() {
-      header.classList.toggle('site-header--scrolled', window.scrollY > 60);
-    }, { passive: true });
-  }
-  var triggers = document.querySelectorAll('.nav-dropdown-trigger');
-  function closeAll() {
-    triggers.forEach(function(t) {
-      t.setAttribute('aria-expanded','false');
-      var dd = t.nextElementSibling;
-      if (dd) dd.classList.remove('nav-dropdown--open');
-    });
-  }
-  triggers.forEach(function(trigger) {
-    trigger.addEventListener('click', function(e) {
-      e.stopPropagation();
-      var isOpen = trigger.getAttribute('aria-expanded') === 'true';
-      closeAll();
-      if (!isOpen) {
-        trigger.setAttribute('aria-expanded','true');
-        var dd = trigger.nextElementSibling;
-        if (dd) dd.classList.add('nav-dropdown--open');
-      }
-    });
-  });
-  document.addEventListener('click', closeAll);
-  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeAll(); });
-})();
-</script>
 </body>
 </html>
