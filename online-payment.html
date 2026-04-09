@@ -227,22 +227,36 @@
         <span aria-current="page">Online payment</span>
       </nav>
       <span class="badge badge-red-dark">Make a payment</span>
-      <h1>Pay your loan by Interac e-Transfer</h1>
-      <p class="pmt-hero-sub">Quick, free, and secure. All you need is access to your online banking. Payments are processed the same business day if received before 2 PM ET.</p>
-      <div class="pmt-hero-badges">
-        <div class="pmt-badge">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-          Free to send
+      <h1>Pay your Captain Cash<br>loan in 3 steps</h1>
+      <p class="pmt-hero-sub">All you need is your online banking app. Send by Interac e-Transfer — free, secure, and processed same day if received before 2 PM ET.</p>
+
+      <!-- Stat bar -->
+      <div class="pmt-hero-stats">
+        <div class="pmt-hero-stat">
+          <strong>Free</strong>
+          <span>No fees to send</span>
         </div>
-        <div class="pmt-badge">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-          Processed same day
+        <div class="pmt-stat-div" aria-hidden="true"></div>
+        <div class="pmt-hero-stat">
+          <strong>Same day</strong>
+          <span>Before 2 PM ET</span>
         </div>
-        <div class="pmt-badge">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-          All major Canadian banks
+        <div class="pmt-stat-div" aria-hidden="true"></div>
+        <div class="pmt-hero-stat">
+          <strong>3 steps</strong>
+          <span>Takes under 2 minutes</span>
+        </div>
+        <div class="pmt-stat-div" aria-hidden="true"></div>
+        <div class="pmt-hero-stat">
+          <strong>All banks</strong>
+          <span>Works with any Canadian bank</span>
         </div>
       </div>
+
+      <a href="#steps" class="pmt-hero-cta">
+        See the steps
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
     </div>
     <div class="pmt-hero-visual">
       <!-- Transaction card -->
@@ -305,7 +319,7 @@
 <!-- ═══════════════════════════════════════
      3 STEPS — white
 ═══════════════════════════════════════ -->
-<section class="section pmt-steps">
+<section class="section pmt-steps" id="steps">
   <div class="container">
     <div class="section-header">
       <span class="badge badge-red">How to pay</span>
@@ -642,6 +656,16 @@
 <script src="js/main.js"></script>
 <script>
 (function() {
+  /* Smooth scroll for hero CTA */
+  var heroCta = document.querySelector('.pmt-hero-cta');
+  if (heroCta) {
+    heroCta.addEventListener('click', function(e) {
+      var target = document.getElementById('steps');
+      if (!target) { target = document.querySelector('.pmt-steps'); }
+      if (target) { e.preventDefault(); window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 90, behavior: 'smooth' }); }
+    });
+  }
+
   /* Transaction card date */
   var dateEl = document.getElementById('pmt-txn-date');
   if (dateEl) {
@@ -723,7 +747,7 @@
 /* ── Transaction card ── */
 .pmt-hero-visual { position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center; }
 .pmt-txn-card {
-  width:100%;max-width:300px;
+  width:100%;max-width:320px;
   background:#0d1829;
   border:1px solid rgba(255,255,255,0.12);
   border-radius:22px;
@@ -866,6 +890,28 @@
 /* Add bottom padding on mobile so sticky bar doesn't cover content */
 @media(max-width:768px){ main { padding-bottom:60px; } }
 
+
+/* Hero stat bar */
+.pmt-hero-stats { display:flex;align-items:center;flex-wrap:wrap;gap:0;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:0.875rem 1.5rem;margin-bottom:2rem; }
+.pmt-hero-stat { display:flex;flex-direction:column;gap:3px;padding:0 1.125rem; }
+.pmt-hero-stat:first-child { padding-left:0; }
+.pmt-hero-stat strong { font-size:1rem;font-weight:800;color:#e82020;line-height:1; }
+.pmt-hero-stat span { font-size:0.6875rem;color:rgba(255,255,255,0.4);font-weight:500; }
+.pmt-stat-div { width:1px;height:32px;background:rgba(255,255,255,0.1);flex-shrink:0; }
+
+/* Hero CTA button */
+.pmt-hero-cta {
+  display:inline-flex;align-items:center;gap:8px;
+  background:linear-gradient(135deg,#e82020,#c41515);color:#fff;
+  border:none;border-radius:9999px;padding:13px 28px;text-decoration:none;
+  font-size:1rem;font-weight:700;
+  box-shadow:0 1px 0 rgba(255,255,255,0.15) inset,0 -3px 0 rgba(0,0,0,0.25) inset,0 8px 24px rgba(232,32,32,0.4),0 4px 0 #8b0000;
+  transform:perspective(400px) translateZ(0);transition:transform 0.15s,box-shadow 0.15s;
+}
+.pmt-hero-cta:hover {
+  transform:perspective(400px) translateZ(6px) translateY(-2px);
+  box-shadow:0 1px 0 rgba(255,255,255,0.18) inset,0 -3px 0 rgba(0,0,0,0.25) inset,0 16px 36px rgba(232,32,32,0.55),0 6px 0 #8b0000;
+}
 .pmt-hero { position:relative;overflow:hidden; }
 .pmt-bg-streams {
   position:absolute;inset:0;width:100%;height:100%;
@@ -877,12 +923,11 @@
 .pmt-orb-b { position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(26,110,240,0.12) 0%,transparent 65%);top:-160px;left:-100px;filter:blur(18px); }
 
 .pmt-edge { position:absolute;top:0;right:0;width:1px;height:100%;background:linear-gradient(180deg,rgba(232,32,32,0.7) 0%,rgba(232,32,32,0.15) 50%,transparent 100%); }
-.pmt-hero-inner { position:relative;z-index:2;display:grid;grid-template-columns:1fr 220px;gap:3rem;align-items:center;padding:3.5rem 0 4.5rem; }
+.pmt-hero-inner { position:relative;z-index:2;display:grid;grid-template-columns:1fr 300px;gap:3.5rem;align-items:center;padding:5rem 0 5.5rem; }
 .pmt-hero-content .badge { display:inline-block;margin-bottom:0.875rem; }
-.pmt-hero-content h1 { font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:800;color:#fff;letter-spacing:-0.03em;line-height:1.2;margin-bottom:1rem; }
+.pmt-hero-content h1 { font-size:clamp(2rem,4vw,3rem);font-weight:900;color:#fff;letter-spacing:-0.04em;line-height:1.15;margin-bottom:1.125rem; }
 .pmt-hero-sub { font-size:1rem;color:rgba(255,255,255,0.5);line-height:1.7;max-width:520px;margin-bottom:1.5rem; }
-.pmt-hero-badges { display:flex;flex-wrap:wrap;gap:0.625rem; }
-.pmt-badge { display:flex;align-items:center;gap:6px;font-size:0.8125rem;font-weight:600;color:rgba(255,255,255,0.7);background:rgba(22,163,74,0.08);border:1px solid rgba(22,163,74,0.2);border-radius:9999px;padding:5px 12px; }
+
 .pmt-hero-visual { display:flex;flex-direction:column;align-items:center;gap:1rem;position:relative; }
 .pmt-etransfer-badge { display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:14px;padding:12px 16px; }
 .pmt-etransfer-badge strong { display:block;font-size:0.875rem;font-weight:800;color:#fff; }
