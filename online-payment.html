@@ -230,30 +230,60 @@
         </div>
       </div>
     </div>
-    <div class="pmt-hero-visual" aria-hidden="true">
-      <div class="pmt-hero-card">
-        <div class="pmt-hero-card-icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e82020" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+    <div class="pmt-hero-visual">
+      <!-- Transaction card -->
+      <div class="pmt-txn-card" aria-label="Example of a successful payment confirmation">
+        <!-- Bank app header -->
+        <div class="pmt-txn-header">
+          <div class="pmt-txn-header-dot"></div>
+          <div class="pmt-txn-header-dot"></div>
+          <div class="pmt-txn-header-dot pmt-txn-header-dot--green"></div>
+          <span class="pmt-txn-header-label">Interac e&#8209;Transfer</span>
         </div>
-        <div class="pmt-hero-card-label">Interac e&#8209;Transfer</div>
-        <div class="pmt-hero-card-steps">
-          <div class="pmt-hero-card-step">
-            <span class="pmt-hero-card-dot pmt-hero-card-dot--done">✓</span>Log into banking
+        <!-- Status badge -->
+        <div class="pmt-txn-status">
+          <div class="pmt-txn-status-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
-          <div class="pmt-hero-card-step">
-            <span class="pmt-hero-card-dot pmt-hero-card-dot--done">✓</span>Enter recipient details
-          </div>
-          <div class="pmt-hero-card-step">
-            <span class="pmt-hero-card-dot pmt-hero-card-dot--active">→</span>Send &amp; confirm
+          <div>
+            <strong>Transfer sent</strong>
+            <span>Processing same day</span>
           </div>
         </div>
-        <div class="pmt-hero-card-footer">
-          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-          Free · Same-day · Secure
+        <!-- Amount -->
+        <div class="pmt-txn-amount" aria-label="Payment amount">
+          <span class="pmt-txn-currency">CAD</span>
+          <span class="pmt-txn-value">$150.00</span>
+        </div>
+        <!-- Details rows -->
+        <div class="pmt-txn-details">
+          <div class="pmt-txn-row">
+            <span>To</span>
+            <span class="pmt-txn-to">receivables@<wbr>diamondfinancialone.com</span>
+          </div>
+          <div class="pmt-txn-row">
+            <span>Reference</span>
+            <span>Captain Cash</span>
+          </div>
+          <div class="pmt-txn-row">
+            <span>Date</span>
+            <span id="pmt-txn-date">Today</span>
+          </div>
+          <div class="pmt-txn-row pmt-txn-row--status">
+            <span>Status</span>
+            <span class="pmt-txn-badge">
+              <span class="pmt-txn-badge-dot" aria-hidden="true"></span>
+              Applied to your loan
+            </span>
+          </div>
+        </div>
+        <!-- Footer -->
+        <div class="pmt-txn-footer">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Payment confirmed · No fees charged
         </div>
       </div>
-      <img src="images/mascot/mascot-canada-shield.webp" alt="" width="100" height="122" loading="eager" class="pmt-hero-mascot">
-      <div class="pmt-hero-glow"></div>
+      <div class="pmt-txn-glow" aria-hidden="true"></div>
     </div>
   </div>
 </section>
@@ -598,6 +628,13 @@
 <script src="js/main.js"></script>
 <script>
 (function() {
+  /* Transaction card date */
+  var dateEl = document.getElementById('pmt-txn-date');
+  if (dateEl) {
+    var d = new Date();
+    dateEl.textContent = d.toLocaleDateString('en-CA', { month:'short', day:'numeric', year:'numeric' });
+  }
+
   /* header scroll */
   var header = document.getElementById('site-header');
   if (header) window.addEventListener('scroll', function() {
@@ -668,17 +705,86 @@
 
 /* Hero */
 
-/* ── Hero card ── */
-.pmt-hero-visual { gap:0.875rem; }
-.pmt-hero-card { background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:18px;padding:1.25rem;width:100%; }
-.pmt-hero-card-icon { width:48px;height:48px;border-radius:14px;background:rgba(232,32,32,0.12);border:1px solid rgba(232,32,32,0.22);display:flex;align-items:center;justify-content:center;margin-bottom:0.875rem; }
-.pmt-hero-card-label { font-size:0.875rem;font-weight:700;color:#fff;margin-bottom:1rem; }
-.pmt-hero-card-steps { display:flex;flex-direction:column;gap:8px;margin-bottom:1rem; }
-.pmt-hero-card-step { display:flex;align-items:center;gap:8px;font-size:0.8125rem;color:rgba(255,255,255,0.6); }
-.pmt-hero-card-dot { width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.625rem;font-weight:800;flex-shrink:0; }
-.pmt-hero-card-dot--done { background:rgba(22,163,74,0.15);border:1px solid rgba(22,163,74,0.3);color:#4ade80; }
-.pmt-hero-card-dot--active { background:rgba(232,32,32,0.15);border:1px solid rgba(232,32,32,0.3);color:#e82020;animation:orbPulse 2s ease-in-out infinite; }
-.pmt-hero-card-footer { display:flex;align-items:center;gap:6px;font-size:0.6875rem;color:rgba(255,255,255,0.35);padding-top:0.875rem;border-top:1px solid rgba(255,255,255,0.08); }
+
+/* ── Transaction card ── */
+.pmt-hero-visual { position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center; }
+.pmt-txn-card {
+  width:100%;max-width:300px;
+  background:#0d1829;
+  border:1px solid rgba(255,255,255,0.12);
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 24px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.05);
+  animation:txnFloat 5s ease-in-out infinite;
+}
+@keyframes txnFloat {
+  0%,100% { transform:translateY(0px) rotate(-1deg); }
+  50%      { transform:translateY(-10px) rotate(-1deg); }
+}
+.pmt-txn-header {
+  display:flex;align-items:center;gap:5px;
+  padding:12px 16px 10px;
+  border-bottom:1px solid rgba(255,255,255,0.07);
+  background:rgba(255,255,255,0.03);
+}
+.pmt-txn-header-dot { width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.15); }
+.pmt-txn-header-dot--green { background:#16a34a; }
+.pmt-txn-header-label { font-size:0.6875rem;font-weight:600;color:rgba(255,255,255,0.4);margin-left:6px;letter-spacing:0.04em; }
+.pmt-txn-status {
+  display:flex;align-items:center;gap:10px;
+  padding:14px 16px 10px;
+  border-bottom:1px solid rgba(255,255,255,0.07);
+}
+.pmt-txn-status-icon {
+  width:32px;height:32px;border-radius:50%;
+  background:rgba(22,163,74,0.15);border:1.5px solid rgba(22,163,74,0.3);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.pmt-txn-status strong { display:block;font-size:0.8125rem;font-weight:700;color:#fff; }
+.pmt-txn-status span { font-size:0.6875rem;color:rgba(255,255,255,0.4); }
+.pmt-txn-amount {
+  display:flex;align-items:baseline;gap:6px;
+  padding:16px 16px 12px;
+  border-bottom:1px solid rgba(255,255,255,0.07);
+}
+.pmt-txn-currency { font-size:0.875rem;font-weight:700;color:rgba(255,255,255,0.4); }
+.pmt-txn-value { font-size:2rem;font-weight:800;color:#fff;letter-spacing:-0.03em; }
+.pmt-txn-details { padding:4px 0; }
+.pmt-txn-row {
+  display:flex;justify-content:space-between;align-items:center;
+  padding:8px 16px;gap:1rem;
+  font-size:0.75rem;
+}
+.pmt-txn-row span:first-child { color:rgba(255,255,255,0.35);font-weight:500;flex-shrink:0; }
+.pmt-txn-row span:last-child { color:rgba(255,255,255,0.75);font-weight:600;text-align:right; }
+.pmt-txn-to { font-size:0.6875rem;word-break:break-all;text-align:right; }
+.pmt-txn-row--status { padding-bottom:12px; }
+.pmt-txn-badge {
+  display:inline-flex;align-items:center;gap:5px;
+  background:rgba(22,163,74,0.12);border:1px solid rgba(22,163,74,0.25);
+  border-radius:9999px;padding:3px 10px;
+  color:#4ade80;font-size:0.6875rem;font-weight:700;
+}
+.pmt-txn-badge-dot {
+  width:5px;height:5px;border-radius:50%;background:#4ade80;
+  box-shadow:0 0 6px rgba(74,222,128,0.7);
+  animation:orbPulse 2s ease-in-out infinite;
+}
+.pmt-txn-footer {
+  display:flex;align-items:center;gap:6px;
+  padding:10px 16px;
+  border-top:1px solid rgba(255,255,255,0.07);
+  background:rgba(22,163,74,0.05);
+  font-size:0.6875rem;color:rgba(255,255,255,0.35);font-weight:500;
+}
+.pmt-txn-glow {
+  position:absolute;bottom:-20px;left:50%;transform:translateX(-50%);
+  width:160px;height:20px;
+  background:radial-gradient(ellipse,rgba(22,163,74,0.3) 0%,transparent 70%);
+  filter:blur(8px);
+}
+@media(max-width:900px){ .pmt-hero-visual { display:none; } }
+
 
 /* ── Before you start banner ── */
 .pmt-before-banner { display:flex;align-items:stretch;background:#fff;border:1.5px solid #e2e6ed;border-radius:16px;margin-bottom:2rem;overflow:hidden; }
