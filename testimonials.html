@@ -3549,34 +3549,34 @@ h1 em {
 
 <script src="js/main.js"></script>
 <script>
-(function() {{
+(function() {
   var header = document.getElementById('site-header');
-  if (header) window.addEventListener('scroll', function() {{
+  if (header) window.addEventListener('scroll', function() {
     header.classList.toggle('site-header--scrolled', window.scrollY > 60);
-  }}, {{ passive:true }});
+  }, { passive:true });
 
   var triggers = document.querySelectorAll('.nav-dropdown-trigger');
-  function closeAll() {{
-    triggers.forEach(function(t) {{
+  function closeAll() {
+    triggers.forEach(function(t) {
       t.setAttribute('aria-expanded','false');
       var dd = t.nextElementSibling;
       if (dd) dd.classList.remove('nav-dropdown--open');
-    }});
-  }}
-  triggers.forEach(function(trigger) {{
-    trigger.addEventListener('click', function(e) {{
+    });
+  }
+  triggers.forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
       e.stopPropagation();
       var isOpen = trigger.getAttribute('aria-expanded') === 'true';
       closeAll();
-      if (!isOpen) {{
+      if (!isOpen) {
         trigger.setAttribute('aria-expanded','true');
         var dd = trigger.nextElementSibling;
         if (dd) dd.classList.add('nav-dropdown--open');
-      }}
-    }});
-  }});
+      }
+    });
+  });
   document.addEventListener('click', closeAll);
-  document.addEventListener('keydown', function(e) {{ if (e.key==='Escape') closeAll(); }});
-}})();
+  document.addEventListener('keydown', function(e) { if (e.key==='Escape') closeAll(); });
+})();
 </script>
 
