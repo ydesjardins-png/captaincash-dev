@@ -200,6 +200,51 @@
 ═══════════════════════════════════════ -->
 <section class="section section--dark pmt-hero">
   <div class="pmt-hero-bg" aria-hidden="true">
+    <!-- Option A: diagonal data streams -->
+    <svg class="pmt-bg-streams" viewBox="0 0 1400 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#e82020" opacity="0.055" font-family="monospace" font-size="11">
+        <text transform="rotate(-20,0,40)" x="-40" y="40">8291 4402 1837 9901 2210 5543 8871 3320 6654 1129 8801 4432 9910 2287 5561 8830 3319 6641 1108</text>
+        <text transform="rotate(-20,0,100)" x="-40" y="100">1100 9928 4471 8833 2201 6677 3312 9988 1144 5521 8849 2290 6631 9900 3341 6682 0019 4401 7763</text>
+        <text transform="rotate(-20,0,160)" x="-40" y="160">5532 2291 8849 1102 7763 3318 9900 4421 8832 2211 6643 9912 3341 6682 0019 4401 8836 2210 5543</text>
+        <text transform="rotate(-20,0,220)" x="-40" y="220">3398 6621 9900 1137 8842 2291 5563 8814 3320 9912 3341 6682 0019 4401 8836 2210 5543 7791 1100</text>
+        <text transform="rotate(-20,0,280)" x="-40" y="280">9912 3341 6682 0019 4401 8836 2210 5543 7791 2201 5523 8889 1198 4420 7762 3341 9901 6643 3312</text>
+        <text transform="rotate(-20,0,340)" x="-40" y="340">2201 5523 8889 1198 4420 7762 3341 9901 6643 8291 4402 1837 9901 2210 5543 8871 3320 6654 1129</text>
+        <text transform="rotate(-20,0,400)" x="-40" y="400">6631 9920 3312 8841 1100 4492 7723 2298 5561 3398 6621 9900 1137 8842 2291 5563 8814 3320 9912</text>
+        <text transform="rotate(-20,0,460)" x="-40" y="460">4420 7762 3341 9901 6643 1100 9928 4471 8833 2201 6677 3312 9988 1144 5521 8849 2290 6631 9900</text>
+        <text transform="rotate(-20,0,520)" x="-40" y="520">8832 2211 6643 9912 5532 2291 8849 1102 7763 3318 9900 4421 8832 2211 6643 9912 3341 6682 0019</text>
+        <text transform="rotate(-20,0,580)" x="-40" y="580">1837 9901 2210 5543 6631 9920 3312 8841 1100 4492 7723 2298 5561 4420 7762 3341 9901 6643 1100</text>
+      </g>
+    </svg>
+    <!-- Option C: ghost transaction UI faded behind right side -->
+    <svg class="pmt-bg-ghost" viewBox="0 0 300 260" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+      <g opacity="0.055" fill="white">
+        <!-- Card shape -->
+        <rect x="10" y="10" width="280" height="240" rx="20"/>
+        <!-- Header bar -->
+        <rect x="10" y="10" width="280" height="45" rx="20"/>
+        <rect x="10" y="42" width="280" height="13"/>
+        <!-- Traffic light dots -->
+        <circle cx="35" cy="33" r="5"/>
+        <circle cx="52" cy="33" r="5"/>
+        <circle cx="69" cy="33" r="5"/>
+        <!-- Status circle -->
+        <circle cx="150" cy="95" r="28"/>
+        <!-- Checkmark -->
+        <polyline points="136,95 147,106 166,83" fill="none" stroke="#04080f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Amount block -->
+        <rect x="60" y="135" width="180" height="28" rx="6"/>
+        <!-- Detail rows -->
+        <rect x="30" y="178" width="100" height="8" rx="4"/>
+        <rect x="170" y="178" width="110" height="8" rx="4"/>
+        <rect x="30" y="198" width="80" height="8" rx="4"/>
+        <rect x="190" y="198" width="90" height="8" rx="4"/>
+        <rect x="30" y="218" width="70" height="8" rx="4"/>
+        <rect x="200" y="218" width="80" height="8" rx="4"/>
+        <!-- Footer strip -->
+        <rect x="10" y="236" width="280" height="14" rx="8"/>
+      </g>
+    </svg>
+    <!-- Existing atmospheric elements -->
     <div class="pmt-orb-r"></div>
     <div class="pmt-orb-b"></div>
     <div class="pmt-beam"></div>
@@ -853,6 +898,18 @@
 @media(max-width:768px){ main { padding-bottom:60px; } }
 
 .pmt-hero { position:relative;overflow:hidden; }
+.pmt-bg-streams {
+  position:absolute;inset:0;width:100%;height:100%;
+  pointer-events:none;
+}
+.pmt-bg-ghost {
+  position:absolute;right:-2%;top:50%;
+  transform:translateY(-50%);
+  width:340px;height:auto;
+  pointer-events:none;
+  opacity:1;
+}
+@media(max-width:768px){ .pmt-bg-ghost { display:none; } }
 .pmt-hero-bg { position:absolute;inset:0;pointer-events:none;overflow:hidden; }
 .pmt-orb-r { position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(232,32,32,0.18) 0%,transparent 65%);bottom:-280px;right:-160px;filter:blur(20px);animation:orbPulse 8s ease-in-out infinite; }
 .pmt-orb-b { position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(26,110,240,0.12) 0%,transparent 65%);top:-160px;left:-100px;filter:blur(18px); }
