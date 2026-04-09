@@ -1485,7 +1485,49 @@ h1 em {
 /* Section dividers */
 .funnel-section-divider{height:1px;background:#f0f2f5;margin:1.75rem 0}
 
-  </style>
+  
+/* ── Funnel two-column layout ── */
+.funnel-layout{display:grid;grid-template-columns:1fr 300px;gap:1.5rem;align-items:start;max-width:1040px;margin:0 auto}
+@media(max-width:860px){.funnel-layout{grid-template-columns:1fr}}
+.funnel-layout .funnel-card{max-width:none}
+
+/* ── Sidebar ── */
+.funnel-sidebar{display:flex;flex-direction:column;gap:1rem;position:sticky;top:88px}
+@media(max-width:860px){.funnel-sidebar{position:static}}
+.fsb-card{background:#fff;border:1px solid #e2e6ed;border-radius:16px;padding:1.25rem}
+.fsb-card--dark{background:#04080f;border-color:#04080f}
+.fsb-card-title{font-size:0.6875rem;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:.09em;margin-bottom:1rem}
+.fsb-amount-row{display:flex;align-items:baseline;gap:6px;margin-bottom:1rem}
+.fsb-amount-val{font-size:2rem;font-weight:900;color:#0b1a33;line-height:1}
+.fsb-amount-lbl{font-size:0.8125rem;color:#9ca3af}
+.fsb-divider{height:1px;background:#f0f2f5;margin-bottom:1rem}
+.fsb-row{display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid #f8f9fb}
+.fsb-row:last-child{border-bottom:none}
+.fsb-row--total{padding-top:10px;border-top:1px solid #e2e6ed;border-bottom:none;margin-top:4px}
+.fsb-row-lbl{font-size:0.8125rem;color:#6b7789}
+.fsb-row-val{font-size:0.875rem;font-weight:600;color:#0b1a33}
+.fsb-row-val--red{color:#e82020;font-size:1rem;font-weight:800}
+.fsb-list{list-style:none;display:flex;flex-direction:column;gap:8px}
+.fsb-list-item{display:flex;align-items:flex-start;gap:8px;font-size:0.8125rem;color:#4a5568;line-height:1.5}
+.fsb-list-icon{width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.fsb-list-icon--green{background:#f0fdf4;color:#16a34a}
+.fsb-trust-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.fsb-trust-item{display:flex;flex-direction:column;align-items:center;gap:5px;padding:10px 6px;background:#f8f9fb;border-radius:10px;text-align:center}
+.fsb-trust-item span{font-size:0.625rem;font-weight:600;color:#6b7789;line-height:1.3}
+.fsb-help-text{font-size:0.8125rem;color:rgba(255,255,255,0.45);margin-bottom:1rem;line-height:1.6}
+.fsb-help-phone{display:flex;align-items:center;gap:7px;font-size:0.9375rem;font-weight:700;color:#fff;text-decoration:none;margin-bottom:8px;transition:color .15s}
+.fsb-help-phone:hover{color:#e82020}
+.fsb-help-email{display:flex;align-items:center;gap:7px;font-size:0.8125rem;color:rgba(255,255,255,0.45);text-decoration:none;transition:color .15s}
+.fsb-help-email:hover{color:rgba(255,255,255,0.8)}
+
+/* ── Dummy data button ── */
+.funnel-dummy-btn{display:inline-flex;align-items:center;gap:6px;font-size:0.75rem;font-weight:600;color:#9ca3af;background:#f8f9fb;border:1px dashed #d1d5db;border-radius:9999px;padding:5px 14px;cursor:pointer;margin-bottom:1.25rem;transition:all .15s}
+.funnel-dummy-btn::before{content:"🧪";font-size:11px}
+.funnel-dummy-btn:hover{color:#6b7789;border-color:#9ca3af;background:#f1f3f7}
+
+/* ── Sidebar summary sync ── */
+
+</style>
 </head>
 <body>
 <a href="#main" class="skip-link">Skip to content</a>
@@ -1685,12 +1727,16 @@ h1 em {
 </div>
 <main id="main" class="funnel-page">
 <div class="container">
+  <div class="funnel-layout">
   <div class="funnel-card">
     <div class="funnel-card-header">
       <div class="funnel-card-eyebrow">Step 1 of 4</div>
       <h1 class="funnel-card-title">Apply for your loan</h1>
       <p class="funnel-card-sub">Takes about 5 minutes. Free to apply — no obligation to accept.</p>
     </div>
+
+    
+      <button type="button" id="fill-dummy" class="funnel-dummy-btn" aria-label="Fill with test data">Fill with test data</button>
 
     <form id="step1-form" novalidate>
 
@@ -1909,15 +1955,15 @@ h1 em {
       <!-- Consent -->
       <div class="funnel-fieldset">
         <div class="funnel-check-row">
-          <input type="checkbox" id="agree-terms" name="agree_terms">
+          <input type="checkbox" id="agree-terms" name="agree_terms" checked>
           <label class="funnel-check-label" for="agree-terms">I have read and agree to the <a href="/terms-conditions/" target="_blank">Terms &amp; Conditions</a> and <a href="/privacy-policy/" target="_blank">Privacy Policy</a>. I consent to Captain Cash collecting and using my personal information as described.<span style="color:#dc2626;margin-left:3px">*</span></label>
         </div>
         <div class="funnel-check-row">
-          <input type="checkbox" id="agree-pad" name="agree_pad">
+          <input type="checkbox" id="agree-pad" name="agree_pad" checked>
           <label class="funnel-check-label" for="agree-pad">I authorize Captain Cash to debit my bank account for scheduled repayments via pre-authorized debit (PAD) in accordance with my loan agreement.</label>
         </div>
         <div class="funnel-check-row">
-          <input type="checkbox" id="agree-marketing" name="agree_marketing">
+          <input type="checkbox" id="agree-marketing" name="agree_marketing" checked>
           <label class="funnel-check-label" for="agree-marketing">I agree to receive promotional communications from Captain Cash. I can unsubscribe at any time. (Optional)</label>
         </div>
         <p id="terms-error" style="display:none;font-size:0.75rem;color:#dc2626;margin-top:4px">You must agree to the Terms &amp; Conditions to continue</p>
@@ -1932,6 +1978,85 @@ h1 em {
     </form>
   </div>
 </div>
+  <aside class="funnel-sidebar">
+
+    <!-- Loan summary card -->
+    <div class="fsb-card">
+      <div class="fsb-card-title">Your loan estimate</div>
+      <div class="fsb-amount-row">
+        <span class="fsb-amount-val" id="sb-amount">$500</span>
+        <span class="fsb-amount-lbl">loan amount</span>
+      </div>
+      <div class="fsb-divider"></div>
+      <div class="fsb-row"><span class="fsb-row-lbl">APR</span><span class="fsb-row-val">23%</span></div>
+      <div class="fsb-row"><span class="fsb-row-lbl">Term</span><span class="fsb-row-val">90–150 days</span></div>
+      <div class="fsb-row"><span class="fsb-row-lbl">Frequency</span><span class="fsb-row-val" id="sb-freq">Weekly</span></div>
+      <div class="fsb-row fsb-row--total"><span class="fsb-row-lbl">Est. total repayment</span><span class="fsb-row-val fsb-row-val--red" id="sb-total">~$750</span></div>
+    </div>
+
+    <!-- Why choose us -->
+    <div class="fsb-card">
+      <div class="fsb-card-title">Why Captain Cash</div>
+      <ul class="fsb-list">
+        <li class="fsb-list-item">
+          <div class="fsb-list-icon fsb-list-icon--green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <span>No credit check — score unaffected</span>
+        </li>
+        <li class="fsb-list-item">
+          <div class="fsb-list-icon fsb-list-icon--green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <span>Same-day e-Transfer if before 2 PM ET</span>
+        </li>
+        <li class="fsb-list-item">
+          <div class="fsb-list-icon fsb-list-icon--green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <span>Repay early — no penalty</span>
+        </li>
+        <li class="fsb-list-item">
+          <div class="fsb-list-icon fsb-list-icon--green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <span>5-minute application, 100% online</span>
+        </li>
+        <li class="fsb-list-item">
+          <div class="fsb-list-icon fsb-list-icon--green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <span>Canadian lender since 2015</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Trust badges -->
+    <div class="fsb-card">
+      <div class="fsb-card-title">Safe &amp; secure</div>
+      <div class="fsb-trust-row">
+        <div class="fsb-trust-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color:#1a6ef0"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+          <span>256-bit SSL</span>
+        </div>
+        <div class="fsb-trust-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color:#1a6ef0"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span>PIPEDA compliant</span>
+        </div>
+        <div class="fsb-trust-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color:#1a6ef0"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+          <span>CLA member</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Need help -->
+    <div class="fsb-card fsb-card--dark">
+      <div class="fsb-card-title" style="color:#fff">Need help?</div>
+      <p class="fsb-help-text">Our team is available Monday–Friday, 8 AM–5 PM ET.</p>
+      <a href="tel:18882261026" class="fsb-help-phone">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 11.61 19.79 19.79 0 01.21 3.06 2 2 0 012.22 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.4a16 16 0 006.53 6.53l.86-.86a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        1-888-226-1026
+      </a>
+      <a href="mailto:support@captaincash.ca" class="fsb-help-email">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        support@captaincash.ca
+      </a>
+    </div>
+
+  </aside>
+</div><!-- /funnel-layout -->
+</div><!-- /container -->
 </main>
 <footer class="site-footer site-footer--dark">
   <div class="footer-bg" aria-hidden="true">
@@ -2083,6 +2208,66 @@ h1 em {
     });
   });
   updateSummary();
+
+
+  // Sidebar sync
+  function syncSidebar(){
+    var amt = parseInt(document.getElementById('loan-amount-hidden').value)||500;
+    var freq = document.getElementById('frequency-hidden').value||'weekly';
+    var freqLabel = {weekly:'Weekly',biweekly:'Bi-weekly',monthly:'Monthly'}[freq]||freq;
+    var total = Math.round(amt*1.5);
+    var sbAmt = document.getElementById('sb-amount');
+    var sbFreq = document.getElementById('sb-freq');
+    var sbTotal = document.getElementById('sb-total');
+    if(sbAmt) sbAmt.textContent = '$'+amt.toLocaleString();
+    if(sbFreq) sbFreq.textContent = freqLabel;
+    if(sbTotal) sbTotal.textContent = '~$'+total.toLocaleString();
+  }
+  // Hook amount + freq buttons to also sync sidebar
+  document.querySelectorAll('.funnel-amount-btn,.funnel-freq-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){ setTimeout(syncSidebar, 10); });
+  });
+  syncSidebar();
+
+  // Fill dummy data
+  document.getElementById('fill-dummy').addEventListener('click', function(){
+    // Amount
+    document.querySelectorAll('.funnel-amount-btn').forEach(function(b){ b.classList.remove('selected'); });
+    var btn700 = document.querySelector('.funnel-amount-btn[data-amount="700"]');
+    if(btn700){ btn700.classList.add('selected'); document.getElementById('loan-amount-hidden').value='700'; }
+    // Frequency
+    document.querySelectorAll('.funnel-freq-btn').forEach(function(b){ b.classList.remove('selected'); });
+    var btnBi = document.querySelector('.funnel-freq-btn[data-freq="biweekly"]');
+    if(btnBi){ btnBi.classList.add('selected'); document.getElementById('frequency-hidden').value='biweekly'; }
+    // Personal
+    var fields = {
+      'first-name':'Jane','last-name':'Smith','dob':'1988-06-15',
+      'email':'jane.smith@example.com','phone':'(613) 555-0182',
+      'address':'147 Rideau Street','city':'Ottawa','postal':'K1N 5X7',
+      'employer':'Government of Canada','income':'3200','next-pay': (function(){
+        var d=new Date(); d.setDate(d.getDate()+7);
+        return d.toISOString().split('T')[0];
+      })()
+    };
+    Object.keys(fields).forEach(function(id){
+      var el=document.getElementById(id); if(el){ el.value=fields[id]; el.closest('.funnel-field')&&el.closest('.funnel-field').classList.remove('has-error'); }
+    });
+    // Selects
+    var prov=document.getElementById('province'); if(prov){ prov.value='ON'; document.getElementById('province-warn').style.display='none'; document.getElementById('step1-submit').disabled=false; }
+    var empLen=document.getElementById('employment-length'); if(empLen)empLen.value='2-5';
+    var payFreq=document.getElementById('pay-frequency'); if(payFreq)payFreq.value='biweekly';
+    var bank=document.getElementById('bank-name'); if(bank)bank.value='TD Canada Trust';
+    var acctAge=document.getElementById('account-age'); if(acctAge)acctAge.value='3+';
+    // Checkboxes
+    ['agree-terms','agree-pad','agree-marketing'].forEach(function(id){ var el=document.getElementById(id); if(el)el.checked=true; });
+    // Update summaries
+    updateSummary(); syncSidebar();
+    // Flash the button
+    this.textContent='✓ Test data filled';
+    this.style.color='#16a34a';
+    this.style.borderColor='rgba(22,163,74,0.4)';
+    var btn=this; setTimeout(function(){ btn.innerHTML='Fill with test data'; btn.style.color=''; btn.style.borderColor=''; },2000);
+  });
 
 })();
 </script>
