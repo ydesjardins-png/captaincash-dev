@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Learn exactly how Captain Cash works — from a 5-minute online application to same-day Interac e-Transfer. No credit check. APR 23%. Licensed Canadian.">
   <title>How It Works — Get Cash in 4 Simple Steps | Captain Cash</title>
@@ -90,6 +93,7 @@
     ]
   }
   </script>
+  <link rel="preload" href="/css/main.css" as="style">
   <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
@@ -307,7 +311,7 @@
       </a>
     </div>
     <div class="hiw-hero-visual" aria-hidden="true">
-      <img src="/images/mascot.webp" alt="" width="220" height="268" loading="eager" class="hiw-hero-mascot">
+      <img src="/images/mascot.webp" alt="" width="220" height="268" loading="eager" fetchpriority="high" class="hiw-hero-mascot">
       <div class="hiw-mascot-glow"></div>
     </div>
   </div>
@@ -843,7 +847,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="/" class="site-logo-img site-logo-img--footer">
-          <img src="/images/mascot/sprites/logo-lockup-small.webp" alt="Captain Cash" width="140" height="35" loading="lazy">
+          <img src="/images/mascot/sprites/logo-lockup-small.webp" alt="Captain Cash" width="140" height="35" loading="eager">
         </a>
         <p style="margin-top:1rem;color:var(--gray-400);font-size:0.875rem;line-height:1.7">A fast, fair alternative to payday loans for Canadians who need cash today. Serving Canada since 2015.</p>
         <address style="margin-top:1rem;font-size:0.8rem;color:var(--gray-500);font-style:normal;line-height:1.7">
@@ -889,7 +893,7 @@
   </div>
 </footer>
 
-<script src="/js/main.js"></script>
+<script src="/js/main.js" defer></script>
 <script>
 (function() {
   var header = document.getElementById('site-header');
@@ -935,9 +939,6 @@
 </script>
 
 <style>
-/* Skip to content link */
-.skip-link { position:absolute;top:-100px;left:1rem;padding:8px 16px;background:#e82020;color:#fff;font-size:0.875rem;font-weight:700;border-radius:0 0 8px 8px;text-decoration:none;z-index:9999;transition:top 0.1s; }
-.skip-link:focus { top:0; }
 /* ══════════════════════════════════════
    HOW IT WORKS — Page Styles
 ══════════════════════════════════════ */
