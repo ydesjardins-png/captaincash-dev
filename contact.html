@@ -250,9 +250,77 @@
         </div>
       </div>
     </div>
-    <div class="cnt-hero-visual" aria-hidden="true">
-      <img src="images/mascot.webp" alt="" width="200" height="244" loading="eager" class="cnt-hero-mascot">
-      <div class="cnt-hero-glow"></div>
+    <div class="cnt-chat-ui" aria-label="Chat with our team">
+      <!-- Chat window header -->
+      <div class="cnt-chat-header">
+        <div class="cnt-chat-avatar" aria-hidden="true">
+          <img src="images/mascot/mascot-canada-shield.webp" alt="" width="32" height="39" loading="eager">
+        </div>
+        <div class="cnt-chat-agent">
+          <strong>Captain Cash Support</strong>
+          <span><span class="cnt-chat-dot" aria-hidden="true"></span>Online now</span>
+        </div>
+        <div class="cnt-chat-close" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </div>
+      </div>
+
+      <!-- Chat messages -->
+      <div class="cnt-chat-body">
+        <!-- Agent message 1 -->
+        <div class="cnt-chat-msg cnt-chat-msg--agent cnt-chat-anim" style="animation-delay:0.2s">
+          <div class="cnt-chat-bubble cnt-chat-bubble--agent">
+            Hi there 👋 How can we help you today?
+          </div>
+          <span class="cnt-chat-time">Just now</span>
+        </div>
+
+        <!-- Agent message 2 -->
+        <div class="cnt-chat-msg cnt-chat-msg--agent cnt-chat-anim" style="animation-delay:0.5s">
+          <div class="cnt-chat-bubble cnt-chat-bubble--agent">
+            Our Halifax team is available <strong>Mon–Fri, 8 AM–5 PM ET</strong>. Pick the fastest option for you:
+          </div>
+        </div>
+
+        <!-- Quick reply buttons -->
+        <div class="cnt-chat-replies cnt-chat-anim" style="animation-delay:0.9s" role="group" aria-label="Contact options">
+          <a href="tel:18882261026" class="cnt-reply-btn cnt-reply-btn--red">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            Call 1-888-226-1026
+          </a>
+          <a href="mailto:support@captaincash.ca" class="cnt-reply-btn">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Send an email
+          </a>
+          <a href="support.html" class="cnt-reply-btn">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            Browse FAQ
+          </a>
+        </div>
+
+        <!-- User message (faint, typing feel) -->
+        <div class="cnt-chat-msg cnt-chat-msg--user cnt-chat-anim" style="animation-delay:1.4s">
+          <div class="cnt-chat-bubble cnt-chat-bubble--user">
+            I have a question about my loan…
+          </div>
+          <span class="cnt-chat-time">Just now</span>
+        </div>
+
+        <!-- Typing indicator -->
+        <div class="cnt-chat-msg cnt-chat-msg--agent cnt-chat-anim" style="animation-delay:1.9s">
+          <div class="cnt-chat-bubble cnt-chat-bubble--agent cnt-typing">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Input bar -->
+      <div class="cnt-chat-input" aria-hidden="true">
+        <div class="cnt-chat-input-field">Type your message…</div>
+        <button class="cnt-chat-send" tabindex="-1" aria-label="Send">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </div>
     </div>
   </div>
 </section>
@@ -596,7 +664,7 @@
 .cnt-orb-b { position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(26,110,240,0.12) 0%,transparent 65%);top:-160px;left:-100px;filter:blur(18px); }
 .cnt-beam { position:absolute;top:0;right:0;width:65%;height:100%;background:conic-gradient(from 200deg at 100% 0%,transparent 0deg,rgba(232,32,32,0.14) 22deg,transparent 52deg); }
 .cnt-edge { position:absolute;top:0;right:0;width:1px;height:100%;background:linear-gradient(180deg,rgba(232,32,32,0.7) 0%,rgba(232,32,32,0.15) 50%,transparent 100%); }
-.cnt-hero-inner { position:relative;z-index:2;display:grid;grid-template-columns:1fr 240px;gap:3rem;align-items:center;padding:3.5rem 0 4.5rem; }
+.cnt-hero-inner { position:relative;z-index:2;display:grid;grid-template-columns:1fr 360px;gap:3.5rem;align-items:center;padding:4rem 0 5rem; }
 .cnt-hero-content .badge { display:inline-block;margin-bottom:0.875rem; }
 .cnt-hero-content h1 { font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:800;color:#fff;letter-spacing:-0.03em;line-height:1.2;margin-bottom:1rem; }
 .cnt-hero-sub { font-size:1rem;color:rgba(255,255,255,0.5);line-height:1.7;max-width:520px;margin-bottom:2rem; }
@@ -611,9 +679,92 @@
 .cnt-card-body small { font-size:0.6875rem;color:rgba(255,255,255,0.35); }
 .cnt-card-arrow { color:rgba(255,255,255,0.25);flex-shrink:0;transition:color 0.15s,transform 0.15s; }
 .cnt-card--link:hover .cnt-card-arrow { color:rgba(255,255,255,0.7);transform:translateX(3px); }
-.cnt-hero-visual { display:flex;justify-content:center;align-items:flex-end;position:relative; }
-.cnt-hero-mascot { width:185px;height:auto;filter:drop-shadow(-10px 0 32px rgba(232,32,32,0.32)) drop-shadow(0 20px 36px rgba(0,0,0,0.65));animation:mascotFloat 5s ease-in-out infinite; }
-.cnt-hero-glow { position:absolute;bottom:-8px;left:50%;transform:translateX(-50%);width:110px;height:14px;background:radial-gradient(ellipse,rgba(232,32,32,0.4) 0%,transparent 70%);filter:blur(5px); }
+/* Chat UI */
+.cnt-chat-ui {
+  background:#0d1829;
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 24px 60px rgba(0,0,0,0.5),0 0 0 1px rgba(255,255,255,0.04);
+  display:flex;flex-direction:column;
+  max-width:360px;width:100%;
+}
+.cnt-chat-header {
+  display:flex;align-items:center;gap:10px;
+  padding:12px 16px;
+  background:rgba(232,32,32,0.1);
+  border-bottom:1px solid rgba(255,255,255,0.08);
+}
+.cnt-chat-avatar { width:32px;height:32px;border-radius:50%;background:rgba(232,32,32,0.15);border:1.5px solid rgba(232,32,32,0.3);overflow:hidden;display:flex;align-items:center;justify-content:center;flex-shrink:0; }
+.cnt-chat-avatar img { width:24px;height:auto; }
+.cnt-chat-agent { flex:1;display:flex;flex-direction:column;gap:1px; }
+.cnt-chat-agent strong { font-size:0.8125rem;font-weight:700;color:#fff; }
+.cnt-chat-agent span { font-size:0.6875rem;color:rgba(255,255,255,0.45);display:flex;align-items:center;gap:4px; }
+.cnt-chat-dot { width:6px;height:6px;border-radius:50%;background:#4ade80;box-shadow:0 0 5px rgba(74,222,128,0.7);animation:helpPulse 2s ease-in-out infinite;flex-shrink:0; }
+.cnt-chat-close { color:rgba(255,255,255,0.2);cursor:default; }
+.cnt-chat-body { padding:16px;display:flex;flex-direction:column;gap:10px;flex:1; }
+.cnt-chat-msg { display:flex;flex-direction:column;gap:3px; }
+.cnt-chat-msg--agent { align-items:flex-start; }
+.cnt-chat-msg--user  { align-items:flex-end; }
+.cnt-chat-bubble {
+  max-width:88%;padding:9px 13px;border-radius:14px;
+  font-size:0.8125rem;line-height:1.55;
+}
+.cnt-chat-bubble--agent {
+  background:rgba(255,255,255,0.07);
+  border:1px solid rgba(255,255,255,0.09);
+  color:rgba(255,255,255,0.85);
+  border-bottom-left-radius:4px;
+}
+.cnt-chat-bubble--agent strong { color:#fff; }
+.cnt-chat-bubble--user {
+  background:rgba(232,32,32,0.15);
+  border:1px solid rgba(232,32,32,0.25);
+  color:rgba(255,255,255,0.7);
+  border-bottom-right-radius:4px;
+}
+.cnt-chat-time { font-size:0.625rem;color:rgba(255,255,255,0.25);padding:0 4px; }
+.cnt-chat-replies { display:flex;flex-direction:column;gap:6px;padding-left:0; }
+.cnt-reply-btn {
+  display:flex;align-items:center;gap:7px;
+  padding:8px 12px;border-radius:10px;text-decoration:none;
+  font-size:0.75rem;font-weight:600;
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.1);
+  color:rgba(255,255,255,0.7);
+  transition:all 0.15s;
+}
+.cnt-reply-btn:hover { background:rgba(255,255,255,0.12);color:#fff;border-color:rgba(255,255,255,0.2); }
+.cnt-reply-btn--red { background:rgba(232,32,32,0.12);border-color:rgba(232,32,32,0.28);color:#ff8080; }
+.cnt-reply-btn--red:hover { background:rgba(232,32,32,0.22);color:#fff; }
+/* Typing dots */
+.cnt-typing { display:flex;align-items:center;gap:4px;padding:10px 14px; }
+.cnt-typing span { width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,0.3);animation:typingBounce 1.2s ease-in-out infinite; }
+.cnt-typing span:nth-child(2) { animation-delay:0.2s; }
+.cnt-typing span:nth-child(3) { animation-delay:0.4s; }
+@keyframes typingBounce { 0%,60%,100%{transform:translateY(0)} 30%{transform:translateY(-5px)} }
+/* Chat input */
+.cnt-chat-input {
+  display:flex;align-items:center;gap:8px;
+  padding:10px 14px;
+  border-top:1px solid rgba(255,255,255,0.08);
+  background:rgba(255,255,255,0.03);
+}
+.cnt-chat-input-field {
+  flex:1;font-size:0.8125rem;color:rgba(255,255,255,0.2);
+  background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);
+  border-radius:9999px;padding:7px 14px;
+}
+.cnt-chat-send {
+  width:30px;height:30px;border-radius:50%;
+  background:rgba(232,32,32,0.15);border:1px solid rgba(232,32,32,0.25);
+  color:#e82020;display:flex;align-items:center;justify-content:center;
+  cursor:default;flex-shrink:0;
+}
+/* Entrance animation */
+@keyframes chatFadeUp { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+.cnt-chat-anim { opacity:0;animation:chatFadeUp 0.4s ease forwards; }
+@media(max-width:900px){ .cnt-chat-ui { display:none; } }
 
 /* Main section */
 .cnt-main { position:relative; }
