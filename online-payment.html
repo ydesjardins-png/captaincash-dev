@@ -388,11 +388,14 @@
             <span class="pmt-detail-val">Captain Cash <span class="pmt-copy-note">(or your choice)</span></span>
           </div>
           <div class="pmt-detail-row pmt-detail-row--highlight pmt-detail-row--email">
-            <span class="pmt-detail-label">Recipient email</span>
-            <button class="pmt-copy-btn" data-copy="receivables@diamondfinancialone.com" aria-label="Copy email address">
-              <span class="pmt-copy-email">receivables@diamondfinancialone.com</span>
-              <svg class="pmt-copy-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
-              <span class="pmt-copy-confirm" aria-live="polite">Copied!</span>
+            <span class="pmt-detail-label">Email</span>
+            <button class="pmt-copy-btn" data-copy="receivables@diamondfinancialone.com" aria-label="Copy recipient email address">
+              <span class="pmt-copy-email">receivables@<br>diamondfinancialone.com</span>
+              <span class="pmt-copy-right">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                <span class="pmt-copy-confirm" aria-live="polite">Copied!</span>
+                <span class="pmt-copy-tap">Tap to copy</span>
+              </span>
             </button>
           </div>
           <div class="pmt-detail-row">
@@ -962,10 +965,12 @@
 .pmt-detail-val { color:#0b1a33;font-weight:500;text-align:right; }
 .pmt-detail-exact { font-family:monospace;background:#fff;border:1px solid #e2e6ed;border-radius:6px;padding:2px 8px;color:#e82020;font-weight:700; }
 .pmt-copy-note { font-size:0.6875rem;color:#9ca3af;font-weight:400; }
-.pmt-detail-row--email { flex-direction:column;align-items:flex-start;gap:6px; }
-.pmt-copy-btn { display:flex;align-items:center;gap:6px;background:rgba(232,32,32,0.06);border:1px solid rgba(232,32,32,0.18);border-radius:8px;padding:6px 12px;cursor:pointer;font-size:0.8125rem;font-family:inherit;color:#e82020;font-weight:600;transition:all 0.15s;width:100%;justify-content:space-between; }
+.pmt-detail-row--email { flex-direction:row;align-items:center;gap:0.75rem; }
+.pmt-copy-btn { display:flex;align-items:center;justify-content:space-between;gap:8px;background:rgba(232,32,32,0.06);border:1px solid rgba(232,32,32,0.18);border-radius:8px;padding:7px 10px;cursor:pointer;font-family:inherit;color:#e82020;transition:all 0.15s;flex:1;min-width:0; }
 .pmt-copy-btn:hover { background:rgba(232,32,32,0.12); }
-.pmt-copy-email { font-size:0.8125rem;word-break:break-all;flex:1; }
+.pmt-copy-email { font-size:0.75rem;font-weight:700;line-height:1.35;flex:1;min-width:0; }
+.pmt-copy-right { display:flex;flex-direction:column;align-items:center;gap:2px;flex-shrink:0; }
+.pmt-copy-tap { font-size:0.5625rem;color:rgba(232,32,32,0.6);white-space:nowrap;font-weight:600;letter-spacing:0.04em; }
 .pmt-copy-confirm { display:none;color:#16a34a;font-size:0.6875rem;font-weight:700; }
 
 /* Quick reference */
