@@ -150,10 +150,104 @@
       <img src="images/mascot/sprites/logo-lockup-small.webp" alt="Captain Cash — Here to save the day" width="192" height="48" loading="eager">
     </a>
     <nav class="nav-links" aria-label="Main navigation">
-      <a href="how-it-works.html">How it works</a>
-      <a href="support.html">FAQ</a>
-      <a href="about.html">About</a>
-      <a href="blog.html">Blog</a>
+
+      <!-- Products dropdown -->
+      <div class="nav-item nav-item--dropdown">
+        <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+          Products
+          <svg class="nav-chev" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
+        </button>
+        <div class="nav-dropdown" role="menu">
+          <a href="claim-your-cash.html" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--red" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>Get a loan</strong>
+              <span>$500–$1,000, same business day</span>
+            </span>
+          </a>
+          <a href="renew-your-loan.html" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--amber" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>Renew your loan</strong>
+              <span>Fast track for returning customers</span>
+            </span>
+          </a>
+          <a href="online-payment.html" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--blue" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>Online payment</strong>
+              <span>Pay or manage your existing loan</span>
+            </span>
+          </a>
+          <div class="nav-drop-sep" aria-hidden="true"></div>
+          <a href="pages/installment-loans.html" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--green" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>Installment loans</strong>
+              <span>How our loan model works</span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Learn dropdown -->
+      <div class="nav-item nav-item--dropdown">
+        <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+          Learn
+          <svg class="nav-chev" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
+        </button>
+        <div class="nav-dropdown" role="menu">
+          <a href="how-it-works.html" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--blue" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>How it works</strong>
+              <span>Apply, approve, get funded</span>
+            </span>
+          </a>
+          <a href="support.html" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--green" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>FAQ</strong>
+              <span>Common questions answered</span>
+            </span>
+          </a>
+          <a href="about.html" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--red" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>About Captain Cash</strong>
+              <span>Canadian lender since 2015</span>
+            </span>
+          </a>
+          <div class="nav-drop-sep" aria-hidden="true"></div>
+          <a href="blog.html" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--amber" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>Blog</strong>
+              <span>Tips for Canadian borrowers</span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Direct links -->
+      <a href="contact.html" class="nav-link-plain">Contact</a>
+
     </nav>
     <div class="nav-cta">
       <a href="tel:18882261026" class="nav-phone nav-phone--dark">1-888-226-1026</a>
@@ -1180,6 +1274,56 @@
   box-shadow: 0 1px 0 rgba(255,255,255,0.08);
 }
 .site-header--dark .nav-links a { color: rgba(255,255,255,0.65); }
+/* ── NAV DROPDOWNS ── */
+.nav-item { position:relative; }
+.nav-dropdown-trigger {
+  display:flex; align-items:center; gap:5px;
+  background:none; border:none; cursor:pointer;
+  font-family:inherit; font-size:0.875rem; font-weight:500;
+  color:rgba(255,255,255,0.65); padding:6px 10px; border-radius:8px;
+  transition:background 0.15s, color 0.15s;
+}
+.nav-dropdown-trigger:hover,
+.nav-dropdown-trigger[aria-expanded="true"] { background:rgba(255,255,255,0.07); color:#fff; }
+.nav-chev { transition:transform 0.2s; flex-shrink:0; }
+.nav-dropdown-trigger[aria-expanded="true"] .nav-chev { transform:rotate(180deg); }
+.nav-dropdown {
+  position:absolute; top:calc(100% + 10px); left:0;
+  background:#0d1829; border:1px solid rgba(255,255,255,0.1);
+  border-radius:16px; padding:8px; min-width:260px; z-index:200;
+  opacity:0; pointer-events:none;
+  transform:translateY(-8px);
+  transition:opacity 0.18s ease, transform 0.18s ease;
+  box-shadow:0 16px 48px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.04);
+}
+.nav-dropdown.nav-dropdown--open {
+  opacity:1; pointer-events:auto; transform:translateY(0);
+}
+.nav-drop-item {
+  display:flex; align-items:center; gap:12px;
+  padding:10px 12px; border-radius:10px; text-decoration:none;
+  transition:background 0.15s;
+  color:inherit;
+}
+.nav-drop-item:hover { background:rgba(255,255,255,0.06); }
+.nav-drop-icon {
+  width:32px; height:32px; border-radius:8px; flex-shrink:0;
+  display:flex; align-items:center; justify-content:center;
+}
+.nav-drop-icon--red   { background:rgba(232,32,32,0.15);  color:#e82020; }
+.nav-drop-icon--amber { background:rgba(255,179,71,0.12);  color:#ffb347; }
+.nav-drop-icon--blue  { background:rgba(26,110,240,0.15);  color:#4a9eff; }
+.nav-drop-icon--green { background:rgba(22,163,74,0.15);   color:#4ade80; }
+.nav-drop-text { display:flex; flex-direction:column; gap:1px; }
+.nav-drop-text strong { font-size:0.8125rem; font-weight:600; color:#fff; }
+.nav-drop-text span   { font-size:0.75rem; color:rgba(255,255,255,0.4); }
+.nav-drop-sep { height:1px; background:rgba(255,255,255,0.07); margin:6px 0; }
+.nav-link-plain {
+  font-size:0.875rem; font-weight:500; color:rgba(255,255,255,0.65);
+  padding:6px 10px; border-radius:8px; text-decoration:none;
+  transition:background 0.15s, color 0.15s;
+}
+.nav-link-plain:hover { background:rgba(255,255,255,0.07); color:#fff; }
 .site-header--dark .nav-links a:hover { color: #fff; }
 .btn-header-red, .btn-header-amber {
   display:inline-flex; align-items:center;
@@ -2572,6 +2716,35 @@ h1 em {
       }
     });
   });
+  </script>
+  <script>
+  /* ── nav dropdowns ── */
+  (function() {
+    var triggers = document.querySelectorAll('.nav-dropdown-trigger');
+    function closeAll() {
+      triggers.forEach(function(t) {
+        t.setAttribute('aria-expanded','false');
+        var dd = t.nextElementSibling;
+        if (dd) dd.classList.remove('nav-dropdown--open');
+      });
+    }
+    triggers.forEach(function(trigger) {
+      trigger.addEventListener('click', function(e) {
+        e.stopPropagation();
+        var isOpen = trigger.getAttribute('aria-expanded') === 'true';
+        closeAll();
+        if (!isOpen) {
+          trigger.setAttribute('aria-expanded','true');
+          var dd = trigger.nextElementSibling;
+          if (dd) dd.classList.add('nav-dropdown--open');
+        }
+      });
+    });
+    document.addEventListener('click', closeAll);
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeAll();
+    });
+  })();
   </script>
 </body>
 </html>
