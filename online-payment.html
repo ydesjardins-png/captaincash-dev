@@ -214,37 +214,7 @@
         <text transform="rotate(-20,0,520)" x="-40" y="520">8832 2211 6643 9912 5532 2291 8849 1102 7763 3318 9900 4421 8832 2211 6643 9912 3341 6682 0019</text>
         <text transform="rotate(-20,0,580)" x="-40" y="580">1837 9901 2210 5543 6631 9920 3312 8841 1100 4492 7723 2298 5561 4420 7762 3341 9901 6643 1100</text>
       </g>
-    </svg>
-    <!-- Option C: ghost transaction UI faded behind right side -->
-    <svg class="pmt-bg-ghost" viewBox="0 0 300 260" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
-      <g opacity="0.055" fill="white">
-        <!-- Card shape -->
-        <rect x="10" y="10" width="280" height="240" rx="20"/>
-        <!-- Header bar -->
-        <rect x="10" y="10" width="280" height="45" rx="20"/>
-        <rect x="10" y="42" width="280" height="13"/>
-        <!-- Traffic light dots -->
-        <circle cx="35" cy="33" r="5"/>
-        <circle cx="52" cy="33" r="5"/>
-        <circle cx="69" cy="33" r="5"/>
-        <!-- Status circle -->
-        <circle cx="150" cy="95" r="28"/>
-        <!-- Checkmark -->
-        <polyline points="136,95 147,106 166,83" fill="none" stroke="#04080f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-        <!-- Amount block -->
-        <rect x="60" y="135" width="180" height="28" rx="6"/>
-        <!-- Detail rows -->
-        <rect x="30" y="178" width="100" height="8" rx="4"/>
-        <rect x="170" y="178" width="110" height="8" rx="4"/>
-        <rect x="30" y="198" width="80" height="8" rx="4"/>
-        <rect x="190" y="198" width="90" height="8" rx="4"/>
-        <rect x="30" y="218" width="70" height="8" rx="4"/>
-        <rect x="200" y="218" width="80" height="8" rx="4"/>
-        <!-- Footer strip -->
-        <rect x="10" y="236" width="280" height="14" rx="8"/>
-      </g>
-    </svg>
-    <!-- Existing atmospheric elements -->
+    </svg>    <!-- Existing atmospheric elements -->
     <div class="pmt-orb-r"></div>
     <div class="pmt-orb-b"></div>
     <div class="pmt-edge"></div>
@@ -901,14 +871,7 @@
   position:absolute;inset:0;width:100%;height:100%;
   pointer-events:none;
 }
-.pmt-bg-ghost {
-  position:absolute;right:-2%;top:50%;
-  transform:translateY(-50%);
-  width:340px;height:auto;
-  pointer-events:none;
-  opacity:1;
-}
-@media(max-width:768px){ .pmt-bg-ghost { display:none; } }
+
 .pmt-hero-bg { position:absolute;inset:0;pointer-events:none;overflow:hidden; }
 .pmt-orb-r { position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(232,32,32,0.18) 0%,transparent 65%);bottom:-280px;right:-160px;filter:blur(20px);animation:orbPulse 8s ease-in-out infinite; }
 .pmt-orb-b { position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(26,110,240,0.12) 0%,transparent 65%);top:-160px;left:-100px;filter:blur(18px); }
