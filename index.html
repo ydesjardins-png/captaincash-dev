@@ -1938,9 +1938,6 @@ h1 em {
 .btn-cta-phone:hover { background:rgba(255,255,255,0.08); color:#fff; }
 
 /* ── FOOTER ── */
-.footer-mascot-row { display:flex; align-items:center; gap:1rem; margin-top:1rem; }
-.footer-mascot { width:58px; height:auto; flex-shrink:0; opacity:0.9; filter:drop-shadow(0 4px 8px rgba(0,0,0,0.4)); }
-.footer-mascot-row p { margin:0; }
 
 /* ══════════════════════════════════════
    RESPONSIVE — 4 breakpoints
@@ -1953,6 +1950,15 @@ h1 em {
 
 
 /* ── small laptop (900–1199px) ── */
+/* ══════════════════════════════════════
+   RESPONSIVE — 4 breakpoints
+   ≤1199px  small laptop
+   ≤900px   tablet / iPad portrait
+   ≤767px   large phone
+   ≤479px   small phone
+══════════════════════════════════════ */
+
+/* ── small laptop (≤1199px) ── */
 @media (max-width:1199px) {
   .bento-grid { grid-template-columns:repeat(2,1fr); }
   .bento-card--tall { grid-row:span 1; }
@@ -1964,27 +1970,36 @@ h1 em {
 
 /* ── tablet / iPad portrait (≤900px) ── */
 @media (max-width:900px) {
+  /* hero */
   .hero-inner {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     padding-top: 4rem;
-    padding-bottom: 0;
+    padding-bottom: 2rem;
     gap: 2rem;
     align-items: start;
   }
-  .hero-mascot-col { display: none; }
-
+  .hero-mascot-col { display:none; }
   .hero-body { max-width:100%; }
   .calc-wrap { max-width:100%; margin:0; }
+
+  /* stat strip */
   .hero-stat-inner { flex-wrap:wrap; }
   .hero-stat-divider { display:none; }
   .hero-stat-item { flex:0 0 50%; padding:1.25rem 1rem; border-bottom:1px solid rgba(255,255,255,0.06); }
   .hero-stat-item:nth-child(1),.hero-stat-item:nth-child(3) { border-right:1px solid rgba(255,255,255,0.06); }
+
+  /* grids */
   .bento-grid { grid-template-columns:repeat(2,1fr); }
   .bento-card--large,.bento-card--wide { grid-column:span 2; }
   .steps-grid { grid-template-columns:repeat(2,1fr); gap:1rem; }
   .testimonials-grid { grid-template-columns:repeat(2,1fr); }
   .faq-preview-grid { grid-template-columns:repeat(2,1fr); }
   .elig-grid { grid-template-columns:1fr; }
+
+  /* cost widget */
+  .cost-top { grid-template-columns:1fr; }
+
+  /* CTA banner */
   .cta-banner-inner { flex-direction:column; text-align:center; align-items:center; }
   .cta-banner-actions { justify-content:center; }
   .cta-mascot { display:none; }
@@ -1992,42 +2007,78 @@ h1 em {
 
 /* ── large phone (≤767px) ── */
 @media (max-width:767px) {
-  .hero-inner { grid-template-columns:1fr; padding-top:3.5rem; }
-  h1 { font-size:2.2rem !important; }
+  /* hero */
+  .hero-inner { padding-top:3rem; padding-bottom:1.5rem; }
+  h1 { font-size:2rem !important; }
+  .hero-trust-pills { gap:6px; }
+  .hero-trust-pills li { font-size:0.75rem; padding:4px 10px; }
+  .hero-actions { flex-direction:column; }
+  .btn-hero-primary,.btn-hero-ghost { width:100%; justify-content:center; text-align:center; }
+  .hero-inline-proof { width:100%; }
+
+  /* calculator */
   .calc-display-row { flex-direction:column; gap:10px; }
   .calc-display-row > div:last-child { text-align:left; }
   .calc-display-amount { font-size:1.8rem; }
+  .cost-sched-header { grid-template-columns:28px 1fr 70px 70px 64px; }
+  .cost-sched-row { grid-template-columns:28px 1fr 70px 70px 64px; }
+
+  /* steps */
   .steps-grid { grid-template-columns:1fr; gap:0.75rem; }
   .steps-connector { display:none; }
+
+  /* bento */
   .bento-grid { grid-template-columns:1fr; }
   .bento-card--tall,.bento-card--wide,.bento-card--full { grid-column:span 1; grid-row:span 1; }
-  .bento-card { padding:1.5rem; }
+  .bento-card,.elig-card,.elig-cta-card { padding:1.25rem; }
+
+  /* compare */
   .compare-layout { grid-template-columns:1fr; gap:0; }
   .cmp-vs-col { flex-direction:row; padding:0 1rem; }
   .cmp-vs-line { flex:1; width:auto; height:1px; background:linear-gradient(90deg,transparent,#e2e6ed 30%,#e2e6ed 70%,transparent); }
   .compare-card-them { border-radius:20px 20px 0 0; border-bottom:none; border-top:3px solid #e2e6ed; }
   .compare-card-us { border-radius:0 0 20px 20px; border-top:2px solid #e82020; }
+  .compare-card-them,.compare-card-us { padding:1.25rem; }
+
+  /* testimonials + faq */
   .testimonials-grid { grid-template-columns:1fr; }
   .faq-preview-grid { grid-template-columns:1fr; }
-  .cost-table th:nth-child(3),.cost-table td:nth-child(3) { display:none; }
-  .hero-actions { flex-direction:column; }
-  .btn-hero-primary,.btn-hero-ghost { width:100%; justify-content:center; text-align:center; }
+
+  /* CTA banner */
   .cta-banner-text { text-align:center; }
-  .section,.section--dark,.section--darker { padding:var(--space-16) 0; }
+  .cta-banner h2 { font-size:1.5rem; }
+
+  /* section padding reduction */
+  .section,
+  .section--dark,
+  .section--darker,
+  .section--steps-light,
+  .section--compare-light,
+  .section--cost,
+  .section--eligibility { padding:var(--space-16) 0; }
 }
 
 /* ── small phone (≤479px) ── */
 @media (max-width:479px) {
-  h1 { font-size:1.9rem !important; }
-  .hero-eyebrow { font-size:0.7rem; padding:5px 12px; }
+  h1 { font-size:1.8rem !important; }
+  .hero-eyebrow { font-size:0.6875rem; padding:5px 12px; }
   .hero-stat-item { flex:0 0 100%; border-right:none !important; }
-  .calc-display-amount { font-size:1.6rem; }
-  .freq-btn { font-size:0.7rem; padding:8px 2px; }
-  .province-tags span { font-size:0.8rem; padding:0.2rem 0.65rem; }
-  .footer-mascot { width:48px; }
-  .footer-mascot-row { gap:0.75rem; }
-  .hero-trust-pills { gap:6px; }
-  .hero-trust-pills li { font-size:0.75rem; padding:4px 10px; }
+  .calc-display-amount { font-size:1.5rem; }
+  .cost-freq-btn { font-size:0.6875rem; padding:6px 2px; }
+  .elig-province-tags span { font-size:0.75rem; padding:3px 10px; }
+
+  /* cost widget schedule: hide balance on tiny screens */
+  .cost-sched-header .col-right:nth-child(4),
+  .cost-sched-row .cs-bal { display:none; }
+  .cost-sched-header { grid-template-columns:28px 1fr 72px 64px; }
+  .cost-sched-row { grid-template-columns:28px 1fr 72px 64px; }
+
+  /* footer */
+  .footer-grid { grid-template-columns:1fr; }
+
+  /* CTA banner button full width */
+  .cta-banner-actions { flex-direction:column; width:100%; }
+  .cta-banner-actions .btn,.cta-banner-actions .btn-cta-phone { width:100%; text-align:center; justify-content:center; }
 }
 </style>
 
