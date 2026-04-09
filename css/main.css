@@ -61,3 +61,26 @@ p  { font-size: var(--text-base); line-height: var(--leading-normal); color: var
 .text-center { text-align: center; }
 .bg-soft { background: var(--color-bg-soft); }
 .bg-subtle { background: var(--color-bg-subtle); }
+
+/* ══════════════════════════════════════
+   MOBILE FIXES — iOS & Android
+══════════════════════════════════════ */
+
+/* Fix 1: Tap highlight flash — iOS & Android */
+*, *::before, *::after {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Fix 2: Button default iOS Safari styling */
+button, input[type="submit"], input[type="button"], input[type="reset"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Fix 3: iOS momentum scroll on overflow containers */
+.sig-contract,
+.legal-toc,
+[style*="overflow: auto"],
+[style*="overflow: scroll"] {
+  -webkit-overflow-scrolling: touch;
+}

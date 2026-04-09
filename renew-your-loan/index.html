@@ -199,6 +199,7 @@
   background: #04080f;
   padding: 0;
   min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
 }
@@ -1420,7 +1421,7 @@ h1 em {
 @media(max-width:600px){.funnel-step-desc{display:none}.funnel-step-name{font-size:0.75rem}.funnel-step{gap:7px}}
 
 /* Funnel page layout */
-.funnel-page{background:#f8f9fb;min-height:calc(100vh - 140px);padding:1.5rem 0 3rem}
+.funnel-page{background:#f8f9fb;min-height:calc(100vh - 140px);min-height:calc(100svh - 140px);padding:1.5rem 0 3rem}
 .funnel-card{background:#fff;border:1px solid #e2e6ed;border-radius:20px;padding:1.5rem;box-shadow:0 1px 4px rgba(11,26,51,0.06);max-width:680px;margin:0 auto}
 .funnel-card-header{margin-bottom:1.25rem;padding-bottom:1rem;border-bottom:1px solid #f0f2f5}
 .funnel-card-eyebrow{font-size:0.6875rem;font-weight:700;color:#e82020;text-transform:uppercase;letter-spacing:0.09em;margin-bottom:6px}
@@ -1437,7 +1438,7 @@ h1 em {
 .funnel-field.full{grid-column:1/-1}
 .funnel-label{font-size:0.8125rem;font-weight:600;color:#374151}
 .funnel-label span{color:#e82020;margin-left:2px}
-.funnel-input,.funnel-select,.funnel-textarea{width:100%;padding:10px 14px;border:1.5px solid #e2e6ed;border-radius:10px;font-size:0.9375rem;color:#0b1a33;background:#fff;outline:none;transition:border-color .15s,box-shadow .15s;-webkit-appearance:none;font-family:inherit}
+.funnel-input,.funnel-select,.funnel-textarea{width:100%;padding:10px 14px;border:1.5px solid #e2e6ed;border-radius:10px;font-size:1rem;color:#0b1a33;background:#fff;outline:none;transition:border-color .15s,box-shadow .15s;-webkit-appearance:none;font-family:inherit}
 .funnel-input:focus,.funnel-select:focus,.funnel-textarea:focus{border-color:#e82020;box-shadow:0 0 0 3px rgba(232,32,32,0.08)}
 .funnel-input::placeholder{color:#c0c7d3}
 .funnel-select{background-image:url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%239ca3af' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:36px;cursor:pointer}
@@ -1867,7 +1868,7 @@ h1 em {
           </div>
           <div class="funnel-field">
             <label class="funnel-label" for="cell">Cellphone Number<span>*</span></label>
-            <input class="funnel-input" type="text" id="cell" name="cell" placeholder="Cellphone number*" required>
+            <input class="funnel-input" type="text" id="cell" name="cell" placeholder="Cellphone number*" autocomplete="tel" required>
             <span class="funnel-error-msg">Required</span>
           </div>
           <div class="funnel-field">
