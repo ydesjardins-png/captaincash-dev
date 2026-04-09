@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Captain Cash terms and conditions — loan agreement, repayment terms, fees, NSF policy, deferral, cancellation rights, and collection practices. Read before you borrow.">
+  <meta name="description" content="Captain Cash loan terms — repayment, fees, cancellation rights, and your obligations as a borrower. Read before you apply.">
   <title>Terms and Conditions | Captain Cash</title>
   <link rel="canonical" href="https://captaincash.ca/terms-conditions/">
   <meta property="og:title" content="Terms and Conditions | Captain Cash">
-  <meta property="og:description" content="Captain Cash loan terms — repayment, fees, cancellation, and your rights as a borrower.">
+  <meta property="og:description" content="Captain Cash loan terms — repayment, fees, cancellation rights, and your obligations as a borrower. Read before you apply.">
   <meta property="og:image" content="https://captaincash-redesign.netlify.app/images/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -1405,61 +1405,97 @@ h1 em {
   .cta-banner-actions .btn,.cta-banner-actions .btn-cta-phone { width:100%; text-align:center; justify-content:center; }
 }
 
-
 /* ══════════════════════════════════════
-   LEGAL PAGES — shared styles
+   LEGAL PAGES — redesigned UI/UX
 ══════════════════════════════════════ */
-.legal-hero { background:#000;padding:3.5rem 0 3rem;border-bottom:1px solid rgba(255,255,255,0.06); }
-.legal-hero-inner { display:flex;flex-direction:column;gap:1rem; }
-.legal-badge { display:inline-flex;align-items:center;gap:6px;font-size:0.75rem;font-weight:700;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.09em;margin-bottom:0.5rem; }
-.legal-badge span { width:6px;height:6px;border-radius:50%;background:#e82020;flex-shrink:0; }
-.legal-hero h1 { font-size:clamp(1.75rem,4vw,2.5rem);font-weight:900;color:#fff;letter-spacing:-0.03em;line-height:1.2; }
-.legal-hero-meta { display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;margin-top:0.5rem; }
-.legal-meta-item { display:flex;align-items:center;gap:6px;font-size:0.8125rem;color:rgba(255,255,255,0.4); }
-.legal-meta-item svg { flex-shrink:0;opacity:0.5; }
-.legal-summary { background:#0d1829;border:1px solid rgba(232,32,32,0.2);border-left:4px solid #e82020;border-radius:0 14px 14px 0;padding:1.5rem 2rem;margin:2.5rem 0; }
-.legal-summary-title { font-size:0.75rem;font-weight:700;color:#e82020;text-transform:uppercase;letter-spacing:0.09em;margin-bottom:1rem; }
-.legal-summary-grid { display:grid;grid-template-columns:repeat(2,1fr);gap:0.75rem; }
-@media(max-width:600px){ .legal-summary-grid { grid-template-columns:1fr; } }
-.legal-summary-item { display:flex;align-items:flex-start;gap:8px;font-size:0.875rem;color:rgba(255,255,255,0.7);line-height:1.55; }
-.legal-summary-item::before { content:"";width:6px;height:6px;border-radius:50%;background:#e82020;flex-shrink:0;margin-top:6px; }
-.legal-layout { display:grid;grid-template-columns:240px 1fr;gap:4rem;align-items:start;padding:3rem 0 5rem; }
-@media(max-width:900px){ .legal-layout { grid-template-columns:1fr; } }
-.legal-toc { position:sticky;top:100px; }
-.legal-toc-title { font-size:0.6875rem;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:0.09em;margin-bottom:1rem;padding-bottom:0.75rem;border-bottom:1px solid #e2e6ed; }
-.legal-toc-list { list-style:none;display:flex;flex-direction:column;gap:2px; }
-.legal-toc-item a { display:block;font-size:0.8125rem;color:#6b7789;text-decoration:none;padding:5px 10px;border-radius:6px;line-height:1.4;transition:all 0.15s; }
-.legal-toc-item a:hover { color:#e82020;background:#fef2f2; }
-.legal-toc-item a.active { color:#e82020;background:#fef2f2;font-weight:600; }
-.legal-toc-item a span { display:block;font-size:0.6875rem;color:#9ca3af;font-weight:400;margin-top:1px; }
-.legal-content { min-width:0; }
-.legal-section { margin-bottom:3rem;padding-bottom:3rem;border-bottom:1px solid #f0f2f5; }
-.legal-section:last-child { border-bottom:none; }
-.legal-section-num { font-size:0.6875rem;font-weight:700;color:#e82020;text-transform:uppercase;letter-spacing:0.09em;margin-bottom:0.5rem; }
-.legal-section h2 { font-size:1.375rem;font-weight:800;color:#0b1a33;margin-bottom:1.25rem;line-height:1.3; }
-.legal-section h3 { font-size:1rem;font-weight:700;color:#0b1a33;margin:1.5rem 0 0.75rem; }
-.legal-section p { font-size:0.9375rem;color:#4a5568;line-height:1.85;margin-bottom:1rem; }
-.legal-section ul { margin:0.75rem 0 1rem 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px; }
-.legal-section ul li { display:flex;align-items:flex-start;gap:8px;font-size:0.9375rem;color:#4a5568;line-height:1.7; }
-.legal-section ul li::before { content:"";width:5px;height:5px;border-radius:50%;background:#e82020;flex-shrink:0;margin-top:9px; }
-.legal-section ol { margin:0.75rem 0 1rem 1.5rem;display:flex;flex-direction:column;gap:8px; }
-.legal-section ol li { font-size:0.9375rem;color:#4a5568;line-height:1.75; }
-.legal-highlight { background:#f8f9fb;border:1px solid #e2e6ed;border-radius:12px;padding:1.25rem 1.5rem;margin:1.25rem 0; }
-.legal-highlight p { margin:0;font-size:0.875rem;color:#4a5568;line-height:1.75; }
-.legal-highlight strong { color:#0b1a33; }
-.legal-contact-card { background:#0b1a33;border-radius:16px;padding:1.75rem;margin-top:1.5rem; }
-.legal-contact-card h3 { color:#fff;font-size:1rem;font-weight:700;margin-bottom:1rem; }
-.legal-contact-row { display:flex;align-items:center;gap:10px;margin-bottom:0.625rem;font-size:0.875rem;color:rgba(255,255,255,0.65); }
-.legal-contact-row a { color:#e82020;text-decoration:none; }
-.legal-sister-link { display:inline-flex;align-items:center;gap:6px;font-size:0.875rem;font-weight:600;color:#e82020;text-decoration:none;padding:8px 16px;border:1px solid rgba(232,32,32,0.3);border-radius:9999px;margin-top:1rem;transition:all 0.15s; }
-.legal-sister-link:hover { background:rgba(232,32,32,0.06); }
-@media(max-width:900px){ .legal-toc { display:none; } }
+.legal-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg,#e82020,#ff6a4d);z-index:9999;transition:width .15s linear;pointer-events:none}
+.legal-hero{position:relative;overflow:hidden;background:#04080f;padding:4rem 0 3.5rem}
+.legal-hero-bg{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.legal-hero-orb{position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(232,32,32,0.16) 0%,transparent 65%);bottom:-260px;right:-140px;filter:blur(20px)}
+.legal-hero-beam{position:absolute;top:0;right:0;width:60%;height:100%;background:conic-gradient(from 200deg at 100% 0%,transparent 0deg,rgba(232,32,32,0.1) 22deg,transparent 52deg)}
+.legal-hero-edge{position:absolute;top:0;right:0;width:1px;height:100%;background:linear-gradient(180deg,rgba(232,32,32,0.7) 0%,rgba(232,32,32,0.12) 50%,transparent 100%)}
+.legal-hero-inner{position:relative;z-index:2;display:flex;flex-direction:column;gap:1.25rem}
+.legal-badge{display:inline-flex;align-items:center;gap:7px;font-size:0.6875rem;font-weight:700;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.1em;background:rgba(232,32,32,0.1);border:1px solid rgba(232,32,32,0.22);border-radius:9999px;padding:4px 14px;width:fit-content}
+.legal-badge-dot{width:6px;height:6px;border-radius:50%;background:#e82020;flex-shrink:0}
+.legal-hero h1{font-size:clamp(2rem,5vw,3rem);font-weight:900;color:#fff;letter-spacing:-0.04em;line-height:1.1;margin:0}
+.legal-hero-meta{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
+.legal-meta-item{display:flex;align-items:center;gap:7px;font-size:0.8125rem;color:rgba(255,255,255,0.38)}
+.legal-meta-item svg{opacity:.5;flex-shrink:0}
+.legal-body-wrap{background:#fff}
+.legal-summary{background:#04080f;border-radius:20px;padding:2.25rem;margin:2.5rem 0 0;position:relative;overflow:hidden}
+.legal-summary-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 85% 50%,rgba(232,32,32,0.13) 0%,transparent 60%);pointer-events:none}
+.legal-summary-inner{position:relative;z-index:2}
+.legal-summary-header{display:flex;align-items:flex-start;gap:12px;margin-bottom:1.5rem}
+.legal-summary-icon{width:38px;height:38px;border-radius:10px;background:rgba(232,32,32,0.12);border:1px solid rgba(232,32,32,0.25);color:#e82020;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.legal-summary-title{font-size:0.6875rem;font-weight:700;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:4px}
+.legal-summary-subtitle{font-size:1rem;font-weight:700;color:#fff}
+.legal-summary-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+@media(max-width:768px){.legal-summary-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.legal-summary-grid{grid-template-columns:1fr}}
+.legal-summary-item{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:14px 16px;display:flex;gap:10px;align-items:flex-start}
+.legal-summary-dot{width:6px;height:6px;border-radius:50%;background:#e82020;flex-shrink:0;margin-top:7px}
+.legal-summary-item p{font-size:0.8125rem;color:rgba(255,255,255,0.58);line-height:1.6;margin:0}
+.legal-layout{display:grid;grid-template-columns:252px 1fr;gap:4.5rem;align-items:start;padding:3rem 0 5rem}
+@media(max-width:900px){.legal-layout{grid-template-columns:1fr}}
+.legal-toc{position:sticky;top:88px}
+@media(max-width:900px){.legal-toc{display:none}}
+.legal-toc-header{display:flex;align-items:center;gap:8px;margin-bottom:1.25rem}
+.legal-toc-icon{width:28px;height:28px;border-radius:8px;background:#fef2f2;display:flex;align-items:center;justify-content:center;color:#e82020;flex-shrink:0}
+.legal-toc-label{font-size:0.6875rem;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:0.09em}
+.legal-toc-list{list-style:none;display:flex;flex-direction:column;gap:1px;border-left:2px solid #f0f2f5;margin-bottom:1.25rem}
+.legal-toc-item a{display:flex;align-items:center;gap:8px;font-size:0.8125rem;color:#9ca3af;text-decoration:none;padding:7px 12px;margin-left:-2px;border-left:2px solid transparent;transition:all .15s;line-height:1.4}
+.legal-toc-item a:hover{color:#374151;border-left-color:#d1d5db}
+.legal-toc-item a.active{color:#e82020;border-left-color:#e82020;font-weight:600;background:#fef2f2}
+.legal-toc-num{font-size:0.625rem;font-weight:700;color:#d1d5db;flex-shrink:0;min-width:14px}
+.legal-toc-item a.active .legal-toc-num{color:rgba(232,32,32,0.6)}
+.legal-sister-card{background:#f8f9fb;border:1px solid #e2e6ed;border-radius:14px;padding:1rem 1.125rem;text-decoration:none;display:block;transition:all .15s}
+.legal-sister-card:hover{border-color:rgba(232,32,32,0.3);background:#fef9f9;transform:translateY(-1px)}
+.legal-sister-label{font-size:0.625rem;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:0.09em;margin-bottom:5px}
+.legal-sister-title{font-size:0.875rem;font-weight:700;color:#0b1a33;display:flex;align-items:center;gap:6px;margin-bottom:4px}
+.legal-sister-title svg{color:#e82020;flex-shrink:0}
+.legal-sister-desc{font-size:0.75rem;color:#6b7789;line-height:1.5}
+.legal-content{min-width:0}
+.legal-section{margin-bottom:3rem;padding-bottom:3rem;border-bottom:1px solid #f0f2f5;scroll-margin-top:100px}
+.legal-section:last-child{border-bottom:none}
+.legal-section-head{display:flex;align-items:center;gap:12px;margin-bottom:1.25rem}
+.legal-num-pill{width:30px;height:30px;border-radius:50%;background:#fef2f2;border:1px solid rgba(232,32,32,0.2);font-size:0.75rem;font-weight:800;color:#e82020;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.legal-section h2{font-size:1.375rem;font-weight:800;color:#0b1a33;line-height:1.25;margin:0}
+.legal-section h3{font-size:0.9375rem;font-weight:700;color:#0b1a33;margin:1.5rem 0 .75rem;display:flex;align-items:center;gap:7px}
+.legal-section h3::before{content:"";width:3px;height:16px;background:#e82020;border-radius:2px;flex-shrink:0}
+.legal-section p{font-size:0.9375rem;color:#4a5568;line-height:1.85;margin-bottom:1rem}
+.legal-section ul{margin:.75rem 0 1rem;padding:0;list-style:none;display:flex;flex-direction:column;gap:5px}
+.legal-section ul li{display:flex;align-items:flex-start;gap:10px;font-size:0.9375rem;color:#4a5568;line-height:1.7;padding:9px 13px;background:#f8f9fb;border-radius:8px}
+.legal-section ul li::before{content:"";width:5px;height:5px;border-radius:50%;background:#e82020;flex-shrink:0;margin-top:9px}
+.legal-callout{display:flex;gap:12px;border-radius:0 12px 12px 0;padding:1rem 1.25rem;margin:1.25rem 0}
+.legal-callout--amber{background:#fffbeb;border:1px solid rgba(245,158,11,0.2);border-left:4px solid #f59e0b}
+.legal-callout--blue{background:#eff6ff;border:1px solid rgba(26,110,240,0.18);border-left:4px solid #1a6ef0}
+.legal-callout--green{background:#f0fdf4;border:1px solid rgba(22,163,74,0.2);border-left:4px solid #16a34a}
+.legal-callout-icon{flex-shrink:0;margin-top:1px}
+.legal-callout--amber .legal-callout-icon{color:#d97706}
+.legal-callout--blue .legal-callout-icon{color:#1a6ef0}
+.legal-callout--green .legal-callout-icon{color:#16a34a}
+.legal-callout p{margin:0;font-size:0.875rem;color:#4a5568;line-height:1.75}
+.legal-callout strong{color:#0b1a33}
+.legal-fees-table{width:100%;border-collapse:collapse;margin:1rem 0;border-radius:12px;overflow:hidden;border:1px solid #e2e6ed}
+.legal-fees-table th{padding:10px 16px;font-size:0.6875rem;font-weight:700;color:#6b7789;text-transform:uppercase;letter-spacing:.07em;text-align:left;background:#f8f9fb;border-bottom:2px solid #e2e6ed}
+.legal-fees-table td{padding:12px 16px;font-size:0.875rem;color:#4a5568;border-bottom:1px solid #f0f2f5;vertical-align:top}
+.legal-fees-table tr:last-child td{border-bottom:none}
+.legal-fees-table td:first-child{font-weight:600;color:#0b1a33;width:42%}
+.legal-contact-card{background:#04080f;border-radius:18px;padding:1.75rem 2rem;margin-top:1.5rem;position:relative;overflow:hidden}
+.legal-contact-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 90% 50%,rgba(232,32,32,0.1) 0%,transparent 60%);pointer-events:none}
+.legal-contact-inner{position:relative;z-index:2}
+.legal-contact-card h3{color:#fff;font-size:1rem;font-weight:700;margin-bottom:1.25rem}
+.legal-contact-row{display:flex;align-items:center;gap:10px;margin-bottom:.75rem;font-size:0.875rem;color:rgba(255,255,255,0.55)}
+.legal-contact-row svg{color:#e82020;flex-shrink:0}
+.legal-contact-row a{color:rgba(255,255,255,0.8);text-decoration:none;transition:color .15s}
+.legal-contact-row a:hover{color:#e82020}
+.legal-contact-row strong{color:rgba(255,255,255,0.85)}
 
   </style>
 </head>
 <body>
+<div class="legal-progress" id="legal-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 <a href="#main" class="skip-link">Skip to content</a>
-
 <header class="site-header site-header--dark" id="site-header">
   <div class="container header-inner">
     <a href="/" class="site-logo-img">
@@ -1622,238 +1658,160 @@ h1 em {
 </div>
 
 <main>
-
 <main id="main">
-
-<!-- HERO -->
 <div class="legal-hero">
+  <div class="legal-hero-bg" aria-hidden="true">
+    <div class="legal-hero-orb"></div>
+    <div class="legal-hero-beam"></div>
+    <div class="legal-hero-edge"></div>
+  </div>
   <div class="container legal-hero-inner">
-    <div>
-      <div class="legal-badge"><span></span>Legal document</div>
-      <h1>Terms &amp; Conditions</h1>
+    <div class="legal-badge"><span class="legal-badge-dot"></span>Legal document</div>
+    <h1>Terms &amp; Conditions</h1>
+    <div class="legal-hero-meta"><div class="legal-meta-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Last updated: January 1, 2025</div><div class="legal-meta-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Governed by Canadian federal and provincial law</div><div class="legal-meta-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg> Applies to all Captain Cash loan agreements</div></div>
+  </div>
+</div>
+<div class="legal-body-wrap">
+  <div class="container">
+<div class="legal-summary">
+      <div class="legal-summary-bg" aria-hidden="true"></div>
+      <div class="legal-summary-inner">
+        <div class="legal-summary-header">
+          <div class="legal-summary-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
+          <div>
+            <div class="legal-summary-title">Plain-language summary</div>
+            <div class="legal-summary-subtitle">What this means for you — read this first</div>
+          </div>
+        </div>
+        <div class="legal-summary-grid">
+          <div class="legal-summary-item"><div class="legal-summary-dot"></div><p>Loans are $500–$1,000, repaid over 90–150 days at APR 23%. Your exact schedule is shown before you sign.</p></div><div class="legal-summary-item"><div class="legal-summary-dot"></div><p>A missed payment triggers a $45 NSF fee. Call 48 hours ahead to defer for $25 instead.</p></div><div class="legal-summary-item"><div class="legal-summary-dot"></div><p>Repay your loan early at any time — no prepayment penalty. You only pay interest for the days held.</p></div><div class="legal-summary-item"><div class="legal-summary-dot"></div><p>You may cancel within 2 business days of signing with no penalty in most provinces.</p></div><div class="legal-summary-item"><div class="legal-summary-dot"></div><p>We do not report to credit bureaus — missed payments do not affect your credit score with us.</p></div><div class="legal-summary-item"><div class="legal-summary-dot"></div><p>If you face financial difficulty, contact us. We use responsible collection practices and work with you first.</p></div>
+        </div>
+      </div>
     </div>
-    <div class="legal-hero-meta">
-      <div class="legal-meta-item">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-        Last updated: January 1, 2025
-      </div>
-      <div class="legal-meta-item">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        Governed by Canadian federal and provincial law
-      </div>
-      <div class="legal-meta-item">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-        Applies to all Captain Cash loan agreements
+    <div class="legal-layout">
+<nav class="legal-toc" aria-label="Table of contents">
+        <div class="legal-toc-header">
+          <div class="legal-toc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="15" y2="18"/></svg></div>
+          <div class="legal-toc-label">Contents</div>
+        </div>
+        <ul class="legal-toc-list">
+          <li class="legal-toc-item"><a href="#eligibility"><span class="legal-toc-num">1</span>Eligibility</a></li><li class="legal-toc-item"><a href="#loan-terms"><span class="legal-toc-num">2</span>Loan terms</a></li><li class="legal-toc-item"><a href="#repayment"><span class="legal-toc-num">3</span>Repayment</a></li><li class="legal-toc-item"><a href="#fees"><span class="legal-toc-num">4</span>Fees & charges</a></li><li class="legal-toc-item"><a href="#cancellation"><span class="legal-toc-num">5</span>Cancellation rights</a></li><li class="legal-toc-item"><a href="#prepayment"><span class="legal-toc-num">6</span>Early repayment</a></li><li class="legal-toc-item"><a href="#default"><span class="legal-toc-num">7</span>Default & collections</a></li><li class="legal-toc-item"><a href="#renewals"><span class="legal-toc-num">8</span>Renewals</a></li><li class="legal-toc-item"><a href="#etransfer"><span class="legal-toc-num">9</span>Interac e-Transfer</a></li><li class="legal-toc-item"><a href="#governing-law"><span class="legal-toc-num">10</span>Governing law</a></li><li class="legal-toc-item"><a href="#contact"><span class="legal-toc-num">11</span>Contact</a></li>
+        </ul>
+        <a href="/privacy-policy/" class="legal-sister-card">
+          <div class="legal-sister-label">Related document</div>
+          <div class="legal-sister-title"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z</svg>Privacy Policy</div>
+          <div class="legal-sister-desc">How we collect, use, and protect your personal information.</div>
+        </a>
+      </nav>
+      <div class="legal-content">
+        <div class="legal-section" id="eligibility">
+          <div class="legal-section-head">
+            <div class="legal-num-pill">1</div>
+            <h2>Eligibility requirements</h2>
+          </div>
+          <p>To apply for a Captain Cash installment loan, you must meet all of the following criteria at the time of application:</p><ul><li>Be a Canadian resident aged 18 years or older</li><li>Reside in a province or territory where Captain Cash is licensed: Ontario, British Columbia, Alberta, Nova Scotia, New Brunswick, Prince Edward Island, Newfoundland and Labrador, Nunavut, or the Northwest Territories</li><li>Have a minimum monthly net income of $1,200, received by direct deposit into a Canadian bank account</li><li>Have been continuously employed or receiving consistent income for a minimum of 3 months</li><li>Hold an active Canadian bank account that has been open for at least 3 months</li><li>Have few or no non-sufficient fund (NSF) transactions on your bank account</li><li>Not be currently bankrupt, insolvent, or subject to an active consumer proposal</li></ul><div class="legal-callout legal-callout--amber">
+          <div class="legal-callout-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+          <p><strong>Not available in:</strong> Quebec, Manitoba, or Saskatchewan. Meeting the minimum eligibility criteria does not guarantee approval — all applications are subject to our internal assessment process.</p>
+        </div>
+        </div>
+        <div class="legal-section" id="loan-terms">
+          <div class="legal-section-head">
+            <div class="legal-num-pill">2</div>
+            <h2>Loan terms</h2>
+          </div>
+          <p>Captain Cash offers personal installment loans on the following terms:</p><table class="legal-fees-table"><thead><tr><th>Term</th><th>Detail</th></tr></thead><tbody><tr><td>Loan amount</td><td>$500 to $1,000 CAD</td></tr><tr><td>Repayment period</td><td>90 to 150 days from disbursement</td></tr><tr><td>Annual Percentage Rate</td><td>23% on all loans</td></tr><tr><td>Payment frequency</td><td>Weekly, bi-weekly, or monthly — aligned to your pay cycle</td></tr><tr><td>Disbursement method</td><td>Interac e-Transfer to your Canadian bank account</td></tr><tr><td>Transaction fee</td><td>$0.50 per disbursement</td></tr></tbody></table><h3>Representative example</h3><p>A $500 loan at APR 23% over 90–150 days results in a total repayment of approximately $750, inclusive of all interest and fees. Your exact schedule is shown in your loan agreement before you accept.</p><div class="legal-callout legal-callout--green">
+          <div class="legal-callout-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
+          <p><strong>No obligation:</strong> You receive a complete loan agreement showing every scheduled payment and the total cost of borrowing before you are required to sign. You are under no obligation to accept.</p>
+        </div>
+        </div>
+        <div class="legal-section" id="repayment">
+          <div class="legal-section-head">
+            <div class="legal-num-pill">3</div>
+            <h2>Repayment</h2>
+          </div>
+          <p>Repayment is made via pre-authorized debit (PAD) from the Canadian bank account registered in your application, on your pay dates as selected during the application process.</p><h3>Changing your repayment date</h3><p>If your pay date changes, contact us at least 5 business days in advance at 1-888-226-1026 or support@captaincash.ca and we will adjust your schedule accordingly.</p><h3>Missed payments</h3><p>If a scheduled payment cannot be processed due to insufficient funds, a $45 NSF fee will be applied and the missed payment rescheduled to the end of your contract. Missed payments do not affect your credit score — we do not report to credit bureaus.</p><div class="legal-callout legal-callout--blue">
+          <div class="legal-callout-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+          <p><strong>Tip:</strong> If you anticipate difficulty with a scheduled payment, contact us at least 48 hours before the payment date to arrange a deferral for a $25 fee — far better than a $45 NSF charge.</p>
+        </div>
+        </div>
+        <div class="legal-section" id="fees">
+          <div class="legal-section-head">
+            <div class="legal-num-pill">4</div>
+            <h2>Fees and charges</h2>
+          </div>
+          <p>All fees applicable to your loan are disclosed in your loan agreement before you sign.</p><table class="legal-fees-table"><thead><tr><th>Fee type</th><th>Amount</th></tr></thead><tbody><tr><td>Application fee</td><td>None — applying is always free</td></tr><tr><td>NSF fee</td><td>$45 per returned payment</td></tr><tr><td>Deferral fee</td><td>$25 per deferred payment (48-hour notice required)</td></tr><tr><td>Prepayment penalty</td><td>None — repay early at any time for free</td></tr><tr><td>Transaction fee</td><td>$0.50 per disbursement</td></tr></tbody></table><div class="legal-callout legal-callout--green">
+          <div class="legal-callout-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
+          <p><strong>No hidden fees.</strong> There are no administration, processing, or other fees beyond those listed above. The total cost of borrowing is displayed in your loan agreement before you accept.</p>
+        </div>
+        </div>
+        <div class="legal-section" id="cancellation">
+          <div class="legal-section-head">
+            <div class="legal-num-pill">5</div>
+            <h2>Cancellation rights</h2>
+          </div>
+          <p>In provinces where applicable legislation provides a cooling-off period (including Ontario and British Columbia), you have the right to cancel your loan agreement within 2 business days of signing without penalty or cost.</p><p>To cancel, contact us in writing within the applicable period:</p><ul><li>Email: support@captaincash.ca</li><li>Phone: 1-888-226-1026</li><li>Mail: 1701 Hollis Street W. Suite 800, Halifax, NS B3J 2T9</li></ul><p>If you cancel within the cooling-off period, you must return the full loan amount. No interest or fees will be charged.</p>
+        </div>
+        <div class="legal-section" id="prepayment">
+          <div class="legal-section-head">
+            <div class="legal-num-pill">6</div>
+            <h2>Early repayment</h2>
+          </div>
+          <p>You may repay the outstanding balance of your loan in full at any time prior to your scheduled final payment date. There is no prepayment penalty.</p><p>Early repayment reduces the total interest you pay — you are charged interest only for the days you hold the loan. To make an early repayment, contact us at 1-888-226-1026 or support@captaincash.ca to stop any scheduled automatic withdrawals before making your final payment.</p><div class="legal-callout legal-callout--green">
+          <div class="legal-callout-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
+          <p>Paying off your loan early never costs extra. You only pay interest for the days you actually held the funds.</p>
+        </div>
+        </div>
+        <div class="legal-section" id="default">
+          <div class="legal-section-head">
+            <div class="legal-num-pill">7</div>
+            <h2>Default and collections</h2>
+          </div>
+          <p>Your loan is considered in default if you fail to make a scheduled payment and have not arranged a deferral. Upon default, the full outstanding balance becomes immediately due and payable.</p><h3>Our collection approach</h3><p>Captain Cash uses responsible collection practices in accordance with applicable provincial consumer protection legislation. We always contact you directly before escalating. Our first step is to reach a mutually agreed resolution.</p><div class="legal-callout legal-callout--blue">
+          <div class="legal-callout-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+          <p><strong>Financial difficulty?</strong> Please contact us as early as possible at 1-888-226-1026. We would rather work with you than pursue formal collection.</p>
+        </div><h3>Escalation process</h3><p>If direct resolution attempts are unsuccessful, Captain Cash may terminate the payment plan, assign the account to a licensed collection agency, or pursue legal action to recover the outstanding balance. Captain Cash does not report to credit bureaus — however, accounts assigned to collection agencies may be subject to their reporting practices.</p>
+        </div>
+        <div class="legal-section" id="renewals">
+          <div class="legal-section-head">
+            <div class="legal-num-pill">8</div>
+            <h2>Renewals</h2>
+          </div>
+          <p>Existing Captain Cash customers in good standing may be eligible to renew their loan after completing their current loan or during a grace period. Renewal eligibility is assessed at the time of application and is not guaranteed.</p><p>Returning customers who have successfully repaid a previous loan may also be eligible to apply using Employment Insurance (EI) as a qualifying income source. This option is not available to first-time applicants.</p>
+        </div>
+        <div class="legal-section" id="etransfer">
+          <div class="legal-section-head">
+            <div class="legal-num-pill">9</div>
+            <h2>Interac e-Transfer disbursement</h2>
+          </div>
+          <p>Approved loans are funded by Interac e-Transfer to the bank account registered in your application. If approved before 2:00 PM Eastern Time on a business day, funds are sent the same business day. Applications approved after 2:00 PM ET or on weekends are processed the next business day.</p><p>Captain Cash is not responsible for delays caused by your financial institution's processing times.</p><div class="legal-callout legal-callout--amber">
+          <div class="legal-callout-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+          <p><strong>Payment processing entity:</strong> Repayments are collected via pre-authorized debit payable to <strong>receivables@diamondfinancialone.com</strong>. Ensure this address is recognized by your bank to avoid returned payments.</p>
+        </div>
+        </div>
+        <div class="legal-section" id="governing-law">
+          <div class="legal-section-head">
+            <div class="legal-num-pill">10</div>
+            <h2>Governing law and amendments</h2>
+          </div>
+          <p>These terms are governed by the laws of Nova Scotia and applicable federal laws of Canada, including the Interest Act (Canada), Cost of Borrowing Regulations, and applicable provincial consumer protection legislation in your province of residence.</p><p>Captain Cash reserves the right to amend these terms from time to time. Any amendments will be posted to this page with an updated effective date. Continued use of our services following any amendment constitutes your acceptance of the revised terms.</p>
+        </div>
+        <div class="legal-section" id="contact">
+          <div class="legal-section-head">
+            <div class="legal-num-pill">11</div>
+            <h2>Contact us</h2>
+          </div>
+          <p>For questions about these terms and conditions, your loan agreement, or to exercise any rights described in this document:</p><div class="legal-contact-card">
+          <div class="legal-contact-bg" aria-hidden="true"></div>
+          <div class="legal-contact-inner">
+            <h3>Captain Cash — Legal & Compliance</h3>
+            <div class="legal-contact-row"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> <strong>Jesse Royer</strong>, Chief Operations Officer</div><div class="legal-contact-row"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> 1701 Hollis Street W. Suite 800, Halifax, NS B3J 2T9</div><div class="legal-contact-row"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 11.61 19.79 19.79 0 01.21 3.06 2 2 0 012.22 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.4a16 16 0 006.53 6.53l.86-.86a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> <a href="tel:18882261026">1-888-226-1026</a> &nbsp;·&nbsp; Monday–Friday, 8 AM–5 PM ET</div><div class="legal-contact-row"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> <a href="mailto:support@captaincash.ca">support@captaincash.ca</a></div>
+          </div>
+        </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
-<div style="background:#fff">
-  <div class="container">
-
-    <!-- PLAIN ENGLISH SUMMARY -->
-    <div class="legal-summary">
-      <div class="legal-summary-title">Plain-language summary — what this means for you</div>
-      <div class="legal-summary-grid">
-        <div class="legal-summary-item">Loans are $500–$1,000, repaid over 90–150 days at APR 23%. Your exact schedule is shown before you sign.</div>
-        <div class="legal-summary-item">A missed payment triggers a $45 NSF fee. Call 48 hours ahead to defer a payment for $25 instead.</div>
-        <div class="legal-summary-item">You can repay your loan early at any time with no prepayment penalty — you only pay interest for the days held.</div>
-        <div class="legal-summary-item">You have a right to cancel within 2 business days of signing with no penalty (where provincial law requires).</div>
-        <div class="legal-summary-item">We do not report to credit bureaus — missed payments do not affect your credit score with us.</div>
-        <div class="legal-summary-item">If you cannot repay, contact us. We use responsible collection practices and will work with you first.</div>
-      </div>
-    </div>
-
-    <!-- TWO-COLUMN LAYOUT -->
-    <div class="legal-layout">
-
-      <!-- TOC -->
-      <nav class="legal-toc" aria-label="Table of contents">
-        <div class="legal-toc-title">Contents</div>
-        <ul class="legal-toc-list">
-          <li class="legal-toc-item"><a href="#eligibility">1. Eligibility</a></li>
-          <li class="legal-toc-item"><a href="#loan-terms">2. Loan terms</a></li>
-          <li class="legal-toc-item"><a href="#repayment">3. Repayment</a></li>
-          <li class="legal-toc-item"><a href="#fees">4. Fees &amp; charges</a></li>
-          <li class="legal-toc-item"><a href="#cancellation">5. Cancellation rights</a></li>
-          <li class="legal-toc-item"><a href="#prepayment">6. Early repayment</a></li>
-          <li class="legal-toc-item"><a href="#default">7. Default &amp; collections</a></li>
-          <li class="legal-toc-item"><a href="#renewals">8. Renewals</a></li>
-          <li class="legal-toc-item"><a href="#etransfer">9. Interac e-Transfer</a></li>
-          <li class="legal-toc-item"><a href="#governing-law">10. Governing law</a></li>
-          <li class="legal-toc-item"><a href="#contact">11. Contact us</a></li>
-        </ul>
-        <a href="/privacy-policy/" class="legal-sister-link">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          Privacy Policy
-        </a>
-      </nav>
-
-      <!-- CONTENT -->
-      <div class="legal-content">
-
-        <div class="legal-section" id="eligibility">
-          <div class="legal-section-num">Section 1</div>
-          <h2>Eligibility requirements</h2>
-          <p>To apply for a Captain Cash installment loan, you must meet all of the following criteria at the time of application:</p>
-          <ul>
-            <li>Be a Canadian resident aged 18 years or older</li>
-            <li>Reside in a province or territory where Captain Cash is licensed: Ontario, British Columbia, Alberta, Nova Scotia, New Brunswick, Prince Edward Island, Newfoundland and Labrador, Nunavut, or the Northwest Territories</li>
-            <li>Have a minimum monthly net income of $1,200, received by direct deposit into a Canadian bank account</li>
-            <li>Have been continuously employed or receiving consistent income for a minimum of 3 months</li>
-            <li>Hold an active Canadian bank account that has been open for at least 3 months and into which your income is deposited by direct deposit</li>
-            <li>Have few or no non-sufficient fund (NSF) transactions on your bank account</li>
-            <li>Not be currently bankrupt, insolvent, or subject to an active consumer proposal</li>
-          </ul>
-          <div class="legal-highlight">
-            <p><strong>Note:</strong> Captain Cash is not currently licensed to lend in Quebec, Manitoba, or Saskatchewan. Applications from residents of these provinces cannot be processed. Meeting the minimum eligibility criteria does not guarantee approval — all applications are subject to our internal assessment process.</p>
-          </div>
-        </div>
-
-        <div class="legal-section" id="loan-terms">
-          <div class="legal-section-num">Section 2</div>
-          <h2>Loan terms</h2>
-          <p>Captain Cash offers personal installment loans on the following terms:</p>
-          <ul>
-            <li><strong>Loan amounts:</strong> $500 to $1,000 CAD</li>
-            <li><strong>Repayment period:</strong> 90 to 150 days from the date of disbursement</li>
-            <li><strong>Annual Percentage Rate (APR):</strong> 23% on all loans</li>
-            <li><strong>Payment frequency:</strong> Weekly, bi-weekly, or monthly — aligned to your pay cycle</li>
-            <li><strong>Disbursement method:</strong> Interac e-Transfer to your registered Canadian bank account</li>
-            <li><strong>Transaction fee:</strong> $0.50 per transaction</li>
-          </ul>
-          <h3>Representative example</h3>
-          <p>A $500 loan at APR 23% over 90–150 days results in a total repayment of approximately $750, inclusive of all interest and fees. Actual repayment amounts depend on your approved term and payment schedule, which are disclosed in full in your loan agreement before you accept.</p>
-          <div class="legal-highlight">
-            <p><strong>Important:</strong> You will receive a complete loan agreement showing every scheduled payment, the total cost of borrowing, and the APR before you are required to sign. You are under no obligation to accept the loan after reviewing the agreement.</p>
-          </div>
-        </div>
-
-        <div class="legal-section" id="repayment">
-          <div class="legal-section-num">Section 3</div>
-          <h2>Repayment</h2>
-          <p>Repayment is made via pre-authorized debit (PAD) from the Canadian bank account registered in your application. Payments are scheduled on your pay dates — weekly, bi-weekly, or monthly — as selected during the application process.</p>
-          <p>Your complete repayment schedule is provided in your loan agreement. Each payment covers a portion of principal plus accrued interest. All payments are applied first to outstanding fees, then to interest, then to principal.</p>
-          <h3>Changing your repayment date</h3>
-          <p>If your pay date changes, contact us at least 5 business days in advance at 1-888-226-1026 or support@captaincash.ca and we will adjust your schedule accordingly, subject to the terms of your loan agreement.</p>
-          <h3>Missed payments</h3>
-          <p>If a scheduled payment cannot be processed due to insufficient funds, a $45 NSF fee will be applied to your account and the missed payment will be rescheduled to the end of your contract term. Missed payments do not affect your credit score with Captain Cash as we do not report to credit bureaus.</p>
-          <p>If you anticipate difficulty making a scheduled payment, contact us at least 48 hours before the payment date to arrange a deferral for a $25 fee.</p>
-        </div>
-
-        <div class="legal-section" id="fees">
-          <div class="legal-section-num">Section 4</div>
-          <h2>Fees and charges</h2>
-          <p>All fees applicable to your loan are disclosed in your loan agreement before you sign. The following fees may apply:</p>
-          <ul>
-            <li><strong>Application fee:</strong> None — applying is free and there is no obligation to accept</li>
-            <li><strong>NSF fee:</strong> $45 per returned payment (insufficient funds)</li>
-            <li><strong>Deferral fee:</strong> $25 per deferred payment (requires 48 hours advance notice)</li>
-            <li><strong>Prepayment penalty:</strong> None — you may repay your loan early at any time at no charge</li>
-            <li><strong>Transaction fee:</strong> $0.50 per disbursement transaction</li>
-          </ul>
-          <div class="legal-highlight">
-            <p><strong>No hidden fees:</strong> There are no administration fees, processing fees, or any other charges beyond those listed above. The total cost of borrowing — including all fees and interest — is displayed in your loan agreement before you accept.</p>
-          </div>
-        </div>
-
-        <div class="legal-section" id="cancellation">
-          <div class="legal-section-num">Section 5</div>
-          <h2>Cancellation rights</h2>
-          <p>In provinces where applicable provincial legislation provides a cooling-off period (including Ontario and British Columbia), you have the right to cancel your loan agreement within 2 business days of signing without penalty or cost.</p>
-          <p>To exercise your right to cancel, contact us in writing within the applicable cancellation period:</p>
-          <ul>
-            <li>By email: support@captaincash.ca</li>
-            <li>By phone: 1-888-226-1026</li>
-            <li>By mail: 1701 Hollis Street W. Suite 800, Halifax, NS B3J 2T9</li>
-          </ul>
-          <p>If you cancel within the cooling-off period, you must return the full loan amount. No interest or fees will be charged for the cancellation period.</p>
-        </div>
-
-        <div class="legal-section" id="prepayment">
-          <div class="legal-section-num">Section 6</div>
-          <h2>Early repayment</h2>
-          <p>You may repay the outstanding balance of your loan in full at any time prior to your scheduled final payment date. There is no prepayment penalty.</p>
-          <p>Early repayment reduces the total interest you pay — you are charged interest only for the days you hold the loan. To make an early repayment or obtain a payoff amount, contact us at 1-888-226-1026 or support@captaincash.ca to stop any scheduled automatic withdrawals before making your final payment.</p>
-        </div>
-
-        <div class="legal-section" id="default">
-          <div class="legal-section-num">Section 7</div>
-          <h2>Default and collections</h2>
-          <p>Your loan is considered in default if you fail to make a scheduled payment and have not arranged a deferral. Upon default, the full outstanding balance of your loan, including accrued interest and applicable fees, becomes immediately due and payable.</p>
-          <h3>Our collection approach</h3>
-          <p>Captain Cash uses responsible collection practices in accordance with applicable provincial consumer protection legislation. We will always contact you directly before escalating to any collection process. Our first step is always to attempt to reach a mutually agreed resolution.</p>
-          <p>If you are experiencing financial difficulty, please contact us as early as possible. We would rather work with you than pursue formal collection. Call us at 1-888-226-1026 during business hours.</p>
-          <h3>Escalation process</h3>
-          <p>If direct contact and internal resolution attempts are unsuccessful, Captain Cash may:</p>
-          <ul>
-            <li>Terminate the payment plan and declare the full balance owing</li>
-            <li>Assign the account to a licensed collection agency</li>
-            <li>Pursue legal action to recover the outstanding balance</li>
-          </ul>
-          <p>Captain Cash does not report loan accounts to credit bureaus. However, accounts assigned to collection agencies may be subject to that agency's reporting practices.</p>
-        </div>
-
-        <div class="legal-section" id="renewals">
-          <div class="legal-section-num">Section 8</div>
-          <h2>Renewals</h2>
-          <p>Existing Captain Cash customers in good standing may be eligible to renew their loan after completing their current loan or during a grace period before their new loan's payment cycles begin. Renewal eligibility is assessed at the time of application and is not guaranteed.</p>
-          <p>Returning customers who have successfully repaid a previous loan may also be eligible to apply using Employment Insurance (EI) as a qualifying income source. This option is not available to first-time applicants.</p>
-        </div>
-
-        <div class="legal-section" id="etransfer">
-          <div class="legal-section-num">Section 9</div>
-          <h2>Interac e-Transfer disbursement</h2>
-          <p>Approved loans are funded by Interac e-Transfer to the bank account registered in your application. If your application is approved before 2:00 PM Eastern Time on a business day, funds are sent the same business day. Applications approved after 2:00 PM ET or on weekends or statutory holidays are processed the next business day.</p>
-          <p>Captain Cash is not responsible for delays caused by your financial institution's processing times. Interac e-Transfer funds are typically deposited within minutes but may take up to several hours depending on your bank.</p>
-          <p>You must accept the e-Transfer within the timeframe specified by Interac. If the transfer expires before you accept it, contact us to re-initiate the transfer.</p>
-          <p>Repayments are collected by pre-authorized debit payable to <strong>receivables@diamondfinancialone.com</strong>. This is our payment processing entity — please ensure this address is recognized by your bank to avoid returned payments.</p>
-        </div>
-
-        <div class="legal-section" id="governing-law">
-          <div class="legal-section-num">Section 10</div>
-          <h2>Governing law and amendments</h2>
-          <p>These terms and conditions are governed by the laws of the Province of Nova Scotia and the applicable federal laws of Canada, including but not limited to the Interest Act (Canada), the Cost of Borrowing Regulations, and applicable provincial consumer protection legislation in your province of residence.</p>
-          <p>Captain Cash reserves the right to amend these terms and conditions from time to time. Any amendments will be posted to this page with an updated effective date. Your continued use of Captain Cash services following any amendment constitutes your acceptance of the revised terms.</p>
-          <p>If any provision of these terms is found to be unenforceable, the remaining provisions continue in full force and effect.</p>
-          <p>These terms and conditions, together with your individual loan agreement, constitute the entire agreement between you and Captain Cash with respect to your loan.</p>
-        </div>
-
-        <div class="legal-section" id="contact">
-          <div class="legal-section-num">Section 11</div>
-          <h2>Contact us</h2>
-          <p>For questions about these terms and conditions, your loan agreement, or to exercise any rights described in this document, contact us using the information below.</p>
-          <div class="legal-contact-card">
-            <h3>Captain Cash — Legal &amp; Compliance</h3>
-            <div class="legal-contact-row">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              1701 Hollis Street W. Suite 800, Halifax, NS B3J 2T9
-            </div>
-            <div class="legal-contact-row">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 11.61 19.79 19.79 0 01.21 3.06 2 2 0 012.22 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.4a16 16 0 006.53 6.53l.86-.86a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-              <a href="tel:18882261026">1-888-226-1026</a> &nbsp;·&nbsp; Monday–Friday, 8 AM–5 PM ET
-            </div>
-            <div class="legal-contact-row">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              <a href="mailto:support@captaincash.ca">support@captaincash.ca</a>
-            </div>
-            <div class="legal-contact-row">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-              Jesse Royer, Chief Operations Officer
-            </div>
-          </div>
-          <a href="/privacy-policy/" class="legal-sister-link">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            Read our Privacy Policy
-          </a>
-        </div>
-
-      </div><!-- /legal-content -->
-    </div><!-- /legal-layout -->
-  </div><!-- /container -->
-</div>
-
 </main>
 
 <footer class="site-footer site-footer--dark">
@@ -1916,48 +1874,22 @@ h1 em {
 
 <script src="/js/main.js" defer></script>
 <script>
-(function() {
-  var header = document.getElementById('site-header');
-  if (header) window.addEventListener('scroll', function() {
-    header.classList.toggle('site-header--scrolled', window.scrollY > 60);
-  }, { passive:true });
-  var triggers = document.querySelectorAll('.nav-dropdown-trigger');
-  function closeAll() {
-    triggers.forEach(function(t) {
-      t.setAttribute('aria-expanded','false');
-      var dd = t.nextElementSibling;
-      if (dd) dd.classList.remove('nav-dropdown--open');
-    });
-  }
-  triggers.forEach(function(t) {
-    t.addEventListener('click', function(e) {
-      e.stopPropagation();
-      var isOpen = t.getAttribute('aria-expanded') === 'true';
-      closeAll();
-      if (!isOpen) {
-        t.setAttribute('aria-expanded','true');
-        var dd = t.nextElementSibling;
-        if (dd) dd.classList.add('nav-dropdown--open');
-      }
-    });
-  });
-  document.addEventListener('click', closeAll);
-  document.addEventListener('keydown', function(e) { if (e.key==='Escape') closeAll(); });
-  
-  // Sticky TOC active state
-  var sections = document.querySelectorAll('.legal-section[id]');
-  var tocLinks = document.querySelectorAll('.legal-toc-item a');
-  function updateTOC() {
-    var scrollY = window.scrollY + 120;
-    var current = '';
-    sections.forEach(function(s) {
-      if (s.offsetTop <= scrollY) current = s.id;
-    });
-    tocLinks.forEach(function(a) {
-      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
-    });
-  }
-  window.addEventListener('scroll', updateTOC, { passive:true });
+(function(){
+  var h=document.getElementById('site-header');
+  if(h)window.addEventListener('scroll',function(){h.classList.toggle('site-header--scrolled',window.scrollY>60)},{passive:true});
+  var triggers=document.querySelectorAll('.nav-dropdown-trigger');
+  function closeAll(){triggers.forEach(function(t){t.setAttribute('aria-expanded','false');var d=t.nextElementSibling;if(d)d.classList.remove('nav-dropdown--open')});}
+  triggers.forEach(function(t){t.addEventListener('click',function(e){e.stopPropagation();var o=t.getAttribute('aria-expanded')==='true';closeAll();if(!o){t.setAttribute('aria-expanded','true');var d=t.nextElementSibling;if(d)d.classList.add('nav-dropdown--open')}})});
+  document.addEventListener('click',closeAll);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeAll()});
+  // Progress bar
+  var bar=document.getElementById('legal-progress');
+  if(bar){window.addEventListener('scroll',function(){var d=document.documentElement;var p=(d.scrollTop||document.body.scrollTop)/(d.scrollHeight-d.clientHeight)*100;bar.style.width=Math.min(p,100)+'%'},{passive:true});}
+  // TOC active
+  var sections=document.querySelectorAll('.legal-section[id]');
+  var links=document.querySelectorAll('.legal-toc-item a');
+  function updateTOC(){var y=window.scrollY+110,cur='';sections.forEach(function(s){if(s.offsetTop<=y)cur=s.id});links.forEach(function(a){a.classList.toggle('active',a.getAttribute('href')==='#'+cur)});}
+  window.addEventListener('scroll',updateTOC,{passive:true});
   updateTOC();
 })();
 </script>

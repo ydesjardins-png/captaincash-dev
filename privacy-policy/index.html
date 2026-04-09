@@ -7,7 +7,7 @@
   <title>Privacy Policy | Captain Cash</title>
   <link rel="canonical" href="https://captaincash.ca/privacy-policy/">
   <meta property="og:title" content="Privacy Policy | Captain Cash">
-  <meta property="og:description" content="How Captain Cash collects, uses, and protects your personal information. PIPEDA compliant.">
+  <meta property="og:description" content="Captain Cash Privacy Policy — how we collect, use, and protect your personal information in compliance with PIPEDA and Canadian privacy law.">
   <meta property="og:image" content="https://captaincash-redesign.netlify.app/images/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -1406,58 +1406,96 @@ h1 em {
 }
 
 /* ══════════════════════════════════════
-   LEGAL PAGES — shared styles
+   LEGAL PAGES — redesigned UI/UX
 ══════════════════════════════════════ */
-.legal-hero { background:#000;padding:3.5rem 0 3rem;border-bottom:1px solid rgba(255,255,255,0.06); }
-.legal-hero-inner { display:flex;flex-direction:column;gap:1rem; }
-.legal-badge { display:inline-flex;align-items:center;gap:6px;font-size:0.75rem;font-weight:700;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.09em;margin-bottom:0.5rem; }
-.legal-badge span { width:6px;height:6px;border-radius:50%;background:#e82020;flex-shrink:0; }
-.legal-hero h1 { font-size:clamp(1.75rem,4vw,2.5rem);font-weight:900;color:#fff;letter-spacing:-0.03em;line-height:1.2; }
-.legal-hero-meta { display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;margin-top:0.5rem; }
-.legal-meta-item { display:flex;align-items:center;gap:6px;font-size:0.8125rem;color:rgba(255,255,255,0.4); }
-.legal-meta-item svg { flex-shrink:0;opacity:0.5; }
-.legal-summary { background:#0d1829;border:1px solid rgba(232,32,32,0.2);border-left:4px solid #e82020;border-radius:0 14px 14px 0;padding:1.5rem 2rem;margin:2.5rem 0; }
-.legal-summary-title { font-size:0.75rem;font-weight:700;color:#e82020;text-transform:uppercase;letter-spacing:0.09em;margin-bottom:1rem; }
-.legal-summary-grid { display:grid;grid-template-columns:repeat(2,1fr);gap:0.75rem; }
-@media(max-width:600px){ .legal-summary-grid { grid-template-columns:1fr; } }
-.legal-summary-item { display:flex;align-items:flex-start;gap:8px;font-size:0.875rem;color:rgba(255,255,255,0.7);line-height:1.55; }
-.legal-summary-item::before { content:"";width:6px;height:6px;border-radius:50%;background:#e82020;flex-shrink:0;margin-top:6px; }
-.legal-layout { display:grid;grid-template-columns:240px 1fr;gap:4rem;align-items:start;padding:3rem 0 5rem; }
-@media(max-width:900px){ .legal-layout { grid-template-columns:1fr; } }
-.legal-toc { position:sticky;top:100px; }
-.legal-toc-title { font-size:0.6875rem;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:0.09em;margin-bottom:1rem;padding-bottom:0.75rem;border-bottom:1px solid #e2e6ed; }
-.legal-toc-list { list-style:none;display:flex;flex-direction:column;gap:2px; }
-.legal-toc-item a { display:block;font-size:0.8125rem;color:#6b7789;text-decoration:none;padding:5px 10px;border-radius:6px;line-height:1.4;transition:all 0.15s; }
-.legal-toc-item a:hover { color:#e82020;background:#fef2f2; }
-.legal-toc-item a.active { color:#e82020;background:#fef2f2;font-weight:600; }
-.legal-toc-item a span { display:block;font-size:0.6875rem;color:#9ca3af;font-weight:400;margin-top:1px; }
-.legal-content { min-width:0; }
-.legal-section { margin-bottom:3rem;padding-bottom:3rem;border-bottom:1px solid #f0f2f5; }
-.legal-section:last-child { border-bottom:none; }
-.legal-section-num { font-size:0.6875rem;font-weight:700;color:#e82020;text-transform:uppercase;letter-spacing:0.09em;margin-bottom:0.5rem; }
-.legal-section h2 { font-size:1.375rem;font-weight:800;color:#0b1a33;margin-bottom:1.25rem;line-height:1.3; }
-.legal-section h3 { font-size:1rem;font-weight:700;color:#0b1a33;margin:1.5rem 0 0.75rem; }
-.legal-section p { font-size:0.9375rem;color:#4a5568;line-height:1.85;margin-bottom:1rem; }
-.legal-section ul { margin:0.75rem 0 1rem 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px; }
-.legal-section ul li { display:flex;align-items:flex-start;gap:8px;font-size:0.9375rem;color:#4a5568;line-height:1.7; }
-.legal-section ul li::before { content:"";width:5px;height:5px;border-radius:50%;background:#e82020;flex-shrink:0;margin-top:9px; }
-.legal-section ol { margin:0.75rem 0 1rem 1.5rem;display:flex;flex-direction:column;gap:8px; }
-.legal-section ol li { font-size:0.9375rem;color:#4a5568;line-height:1.75; }
-.legal-highlight { background:#f8f9fb;border:1px solid #e2e6ed;border-radius:12px;padding:1.25rem 1.5rem;margin:1.25rem 0; }
-.legal-highlight p { margin:0;font-size:0.875rem;color:#4a5568;line-height:1.75; }
-.legal-highlight strong { color:#0b1a33; }
-.legal-contact-card { background:#0b1a33;border-radius:16px;padding:1.75rem;margin-top:1.5rem; }
-.legal-contact-card h3 { color:#fff;font-size:1rem;font-weight:700;margin-bottom:1rem; }
-.legal-contact-row { display:flex;align-items:center;gap:10px;margin-bottom:0.625rem;font-size:0.875rem;color:rgba(255,255,255,0.65); }
-.legal-contact-row a { color:#e82020;text-decoration:none; }
-.legal-sister-link { display:inline-flex;align-items:center;gap:6px;font-size:0.875rem;font-weight:600;color:#e82020;text-decoration:none;padding:8px 16px;border:1px solid rgba(232,32,32,0.3);border-radius:9999px;margin-top:1rem;transition:all 0.15s; }
-.legal-sister-link:hover { background:rgba(232,32,32,0.06); }
-@media(max-width:900px){ .legal-toc { display:none; } }
+.legal-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg,#e82020,#ff6a4d);z-index:9999;transition:width .15s linear;pointer-events:none}
+.legal-hero{position:relative;overflow:hidden;background:#04080f;padding:4rem 0 3.5rem}
+.legal-hero-bg{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.legal-hero-orb{position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(232,32,32,0.16) 0%,transparent 65%);bottom:-260px;right:-140px;filter:blur(20px)}
+.legal-hero-beam{position:absolute;top:0;right:0;width:60%;height:100%;background:conic-gradient(from 200deg at 100% 0%,transparent 0deg,rgba(232,32,32,0.1) 22deg,transparent 52deg)}
+.legal-hero-edge{position:absolute;top:0;right:0;width:1px;height:100%;background:linear-gradient(180deg,rgba(232,32,32,0.7) 0%,rgba(232,32,32,0.12) 50%,transparent 100%)}
+.legal-hero-inner{position:relative;z-index:2;display:flex;flex-direction:column;gap:1.25rem}
+.legal-badge{display:inline-flex;align-items:center;gap:7px;font-size:0.6875rem;font-weight:700;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.1em;background:rgba(232,32,32,0.1);border:1px solid rgba(232,32,32,0.22);border-radius:9999px;padding:4px 14px;width:fit-content}
+.legal-badge-dot{width:6px;height:6px;border-radius:50%;background:#e82020;flex-shrink:0}
+.legal-hero h1{font-size:clamp(2rem,5vw,3rem);font-weight:900;color:#fff;letter-spacing:-0.04em;line-height:1.1;margin:0}
+.legal-hero-meta{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
+.legal-meta-item{display:flex;align-items:center;gap:7px;font-size:0.8125rem;color:rgba(255,255,255,0.38)}
+.legal-meta-item svg{opacity:.5;flex-shrink:0}
+.legal-body-wrap{background:#fff}
+.legal-summary{background:#04080f;border-radius:20px;padding:2.25rem;margin:2.5rem 0 0;position:relative;overflow:hidden}
+.legal-summary-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 85% 50%,rgba(232,32,32,0.13) 0%,transparent 60%);pointer-events:none}
+.legal-summary-inner{position:relative;z-index:2}
+.legal-summary-header{display:flex;align-items:flex-start;gap:12px;margin-bottom:1.5rem}
+.legal-summary-icon{width:38px;height:38px;border-radius:10px;background:rgba(232,32,32,0.12);border:1px solid rgba(232,32,32,0.25);color:#e82020;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.legal-summary-title{font-size:0.6875rem;font-weight:700;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:4px}
+.legal-summary-subtitle{font-size:1rem;font-weight:700;color:#fff}
+.legal-summary-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+@media(max-width:768px){.legal-summary-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.legal-summary-grid{grid-template-columns:1fr}}
+.legal-summary-item{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:14px 16px;display:flex;gap:10px;align-items:flex-start}
+.legal-summary-dot{width:6px;height:6px;border-radius:50%;background:#e82020;flex-shrink:0;margin-top:7px}
+.legal-summary-item p{font-size:0.8125rem;color:rgba(255,255,255,0.58);line-height:1.6;margin:0}
+.legal-layout{display:grid;grid-template-columns:252px 1fr;gap:4.5rem;align-items:start;padding:3rem 0 5rem}
+@media(max-width:900px){.legal-layout{grid-template-columns:1fr}}
+.legal-toc{position:sticky;top:88px}
+@media(max-width:900px){.legal-toc{display:none}}
+.legal-toc-header{display:flex;align-items:center;gap:8px;margin-bottom:1.25rem}
+.legal-toc-icon{width:28px;height:28px;border-radius:8px;background:#fef2f2;display:flex;align-items:center;justify-content:center;color:#e82020;flex-shrink:0}
+.legal-toc-label{font-size:0.6875rem;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:0.09em}
+.legal-toc-list{list-style:none;display:flex;flex-direction:column;gap:1px;border-left:2px solid #f0f2f5;margin-bottom:1.25rem}
+.legal-toc-item a{display:flex;align-items:center;gap:8px;font-size:0.8125rem;color:#9ca3af;text-decoration:none;padding:7px 12px;margin-left:-2px;border-left:2px solid transparent;transition:all .15s;line-height:1.4}
+.legal-toc-item a:hover{color:#374151;border-left-color:#d1d5db}
+.legal-toc-item a.active{color:#e82020;border-left-color:#e82020;font-weight:600;background:#fef2f2}
+.legal-toc-num{font-size:0.625rem;font-weight:700;color:#d1d5db;flex-shrink:0;min-width:14px}
+.legal-toc-item a.active .legal-toc-num{color:rgba(232,32,32,0.6)}
+.legal-sister-card{background:#f8f9fb;border:1px solid #e2e6ed;border-radius:14px;padding:1rem 1.125rem;text-decoration:none;display:block;transition:all .15s}
+.legal-sister-card:hover{border-color:rgba(232,32,32,0.3);background:#fef9f9;transform:translateY(-1px)}
+.legal-sister-label{font-size:0.625rem;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:0.09em;margin-bottom:5px}
+.legal-sister-title{font-size:0.875rem;font-weight:700;color:#0b1a33;display:flex;align-items:center;gap:6px;margin-bottom:4px}
+.legal-sister-title svg{color:#e82020;flex-shrink:0}
+.legal-sister-desc{font-size:0.75rem;color:#6b7789;line-height:1.5}
+.legal-content{min-width:0}
+.legal-section{margin-bottom:3rem;padding-bottom:3rem;border-bottom:1px solid #f0f2f5;scroll-margin-top:100px}
+.legal-section:last-child{border-bottom:none}
+.legal-section-head{display:flex;align-items:center;gap:12px;margin-bottom:1.25rem}
+.legal-num-pill{width:30px;height:30px;border-radius:50%;background:#fef2f2;border:1px solid rgba(232,32,32,0.2);font-size:0.75rem;font-weight:800;color:#e82020;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.legal-section h2{font-size:1.375rem;font-weight:800;color:#0b1a33;line-height:1.25;margin:0}
+.legal-section h3{font-size:0.9375rem;font-weight:700;color:#0b1a33;margin:1.5rem 0 .75rem;display:flex;align-items:center;gap:7px}
+.legal-section h3::before{content:"";width:3px;height:16px;background:#e82020;border-radius:2px;flex-shrink:0}
+.legal-section p{font-size:0.9375rem;color:#4a5568;line-height:1.85;margin-bottom:1rem}
+.legal-section ul{margin:.75rem 0 1rem;padding:0;list-style:none;display:flex;flex-direction:column;gap:5px}
+.legal-section ul li{display:flex;align-items:flex-start;gap:10px;font-size:0.9375rem;color:#4a5568;line-height:1.7;padding:9px 13px;background:#f8f9fb;border-radius:8px}
+.legal-section ul li::before{content:"";width:5px;height:5px;border-radius:50%;background:#e82020;flex-shrink:0;margin-top:9px}
+.legal-callout{display:flex;gap:12px;border-radius:0 12px 12px 0;padding:1rem 1.25rem;margin:1.25rem 0}
+.legal-callout--amber{background:#fffbeb;border:1px solid rgba(245,158,11,0.2);border-left:4px solid #f59e0b}
+.legal-callout--blue{background:#eff6ff;border:1px solid rgba(26,110,240,0.18);border-left:4px solid #1a6ef0}
+.legal-callout--green{background:#f0fdf4;border:1px solid rgba(22,163,74,0.2);border-left:4px solid #16a34a}
+.legal-callout-icon{flex-shrink:0;margin-top:1px}
+.legal-callout--amber .legal-callout-icon{color:#d97706}
+.legal-callout--blue .legal-callout-icon{color:#1a6ef0}
+.legal-callout--green .legal-callout-icon{color:#16a34a}
+.legal-callout p{margin:0;font-size:0.875rem;color:#4a5568;line-height:1.75}
+.legal-callout strong{color:#0b1a33}
+.legal-fees-table{width:100%;border-collapse:collapse;margin:1rem 0;border-radius:12px;overflow:hidden;border:1px solid #e2e6ed}
+.legal-fees-table th{padding:10px 16px;font-size:0.6875rem;font-weight:700;color:#6b7789;text-transform:uppercase;letter-spacing:.07em;text-align:left;background:#f8f9fb;border-bottom:2px solid #e2e6ed}
+.legal-fees-table td{padding:12px 16px;font-size:0.875rem;color:#4a5568;border-bottom:1px solid #f0f2f5;vertical-align:top}
+.legal-fees-table tr:last-child td{border-bottom:none}
+.legal-fees-table td:first-child{font-weight:600;color:#0b1a33;width:42%}
+.legal-contact-card{background:#04080f;border-radius:18px;padding:1.75rem 2rem;margin-top:1.5rem;position:relative;overflow:hidden}
+.legal-contact-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 90% 50%,rgba(232,32,32,0.1) 0%,transparent 60%);pointer-events:none}
+.legal-contact-inner{position:relative;z-index:2}
+.legal-contact-card h3{color:#fff;font-size:1rem;font-weight:700;margin-bottom:1.25rem}
+.legal-contact-row{display:flex;align-items:center;gap:10px;margin-bottom:.75rem;font-size:0.875rem;color:rgba(255,255,255,0.55)}
+.legal-contact-row svg{color:#e82020;flex-shrink:0}
+.legal-contact-row a{color:rgba(255,255,255,0.8);text-decoration:none;transition:color .15s}
+.legal-contact-row a:hover{color:#e82020}
+.legal-contact-row strong{color:rgba(255,255,255,0.85)}
+
   </style>
 </head>
 <body>
+<div class="legal-progress" id="legal-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 <a href="#main" class="skip-link">Skip to content</a>
-
 <header class="site-header site-header--dark" id="site-header">
   <div class="container header-inner">
     <a href="/" class="site-logo-img">
@@ -1620,281 +1658,154 @@ h1 em {
 </div>
 
 <main>
-
 <main id="main">
-
-<!-- HERO -->
 <div class="legal-hero">
+  <div class="legal-hero-bg" aria-hidden="true">
+    <div class="legal-hero-orb"></div>
+    <div class="legal-hero-beam"></div>
+    <div class="legal-hero-edge"></div>
+  </div>
   <div class="container legal-hero-inner">
-    <div>
-      <div class="legal-badge"><span></span>Legal document</div>
-      <h1>Privacy Policy</h1>
+    <div class="legal-badge"><span class="legal-badge-dot"></span>Legal document</div>
+    <h1>Privacy Policy</h1>
+    <div class="legal-hero-meta"><div class="legal-meta-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Last updated: January 1, 2025</div><div class="legal-meta-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg> PIPEDA compliant — Canadian federal and provincial privacy law</div><div class="legal-meta-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg> Applies to all Captain Cash clients and website visitors</div></div>
+  </div>
+</div>
+<div class="legal-body-wrap">
+  <div class="container">
+<div class="legal-summary">
+      <div class="legal-summary-bg" aria-hidden="true"></div>
+      <div class="legal-summary-inner">
+        <div class="legal-summary-header">
+          <div class="legal-summary-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
+          <div>
+            <div class="legal-summary-title">Plain-language summary</div>
+            <div class="legal-summary-subtitle">What this means for you — read this first</div>
+          </div>
+        </div>
+        <div class="legal-summary-grid">
+          <div class="legal-summary-item"><div class="legal-summary-dot"></div><p>We collect personal and financial information only to process your loan application — nothing more than necessary.</p></div><div class="legal-summary-item"><div class="legal-summary-dot"></div><p>We do not sell your personal information to third parties under any circumstances.</p></div><div class="legal-summary-item"><div class="legal-summary-dot"></div><p>You can request to view, correct, or delete your personal information at any time.</p></div><div class="legal-summary-item"><div class="legal-summary-dot"></div><p>You can unsubscribe from marketing emails at any time — it has no effect on your loan account.</p></div><div class="legal-summary-item"><div class="legal-summary-dot"></div><p>We use industry-standard encryption and access controls to protect your data.</p></div><div class="legal-summary-item"><div class="legal-summary-dot"></div><p>Our website uses cookies. You can control them through your browser settings.</p></div>
+        </div>
+      </div>
     </div>
-    <div class="legal-hero-meta">
-      <div class="legal-meta-item">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-        Last updated: January 1, 2025
-      </div>
-      <div class="legal-meta-item">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        Compliant with PIPEDA and provincial privacy law
-      </div>
-      <div class="legal-meta-item">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-        Applies to all Captain Cash clients and website visitors
+    <div class="legal-layout">
+<nav class="legal-toc" aria-label="Table of contents">
+        <div class="legal-toc-header">
+          <div class="legal-toc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="15" y2="18"/></svg></div>
+          <div class="legal-toc-label">Contents</div>
+        </div>
+        <ul class="legal-toc-list">
+          <li class="legal-toc-item"><a href="#overview"><span class="legal-toc-num">1</span>Overview</a></li><li class="legal-toc-item"><a href="#what-we-collect"><span class="legal-toc-num">2</span>What we collect</a></li><li class="legal-toc-item"><a href="#why-we-collect"><span class="legal-toc-num">3</span>Why we collect it</a></li><li class="legal-toc-item"><a href="#how-we-use"><span class="legal-toc-num">4</span>How we use it</a></li><li class="legal-toc-item"><a href="#who-we-share"><span class="legal-toc-num">5</span>Who we share with</a></li><li class="legal-toc-item"><a href="#cookies"><span class="legal-toc-num">6</span>Cookies</a></li><li class="legal-toc-item"><a href="#security"><span class="legal-toc-num">7</span>Security</a></li><li class="legal-toc-item"><a href="#retention"><span class="legal-toc-num">8</span>Data retention</a></li><li class="legal-toc-item"><a href="#your-rights"><span class="legal-toc-num">9</span>Your rights</a></li><li class="legal-toc-item"><a href="#marketing"><span class="legal-toc-num">10</span>Marketing opt-out</a></li><li class="legal-toc-item"><a href="#contact"><span class="legal-toc-num">11</span>Contact</a></li>
+        </ul>
+        <a href="/terms-conditions/" class="legal-sister-card">
+          <div class="legal-sister-label">Related document</div>
+          <div class="legal-sister-title"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z</svg>Terms & Conditions</div>
+          <div class="legal-sister-desc">Loan terms, fees, repayment, and your rights as a borrower.</div>
+        </a>
+      </nav>
+      <div class="legal-content">
+        <div class="legal-section" id="overview">
+          <div class="legal-section-head">
+            <div class="legal-num-pill">1</div>
+            <h2>Overview</h2>
+          </div>
+          <p>Captain Cash, a division of Opal Financial, is committed to protecting the privacy and personal information of its clients and website visitors. This Privacy Policy describes our practices for collecting, using, disclosing, and safeguarding personal information.</p><p>Captain Cash is subject to the <em>Personal Information Protection and Electronic Documents Act</em> (PIPEDA) and applicable provincial privacy legislation.</p><div class="legal-callout legal-callout--blue">
+          <div class="legal-callout-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+          <p><strong>Questions about this policy?</strong> Contact our Privacy Officer at <a href="mailto:support@captaincash.ca">support@captaincash.ca</a> or 1-888-226-1026. We will respond within 30 business days.</p>
+        </div>
+        </div>
+        <div class="legal-section" id="what-we-collect">
+          <div class="legal-section-head">
+            <div class="legal-num-pill">2</div>
+            <h2>What personal information we collect</h2>
+          </div>
+          <h3>Identity and contact information</h3><ul><li>Legal first and last name, date of birth, and sex</li><li>Residential address and postal code</li><li>Phone number and email address</li><li>Government-issued identification numbers (SIN, driver's licence) for identity verification</li></ul><h3>Financial and employment information</h3><ul><li>Employer name, address, and length of employment</li><li>Monthly net income and income source</li><li>Bank account details for direct deposit verification and pre-authorized debit setup</li><li>Bank statements and transaction history to assess repayment capacity</li></ul><h3>Technical and behavioural information</h3><ul><li>IP address, browser type, and operating system (collected automatically)</li><li>Pages visited, time on page, and navigation patterns</li><li>Cookie data (see Section 6)</li></ul><div class="legal-callout legal-callout--green">
+          <div class="legal-callout-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
+          <p><strong>Consent:</strong> By submitting a loan application, you consent to the collection of all information described above, including information obtained from third parties (employer, financial institution) for verification purposes.</p>
+        </div>
+        </div>
+        <div class="legal-section" id="why-we-collect">
+          <div class="legal-section-head">
+            <div class="legal-num-pill">3</div>
+            <h2>Why we collect it</h2>
+          </div>
+          <p>We collect personal information only for the following purposes:</p><ul><li>To evaluate your eligibility for a loan</li><li>To verify your identity and the accuracy of information provided</li><li>To set up and administer your loan account</li><li>To process loan disbursements and collect repayments</li><li>To comply with applicable laws and regulatory requirements</li><li>To detect and prevent fraud</li><li>To send promotional communications (with your consent)</li></ul><p>We will not collect personal information beyond what is necessary for these stated purposes without your explicit consent.</p>
+        </div>
+        <div class="legal-section" id="how-we-use">
+          <div class="legal-section-head">
+            <div class="legal-num-pill">4</div>
+            <h2>How we use it</h2>
+          </div>
+          <p>Captain Cash uses personal information in the normal course of its lending business, including to:</p><ul><li>Assess your loan application using our internal eligibility criteria</li><li>Verify your employment, income, and banking information</li><li>Disburse approved loan funds via Interac e-Transfer</li><li>Collect scheduled repayments via pre-authorized debit</li><li>Communicate with you regarding your account, payments, and any issues</li><li>Assess renewal eligibility for returning customers</li></ul><p>With your consent, we may also use your contact information to send promotional material about Captain Cash services. You may withdraw this consent at any time (see Section 10).</p>
+        </div>
+        <div class="legal-section" id="who-we-share">
+          <div class="legal-section-head">
+            <div class="legal-num-pill">5</div>
+            <h2>Who we share it with</h2>
+          </div>
+          <p>Captain Cash does not sell personal information. We may share your information only in the following limited circumstances:</p><h3>Service providers</h3><p>Third-party service providers (payment processors, IT services, business administration) who access only the information necessary for their specific function, bound by confidentiality obligations.</p><h3>Verification and underwriting</h3><p>Financial institutions, employers, and references you have provided in order to verify your application details.</p><h3>Collections</h3><p>Licensed collection agencies or legal counsel if your account becomes delinquent.</p><h3>Legal requirements</h3><p>Government authorities, regulators, or courts as required by applicable law.</p><div class="legal-callout legal-callout--green">
+          <div class="legal-callout-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
+          <p>We require all third parties who receive personal information to maintain appropriate confidentiality and security measures. We do not share your information for any purpose beyond those described in this policy without your explicit consent.</p>
+        </div>
+        </div>
+        <div class="legal-section" id="cookies">
+          <div class="legal-section-head">
+            <div class="legal-num-pill">6</div>
+            <h2>Cookies and website tracking</h2>
+          </div>
+          <p>Our website uses cookies — small text files stored on your device — to improve your experience and gather aggregate usage statistics.</p><table class="legal-fees-table"><thead><tr><th>Cookie type</th><th>Purpose</th></tr></thead><tbody><tr><td>Essential</td><td>Required for the website to function. Cannot be disabled.</td></tr><tr><td>Analytics</td><td>Help us understand how visitors use our site. No personally identifiable information stored.</td></tr><tr><td>Marketing</td><td>Used to serve relevant advertising. Can be opted out via browser settings.</td></tr></tbody></table><p>You can control or disable cookies through your browser settings. Disabling certain cookies may affect website functionality. Aggregate navigation data does not identify individual users.</p>
+        </div>
+        <div class="legal-section" id="security">
+          <div class="legal-section-head">
+            <div class="legal-num-pill">7</div>
+            <h2>Security</h2>
+          </div>
+          <p>Captain Cash uses physical, electronic, and procedural safeguards that meet or exceed industry standards:</p><ul><li>Encrypted data transmission (TLS/SSL) for all online interactions</li><li>Secure, access-controlled servers with restricted physical and electronic access</li><li>Regular security testing and vulnerability assessments</li><li>Employee training on privacy obligations and data handling</li><li>Data backup procedures to protect against loss</li></ul><div class="legal-callout legal-callout--amber">
+          <div class="legal-callout-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+          <p>If you have reason to believe your information has been compromised, contact us immediately at <a href="mailto:support@captaincash.ca">support@captaincash.ca</a>.</p>
+        </div>
+        </div>
+        <div class="legal-section" id="retention">
+          <div class="legal-section-head">
+            <div class="legal-num-pill">8</div>
+            <h2>Data retention</h2>
+          </div>
+          <p>We retain personal information for as long as necessary to fulfill the purposes for which it was collected, including:</p><ul><li>The duration of your loan agreement and any renewal periods</li><li>Additional periods required to resolve disputes or comply with legal obligations</li><li>Periods required by financial services regulations, tax law, and anti-money laundering requirements</li></ul><p>When personal information is no longer required, it is securely destroyed or anonymized. Data is stored at our Halifax, Nova Scotia offices and/or with our Canadian-based service providers.</p>
+        </div>
+        <div class="legal-section" id="your-rights">
+          <div class="legal-section-head">
+            <div class="legal-num-pill">9</div>
+            <h2>Your rights</h2>
+          </div>
+          <h3>Right of access</h3><p>You have the right to request access to the personal information we hold about you. We will respond within 30 business days of a written request.</p><h3>Right of correction</h3><p>If you believe information we hold about you is inaccurate or incomplete, you have the right to request that it be corrected or updated.</p><h3>Right of withdrawal</h3><p>You have the right to withdraw consent to the collection, use, or disclosure of your personal information. However, withdrawal may result in our inability to provide certain services. Consent for an active loan agreement remains valid until all obligations are fully discharged.</p><h3>Right to complain</h3><p>If you are not satisfied with our response to a privacy concern, you have the right to file a complaint with the Office of the Privacy Commissioner of Canada at <a href="https://www.priv.gc.ca" target="_blank" rel="noopener" style="color:#e82020">priv.gc.ca</a> or 1-800-282-1376.</p>
+        </div>
+        <div class="legal-section" id="marketing">
+          <div class="legal-section-head">
+            <div class="legal-num-pill">10</div>
+            <h2>Marketing opt-out</h2>
+          </div>
+          <p>By submitting a loan application, you consent to receiving promotional material and newsletters from Captain Cash. You may withdraw this consent at any time by:</p><ul><li>Clicking the "Unsubscribe" link in any marketing email</li><li>Emailing support@captaincash.ca with "Unsubscribe" in the subject line</li><li>Calling 1-888-226-1026 during business hours</li></ul><p>Please allow up to 10 business days for your request to take effect. Withdrawing consent to marketing does not affect transactional communications related to your loan account.</p><div class="legal-callout legal-callout--green">
+          <div class="legal-callout-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
+          <p>Opting out of marketing has no effect on your loan account or your relationship with Captain Cash. You will continue to receive payment reminders and account notifications.</p>
+        </div>
+        </div>
+        <div class="legal-section" id="contact">
+          <div class="legal-section-head">
+            <div class="legal-num-pill">11</div>
+            <h2>Contact our Privacy Officer</h2>
+          </div>
+          <p>For any privacy-related questions, concerns, or requests — including access, correction, or withdrawal of consent:</p><div class="legal-contact-card">
+          <div class="legal-contact-bg" aria-hidden="true"></div>
+          <div class="legal-contact-inner">
+            <h3>Privacy Officer — Captain Cash</h3>
+            <div class="legal-contact-row"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> <strong>Jesse Royer</strong>, Chief Operations Officer</div><div class="legal-contact-row"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> 1701 Hollis Street W. Suite 800, Halifax, NS B3J 2T9</div><div class="legal-contact-row"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> <a href="mailto:support@captaincash.ca">support@captaincash.ca</a></div><div class="legal-contact-row"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 11.61 19.79 19.79 0 01.21 3.06 2 2 0 012.22 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.4a16 16 0 006.53 6.53l.86-.86a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> <a href="tel:18882261026">1-888-226-1026</a> &nbsp;·&nbsp; Monday–Friday, 8 AM–5 PM ET</div>
+          </div>
+        </div><p style="font-size:0.875rem;color:#6b7789;margin-top:1.25rem;line-height:1.75">This Privacy Policy is periodically reviewed and updated. The effective date of the current version is shown at the top of this document. Continued use of Captain Cash services following any update constitutes your acceptance of the revised policy.</p>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
-<div style="background:#fff">
-  <div class="container">
-
-    <!-- PLAIN ENGLISH SUMMARY -->
-    <div class="legal-summary">
-      <div class="legal-summary-title">Plain-language summary — what this means for you</div>
-      <div class="legal-summary-grid">
-        <div class="legal-summary-item">We collect personal and financial information to process your loan application — nothing more than what is necessary.</div>
-        <div class="legal-summary-item">We do not sell your personal information to third parties. We share it only as required to process your loan or comply with the law.</div>
-        <div class="legal-summary-item">You can request to view, correct, or delete your personal information at any time by contacting us.</div>
-        <div class="legal-summary-item">You can withdraw consent to receive marketing communications by clicking "unsubscribe" in any email or by contacting us directly.</div>
-        <div class="legal-summary-item">We use industry-standard security measures to protect your data and store it only for as long as required by law or our business obligations.</div>
-        <div class="legal-summary-item">Our website uses cookies to improve your experience. You can control cookies through your browser settings.</div>
-      </div>
-    </div>
-
-    <!-- TWO-COLUMN LAYOUT -->
-    <div class="legal-layout">
-
-      <!-- TOC -->
-      <nav class="legal-toc" aria-label="Table of contents">
-        <div class="legal-toc-title">Contents</div>
-        <ul class="legal-toc-list">
-          <li class="legal-toc-item"><a href="#overview">1. Overview</a></li>
-          <li class="legal-toc-item"><a href="#what-we-collect">2. What we collect</a></li>
-          <li class="legal-toc-item"><a href="#why-we-collect">3. Why we collect it</a></li>
-          <li class="legal-toc-item"><a href="#how-we-use">4. How we use it</a></li>
-          <li class="legal-toc-item"><a href="#who-we-share">5. Who we share it with</a></li>
-          <li class="legal-toc-item"><a href="#cookies">6. Cookies</a></li>
-          <li class="legal-toc-item"><a href="#security">7. Security</a></li>
-          <li class="legal-toc-item"><a href="#retention">8. Retention</a></li>
-          <li class="legal-toc-item"><a href="#your-rights">9. Your rights</a></li>
-          <li class="legal-toc-item"><a href="#marketing">10. Marketing opt-out</a></li>
-          <li class="legal-toc-item"><a href="#contact">11. Contact us</a></li>
-        </ul>
-        <a href="/terms-conditions/" class="legal-sister-link">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-          Terms &amp; Conditions
-        </a>
-      </nav>
-
-      <!-- CONTENT -->
-      <div class="legal-content">
-
-        <div class="legal-section" id="overview">
-          <div class="legal-section-num">Section 1</div>
-          <h2>Overview</h2>
-          <p>Captain Cash, a division of Opal Financial, is committed to protecting the privacy and personal information of its clients and website visitors. This Privacy Policy describes our practices for collecting, using, disclosing, and safeguarding personal information.</p>
-          <p>Captain Cash is subject to federal and provincial laws governing the protection of personal information, including the <em>Personal Information Protection and Electronic Documents Act</em> (PIPEDA) and applicable provincial privacy legislation. This policy outlines how we fulfill our obligations under those laws.</p>
-          <p>By submitting a loan application or using our website, you consent to the collection, use, and disclosure of your personal information as described in this policy.</p>
-          <div class="legal-highlight">
-            <p><strong>Questions about this policy?</strong> Contact our Privacy Officer at <a href="mailto:support@captaincash.ca" style="color:#e82020">support@captaincash.ca</a> or 1-888-226-1026. We will respond within 30 business days.</p>
-          </div>
-        </div>
-
-        <div class="legal-section" id="what-we-collect">
-          <div class="legal-section-num">Section 2</div>
-          <h2>What personal information we collect</h2>
-          <p>We collect personal information that is necessary to evaluate your loan application, administer your account, and comply with our legal obligations. This includes:</p>
-          <h3>Identity and contact information</h3>
-          <ul>
-            <li>Legal first and last name</li>
-            <li>Date of birth and sex</li>
-            <li>Residential address and postal code</li>
-            <li>Phone number and email address</li>
-            <li>Government-issued identification numbers (social insurance number, driver's licence) as required for identity verification</li>
-          </ul>
-          <h3>Financial and employment information</h3>
-          <ul>
-            <li>Employment status, employer name and address, and length of employment</li>
-            <li>Monthly net income and income source</li>
-            <li>Bank account details (institution, transit, account number) for direct deposit verification and pre-authorized debit setup</li>
-            <li>Bank statements and transaction history to assess repayment capacity</li>
-            <li>Outstanding debts and financial obligations</li>
-          </ul>
-          <h3>Technical and behavioural information</h3>
-          <ul>
-            <li>IP address, browser type, and operating system (collected automatically when you visit our website)</li>
-            <li>Pages visited, time spent on pages, and navigation patterns</li>
-            <li>Cookie data (see Section 6 for details)</li>
-          </ul>
-          <div class="legal-highlight">
-            <p><strong>Consent:</strong> By completing and submitting a loan application, you consent to the collection of all information described above, including information obtained from third parties such as your employer or financial institution for verification purposes.</p>
-          </div>
-        </div>
-
-        <div class="legal-section" id="why-we-collect">
-          <div class="legal-section-num">Section 3</div>
-          <h2>Why we collect personal information</h2>
-          <p>We collect personal information for the following primary purposes:</p>
-          <ul>
-            <li>To evaluate your eligibility for a loan</li>
-            <li>To verify your identity and the accuracy of information provided</li>
-            <li>To set up and administer your loan account</li>
-            <li>To process loan disbursements and collect scheduled repayments</li>
-            <li>To communicate with you about your account</li>
-            <li>To comply with applicable laws and regulatory requirements</li>
-            <li>To detect and prevent fraud</li>
-            <li>To improve our products and services</li>
-            <li>To send you promotional and marketing communications (with your consent)</li>
-          </ul>
-          <p>We will not collect personal information beyond what is necessary for these stated purposes without your explicit consent.</p>
-        </div>
-
-        <div class="legal-section" id="how-we-use">
-          <div class="legal-section-num">Section 4</div>
-          <h2>How we use personal information</h2>
-          <p>Captain Cash uses personal information in the normal course of its lending business, including to:</p>
-          <ul>
-            <li>Create and maintain your client account</li>
-            <li>Assess your loan application using our internal eligibility criteria</li>
-            <li>Verify your employment, income, and banking information</li>
-            <li>Disburse approved loan funds via Interac e-Transfer</li>
-            <li>Collect scheduled repayments via pre-authorized debit</li>
-            <li>Communicate with you regarding your account, payments, and any issues</li>
-            <li>Send statements, receipts, and other account documentation</li>
-            <li>Assess renewal eligibility for returning customers</li>
-            <li>Comply with applicable federal and provincial laws</li>
-          </ul>
-          <p>With your consent, we may also use your contact information to send promotional material, product announcements, and newsletters about Captain Cash services. You may withdraw this consent at any time (see Section 10).</p>
-        </div>
-
-        <div class="legal-section" id="who-we-share">
-          <div class="legal-section-num">Section 5</div>
-          <h2>Who we share your information with</h2>
-          <p>Captain Cash does not sell personal information. We may share your information in the following limited circumstances:</p>
-          <h3>Service providers</h3>
-          <p>We share information with third-party service providers who assist us in operating our business — including payment processors, IT service providers, and business administration services. These parties access only the information necessary to perform their specific function and are contractually bound to protect your information.</p>
-          <h3>Verification and underwriting</h3>
-          <p>We may share information with financial institutions, employers, and other references you have provided in order to verify your application details.</p>
-          <h3>Collections</h3>
-          <p>If your account becomes delinquent, we may share your information with licensed collection agencies or legal counsel for the purposes of debt recovery.</p>
-          <h3>Legal requirements</h3>
-          <p>We may disclose personal information to government authorities, regulators, or courts as required by applicable law — for example, to respond to a court order or to comply with anti-money laundering regulations.</p>
-          <div class="legal-highlight">
-            <p><strong>Note:</strong> We require all third parties who receive personal information to maintain appropriate confidentiality and security measures. We do not share your information for any purpose beyond those described in this policy without your explicit consent.</p>
-          </div>
-        </div>
-
-        <div class="legal-section" id="cookies">
-          <div class="legal-section-num">Section 6</div>
-          <h2>Cookies and website tracking</h2>
-          <p>Our website uses cookies — small text files stored on your device — to improve your browsing experience and gather aggregate usage statistics. Cookies allow us to:</p>
-          <ul>
-            <li>Remember your preferences and partially completed application data</li>
-            <li>Understand how visitors navigate our website so we can improve it</li>
-            <li>Measure the effectiveness of our marketing campaigns</li>
-            <li>Detect and prevent fraudulent activity</li>
-          </ul>
-          <h3>Types of cookies we use</h3>
-          <ul>
-            <li><strong>Essential cookies:</strong> Required for the website to function. These cannot be disabled.</li>
-            <li><strong>Analytics cookies:</strong> Help us understand how visitors use our site. No personally identifiable information is stored.</li>
-            <li><strong>Marketing cookies:</strong> Used to serve relevant advertising. You can opt out via your browser settings.</li>
-          </ul>
-          <p>You can control or disable cookies through your browser settings. Note that disabling certain cookies may affect the functionality of our website and application process. Aggregate navigation data collected via cookies does not identify individual users.</p>
-        </div>
-
-        <div class="legal-section" id="security">
-          <div class="legal-section-num">Section 7</div>
-          <h2>Security</h2>
-          <p>Captain Cash processes and stores personal information in a secure environment using physical, electronic, and procedural safeguards that meet or exceed industry standards. Our security measures include:</p>
-          <ul>
-            <li>Encrypted data transmission (TLS/SSL) for all online interactions</li>
-            <li>Secure, access-controlled servers with restricted physical and electronic access</li>
-            <li>Regular security testing and vulnerability assessments</li>
-            <li>Employee training on privacy obligations and data handling</li>
-            <li>Data backup procedures to protect against loss</li>
-          </ul>
-          <p>While we take all reasonable precautions, no security system is completely impenetrable. If you have reason to believe your information has been compromised, contact us immediately at support@captaincash.ca.</p>
-        </div>
-
-        <div class="legal-section" id="retention">
-          <div class="legal-section-num">Section 8</div>
-          <h2>Data retention</h2>
-          <p>We retain personal information for as long as necessary to fulfill the purposes for which it was collected, including:</p>
-          <ul>
-            <li>The duration of your loan agreement and any subsequent renewal periods</li>
-            <li>Any additional period required to resolve disputes, enforce agreements, or comply with legal obligations</li>
-            <li>Periods required by applicable financial services regulations, tax law, and anti-money laundering requirements</li>
-          </ul>
-          <p>When personal information is no longer required, it is securely destroyed or anonymized in accordance with our data retention policy.</p>
-          <p>Data is stored at our principal business location in Halifax, Nova Scotia, and/or with our service providers, which may include servers located in Canada.</p>
-        </div>
-
-        <div class="legal-section" id="your-rights">
-          <div class="legal-section-num">Section 9</div>
-          <h2>Your rights</h2>
-          <p>Under PIPEDA and applicable provincial privacy law, you have the following rights with respect to your personal information held by Captain Cash:</p>
-          <h3>Right of access</h3>
-          <p>You have the right to request access to the personal information we hold about you. We will provide this information within 30 business days of a written request. In some circumstances, we may charge a reasonable fee for providing access.</p>
-          <h3>Right of correction</h3>
-          <p>If you believe that personal information we hold about you is inaccurate or incomplete, you have the right to request that it be corrected or updated.</p>
-          <h3>Right of withdrawal</h3>
-          <p>You have the right to withdraw consent to the collection, use, or disclosure of your personal information. However, withdrawal of consent may result in our inability to provide certain services. Consent already given for an active loan agreement remains valid until all contractual obligations under that agreement are fully discharged.</p>
-          <h3>Right to complain</h3>
-          <p>If you are not satisfied with our response to a privacy concern, you have the right to file a complaint with the Office of the Privacy Commissioner of Canada at <a href="https://www.priv.gc.ca" target="_blank" rel="noopener" style="color:#e82020">priv.gc.ca</a> or 1-800-282-1376.</p>
-          <p>To exercise any of the above rights, contact our Privacy Officer using the information in Section 11.</p>
-        </div>
-
-        <div class="legal-section" id="marketing">
-          <div class="legal-section-num">Section 10</div>
-          <h2>Marketing communications and opt-out</h2>
-          <p>By submitting a loan application, you consent to receiving promotional material, newsletters, and information about Captain Cash products and services by email.</p>
-          <p>You may withdraw this consent and unsubscribe from marketing communications at any time by:</p>
-          <ul>
-            <li>Clicking the "Unsubscribe" link at the bottom of any marketing email</li>
-            <li>Emailing us at support@captaincash.ca with "Unsubscribe" in the subject line</li>
-            <li>Calling us at 1-888-226-1026 during business hours</li>
-          </ul>
-          <p>Please allow up to 10 business days for your opt-out request to take effect. Note that withdrawing consent to marketing does not affect transactional communications related to your loan account — you will continue to receive payment reminders, statements, and account notifications as these are necessary for the administration of your loan.</p>
-        </div>
-
-        <div class="legal-section" id="contact">
-          <div class="legal-section-num">Section 11</div>
-          <h2>Contact our Privacy Officer</h2>
-          <p>For any privacy-related questions, concerns, or requests — including requests to access, correct, or withdraw consent for your personal information — contact our Privacy Officer:</p>
-          <div class="legal-contact-card">
-            <h3>Privacy Officer — Captain Cash</h3>
-            <div class="legal-contact-row">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-              Jesse Royer, Chief Operations Officer
-            </div>
-            <div class="legal-contact-row">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              1701 Hollis Street W. Suite 800, Halifax, NS B3J 2T9
-            </div>
-            <div class="legal-contact-row">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              <a href="mailto:support@captaincash.ca">support@captaincash.ca</a>
-            </div>
-            <div class="legal-contact-row">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 11.61 19.79 19.79 0 01.21 3.06 2 2 0 012.22 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.4a16 16 0 006.53 6.53l.86-.86a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-              <a href="tel:18882261026">1-888-226-1026</a> &nbsp;·&nbsp; Monday–Friday, 8 AM–5 PM ET
-            </div>
-          </div>
-          <p style="font-size:0.875rem;color:#6b7789;margin-top:1.25rem;line-height:1.75">This Privacy Policy is periodically reviewed and updated. The effective date of the current version is shown at the top of this document. Continued use of Captain Cash services following any update constitutes your acceptance of the revised policy.</p>
-          <a href="/terms-conditions/" class="legal-sister-link">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-            Read our Terms &amp; Conditions
-          </a>
-        </div>
-
-      </div><!-- /legal-content -->
-    </div><!-- /legal-layout -->
-  </div><!-- /container -->
-</div>
-
 </main>
 
 <footer class="site-footer site-footer--dark">
@@ -1957,48 +1868,22 @@ h1 em {
 
 <script src="/js/main.js" defer></script>
 <script>
-(function() {
-  var header = document.getElementById('site-header');
-  if (header) window.addEventListener('scroll', function() {
-    header.classList.toggle('site-header--scrolled', window.scrollY > 60);
-  }, { passive:true });
-  var triggers = document.querySelectorAll('.nav-dropdown-trigger');
-  function closeAll() {
-    triggers.forEach(function(t) {
-      t.setAttribute('aria-expanded','false');
-      var dd = t.nextElementSibling;
-      if (dd) dd.classList.remove('nav-dropdown--open');
-    });
-  }
-  triggers.forEach(function(t) {
-    t.addEventListener('click', function(e) {
-      e.stopPropagation();
-      var isOpen = t.getAttribute('aria-expanded') === 'true';
-      closeAll();
-      if (!isOpen) {
-        t.setAttribute('aria-expanded','true');
-        var dd = t.nextElementSibling;
-        if (dd) dd.classList.add('nav-dropdown--open');
-      }
-    });
-  });
-  document.addEventListener('click', closeAll);
-  document.addEventListener('keydown', function(e) { if (e.key==='Escape') closeAll(); });
-
-  // Sticky TOC active state
-  var sections = document.querySelectorAll('.legal-section[id]');
-  var tocLinks = document.querySelectorAll('.legal-toc-item a');
-  function updateTOC() {
-    var scrollY = window.scrollY + 120;
-    var current = '';
-    sections.forEach(function(s) {
-      if (s.offsetTop <= scrollY) current = s.id;
-    });
-    tocLinks.forEach(function(a) {
-      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
-    });
-  }
-  window.addEventListener('scroll', updateTOC, { passive:true });
+(function(){
+  var h=document.getElementById('site-header');
+  if(h)window.addEventListener('scroll',function(){h.classList.toggle('site-header--scrolled',window.scrollY>60)},{passive:true});
+  var triggers=document.querySelectorAll('.nav-dropdown-trigger');
+  function closeAll(){triggers.forEach(function(t){t.setAttribute('aria-expanded','false');var d=t.nextElementSibling;if(d)d.classList.remove('nav-dropdown--open')});}
+  triggers.forEach(function(t){t.addEventListener('click',function(e){e.stopPropagation();var o=t.getAttribute('aria-expanded')==='true';closeAll();if(!o){t.setAttribute('aria-expanded','true');var d=t.nextElementSibling;if(d)d.classList.add('nav-dropdown--open')}})});
+  document.addEventListener('click',closeAll);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeAll()});
+  // Progress bar
+  var bar=document.getElementById('legal-progress');
+  if(bar){window.addEventListener('scroll',function(){var d=document.documentElement;var p=(d.scrollTop||document.body.scrollTop)/(d.scrollHeight-d.clientHeight)*100;bar.style.width=Math.min(p,100)+'%'},{passive:true});}
+  // TOC active
+  var sections=document.querySelectorAll('.legal-section[id]');
+  var links=document.querySelectorAll('.legal-toc-item a');
+  function updateTOC(){var y=window.scrollY+110,cur='';sections.forEach(function(s){if(s.offsetTop<=y)cur=s.id});links.forEach(function(a){a.classList.toggle('active',a.getAttribute('href')==='#'+cur)});}
+  window.addEventListener('scroll',updateTOC,{passive:true});
   updateTOC();
 })();
 </script>
