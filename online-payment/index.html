@@ -2448,6 +2448,16 @@ h1 em {
   .cta-banner-actions { flex-direction:column; width:100%; }
   .cta-banner-actions .btn,.cta-banner-actions .btn-cta-phone { width:100%; text-align:center; justify-content:center; }
 }
+
+/* ── Mobile: hide hero visual, single-col layout ── */
+@media(max-width:900px){
+  .pmt-hero-visual{display:none !important;}
+  .pmt-hero-inner{
+    grid-template-columns:1fr !important;
+    padding-top:3rem !important;
+    padding-bottom:3.5rem !important;
+  }
+}
 </style>
 </body>
 </html>
