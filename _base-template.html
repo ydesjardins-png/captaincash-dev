@@ -117,16 +117,118 @@
 <header class="site-header site-header--dark" id="site-header">
   <div class="container header-inner">
     <a href="/" class="site-logo-img">
-      <img src="images/mascot/sprites/logo-lockup-small.webp" alt="Captain Cash — Here to save the day" width="160" height="40" loading="eager">
+      <img src="images/mascot/sprites/logo-lockup-small.webp" alt="Captain Cash — Here to save the day" width="192" height="48" loading="eager">
     </a>
     <nav class="nav-links" aria-label="Main navigation">
-      <a href="how-it-works.html">How it works</a>
-      <a href="support.html">FAQ</a>
-      <a href="about.html">About</a>
-      <a href="blog.html">Blog</a>
+
+      <!-- Products dropdown -->
+      <div class="nav-item nav-item--dropdown">
+        <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+          Products
+          <svg class="nav-chev" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
+        </button>
+        <div class="nav-dropdown" role="menu">
+          <a href="claim-your-cash.html" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--red" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>Get a loan</strong>
+              <span>$500–$1,000, same business day</span>
+            </span>
+          </a>
+          <a href="renew-your-loan.html" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--amber" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>Renew your loan</strong>
+              <span>Fast track for returning customers</span>
+            </span>
+          </a>
+          <a href="online-payment.html" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--blue" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>Online payment</strong>
+              <span>Pay or manage your existing loan</span>
+            </span>
+          </a>
+          <div class="nav-drop-sep" aria-hidden="true"></div>
+          <a href="pages/installment-loans.html" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--green" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>Installment loans</strong>
+              <span>How our loan model works</span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Learn dropdown -->
+      <div class="nav-item nav-item--dropdown">
+        <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+          Learn
+          <svg class="nav-chev" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
+        </button>
+        <div class="nav-dropdown" role="menu">
+          <a href="how-it-works.html" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--blue" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>How it works</strong>
+              <span>Apply, approve, get funded</span>
+            </span>
+          </a>
+          <a href="support.html" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--green" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>FAQ</strong>
+              <span>Common questions answered</span>
+            </span>
+          </a>
+          <a href="about.html" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--red" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>About Captain Cash</strong>
+              <span>Canadian lender since 2015</span>
+            </span>
+          </a>
+          <div class="nav-drop-sep" aria-hidden="true"></div>
+          <a href="blog.html" class="nav-drop-item" role="menuitem">
+            <span class="nav-drop-icon nav-drop-icon--amber" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+            </span>
+            <span class="nav-drop-text">
+              <strong>Blog</strong>
+              <span>Tips for Canadian borrowers</span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Direct links -->
+      <a href="contact.html" class="nav-link-plain">Contact</a>
+
     </nav>
     <div class="nav-cta">
-      <a href="tel:18882261026" class="nav-phone nav-phone--dark">1-888-226-1026</a>
+      <a href="tel:18882261026" class="nav-phone nav-phone--dark" aria-label="Call us at 1-888-226-1026">
+        <span class="nav-phone-icon" aria-hidden="true">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#e82020" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        </span>
+        <span class="nav-phone-text">
+          <span class="nav-phone-label">Call us</span>
+          <span class="nav-phone-num">1-888-226-1026</span>
+        </span>
+      </a>
       <a href="claim-your-cash.html" class="btn-header-red">Get a loan</a>
       <a href="renew-your-loan.html" class="btn-header-amber">Renew</a>
     </div>
@@ -135,6 +237,44 @@
     </button>
   </div>
 </header>
+
+<!-- ═══════════════════════════════════════
+     TRUST BAR
+═══════════════════════════════════════ -->
+<div class="trust-bar" role="complementary" aria-label="Trust credentials">
+  <div class="container trust-bar-inner">
+    <div class="trust-bar-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <span>CLA member since 2015</span>
+    </div>
+    <div class="trust-bar-divider" aria-hidden="true"></div>
+    <div class="trust-bar-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      <span>SSL encrypted</span>
+    </div>
+    <div class="trust-bar-divider" aria-hidden="true"></div>
+    <div class="trust-bar-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      <span>12,000+ Canadians served</span>
+    </div>
+    <div class="trust-bar-divider" aria-hidden="true"></div>
+    <div class="trust-bar-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+      <span>Provincially licensed</span>
+    </div>
+    <div class="trust-bar-divider" aria-hidden="true"></div>
+    <div class="trust-bar-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      <span>Same-day e-Transfer</span>
+    </div>
+    <div class="trust-bar-divider" aria-hidden="true"></div>
+    <div class="trust-bar-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+      <span>APR 23% — transparent</span>
+    </div>
+  </div>
+</div>
+
 
 <main>
 
@@ -162,7 +302,7 @@
   <div class="cta-banner-orb cta-banner-orb-1" aria-hidden="true"></div>
   <div class="cta-banner-orb cta-banner-orb-2" aria-hidden="true"></div>
   <div class="container cta-banner-inner">
-    <img src="images/mascot.webp" alt="" aria-hidden="true" class="cta-mascot" width="140" height="170" loading="lazy">
+    <img src="images/mascot/mascot-fists.webp" alt="" aria-hidden="true" class="cta-mascot" width="140" height="170" loading="lazy">
     <div class="cta-banner-text">
       <h2>Ready to get your cash?</h2>
       <p>Apply in 5 minutes. Get approved today. No credit check required.</p>
@@ -188,11 +328,11 @@
         <a href="/" class="site-logo-img site-logo-img--footer">
           <img src="images/mascot/sprites/logo-lockup-small.webp" alt="Captain Cash" width="140" height="35" loading="lazy">
         </a>
-        <p style="margin-top:1rem;color:rgba(255,255,255,0.4);font-size:0.875rem;line-height:1.7">A fast, fair alternative to payday loans for Canadians who need cash today. Serving Canada since 2015.</p>
-        <address style="margin-top:1rem;font-size:0.8rem;color:rgba(255,255,255,0.3);font-style:normal;line-height:1.7">
+        <p style="margin-top:1rem;color:var(--gray-400);font-size:0.875rem;line-height:1.7">A fast, fair alternative to payday loans for Canadians who need cash today. Serving Canada since 2015.</p>
+        <address style="margin-top:1rem;font-size:0.8rem;color:var(--gray-500);font-style:normal;line-height:1.7">
           1701 Hollis Street W. Suite 800<br>
           Halifax, NS B3J 2T9<br>
-          <a href="tel:18882261026" style="color:rgba(255,255,255,0.3)">1-888-226-1026</a>
+          <a href="tel:18882261026" style="color:var(--gray-400)">1-888-226-1026</a>
         </address>
       </div>
       <div class="footer-col">
@@ -227,26 +367,67 @@
     </div>
     <div class="footer-bottom">
       <p>Captain Cash &copy; 2026, a division of Opal Financial. All Rights Reserved.</p>
-      <p>APR 23% &mdash; <a href="terms.html" style="color:rgba(255,255,255,0.3)">Privacy Policy</a> &mdash; Borrow responsibly</p>
+      <p>APR 23% &mdash; <a href="terms.html" style="color:var(--gray-500)">Privacy Policy</a> &mdash; Borrow responsibly</p>
     </div>
   </div>
 </footer>
 
 <!-- SCRIPTS — DO NOT MODIFY -->
-<script src="js/main.js"></script>
-<script>
-(function() {
-  var header = document.getElementById('site-header');
-  if (!header) return;
-  function updateHeader() {
-    header.classList.toggle('site-header--scrolled', window.scrollY > 60);
-  }
-  window.addEventListener('scroll', updateHeader, { passive: true });
-  updateHeader();
-})();
-</script>
 
-<!-- PAGE-SPECIFIC STYLES — add below, do not edit above -->
+  <script src="js/main.js"></script>
+  <script>
+  (function() {
+    var header = document.getElementById('site-header');
+    if (!header) return;
+    function updateHeader() {
+      header.classList.toggle('site-header--scrolled', window.scrollY > 60);
+    }
+    window.addEventListener('scroll', updateHeader, { passive: true });
+    updateHeader();
+  })();
+  </script>
+  <script>
+  /* nav dropdowns */
+  (function() {
+    var triggers = document.querySelectorAll('.nav-dropdown-trigger');
+    function closeAll() {
+      triggers.forEach(function(t) {
+        t.setAttribute('aria-expanded','false');
+        var dd = t.nextElementSibling;
+        if (dd) dd.classList.remove('nav-dropdown--open');
+      });
+    }
+    triggers.forEach(function(trigger) {
+      trigger.addEventListener('click', function(e) {
+        e.stopPropagation();
+        var isOpen = trigger.getAttribute('aria-expanded') === 'true';
+        closeAll();
+        if (!isOpen) {
+          trigger.setAttribute('aria-expanded','true');
+          var dd = trigger.nextElementSibling;
+          if (dd) dd.classList.add('nav-dropdown--open');
+        }
+      });
+    });
+    document.addEventListener('click', closeAll);
+    document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeAll(); });
+  })();
+  </script>
+  <script>
+  /* FAQ accordion */
+  document.querySelectorAll('.faq-trigger').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      var body = document.getElementById(btn.getAttribute('aria-controls'));
+      btn.setAttribute('aria-expanded', !expanded);
+      if (!expanded) { body.classList.add('faq-open'); }
+      else { body.classList.remove('faq-open'); }
+    });
+  });
+  </script>
+
+<!-- PAGE-SPECIFIC STYLES — add below -->
+ not edit above -->
 <style>
 /* ── DARK HEADER ── */
 .site-header--dark {
@@ -258,6 +439,56 @@
   box-shadow: 0 1px 0 rgba(255,255,255,0.08);
 }
 .site-header--dark .nav-links a { color: rgba(255,255,255,0.65); }
+/* ── NAV DROPDOWNS ── */
+.nav-item { position:relative; }
+.nav-dropdown-trigger {
+  display:flex; align-items:center; gap:5px;
+  background:none; border:none; cursor:pointer;
+  font-family:inherit; font-size:0.875rem; font-weight:500;
+  color:rgba(255,255,255,0.65); padding:6px 10px; border-radius:8px;
+  transition:background 0.15s, color 0.15s;
+}
+.nav-dropdown-trigger:hover,
+.nav-dropdown-trigger[aria-expanded="true"] { background:rgba(255,255,255,0.07); color:#fff; }
+.nav-chev { transition:transform 0.2s; flex-shrink:0; }
+.nav-dropdown-trigger[aria-expanded="true"] .nav-chev { transform:rotate(180deg); }
+.nav-dropdown {
+  position:absolute; top:calc(100% + 10px); left:0;
+  background:#000; border:1px solid rgba(255,255,255,0.12);
+  border-radius:16px; padding:8px; min-width:260px; z-index:200;
+  opacity:0; pointer-events:none;
+  transform:translateY(-8px);
+  transition:opacity 0.18s ease, transform 0.18s ease;
+  box-shadow:0 16px 48px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.04);
+}
+.nav-dropdown.nav-dropdown--open {
+  opacity:1; pointer-events:auto; transform:translateY(0);
+}
+.nav-drop-item {
+  display:flex; align-items:center; gap:12px;
+  padding:10px 12px; border-radius:10px; text-decoration:none;
+  transition:background 0.15s;
+  color:inherit;
+}
+.nav-drop-item:hover { background:rgba(255,255,255,0.06); }
+.nav-drop-icon {
+  width:32px; height:32px; border-radius:8px; flex-shrink:0;
+  display:flex; align-items:center; justify-content:center;
+}
+.nav-drop-icon--red   { background:rgba(232,32,32,0.15);  color:#e82020; }
+.nav-drop-icon--amber { background:rgba(255,179,71,0.12);  color:#ffb347; }
+.nav-drop-icon--blue  { background:rgba(26,110,240,0.15);  color:#4a9eff; }
+.nav-drop-icon--green { background:rgba(22,163,74,0.15);   color:#4ade80; }
+.nav-drop-text { display:flex; flex-direction:column; gap:1px; }
+.nav-drop-text strong { font-size:0.8125rem; font-weight:600; color:#fff; }
+.nav-drop-text span   { font-size:0.75rem; color:rgba(255,255,255,0.4); }
+.nav-drop-sep { height:1px; background:rgba(255,255,255,0.07); margin:6px 0; }
+.nav-link-plain {
+  font-size:0.875rem; font-weight:500; color:rgba(255,255,255,0.65);
+  padding:6px 10px; border-radius:8px; text-decoration:none;
+  transition:background 0.15s, color 0.15s;
+}
+.nav-link-plain:hover { background:rgba(255,255,255,0.07); color:#fff; }
 .site-header--dark .nav-links a:hover { color: #fff; }
 .btn-header-red, .btn-header-amber {
   display:inline-flex; align-items:center;
@@ -318,9 +549,30 @@
     0 1px 0 #7a3800;
 }
 .site-logo-img { display:flex; align-items:center; }
-.site-logo-img img { height:36px; width:auto; display:block; }
+.site-logo-img img { height:48px; width:auto; display:block; }
 .site-logo-img--footer img { height:32px; width:auto; opacity:0.92; }
-.nav-phone--dark { color: rgba(255,255,255,0.8) !important; }
+.nav-phone--dark {
+  display:flex; align-items:center; gap:9px;
+  text-decoration:none; padding:5px 10px 5px 5px;
+  border-radius:10px;
+  transition:background 0.15s;
+}
+.nav-phone--dark:hover { background:rgba(255,255,255,0.07); }
+.nav-phone-icon {
+  width:32px; height:32px; border-radius:50%; flex-shrink:0;
+  background:rgba(232,32,32,0.15);
+  border:1px solid rgba(232,32,32,0.25);
+  display:flex; align-items:center; justify-content:center;
+  transition:background 0.15s, border-color 0.15s;
+}
+.nav-phone--dark:hover .nav-phone-icon {
+  background:rgba(232,32,32,0.22);
+  border-color:rgba(232,32,32,0.4);
+}
+.nav-phone-text { display:flex; flex-direction:column; gap:1px; }
+.nav-phone-label { font-size:0.625rem; font-weight:700; color:rgba(255,255,255,0.35); text-transform:uppercase; letter-spacing:0.08em; }
+.nav-phone-num   { font-size:0.8125rem; font-weight:700; color:rgba(255,255,255,0.85); letter-spacing:0.01em; }
+.nav-phone--dark:hover .nav-phone-num { color:#fff; }
 .hamburger--dark span { background: rgba(255,255,255,0.85); }
 @media (max-width:768px) {
   .nav-phone--dark { display:none; }
@@ -330,6 +582,31 @@
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 .site-header--dark .nav-links.nav-open a { color: rgba(255,255,255,0.75); }
+
+/* ── TRUST BAR ── */
+.trust-bar {
+  background: #000;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  padding: 8px 0;
+  position: sticky; top: 64px; z-index: 90;
+}
+.trust-bar-inner {
+  display: flex; align-items: center; justify-content: center;
+  flex-wrap: wrap; gap: 0;
+}
+.trust-bar-item {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 0.75rem; font-weight: 500;
+  color: rgba(255,255,255,0.45);
+  padding: 4px 16px; white-space: nowrap;
+}
+.trust-bar-item svg { color: rgba(232,32,32,0.7); flex-shrink: 0; }
+.trust-bar-divider {
+  width: 1px; height: 14px;
+  background: rgba(255,255,255,0.1);
+  flex-shrink: 0;
+}
+@media (max-width:900px) { .trust-bar { display:none; } }
 
 /* ── HERO ── */
 .hero {
@@ -365,13 +642,14 @@
 .hero-beam {
   position: absolute;
   top: 0; right: 0;
-  width: 65%; height: 100%;
+  width: 100%; height: 100%;
   background: conic-gradient(
-    from 195deg at 100% 0%,
+    from 200deg at 100% 0%,
     transparent 0deg,
-    rgba(232,32,32,0.16) 20deg,
-    rgba(232,32,32,0.06) 38deg,
-    transparent 58deg
+    rgba(232,32,32,0.08) 15deg,
+    rgba(232,32,32,0.18) 28deg,
+    rgba(232,32,32,0.08) 42deg,
+    transparent 56deg
   );
 }
 /* thin red edge light — right side */
@@ -452,6 +730,18 @@
   animation: glowPulse 3s ease-in-out infinite;
 }
 @keyframes glowPulse { 0%,100%{opacity:0.7;transform:scaleX(1);} 50%{opacity:1;transform:scaleX(1.15);} }
+/* mobile-only mascot — hidden on desktop */
+.hero-mascot-mobile {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.hero-mascot-mobile img {
+  width: 140px; height: auto;
+  filter: drop-shadow(0 16px 32px rgba(0,0,0,0.6));
+  animation: mascotFloat 5s ease-in-out infinite;
+}
 @keyframes mascotFloat { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-12px);} }
 
 h1 {
@@ -1100,6 +1390,14 @@ h1 em {
 .elig-seals { display:flex; flex-wrap:wrap; gap:0.75rem; }
 .elig-seal { display:flex; align-items:center; gap:5px; font-size:0.75rem; color:rgba(255,255,255,0.45); font-weight:500; }
 .elig-seal-dot { width:5px; height:5px; border-radius:50%; background:#4ade80; box-shadow:0 0 5px rgba(74,222,128,0.5); flex-shrink:0; }
+.elig-cta-mascot {
+  display:flex; justify-content:center; margin-bottom:1rem;
+}
+.elig-cta-mascot img {
+  width:90px; height:auto;
+  filter: drop-shadow(-8px 0 20px rgba(232,32,32,0.3)) drop-shadow(0 12px 24px rgba(0,0,0,0.5));
+  animation: mascotFloat 5s ease-in-out infinite;
+}
 .elig-cta-body h3 { font-size:1.1rem; font-weight:800; color:#fff; line-height:1.35; margin-bottom:0.75rem; }
 .elig-cta-body p  { font-size:0.875rem; color:rgba(255,255,255,0.55); line-height:1.65; margin-bottom:1.25rem; }
 .elig-reassure { list-style:none; padding:0; display:flex; flex-direction:column; gap:7px; margin-bottom:1.5rem; }
@@ -1182,9 +1480,49 @@ h1 em {
 .t-author span { font-size:0.8125rem; color:rgba(255,255,255,0.4); }
 
 /* ── FAQ PREVIEW ── */
-.faq-preview-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1.5rem; }
-.faq-preview-item { padding:var(--space-8); background:white; border:1px solid var(--color-border); border-radius:var(--radius-xl); }
-.faq-preview-item h3 { font-size:var(--text-lg); margin-bottom:0.75rem; }
+/* ── FAQ ACCORDION ── */
+.section--faq { background:#f8f9fb; position:relative; }
+.section--faq::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; background:linear-gradient(90deg,transparent,#e82020 30%,#ff6a4d 50%,#e82020 70%,transparent); }
+.faq-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 3rem;
+}
+.faq-list { display:flex; flex-direction:column; }
+.faq-item { border-bottom:1px solid #e2e6ed; }
+.faq-item:first-child { border-top:1px solid #e2e6ed; }
+.faq-trigger {
+  width:100%; display:flex; justify-content:space-between; align-items:center;
+  padding:1.25rem 0; background:none; border:none; cursor:pointer;
+  font-family:inherit; font-size:1rem; font-weight:600; color:#0b1a33;
+  text-align:left; gap:1rem; transition:color 0.2s;
+}
+.faq-trigger:hover,
+.faq-trigger[aria-expanded="true"] { color:#e82020; }
+.faq-icon {
+  width:22px; height:22px; flex-shrink:0;
+  border:1.5px solid #d1d5db; border-radius:50%;
+  position:relative; transition:border-color 0.2s, transform 0.3s;
+}
+.faq-icon::before, .faq-icon::after {
+  content:''; position:absolute; background:#6b7789;
+  top:50%; left:50%; transition:background 0.2s, opacity 0.25s, transform 0.25s;
+}
+.faq-icon::before { width:9px; height:1.5px; transform:translate(-50%,-50%); }
+.faq-icon::after  { width:1.5px; height:9px; transform:translate(-50%,-50%); }
+.faq-trigger:hover .faq-icon,
+.faq-trigger[aria-expanded="true"] .faq-icon { border-color:#e82020; }
+.faq-trigger:hover .faq-icon::before,
+.faq-trigger:hover .faq-icon::after,
+.faq-trigger[aria-expanded="true"] .faq-icon::before,
+.faq-trigger[aria-expanded="true"] .faq-icon::after { background:#e82020; }
+.faq-trigger[aria-expanded="true"] .faq-icon::after { opacity:0; }
+.faq-body {
+  overflow:hidden; max-height:0;
+  transition:max-height 0.35s ease, padding-bottom 0.35s ease;
+}
+.faq-body.faq-open { max-height:300px; padding-bottom:1.25rem; }
+.faq-body p { font-size:0.9375rem; color:#374151; line-height:1.75; margin:0; }
 
 /* ── HOW IT WORKS — light ── */
 .section--steps-light {
@@ -1331,9 +1669,6 @@ h1 em {
 .btn-cta-phone:hover { background:rgba(255,255,255,0.08); color:#fff; }
 
 /* ── FOOTER ── */
-.footer-mascot-row { display:flex; align-items:center; gap:1rem; margin-top:1rem; }
-.footer-mascot { width:58px; height:auto; flex-shrink:0; opacity:0.9; filter:drop-shadow(0 4px 8px rgba(0,0,0,0.4)); }
-.footer-mascot-row p { margin:0; }
 
 /* ══════════════════════════════════════
    RESPONSIVE — 4 breakpoints
@@ -1346,6 +1681,15 @@ h1 em {
 
 
 /* ── small laptop (900–1199px) ── */
+/* ══════════════════════════════════════
+   RESPONSIVE — 4 breakpoints
+   ≤1199px  small laptop
+   ≤900px   tablet / iPad portrait
+   ≤767px   large phone
+   ≤479px   small phone
+══════════════════════════════════════ */
+
+/* ── small laptop (≤1199px) ── */
 @media (max-width:1199px) {
   .bento-grid { grid-template-columns:repeat(2,1fr); }
   .bento-card--tall { grid-row:span 1; }
@@ -1357,27 +1701,36 @@ h1 em {
 
 /* ── tablet / iPad portrait (≤900px) ── */
 @media (max-width:900px) {
+  /* hero */
   .hero-inner {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     padding-top: 4rem;
-    padding-bottom: 0;
+    padding-bottom: 2rem;
     gap: 2rem;
     align-items: start;
   }
-  .hero-mascot-col { display: none; }
-
+  .hero-mascot-col { display:none; }
   .hero-body { max-width:100%; }
   .calc-wrap { max-width:100%; margin:0; }
+
+  /* stat strip */
   .hero-stat-inner { flex-wrap:wrap; }
   .hero-stat-divider { display:none; }
   .hero-stat-item { flex:0 0 50%; padding:1.25rem 1rem; border-bottom:1px solid rgba(255,255,255,0.06); }
   .hero-stat-item:nth-child(1),.hero-stat-item:nth-child(3) { border-right:1px solid rgba(255,255,255,0.06); }
+
+  /* grids */
   .bento-grid { grid-template-columns:repeat(2,1fr); }
   .bento-card--large,.bento-card--wide { grid-column:span 2; }
   .steps-grid { grid-template-columns:repeat(2,1fr); gap:1rem; }
   .testimonials-grid { grid-template-columns:repeat(2,1fr); }
-  .faq-preview-grid { grid-template-columns:repeat(2,1fr); }
+
   .elig-grid { grid-template-columns:1fr; }
+
+  /* cost widget */
+  .cost-top { grid-template-columns:1fr; }
+
+  /* CTA banner */
   .cta-banner-inner { flex-direction:column; text-align:center; align-items:center; }
   .cta-banner-actions { justify-content:center; }
   .cta-mascot { display:none; }
@@ -1385,42 +1738,81 @@ h1 em {
 
 /* ── large phone (≤767px) ── */
 @media (max-width:767px) {
-  .hero-inner { grid-template-columns:1fr; padding-top:3.5rem; }
-  h1 { font-size:2.2rem !important; }
-  .calc-display-row { flex-direction:column; gap:10px; }
-  .calc-display-row > div:last-child { text-align:left; }
+  /* hero */
+  .hero-inner { padding-top:3rem; padding-bottom:1.5rem; }
+  .hero-mascot-mobile { display:flex; }
+  h1 { font-size:2rem !important; }
+  .hero-trust-pills { gap:6px; }
+  .hero-trust-pills li { font-size:0.75rem; padding:4px 10px; }
+  .hero-actions { flex-direction:column; }
+  .btn-hero-primary,.btn-hero-ghost { width:100%; justify-content:center; text-align:center; }
+  .hero-inline-proof { width:100%; }
+
+  /* calculator */
+  .calc-display-row { flex-direction:column; gap:10px; align-items:center; }
+  .calc-display-row > div { text-align:center; }
+  .calc-display-row > div:last-child { text-align:center; }
   .calc-display-amount { font-size:1.8rem; }
+  .cost-sched-header { grid-template-columns:28px 1fr 70px 70px 64px; }
+  .cost-sched-row { grid-template-columns:28px 1fr 70px 70px 64px; }
+
+  /* steps */
   .steps-grid { grid-template-columns:1fr; gap:0.75rem; }
   .steps-connector { display:none; }
+
+  /* bento */
   .bento-grid { grid-template-columns:1fr; }
   .bento-card--tall,.bento-card--wide,.bento-card--full { grid-column:span 1; grid-row:span 1; }
-  .bento-card { padding:1.5rem; }
+  .bento-card,.elig-card,.elig-cta-card { padding:1.25rem; }
+
+  /* compare */
   .compare-layout { grid-template-columns:1fr; gap:0; }
   .cmp-vs-col { flex-direction:row; padding:0 1rem; }
   .cmp-vs-line { flex:1; width:auto; height:1px; background:linear-gradient(90deg,transparent,#e2e6ed 30%,#e2e6ed 70%,transparent); }
   .compare-card-them { border-radius:20px 20px 0 0; border-bottom:none; border-top:3px solid #e2e6ed; }
   .compare-card-us { border-radius:0 0 20px 20px; border-top:2px solid #e82020; }
+  .compare-card-them,.compare-card-us { padding:1.25rem; }
+
+  /* testimonials + faq */
   .testimonials-grid { grid-template-columns:1fr; }
-  .faq-preview-grid { grid-template-columns:1fr; }
-  .cost-table th:nth-child(3),.cost-table td:nth-child(3) { display:none; }
-  .hero-actions { flex-direction:column; }
-  .btn-hero-primary,.btn-hero-ghost { width:100%; justify-content:center; text-align:center; }
+  .faq-cols { grid-template-columns:1fr; gap:0; }
+
+
+  /* CTA banner */
   .cta-banner-text { text-align:center; }
-  .section,.section--dark,.section--darker { padding:var(--space-16) 0; }
+  .cta-banner h2 { font-size:1.5rem; }
+
+  /* section padding reduction */
+  .section,
+  .section--dark,
+  .section--darker,
+  .section--steps-light,
+  .section--compare-light,
+  .section--cost,
+  .section--eligibility { padding:var(--space-16) 0; }
 }
 
 /* ── small phone (≤479px) ── */
 @media (max-width:479px) {
-  h1 { font-size:1.9rem !important; }
-  .hero-eyebrow { font-size:0.7rem; padding:5px 12px; }
+  h1 { font-size:1.8rem !important; }
+  .hero-eyebrow { font-size:0.6875rem; padding:5px 12px; }
   .hero-stat-item { flex:0 0 100%; border-right:none !important; }
-  .calc-display-amount { font-size:1.6rem; }
-  .freq-btn { font-size:0.7rem; padding:8px 2px; }
-  .province-tags span { font-size:0.8rem; padding:0.2rem 0.65rem; }
-  .footer-mascot { width:48px; }
-  .footer-mascot-row { gap:0.75rem; }
-  .hero-trust-pills { gap:6px; }
-  .hero-trust-pills li { font-size:0.75rem; padding:4px 10px; }
+  .calc-display-amount { font-size:1.5rem; }
+  .cost-freq-btn { font-size:0.6875rem; padding:6px 2px; }
+  .elig-province-tags span { font-size:0.75rem; padding:3px 10px; }
+
+  /* cost widget schedule: hide balance on tiny screens */
+  .cost-sched-header .col-right:nth-child(4),
+  .cost-sched-row .cs-bal { display:none; }
+  .cost-sched-header { grid-template-columns:28px 1fr 72px 64px; }
+  .cost-sched-row { grid-template-columns:28px 1fr 72px 64px; }
+
+  /* footer */
+  .footer-grid { grid-template-columns:1fr; }
+
+  /* CTA banner button full width */
+  .cta-banner-actions { flex-direction:column; width:100%; }
+  .cta-banner-actions .btn,.cta-banner-actions .btn-cta-phone { width:100%; text-align:center; justify-content:center; }
 }
 </style>
 
