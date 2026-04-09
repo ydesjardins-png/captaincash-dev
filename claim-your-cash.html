@@ -260,6 +260,14 @@
         <span class="cyc-progress-label" id="cyc-progress-label">Step 1 of 5</span>
       </div>
 
+      <!-- DEV ONLY: dummy data button -->
+      <div class="cyc-dev-bar" id="cyc-dev-bar">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        Dev mode
+        <button type="button" id="cyc-fill-btn" class="cyc-dev-btn">⚡ Fill dummy data</button>
+        <button type="button" id="cyc-clear-btn" class="cyc-dev-btn cyc-dev-btn--ghost">Clear</button>
+      </div>
+
       <form id="cyc-form" action="#" method="post" novalidate>
         <input type="hidden" name="request_type" value="new">
         <input type="hidden" name="amount" id="amount" value="500">
@@ -2205,6 +2213,25 @@ h1 em {
 }
 
 
+
+/* ── DEV BAR ── */
+.cyc-dev-bar {
+  display:flex; align-items:center; gap:8px;
+  background:rgba(255,200,0,0.08); border:1px solid rgba(255,200,0,0.25);
+  border-radius:10px; padding:8px 14px; margin-bottom:1.25rem;
+  font-size:0.75rem; font-weight:600; color:rgba(255,200,0,0.7);
+}
+.cyc-dev-bar svg { color:rgba(255,200,0,0.6); flex-shrink:0; }
+.cyc-dev-btn {
+  margin-left:auto; padding:5px 14px; border-radius:9999px;
+  background:rgba(255,200,0,0.15); border:1px solid rgba(255,200,0,0.3);
+  color:rgba(255,200,0,0.9); font-size:0.75rem; font-weight:700;
+  cursor:pointer; font-family:inherit; transition:all 0.15s;
+}
+.cyc-dev-btn:hover { background:rgba(255,200,0,0.25); }
+.cyc-dev-btn--ghost { margin-left:4px; background:transparent; border-color:rgba(255,200,0,0.15); color:rgba(255,200,0,0.5); }
+.cyc-dev-btn--ghost:hover { background:rgba(255,200,0,0.08); color:rgba(255,200,0,0.8); }
+
 /* ── CLAIM YOUR CASH — Page Styles ── */
 /* ══════════════════════════════════════
    CLAIM YOUR CASH — Page Styles
@@ -2809,6 +2836,92 @@ h1 em {
     });
     document.addEventListener('click', closeAll);
     document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeAll(); });
+  })();
+  </script>
+  <script>
+  /* ── DEV: dummy data fill ── */
+  (function() {
+    var dummy = {
+      firstname: 'Jean',
+      lastname:  'Tremblay',
+      email:     'jean.tremblay@example.ca',
+      phone:     '(514) 555-0101',
+      cell:      '(514) 555-0202',
+      b_year:    '1988', b_month: '04', b_day: '15',
+      address:   '123 Rue Principale',
+      apt:       'Apt 4',
+      city:      'Halifax',
+      province:  'NS',
+      postal_code:'B3J 2T9',
+      income:    'employed',
+      employer_name: 'Opal Financial Inc.',
+      employer_phone:'(902) 555-0303',
+      employer_extension: '42',
+      job_desc:  'Software Developer',
+      job_supervisor: 'Marie Côté',
+      job_year:  '2021', job_month: '06',
+      pay_frequency: 'biweekly',
+      next_pay:  (function(){ var d=new Date(); d.setDate(d.getDate()+7); return d.toISOString().slice(0,10); })(),
+      bank:      '004',
+      transit:   '12345',
+      account:   '1234567',
+      firstname_contact: 'Sophie',
+      name_contact: 'Tremblay',
+      phone_contact: '(514) 555-0404',
+      link_contact: 'sibling'
+    };
+
+    function fillAll() {
+      Object.keys(dummy).forEach(function(k) {
+        var el = document.getElementById(k) || document.querySelector('[name="' + k + '"]');
+        if (!el) return;
+        if (el.tagName === 'SELECT') {
+          el.value = dummy[k];
+          el.dispatchEvent(new Event('change'));
+        } else {
+          el.value = dummy[k];
+          el.dispatchEvent(new Event('input'));
+        }
+      });
+      // Gender
+      var gm = document.getElementById('gender-m');
+      if (gm) { gm.checked = true; }
+      // Deposit
+      var dy = document.getElementById('deposit-yes');
+      if (dy) { dy.checked = true; }
+      // Declarations
+      ['bankruptcy','bankpast'].forEach(function(id) {
+        var cb = document.getElementById(id);
+        if (cb) cb.checked = true;
+      });
+      // Amount button
+      var btn500 = document.querySelector('[data-amount="700"]');
+      if (btn500) btn500.click();
+      // Update birthday hidden field
+      var by = document.getElementById('b_year');
+      var bm = document.getElementById('b_month');
+      var bd = document.getElementById('b_day');
+      if (by && bm && bd) {
+        var bh = document.getElementById('birthday');
+        if (bh) bh.value = by.value + '-' + bm.value + '-' + bd.value;
+      }
+    }
+
+    function clearAll() {
+      document.querySelectorAll('.cyc-input, .cyc-select').forEach(function(el) {
+        if (el.type === 'hidden') return;
+        el.value = '';
+        el.dispatchEvent(new Event('change'));
+      });
+      document.querySelectorAll('input[type="radio"], input[type="checkbox"]').forEach(function(el){
+        el.checked = false;
+      });
+    }
+
+    var fillBtn  = document.getElementById('cyc-fill-btn');
+    var clearBtn = document.getElementById('cyc-clear-btn');
+    if (fillBtn)  fillBtn.addEventListener('click', fillAll);
+    if (clearBtn) clearBtn.addEventListener('click', clearAll);
   })();
   </script>
 </body>
