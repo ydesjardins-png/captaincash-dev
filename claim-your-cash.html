@@ -265,6 +265,50 @@
         <div class="cyc-seal"><span class="cyc-seal-dot"></span>SSL encrypted</div>
         <div class="cyc-seal"><span class="cyc-seal-dot"></span>Provincially licensed</div>
       </div>
+
+      <!-- Help box -->
+      <div class="cyc-help-box">
+        <div class="cyc-help-header">
+          <div class="cyc-help-dot" aria-hidden="true"></div>
+          <strong>Need help? We're here.</strong>
+        </div>
+        <p class="cyc-help-sub">Our Halifax team is available Mon–Fri, 8 AM–5 PM ET. Reach us any time by email.</p>
+        <a href="tel:18882261026" class="cyc-help-row">
+          <span class="cyc-help-icon" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </span>
+          <div class="cyc-help-contact">
+            <span class="cyc-help-label">Call us</span>
+            <span class="cyc-help-value">1-888-226-1026</span>
+          </div>
+          <svg class="cyc-help-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="mailto:support@captaincash.ca" class="cyc-help-row">
+          <span class="cyc-help-icon" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </span>
+          <div class="cyc-help-contact">
+            <span class="cyc-help-label">Email us</span>
+            <span class="cyc-help-value">support@captaincash.ca</span>
+          </div>
+          <svg class="cyc-help-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <div class="cyc-help-signals">
+          <div class="cyc-help-signal">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>SSL encrypted</span>
+          </div>
+          <div class="cyc-help-signal">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>No data sold</span>
+          </div>
+          <div class="cyc-help-signal">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>CLA member</span>
+          </div>
+        </div>
+      </div>
+
     </aside>
 
     <!-- RIGHT: multi-step form -->
@@ -2379,6 +2423,59 @@ h1 em {
 @media(max-width:768px){.cyc-container{grid-template-columns:1fr}}
 
 /* Trust panel */
+
+/* ── HELP BOX ── */
+.cyc-help-box {
+  margin-top:1.25rem;
+  background:#0a1220;
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:16px;
+  padding:1.25rem;
+}
+.cyc-help-header {
+  display:flex; align-items:center; gap:8px;
+  margin-bottom:0.5rem;
+}
+.cyc-help-dot {
+  width:8px; height:8px; border-radius:50%;
+  background:#4ade80; box-shadow:0 0 6px rgba(74,222,128,0.7);
+  flex-shrink:0;
+  animation:helpPulse 2s ease-in-out infinite;
+}
+@keyframes helpPulse { 0%,100%{opacity:1;} 50%{opacity:0.4;} }
+.cyc-help-header strong { font-size:0.875rem; font-weight:700; color:#fff; }
+.cyc-help-sub { font-size:0.75rem; color:rgba(255,255,255,0.4); line-height:1.55; margin-bottom:1rem; }
+.cyc-help-row {
+  display:flex; align-items:center; gap:10px;
+  padding:10px 10px; border-radius:10px;
+  text-decoration:none; margin-bottom:6px;
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.07);
+  transition:background 0.15s, border-color 0.15s;
+}
+.cyc-help-row:hover { background:rgba(255,255,255,0.09); border-color:rgba(255,255,255,0.15); }
+.cyc-help-row:last-of-type { margin-bottom:0; }
+.cyc-help-icon {
+  width:28px; height:28px; border-radius:8px;
+  background:rgba(232,32,32,0.12); border:1px solid rgba(232,32,32,0.2);
+  color:#e82020; display:flex; align-items:center; justify-content:center;
+  flex-shrink:0;
+}
+.cyc-help-contact { display:flex; flex-direction:column; gap:1px; flex:1; }
+.cyc-help-label { font-size:0.6875rem; color:rgba(255,255,255,0.35); font-weight:600; text-transform:uppercase; letter-spacing:0.06em; }
+.cyc-help-value { font-size:0.875rem; font-weight:600; color:#fff; }
+.cyc-help-arrow { color:rgba(255,255,255,0.25); flex-shrink:0; }
+.cyc-help-row:hover .cyc-help-arrow { color:rgba(255,255,255,0.6); }
+.cyc-help-signals {
+  display:flex; flex-wrap:wrap; gap:0.625rem;
+  margin-top:1rem; padding-top:1rem;
+  border-top:1px solid rgba(255,255,255,0.07);
+}
+.cyc-help-signal {
+  display:flex; align-items:center; gap:4px;
+  font-size:0.6875rem; font-weight:500; color:rgba(255,255,255,0.4);
+}
+
 .cyc-trust-panel {
   background:#0d1829; border:1px solid rgba(255,255,255,0.09);
   border-radius:20px; padding:1.75rem;
