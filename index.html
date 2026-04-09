@@ -66,6 +66,11 @@
 
       <p class="hero-body">Get $500–$1,000 by Interac e-Transfer the same business day. Repay over 90–150 days in instalments that fit your schedule. Apply in 5 minutes from your phone.</p>
 
+      <div class="hero-mascot-mobile" aria-hidden="true">
+        <img src="images/mascot.webp" alt="" width="160" height="195" loading="eager">
+        <div class="hero-mascot-glow"></div>
+      </div>
+
       <div class="hero-actions">
         <a href="claim-your-cash.html" class="btn-hero-primary">
           Claim your cash
@@ -1059,6 +1064,18 @@
   animation: glowPulse 3s ease-in-out infinite;
 }
 @keyframes glowPulse { 0%,100%{opacity:0.7;transform:scaleX(1);} 50%{opacity:1;transform:scaleX(1.15);} }
+/* mobile-only mascot — hidden on desktop */
+.hero-mascot-mobile {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.hero-mascot-mobile img {
+  width: 140px; height: auto;
+  filter: drop-shadow(0 16px 32px rgba(0,0,0,0.6));
+  animation: mascotFloat 5s ease-in-out infinite;
+}
 @keyframes mascotFloat { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-12px);} }
 
 h1 {
@@ -2009,6 +2026,7 @@ h1 em {
 @media (max-width:767px) {
   /* hero */
   .hero-inner { padding-top:3rem; padding-bottom:1.5rem; }
+  .hero-mascot-mobile { display:flex; }
   h1 { font-size:2rem !important; }
   .hero-trust-pills { gap:6px; }
   .hero-trust-pills li { font-size:0.75rem; padding:4px 10px; }
