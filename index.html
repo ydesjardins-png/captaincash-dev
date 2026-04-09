@@ -814,32 +814,81 @@
 <!-- ═══════════════════════════════════════
      FAQ PREVIEW — light
 ═══════════════════════════════════════ -->
-<section class="section bg-subtle">
+<!-- ═══════════════════════════════════════
+     FAQ — light, interactive accordion
+═══════════════════════════════════════ -->
+<section class="section section--faq">
   <div class="container">
     <div class="section-header">
-      <span class="badge badge-blue">Common questions</span>
+      <span class="badge badge-red">Common questions</span>
       <h2>Frequently asked questions</h2>
+      <p>Everything you need to know before you apply. More questions? Visit our full FAQ page.</p>
     </div>
-    <div class="faq-preview-grid">
-      <div class="faq-preview-item animate">
-        <h3>Will you check my credit score?</h3>
-        <p>No. We do not perform a traditional credit check. We review your income and banking history to assess eligibility instead.</p>
+    <div class="faq-list" role="list">
+
+      <div class="faq-item animate" role="listitem">
+        <button class="faq-trigger" aria-expanded="false" aria-controls="faq-1">
+          <span>Will you check my credit score?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-body" id="faq-1" role="region">
+          <p>No. Captain Cash does not perform a traditional credit check. We assess your application based on your income and banking activity — not your credit score. Applying will not place a hard inquiry on your credit file and will not affect your score.</p>
+        </div>
       </div>
-      <div class="faq-preview-item animate">
-        <h3>How fast will I get my money?</h3>
-        <p>If you are approved before 2 PM ET on a business day, funds are sent by Interac e-Transfer the same day.</p>
+
+      <div class="faq-item animate" role="listitem">
+        <button class="faq-trigger" aria-expanded="false" aria-controls="faq-2">
+          <span>How fast will I receive my money?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-body" id="faq-2" role="region">
+          <p>If you are approved before 2 PM ET on a business day, funds are sent by Interac e-Transfer the same day — directly to your Canadian bank account. Applications received after 2 PM or on weekends are processed the next business day.</p>
+        </div>
       </div>
-      <div class="faq-preview-item animate">
-        <h3>What if I need to defer a payment?</h3>
-        <p>Contact us at least 48 hours before your payment date. A deferral fee of $25 applies. We work with you — not against you.</p>
+
+      <div class="faq-item animate" role="listitem">
+        <button class="faq-trigger" aria-expanded="false" aria-controls="faq-3">
+          <span>What does a Captain Cash loan actually cost?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-body" id="faq-3" role="region">
+          <p>Our APR is 23%. As a representative example: a $500 loan repays at approximately $750 in total over 90–150 days. An NSF fee of $45 applies for failed payments. A deferral fee of $25 applies with 48 hours' notice. Full costs are disclosed before you sign — no surprises.</p>
+        </div>
       </div>
-      <div class="faq-preview-item animate">
-        <h3>Can I repay early?</h3>
-        <p>Yes. You can repay your loan early at any time with no penalty whatsoever.</p>
+
+      <div class="faq-item animate" role="listitem">
+        <button class="faq-trigger" aria-expanded="false" aria-controls="faq-4">
+          <span>What if I need to defer a payment?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-body" id="faq-4" role="region">
+          <p>Contact us at least 48 hours before your scheduled payment date. A deferral fee of $25 applies. We are a direct lender — not a broker — so you deal with our team directly. Call us at 1-888-226-1026 or visit the support page.</p>
+        </div>
       </div>
+
+      <div class="faq-item animate" role="listitem">
+        <button class="faq-trigger" aria-expanded="false" aria-controls="faq-5">
+          <span>Can I repay early?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-body" id="faq-5" role="region">
+          <p>Yes. You can repay your loan early at any time with no penalty whatsoever. Early repayment reduces the total cost of borrowing since interest accrues daily.</p>
+        </div>
+      </div>
+
+      <div class="faq-item animate" role="listitem">
+        <button class="faq-trigger" aria-expanded="false" aria-controls="faq-6">
+          <span>Which provinces is Captain Cash available in?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-body" id="faq-6" role="region">
+          <p>Captain Cash is currently licensed to lend in Ontario, British Columbia, Alberta, Nova Scotia, New Brunswick, PEI, Newfoundland, Nunavut, and the Northwest Territories. We are not currently available in Quebec, Manitoba, or Saskatchewan.</p>
+        </div>
+      </div>
+
     </div>
     <div class="text-center" style="margin-top:2.5rem">
-      <a href="support.html" class="btn btn-outline">View all FAQs</a>
+      <a href="support.html" class="btn-steps-cta">View all FAQs</a>
     </div>
   </div>
 </section>
@@ -2307,6 +2356,22 @@ h1 em {
       updateCost();
     });
   })();
+  </script>
+  <script>
+  /* ── FAQ accordion ── */
+  document.querySelectorAll('.faq-trigger').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      var bodyId = btn.getAttribute('aria-controls');
+      var body = document.getElementById(bodyId);
+      btn.setAttribute('aria-expanded', !expanded);
+      if (!expanded) {
+        body.classList.add('faq-open');
+      } else {
+        body.classList.remove('faq-open');
+      }
+    });
+  });
   </script>
 </body>
 </html>
