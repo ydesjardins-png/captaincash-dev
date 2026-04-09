@@ -3,38 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Make an Interac e-Transfer payment to Captain Cash in 3 simple steps. Send to receivables@diamondfinancialone.com — quick, secure, and free.">
-  <title>Online Payment — Make an e-Transfer in 3 Steps | Captain Cash</title>
-  <link rel="canonical" href="https://captaincash.ca/online-payment/">
-  <meta property="og:title" content="Online Payment | Captain Cash">
-  <meta property="og:description" content="Pay your Captain Cash loan by Interac e-Transfer in 3 steps. Free, instant, and secure.">
+  <meta name="description" content="Answers to every question about Captain Cash loans — eligibility, costs, repayment, deferral, banking security and more. APR 23%. Licensed Canadian lender since 2015.">
+  <title>Support & FAQ — Your Questions Answered | Captain Cash</title>
+  <link rel="canonical" href="https://captaincash.ca/support/">
+  <meta property="og:title" content="Support & FAQ | Captain Cash">
+  <meta property="og:description" content="Everything you need to know about applying, repaying, and managing your Captain Cash loan.">
+  <meta property="og:url" content="https://captaincash.ca/support/">
+  <meta property="og:type" content="website">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "@id": "https://captaincash.ca/online-payment/",
-    "url": "https://captaincash.ca/online-payment/",
-    "name": "Online Payment | Captain Cash",
-    "description": "Make an Interac e-Transfer payment to Captain Cash in 3 steps.",
-    "isPartOf": { "@id": "https://captaincash.ca/#website" },
-    "breadcrumb": {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type":"ListItem","position":1,"name":"Home","item":"https://captaincash.ca/"},
-        {"@type":"ListItem","position":2,"name":"Online Payment","item":"https://captaincash.ca/online-payment/"}
-      ]
-    }
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://captaincash.ca/support/",
+        "url": "https://captaincash.ca/support/",
+        "name": "Support & FAQ | Captain Cash",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type":"ListItem","position":1,"name":"Home","item":"https://captaincash.ca/"},
+            {"@type":"ListItem","position":2,"name":"Support & FAQ","item":"https://captaincash.ca/support/"}
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type":"Question","name":"Can I apply without a credit check?","acceptedAnswer":{"@type":"Answer","text":"Yes. Captain Cash does not perform a traditional credit check. We assess applications based on your income and banking history. Applying will not place a hard inquiry on your credit file."}},
+          {"@type":"Question","name":"What income do I need to qualify?","acceptedAnswer":{"@type":"Answer","text":"You need a minimum monthly income of $1,200, received by direct deposit or e-Transfer from your employer or income source. You must also have at least 3 months of continuous employment or consistent income history."}},
+          {"@type":"Question","name":"How much does a Captain Cash loan cost?","acceptedAnswer":{"@type":"Answer","text":"The APR is 23%. A $500 loan repays approximately $750 in total over 90 to 150 days. An NSF fee of $45 applies for failed payments. A deferral fee of $25 applies with 48 hours notice."}},
+          {"@type":"Question","name":"When will I receive my money?","acceptedAnswer":{"@type":"Answer","text":"If approved before 2 PM ET on a business day, funds are sent by Interac e-Transfer the same day. Applications approved after 2 PM ET are processed the next business day."}},
+          {"@type":"Question","name":"How do I defer a payment?","acceptedAnswer":{"@type":"Answer","text":"Contact Captain Cash at least 48 hours before your scheduled payment date. A deferral fee of $25 applies. Note that the first and last payments cannot be deferred."}},
+          {"@type":"Question","name":"Can I repay my loan early?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can repay your loan early at any time with no prepayment penalty. Your first scheduled payment must still be processed as originally scheduled."}},
+          {"@type":"Question","name":"Will Captain Cash log into my bank account?","acceptedAnswer":{"@type":"Answer","text":"No. Captain Cash never sees your login credentials. The bank verification system provides read-only access to your bank statement. Your credentials are never stored or accessible by our team."}},
+          {"@type":"Question","name":"Can I renew my loan?","acceptedAnswer":{"@type":"Answer","text":"Yes. Customers in good standing after repaying their loan may qualify for a renewal. Contact us or visit the renew page to check your eligibility."}}
+        ]
+      }
+    ]
   }
   </script>
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
 
 <header class="site-header site-header--dark" id="site-header">
   <div class="container header-inner">
     <a href="/" class="site-logo-img">
-      <img src="images/mascot/sprites/logo-lockup-small.webp" alt="Captain Cash — Here to save the day" width="192" height="48" loading="eager">
+      <img src="/images/mascot/sprites/logo-lockup-small.webp" alt="Captain Cash — Here to save the day" width="192" height="48" loading="eager">
     </a>
     <nav class="nav-links" aria-label="Main navigation">
 
@@ -45,7 +62,7 @@
           <svg class="nav-chev" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
         </button>
         <div class="nav-dropdown" role="menu">
-          <a href="claim-your-cash.html" class="nav-drop-item" role="menuitem">
+          <a href="/claim-your-cash/" class="nav-drop-item" role="menuitem">
             <span class="nav-drop-icon nav-drop-icon--red" aria-hidden="true">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
             </span>
@@ -54,7 +71,7 @@
               <span>$500–$1,000, same business day</span>
             </span>
           </a>
-          <a href="renew-your-loan.html" class="nav-drop-item" role="menuitem">
+          <a href="/renew-your-loan/" class="nav-drop-item" role="menuitem">
             <span class="nav-drop-icon nav-drop-icon--amber" aria-hidden="true">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg>
             </span>
@@ -63,7 +80,7 @@
               <span>Fast track for returning customers</span>
             </span>
           </a>
-          <a href="online-payment.html" class="nav-drop-item" role="menuitem">
+          <a href="/online-payment/" class="nav-drop-item" role="menuitem">
             <span class="nav-drop-icon nav-drop-icon--blue" aria-hidden="true">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
             </span>
@@ -84,7 +101,7 @@
           <svg class="nav-chev" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
         </button>
         <div class="nav-dropdown" role="menu">
-          <a href="how-it-works.html" class="nav-drop-item" role="menuitem">
+          <a href="/how-does-it-work/" class="nav-drop-item" role="menuitem">
             <span class="nav-drop-icon nav-drop-icon--blue" aria-hidden="true">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </span>
@@ -93,7 +110,7 @@
               <span>Apply, approve, get funded</span>
             </span>
           </a>
-          <a href="support.html" class="nav-drop-item" role="menuitem">
+          <a href="/support/" class="nav-drop-item" role="menuitem">
             <span class="nav-drop-icon nav-drop-icon--green" aria-hidden="true">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
             </span>
@@ -102,7 +119,7 @@
               <span>Common questions answered</span>
             </span>
           </a>
-          <a href="about.html" class="nav-drop-item" role="menuitem">
+          <a href="/about-us/" class="nav-drop-item" role="menuitem">
             <span class="nav-drop-icon nav-drop-icon--red" aria-hidden="true">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
             </span>
@@ -111,7 +128,7 @@
               <span>Canadian lender since 2015</span>
             </span>
           </a>
-          <a href="testimonials.html" class="nav-drop-item" role="menuitem">
+          <a href="/testimonials/" class="nav-drop-item" role="menuitem">
             <span class="nav-drop-icon nav-drop-icon--amber" aria-hidden="true">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
             </span>
@@ -121,7 +138,7 @@
             </span>
           </a>
           <div class="nav-drop-sep" aria-hidden="true"></div>
-          <a href="blog.html" class="nav-drop-item" role="menuitem">
+          <a href="/blog/" class="nav-drop-item" role="menuitem">
             <span class="nav-drop-icon nav-drop-icon--amber" aria-hidden="true">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
             </span>
@@ -134,7 +151,7 @@
       </div>
 
       <!-- Direct links -->
-      <a href="contact.html" class="nav-link-plain">Contact</a>
+      <a href="/contact-us/" class="nav-link-plain">Contact</a>
 
     </nav>
     <div class="nav-cta">
@@ -147,8 +164,8 @@
           <span class="nav-phone-num">1-888-226-1026</span>
         </span>
       </a>
-      <a href="claim-your-cash.html" class="btn-header-red">Get a loan</a>
-      <a href="renew-your-loan.html" class="btn-header-amber">Renew</a>
+      <a href="/claim-your-cash/" class="btn-header-red">Get a loan</a>
+      <a href="/renew-your-loan/" class="btn-header-amber">Renew</a>
     </div>
     <button class="hamburger hamburger--dark" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -193,394 +210,517 @@
   </div>
 </div>
 
-<main>
+
 <main>
 
 <!-- ═══════════════════════════════════════
      HERO — dark
 ═══════════════════════════════════════ -->
-<section class="section section--dark pmt-hero">
-  <div class="pmt-hero-bg" aria-hidden="true">
-    <!-- Option A: diagonal data streams -->
-    <svg class="pmt-bg-streams" viewBox="0 0 1400 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#e82020" opacity="0.055" font-family="monospace" font-size="11">
-        <text transform="rotate(-20,0,40)" x="-40" y="40">8291 4402 1837 9901 2210 5543 8871 3320 6654 1129 8801 4432 9910 2287 5561 8830 3319 6641 1108</text>
-        <text transform="rotate(-20,0,100)" x="-40" y="100">1100 9928 4471 8833 2201 6677 3312 9988 1144 5521 8849 2290 6631 9900 3341 6682 0019 4401 7763</text>
-        <text transform="rotate(-20,0,160)" x="-40" y="160">5532 2291 8849 1102 7763 3318 9900 4421 8832 2211 6643 9912 3341 6682 0019 4401 8836 2210 5543</text>
-        <text transform="rotate(-20,0,220)" x="-40" y="220">3398 6621 9900 1137 8842 2291 5563 8814 3320 9912 3341 6682 0019 4401 8836 2210 5543 7791 1100</text>
-        <text transform="rotate(-20,0,280)" x="-40" y="280">9912 3341 6682 0019 4401 8836 2210 5543 7791 2201 5523 8889 1198 4420 7762 3341 9901 6643 3312</text>
-        <text transform="rotate(-20,0,340)" x="-40" y="340">2201 5523 8889 1198 4420 7762 3341 9901 6643 8291 4402 1837 9901 2210 5543 8871 3320 6654 1129</text>
-        <text transform="rotate(-20,0,400)" x="-40" y="400">6631 9920 3312 8841 1100 4492 7723 2298 5561 3398 6621 9900 1137 8842 2291 5563 8814 3320 9912</text>
-        <text transform="rotate(-20,0,460)" x="-40" y="460">4420 7762 3341 9901 6643 1100 9928 4471 8833 2201 6677 3312 9988 1144 5521 8849 2290 6631 9900</text>
-        <text transform="rotate(-20,0,520)" x="-40" y="520">8832 2211 6643 9912 5532 2291 8849 1102 7763 3318 9900 4421 8832 2211 6643 9912 3341 6682 0019</text>
-        <text transform="rotate(-20,0,580)" x="-40" y="580">1837 9901 2210 5543 6631 9920 3312 8841 1100 4492 7723 2298 5561 4420 7762 3341 9901 6643 1100</text>
-      </g>
-    </svg>    <!-- Existing atmospheric elements -->
-    <div class="pmt-orb-r"></div>
-    <div class="pmt-orb-b"></div>
-    <div class="pmt-edge"></div>
+<section class="section section--dark faq-hero">
+  <div class="faq-hero-bg" aria-hidden="true">
+    <div class="faq-hero-orb-r"></div>
+    <div class="faq-hero-orb-b"></div>
+    <div class="faq-hero-beam"></div>
+    <div class="faq-hero-edge"></div>
   </div>
-  <div class="container pmt-hero-inner">
-    <div class="pmt-hero-content">
+  <div class="container faq-hero-inner">
+    <div class="faq-hero-content">
       <nav aria-label="Breadcrumb" class="hiw-breadcrumb">
         <a href="/">Home</a>
         <span aria-hidden="true">›</span>
-        <span aria-current="page">Online payment</span>
+        <span aria-current="page">Support & FAQ</span>
       </nav>
-      <span class="badge badge-red-dark">Make a payment</span>
-      <h1>Pay your Captain Cash<br>loan in 3 steps</h1>
-      <p class="pmt-hero-sub">All you need is your online banking app. Send by Interac e-Transfer — free, secure, and processed same day if received before 2 PM ET.</p>
-
-      <!-- Stat bar -->
-      <div class="pmt-hero-stats">
-        <div class="pmt-hero-stat">
-          <strong>Free</strong>
-          <span>No fees to send</span>
-        </div>
-        <div class="pmt-stat-div" aria-hidden="true"></div>
-        <div class="pmt-hero-stat">
-          <strong>Same day</strong>
-          <span>Before 2 PM ET</span>
-        </div>
-        <div class="pmt-stat-div" aria-hidden="true"></div>
-        <div class="pmt-hero-stat">
-          <strong>3 steps</strong>
-          <span>Takes under 2 minutes</span>
-        </div>
-        <div class="pmt-stat-div" aria-hidden="true"></div>
-        <div class="pmt-hero-stat">
-          <strong>All banks</strong>
-          <span>Works with any Canadian bank</span>
+      <span class="badge badge-red-dark">Support centre</span>
+      <h1>How can we help you?</h1>
+      <p class="faq-hero-sub">Find answers to every question about applying, repaying, and managing your Captain Cash loan. Can't find what you're looking for? Our team is a phone call away.</p>
+      <div class="faq-hero-contact">
+        <a href="tel:18882261026" class="faq-contact-card">
+          <span class="faq-contact-icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </span>
+          <div>
+            <span class="faq-contact-label">Call us</span>
+            <span class="faq-contact-value">1-888-226-1026</span>
+          </div>
+        </a>
+        <a href="mailto:support@captaincash.ca" class="faq-contact-card">
+          <span class="faq-contact-icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </span>
+          <div>
+            <span class="faq-contact-label">Email us</span>
+            <span class="faq-contact-value">support@captaincash.ca</span>
+          </div>
+        </a>
+        <div class="faq-contact-card faq-contact-card--hours">
+          <span class="faq-contact-icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </span>
+          <div>
+            <span class="faq-contact-label">Hours (ET)</span>
+            <span class="faq-contact-value">Mon–Fri 8 AM–5 PM</span>
+          </div>
         </div>
       </div>
-
-      <a href="#steps" class="pmt-hero-cta">
-        See the steps
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </div>
+    <div class="faq-hero-right">
+      <div class="faq-hero-mascot-wrap" aria-hidden="true">
+        <img src="/images/mascot.webp" alt="" width="180" height="220" loading="eager" class="faq-hero-mascot-img">
+        <div class="faq-hero-mascot-glow"></div>
+      </div>
+      <div class="faq-hero-cats" aria-label="Jump to category">
+      <p class="faq-cats-label">Browse by category</p>
+      <a href="#eligibility" class="faq-cat-btn" data-target="eligibility">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="23 11 17 17 14 14"/></svg>
+        Eligibility & Applying
+      </a>
+      <a href="#costs" class="faq-cat-btn" data-target="costs">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+        Costs & Repayment
+      </a>
+      <a href="#funding" class="faq-cat-btn" data-target="funding">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg>
+        Getting Your Money
+      </a>
+      <a href="#managing" class="faq-cat-btn" data-target="managing">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Managing Your Loan
+      </a>
+      <a href="#security" class="faq-cat-btn" data-target="security">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Security & Privacy
       </a>
     </div>
-    <div class="pmt-hero-visual">
-      <!-- Transaction card -->
-      <div class="pmt-txn-card" aria-label="Example of a successful payment confirmation">
-        <!-- Bank app header -->
-        <div class="pmt-txn-header">
-          <div class="pmt-txn-header-dot"></div>
-          <div class="pmt-txn-header-dot"></div>
-          <div class="pmt-txn-header-dot pmt-txn-header-dot--green"></div>
-          <span class="pmt-txn-header-label">Interac e&#8209;Transfer</span>
+    </div><!-- /faq-hero-right -->
+  </div>
+</section>
+
+<!-- Sticky side nav — desktop only -->
+<nav class="faq-sticky-nav" id="faq-sticky-nav" aria-label="FAQ categories" hidden>
+  <ul>
+    <li><a href="#eligibility" class="faq-sticky-btn" data-target="eligibility">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="23 11 17 17 14 14"/></svg>
+      Eligibility
+    </a></li>
+    <li><a href="#costs" class="faq-sticky-btn" data-target="costs">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+      Costs
+    </a></li>
+    <li><a href="#funding" class="faq-sticky-btn" data-target="funding">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg>
+      Funding
+    </a></li>
+    <li><a href="#managing" class="faq-sticky-btn" data-target="managing">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      Managing
+    </a></li>
+    <li><a href="#security" class="faq-sticky-btn" data-target="security">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      Security
+    </a></li>
+  </ul>
+  <a href="/claim-your-cash/" class="faq-sticky-cta">Apply now →</a>
+</nav>
+
+<!-- ═══════════════════════════════════════
+     FAQ SECTIONS — white
+═══════════════════════════════════════ -->
+<section class="section section--faq faq-page-section">
+  <div class="container">
+
+    <div class="section-header" style="margin-bottom:2.5rem">
+      <span class="badge badge-red">Knowledge base</span>
+      <h2>Everything you need to know</h2>
+      <p>30 questions answered across 5 categories. Click any question to expand the answer.</p>
+    </div>
+
+    <!-- ── Eligibility & Applying ── -->
+    <div class="faq-block" id="eligibility" data-category="eligibility" style="--faq-accent:#16a34a">
+      <div class="section-header section-header--left">
+        <div class="faq-cat-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="23 11 17 17 14 14"/></svg>
         </div>
-        <!-- Status badge -->
-        <div class="pmt-txn-status">
-          <div class="pmt-txn-status-icon" aria-hidden="true">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        <h2>Eligibility &amp; Applying</h2>
+      </div>
+      <div class="faq-cols">
+        <div class="faq-list" role="list">
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-e1">
+              <span>Can I apply without a credit check?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-e1" role="region">
+              <p>Yes. Captain Cash does not perform a traditional credit check. We assess your application based on your income and banking history — not your credit score. Applying will not place a hard inquiry on your credit file and will not affect your score.</p>
+            </div>
+          </div>
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-e2">
+              <span>What criteria do I need to meet to be eligible?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-e2" role="region">
+              <p>You must be a Canadian resident aged 18+, earn at least $1,200/month by direct deposit, have 3+ months of stable employment, hold an active Canadian bank account (3+ months), have few or no NSF transactions, not be bankrupt or in a consumer proposal, and reside in a served province.</p>
+            </div>
+          </div>
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-e3">
+              <span>Which income sources are not accepted?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-e3" role="region">
+              <p>The following are not accepted for new applications: social assistance, student loans, child tax benefit, CPP, private pensions, disability income, and other insurance income. Employment Insurance (EI) may be accepted for <a href="/renew-your-loan/">renewals</a> after a successful first repayment.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-list" role="list">
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-e4">
+              <span>Which provinces does Captain Cash serve?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-e4" role="region">
+              <p>We are licensed in Ontario, British Columbia, Alberta, Nova Scotia, New Brunswick, PEI, Newfoundland &amp; Labrador, Nunavut, and the Northwest Territories. We are not currently available in Quebec, Manitoba, or Saskatchewan.</p>
+            </div>
+          </div>
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-e5">
+              <span>What is a paperless application?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-e5" role="region">
+              <p>Our application is 100% online — no documents to scan, fax, or mail. We use instant bank verification (read-only access to your statement) and an e-signature platform. The entire process is completed from any device in minutes.</p>
+            </div>
+          </div>
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-e6">
+              <span>Do I need a phone number to apply?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-e6" role="region">
+              <p>Yes. Your application must include at least one valid phone number registered in your name. This is used to verify your application and communicate your decision.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Costs & Repayment ── -->
+    <div class="faq-block" id="costs" data-category="costs" style="--faq-accent:#e82020">
+      <div class="section-header section-header--left">
+        <div class="faq-cat-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+        </div>
+        <h2>Costs &amp; Repayment</h2>
+      </div>
+      <div class="faq-cols">
+        <div class="faq-list" role="list">
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-c1">
+              <span>How much does a Captain Cash loan cost?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-c1" role="region">
+              <p>Our APR is 23%. A $500 loan repays approximately $750 total over 90–150 days. A $1,000 loan repays approximately $1,500. The full repayment schedule and total cost are shown in your agreement before you sign — no surprises.</p>
+            </div>
+          </div>
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-c2">
+              <span>What fees apply to my loan?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-c2" role="region">
+              <p>NSF fee: $45 if a payment fails. Deferral fee: $25 with 48 hours notice. Application fee: free. Early repayment penalty: none. All fees are disclosed in your loan agreement before you sign.</p>
+            </div>
+          </div>
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-c3">
+              <span>How are repayments collected?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-c3" role="region">
+              <p>Repayments are collected automatically from the bank account you provided, on dates that align with your pay schedule — weekly, bi-weekly, or monthly. The full schedule is shown before you sign.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-list" role="list">
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-c4">
+              <span>Can I repay my loan early?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-c4" role="region">
+              <p>Yes — with no prepayment penalty. Your first scheduled payment must still be processed as originally planned. After that, you can repay partially or in full at any time. Contact us at least 48 hours in advance to arrange it.</p>
+            </div>
+          </div>
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-c5">
+              <span>How do I make an early payment?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-c5" role="region">
+              <p>Call us at 1-888-226-1026 or email <a href="mailto:support@captaincash.ca">support@captaincash.ca</a> at least 48 hours before your next payment. You can also visit our <a href="/online-payment/">online payment page</a> for instructions.</p>
+            </div>
+          </div>
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-c6">
+              <span>Is there a prepayment penalty?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-c6" role="region">
+              <p>No. You can repay your loan in full at any time with no prepayment penalty. Because interest accrues daily on the outstanding balance, paying early reduces the total amount you owe. Your first scheduled payment must still be processed as originally planned.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Getting Your Money ── -->
+    <div class="faq-block" id="funding" data-category="funding" style="--faq-accent:#1a6ef0">
+      <div class="section-header section-header--left">
+        <div class="faq-cat-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg>
+        </div>
+        <h2>Getting Your Money</h2>
+      </div>
+      <div class="faq-cols">
+        <div class="faq-list" role="list">
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-f1">
+              <span>When will I receive my funds after approval?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-f1" role="region">
+              <p>If approved and signed before 2 PM ET on a business day, funds are sent by Interac e-Transfer the same day. Applications completed after 2 PM ET, on weekends, or on holidays are processed the next business day.</p>
+            </div>
+          </div>
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-f2">
+              <span>How are funds sent to me?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-f2" role="region">
+              <p>Funds are sent by Interac e-Transfer to the Canadian bank account you provided. You'll receive an email notification with deposit instructions. There are no transfer fees from Captain Cash.</p>
+            </div>
+          </div>
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-f3">
+              <span>What are your business hours?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-f3" role="region">
+              <p>Monday–Friday, 8:00 AM–5:00 PM ET (5:30 AM–2:30 PM PT). Applications submitted outside these hours are reviewed the next business day.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-list" role="list">
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-f4">
+              <span>Does Captain Cash call my employer?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-f4" role="region">
+              <p>In some cases, yes. Pay stubs confirm past employment but not current status. Our team may contact your employer discreetly to verify you are currently employed — this is a standard part of the verification process.</p>
+            </div>
+          </div>
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-f5">
+              <span>Can I provide documents via cloud storage links?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-f5" role="region">
+              <p>No. We accept photos, screenshots, and scans uploaded directly. We cannot access documents shared via Dropbox, Google Drive, iCloud, or similar platforms. Please upload files directly through the application.</p>
+            </div>
+          </div>
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-f6">
+              <span>What if my Interac e-Transfer expires before I deposit it?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-f6" role="region">
+              <p>Interac e-Transfers typically expire after 30 days. If your transfer expires before you deposit it, contact our team at 1-888-226-1026 and we will resend the funds. Make sure to check your spam or junk folder if you did not receive the e-Transfer notification email.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Managing Your Loan ── -->
+    <div class="faq-block" id="managing" data-category="managing" style="--faq-accent:#f59e0b">
+      <div class="section-header section-header--left">
+        <div class="faq-cat-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <h2>Managing Your Loan</h2>
+      </div>
+      <div class="faq-cols">
+        <div class="faq-list" role="list">
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-m1">
+              <span>How do I defer a payment?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-m1" role="region">
+              <p>Contact us at least 48 hours before your payment date. A $25 fee applies and replaces your original payment. The first and last payments cannot be deferred. Deferrals are unavailable if your previous payment was returned or you recently deferred another.</p>
+            </div>
+          </div>
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-m2">
+              <span>What happens if a payment fails (NSF)?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-m2" role="region">
+              <p>A $45 NSF fee is charged if a payment cannot be processed. To avoid this, contact us before your payment date if you anticipate an issue — proactive communication always helps.</p>
+            </div>
+          </div>
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-m3">
+              <span>Can I renew my loan?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-m3" role="region">
+              <p>Yes. Customers in good standing after full repayment may qualify for a renewal. Visit the <a href="/renew-your-loan/">renew page</a> or call 1-888-226-1026 to check your eligibility.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-list" role="list">
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-m4">
+              <span>Can I apply with EI income for a renewal?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-m4" role="region">
+              <p>Yes. After successfully repaying your first loan, Employment Insurance and other insurance income are accepted for renewals. You'll need to provide an EI claim or insurance document confirming your coverage.</p>
+            </div>
+          </div>
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-m5">
+              <span>How do I contact Captain Cash about my loan?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-m5" role="region">
+              <p>You can reach our Halifax-based team by phone at 1-888-226-1026 or by email at <a href="mailto:support@captaincash.ca">support@captaincash.ca</a>. We are available Monday–Friday, 8:00 AM–5:00 PM ET. For payment changes, contact us at least 48 hours before your scheduled date.</p>
+            </div>
+          </div>
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-m6">
+              <span>What happens at the end of my loan?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-m6" role="region">
+              <p>Once your final payment is processed, your loan is considered fully repaid. You will receive a confirmation from our team. At that point, you may be eligible to apply for a renewal. We recommend reviewing your finances before renewing to ensure it remains the right choice for your situation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Security & Privacy ── -->
+    <div class="faq-block" id="security" data-category="security" style="--faq-accent:#8b5cf6">
+      <div class="section-header section-header--left">
+        <div class="faq-cat-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h2>Security &amp; Privacy</h2>
+      </div>
+      <div class="faq-cols">
+        <div class="faq-list" role="list">
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-s1">
+              <span>Will Captain Cash log into my bank account?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-s1" role="region">
+              <p>Absolutely not. We never see your username or password, and we have no ability to log in to your account. The bank verification system provides read-only access to your statement only. Your credentials are never stored or accessible by our team.</p>
+            </div>
+          </div>
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-s2">
+              <span>Is my personal information secure?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-s2" role="region">
+              <p>Yes. All data is protected by SSL encryption. We are a direct lender — not a broker — so your information is never sold or shared with third-party advertisers or lead generators.</p>
+            </div>
+          </div>
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-s3">
+              <span>How does the bank verification work?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-s3" role="region">
+              <p>We use industry-standard instant bank verification (IBV) — a secure, read-only view of your recent bank statement to verify income and account activity. It cannot move, withdraw, or access your funds in any way.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-list" role="list">
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-s4">
+              <span>How is the e-signature handled?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-s4" role="region">
+              <p>Your loan agreement is signed via a secure e-signature platform. E-signatures are legally binding in Canada under the Electronic Commerce Act and equivalent provincial legislation — no printing or mailing required.</p>
+            </div>
+          </div>
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-s5">
+              <span>Is Captain Cash a direct lender or a broker?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-s5" role="region">
+              <p>Captain Cash is a direct lender. We review, approve, and fund all loans in-house. Your application and personal information are never sold or shared with third-party lenders, brokers, or advertisers. You deal with our team from start to finish.</p>
+            </div>
+          </div>
+          <div class="faq-item animate" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-s6">
+              <span>Where is Captain Cash based and is it licensed?</span><span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-body" id="faq-s6" role="region">
+              <p>Captain Cash is headquartered at 1701 Hollis Street W., Suite 800, Halifax, NS B3J 2T9. We are a division of Opal Financial and have been operating since January 2015. We are a member of the Canadian Lenders Association (CLA) and are provincially licensed in all provinces and territories we serve.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     CONTACT BLOCK — dark
+═══════════════════════════════════════ -->
+<section class="section section--dark faq-contact-section">
+  <div class="faq-contact-bg" aria-hidden="true">
+    <div class="faq-cnt-orb-r"></div>
+    <div class="faq-cnt-orb-b"></div>
+    <div class="faq-cnt-beam"></div>
+    <div class="faq-cnt-edge"></div>
+  </div>
+  <div class="container faq-contact-inner">
+    <div class="faq-contact-text">
+      <span class="badge badge-red-dark">Still need help?</span>
+      <h2>Our team is here for you</h2>
+      <p>Our Halifax-based customer service team handles every inquiry in-house. We are not a call centre — you will speak with someone who knows your file.</p>
+      <div class="faq-cnt-cards">
+        <a href="tel:18882261026" class="faq-cnt-card">
+          <div class="faq-cnt-card-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
           </div>
           <div>
-            <strong>Transfer sent</strong>
-            <span>Processing same day</span>
+            <strong>1-888-226-1026</strong>
+            <span>Mon–Fri · 8 AM–5 PM ET</span>
           </div>
-        </div>
-        <!-- Amount -->
-        <div class="pmt-txn-amount" aria-label="Payment amount">
-          <span class="pmt-txn-currency">CAD</span>
-          <span class="pmt-txn-value">$150.00</span>
-        </div>
-        <!-- Details rows -->
-        <div class="pmt-txn-details">
-          <div class="pmt-txn-row">
-            <span>To</span>
-            <span class="pmt-txn-to">receivables@<wbr>diamondfinancialone.com</span>
+        </a>
+        <a href="mailto:support@captaincash.ca" class="faq-cnt-card">
+          <div class="faq-cnt-card-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           </div>
-          <div class="pmt-txn-row">
-            <span>Reference</span>
-            <span>Captain Cash</span>
+          <div>
+            <strong>support@captaincash.ca</strong>
+            <span>We respond within one business day</span>
           </div>
-          <div class="pmt-txn-row">
-            <span>Date</span>
-            <span id="pmt-txn-date">Today</span>
+        </a>
+        <a href="/contact-us/" class="faq-cnt-card">
+          <div class="faq-cnt-card-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
           </div>
-          <div class="pmt-txn-row pmt-txn-row--status">
-            <span>Status</span>
-            <span class="pmt-txn-badge">
-              <span class="pmt-txn-badge-dot" aria-hidden="true"></span>
-              Applied to your loan
-            </span>
+          <div>
+            <strong>Contact form</strong>
+            <span>Send us a message anytime</span>
           </div>
-        </div>
-        <!-- Footer -->
-        <div class="pmt-txn-footer">
-          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-          Payment confirmed · No fees charged
-        </div>
-      </div>
-      <div class="pmt-txn-glow" aria-hidden="true"></div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     3 STEPS — white
-═══════════════════════════════════════ -->
-<section class="section pmt-steps" id="steps">
-  <div class="container">
-    <div class="section-header">
-      <span class="badge badge-red">How to pay</span>
-      <h2>3 steps to send your payment</h2>
-      <p>Follow these steps exactly — especially the security question and answer — to ensure your payment is applied to your account correctly.</p>
-    </div>
-
-    <!-- Before you start banner -->
-    <div class="pmt-before-banner animate">
-      <div class="pmt-before-item">
-        <div class="pmt-before-icon" aria-hidden="true">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
-        </div>
-        <div>
-          <strong>Have your banking app ready</strong>
-          <span>Open your online banking before you start — you'll need it open alongside these instructions.</span>
-        </div>
-      </div>
-      <div class="pmt-before-divider" aria-hidden="true"></div>
-      <div class="pmt-before-item">
-        <div class="pmt-before-icon pmt-before-icon--red" aria-hidden="true">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-        </div>
-        <div>
-          <strong>Copy the email address exactly</strong>
-          <span>A single typo means your payment won't reach us. Use the copy button in Step 2 to avoid errors.</span>
-        </div>
-      </div>
-      <div class="pmt-before-divider" aria-hidden="true"></div>
-      <div class="pmt-before-item">
-        <div class="pmt-before-icon pmt-before-icon--amber" aria-hidden="true">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-        </div>
-        <div>
-          <strong>Security answer: lowercase, no spaces</strong>
-          <span>The answer <code>captaincash</code> must be entered exactly — no capitals, no spaces.</span>
-        </div>
+        </a>
       </div>
     </div>
-
-    <div class="pmt-steps-grid pmt-steps-grid--connected">
-
-      <div class="pmt-step-card animate">
-        <div class="pmt-step-num" aria-hidden="true">01</div>
-        <div class="pmt-step-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+    <div class="faq-contact-cta">
+      <div class="faq-cta-card">
+        <div class="faq-cta-mascot-wrap" aria-hidden="true">
+          <img src="/images/mascot/mascot-fists.webp" alt="" width="140" height="160" loading="lazy" class="faq-cta-mascot">
+          <div class="faq-cta-mascot-glow"></div>
         </div>
-        <h3>Log into your online banking</h3>
-        <p>Sign in to your Canadian bank's online banking portal or mobile app. Navigate to the <strong>Interac e-Transfer</strong> or <strong>Send Money</strong> section. This is available on all major Canadian banks.</p>
-        <div class="pmt-step-note">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-          Works with BMO, Scotiabank, RBC, TD, CIBC, National Bank, Tangerine, and most other Canadian banks.
+        <h3>Ready to apply?</h3>
+        <p>Takes 5 minutes. No credit check. Same-day e-Transfer if approved before 2 PM ET.</p>
+        <div class="faq-cta-trust">
+          <span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> No credit check</span>
+          <span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Free to apply</span>
+          <span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Same-day funds</span>
         </div>
-      </div>
-
-      <div class="pmt-step-card animate">
-        <div class="pmt-step-num" aria-hidden="true">02</div>
-        <div class="pmt-step-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        </div>
-        <h3>Fill in the recipient details</h3>
-        <p>Enter the following details exactly as shown. The security question and answer are required to ensure your payment reaches the right account.</p>
-        <div class="pmt-detail-box">
-          <div class="pmt-detail-row">
-            <span class="pmt-detail-label">Recipient name</span>
-            <span class="pmt-detail-val">Captain Cash <span class="pmt-copy-note">(or your choice)</span></span>
-          </div>
-          <div class="pmt-detail-row pmt-detail-row--highlight pmt-detail-row--email">
-            <span class="pmt-detail-label">Email</span>
-            <button class="pmt-copy-btn" data-copy="receivables@diamondfinancialone.com" aria-label="Copy recipient email address">
-              <span class="pmt-copy-email">receivables@<br>diamondfinancialone.com</span>
-              <span class="pmt-copy-right">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
-                <span class="pmt-copy-confirm" aria-live="polite">Copied!</span>
-                <span class="pmt-copy-tap">Tap to copy</span>
-              </span>
-            </button>
-          </div>
-          <div class="pmt-detail-row">
-            <span class="pmt-detail-label">Transfer amount</span>
-            <span class="pmt-detail-val">Your payment amount</span>
-          </div>
-          <div class="pmt-detail-row pmt-detail-row--highlight">
-            <span class="pmt-detail-label">Security question</span>
-            <span class="pmt-detail-val pmt-detail-exact">Who do I owe</span>
-          </div>
-          <div class="pmt-detail-row pmt-detail-row--highlight pmt-detail-row--answer">
-            <span class="pmt-detail-label">Security answer</span>
-            <span class="pmt-detail-val pmt-detail-exact pmt-detail-exact--big">captaincash</span>
-          </div>
-        </div>
-        <div class="pmt-step-note pmt-step-note--warn">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-          The security answer <strong>captaincash</strong> must be lowercase with no spaces or capitals — exactly as shown.
-        </div>
-      </div>
-
-      <div class="pmt-step-card animate">
-        <div class="pmt-step-num" aria-hidden="true">03</div>
-        <div class="pmt-step-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-        </div>
-        <h3>Submit and confirm</h3>
-        <p>Review the details, confirm the transfer, and submit. You will receive a confirmation email from Interac once the payment has been sent. Keep this confirmation for your records.</p>
-        <div class="pmt-step-note pmt-step-note--success">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-          Payments received before 2 PM ET on a business day are processed the same day.
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     QUICK REFERENCE — dark
-═══════════════════════════════════════ -->
-<section class="section section--dark pmt-ref">
-  <div class="pmt-ref-bg" aria-hidden="true">
-    <div class="pmt-ref-orb-r"></div>
-    <div class="pmt-ref-orb-b"></div>
-    <div class="pmt-ref-beam"></div>
-    <div class="pmt-ref-edge"></div>
-  </div>
-  <div class="container pmt-ref-inner">
-    <div class="pmt-ref-content">
-      <div class="section-header section-header--dark" style="text-align:left;align-items:flex-start">
-        <span class="badge badge-red-dark">Quick reference</span>
-        <h2>Save these details</h2>
-        <p style="color:rgba(255,255,255,0.5)">Screenshot or bookmark this page. You will need these details every time you make a manual payment.</p>
-      </div>
-      <div class="pmt-ref-card animate">
-        <div class="pmt-ref-row">
-          <span class="pmt-ref-label">Recipient email</span>
-          <div class="pmt-ref-val-wrap">
-            <span class="pmt-ref-val">receivables@diamondfinancialone.com</span>
-            <button class="pmt-ref-copy" data-copy="receivables@diamondfinancialone.com" aria-label="Copy email">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
-              <span class="pmt-copy-confirm" aria-live="polite">Copied!</span>
-            </button>
-          </div>
-        </div>
-        <div class="pmt-ref-row">
-          <span class="pmt-ref-label">Security question</span>
-          <span class="pmt-ref-val pmt-ref-val--exact">Who do I owe</span>
-        </div>
-        <div class="pmt-ref-row">
-          <span class="pmt-ref-label">Security answer</span>
-          <span class="pmt-ref-val pmt-ref-val--exact">captaincash</span>
-        </div>
-        <div class="pmt-ref-row">
-          <span class="pmt-ref-label">Processing cut-off</span>
-          <span class="pmt-ref-val">2:00 PM ET — same-day processing</span>
-        </div>
-        <div class="pmt-ref-row">
-          <span class="pmt-ref-label">Questions?</span>
-          <span class="pmt-ref-val"><a href="tel:18882261026">1-888-226-1026</a> · Mon–Fri 8 AM–5 PM ET</span>
-        </div>
-      </div>
-    </div>
-    <div class="pmt-ref-faq animate">
-      <h3 class="pmt-ref-faq-title">Common questions</h3>
-      <div class="faq-list" role="list">
-        <div class="faq-item" role="listitem">
-          <button class="faq-trigger" aria-expanded="false" aria-controls="pmt-faq-1">
-            <span>When will my payment be applied?</span><span class="faq-icon" aria-hidden="true"></span>
-          </button>
-          <div class="faq-body" id="pmt-faq-1" role="region">
-            <p>Payments received before 2:00 PM ET on a business day are processed the same day. Payments received after 2:00 PM ET, or on weekends and holidays, are processed the next business day.</p>
-          </div>
-        </div>
-        <div class="faq-item" role="listitem">
-          <button class="faq-trigger" aria-expanded="false" aria-controls="pmt-faq-2">
-            <span>Can I make a partial early payment?</span><span class="faq-icon" aria-hidden="true"></span>
-          </button>
-          <div class="faq-body" id="pmt-faq-2" role="region">
-            <p>Yes. You can make a partial or full early repayment at any time after your first scheduled payment. Your first payment must be processed as originally scheduled. Contact us at least 48 hours in advance so we can stop the scheduled withdrawal.</p>
-          </div>
-        </div>
-        <div class="faq-item" role="listitem">
-          <button class="faq-trigger" aria-expanded="false" aria-controls="pmt-faq-3">
-            <span>What if I sent to the wrong email?</span><span class="faq-icon" aria-hidden="true"></span>
-          </button>
-          <div class="faq-body" id="pmt-faq-3" role="region">
-            <p>Contact us immediately at 1-888-226-1026 or <a href="mailto:support@captaincash.ca" style="color:#e82020">support@captaincash.ca</a>. If the e-Transfer has not yet been deposited, it may be possible to cancel it through your bank.</p>
-          </div>
-        </div>
-        <div class="faq-item" role="listitem">
-          <button class="faq-trigger" aria-expanded="false" aria-controls="pmt-faq-4">
-            <span>Do I need to notify Captain Cash before sending?</span><span class="faq-icon" aria-hidden="true"></span>
-          </button>
-          <div class="faq-body" id="pmt-faq-4" role="region">
-            <p>For regular scheduled payments, no notification is needed. For early repayments or payments outside your normal schedule, contact us at least 48 hours in advance so we can stop any overlapping scheduled withdrawal.</p>
-          </div>
-        </div>
+        <a href="/claim-your-cash/" class="btn-steps-cta" style="display:block;text-align:center;font-size:1rem;padding:14px 24px">Claim your cash →</a>
+        <p class="faq-cta-note">APR 23% · $500–$1,000 · 90–150 days</p>
       </div>
     </div>
   </div>
 </section>
-
-<!-- ═══════════════════════════════════════
-     NEED HELP — white
-═══════════════════════════════════════ -->
-<section class="section pmt-help">
-  <div class="container">
-    <div class="section-header">
-      <span class="badge badge-red">Need help?</span>
-      <h2>Having trouble with your payment?</h2>
-      <p>Our Halifax-based team is here Monday to Friday. Do not wait — contact us before your payment date to avoid NSF fees.</p>
-    </div>
-    <div class="pmt-help-grid">
-      <a href="tel:18882261026" class="pmt-help-card pmt-help-card--link animate">
-        <div class="pmt-help-icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-        </div>
-        <div>
-          <strong>Call us</strong>
-          <span>1-888-226-1026</span>
-          <small>Mon–Fri · 8 AM–5 PM ET · Fastest response</small>
-        </div>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="pmt-help-arrow" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-      <a href="mailto:support@captaincash.ca" class="pmt-help-card pmt-help-card--link animate">
-        <div class="pmt-help-icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        </div>
-        <div>
-          <strong>Email us</strong>
-          <span>support@captaincash.ca</span>
-          <small>Reply within 1 business day</small>
-        </div>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="pmt-help-arrow" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-      <a href="support.html#costs" class="pmt-help-card animate">
-        <div class="pmt-help-icon pmt-help-icon--blue" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-        </div>
-        <div>
-          <strong>Payment FAQ</strong>
-          <span>Deferral, NSF, early repayment</span>
-          <small>Answers to common payment questions</small>
-        </div>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="pmt-help-arrow" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- Sticky mobile payment bar -->
-<div class="pmt-sticky-bar" id="pmt-sticky-bar" aria-label="Payment email — tap to copy">
-  <div class="pmt-sticky-label">
-    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-    Payment email
-  </div>
-  <button class="pmt-sticky-copy" data-copy="receivables@diamondfinancialone.com" aria-label="Copy payment email address">
-    <span>receivables@diamondfinancialone.com</span>
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
-    <span class="pmt-copy-confirm" aria-live="polite">Copied!</span>
-  </button>
-</div>
 
 </main>
 
@@ -588,13 +728,13 @@
   <div class="cta-banner-orb cta-banner-orb-1" aria-hidden="true"></div>
   <div class="cta-banner-orb cta-banner-orb-2" aria-hidden="true"></div>
   <div class="container cta-banner-inner">
-    <img src="images/mascot/mascot-fists.webp" alt="" aria-hidden="true" class="cta-mascot" width="140" height="170" loading="lazy">
+    <img src="/images/mascot/mascot-fists.webp" alt="" aria-hidden="true" class="cta-mascot" width="140" height="170" loading="lazy">
     <div class="cta-banner-text">
       <h2>Ready to get your cash?</h2>
       <p>Apply in 5 minutes. Get approved today. No credit check required.</p>
     </div>
     <div class="cta-banner-actions">
-      <a href="claim-your-cash.html" class="btn btn-primary btn-lg">Claim your cash</a>
+      <a href="/claim-your-cash/" class="btn btn-primary btn-lg">Claim your cash</a>
       <a href="tel:18882261026" class="btn-cta-phone">Call 1-888-226-1026</a>
     </div>
   </div>
@@ -611,7 +751,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="/" class="site-logo-img site-logo-img--footer">
-          <img src="images/mascot/sprites/logo-lockup-small.webp" alt="Captain Cash" width="140" height="35" loading="lazy">
+          <img src="/images/mascot/sprites/logo-lockup-small.webp" alt="Captain Cash" width="140" height="35" loading="lazy">
         </a>
         <p style="margin-top:1rem;color:var(--gray-400);font-size:0.875rem;line-height:1.7">A fast, fair alternative to payday loans for Canadians who need cash today. Serving Canada since 2015.</p>
         <address style="margin-top:1rem;font-size:0.8rem;color:var(--gray-500);font-style:normal;line-height:1.7">
@@ -623,66 +763,50 @@
       <div class="footer-col">
         <h4>Products</h4>
         <ul>
-          <li><a href="pages/loans-canada.html">Loans in Canada</a></li>
-          <li><a href="pages/payday-loans.html">Payday loans</a></li>
-          <li><a href="pages/bad-credit-loans.html">Bad credit loans</a></li>
-          <li><a href="pages/installment-loans.html">Instalment loans</a></li>
-          <li><a href="pages/no-credit-check-loans.html">No credit check</a></li>
+          <li><a href="/loans-in-canada/">Loans in Canada</a></li>
+          <li><a href="/payday-loans/">Payday loans</a></li>
+          <li><a href="/bad-credit-loans-canada/">Bad credit loans</a></li>
+          <li><a href="/installment-loans-canada/">Instalment loans</a></li>
+          <li><a href="/no-credit-check-loans-canada/">No credit check</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Company</h4>
         <ul>
-          <li><a href="about.html">About us</a></li>
-          <li><a href="testimonials.html">Reviews</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="terms.html">Terms and conditions</a></li>
+          <li><a href="/about-us/">About us</a></li>
+          <li><a href="/testimonials/">Reviews</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/terms-conditions/">Terms and conditions</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Support</h4>
         <ul>
-          <li><a href="how-it-works.html">How it works</a></li>
-          <li><a href="support.html">FAQ</a></li>
-          <li><a href="online-payment.html">Online payment</a></li>
-          <li><a href="contact.html">Contact us</a></li>
-          <li><a href="renew-your-loan.html">Renew your loan</a></li>
+          <li><a href="/how-does-it-work/">How it works</a></li>
+          <li><a href="/support/">FAQ</a></li>
+          <li><a href="/online-payment/">Online payment</a></li>
+          <li><a href="/contact-us/">Contact us</a></li>
+          <li><a href="/renew-your-loan/">Renew your loan</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <p>Captain Cash &copy; 2026, a division of Opal Financial. All Rights Reserved.</p>
-      <p>APR 23% &mdash; <a href="terms.html" style="color:var(--gray-500)">Privacy Policy</a> &mdash; Borrow responsibly</p>
+      <p>APR 23% &mdash; <a href="/terms-conditions/" style="color:var(--gray-500)">Privacy Policy</a> &mdash; Borrow responsibly</p>
     </div>
   </div>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="/js/main.js"></script>
 <script>
 (function() {
-  /* Smooth scroll for hero CTA */
-  var heroCta = document.querySelector('.pmt-hero-cta');
-  if (heroCta) {
-    heroCta.addEventListener('click', function(e) {
-      var target = document.getElementById('steps');
-      if (!target) { target = document.querySelector('.pmt-steps'); }
-      if (target) { e.preventDefault(); window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 90, behavior: 'smooth' }); }
-    });
-  }
-
-  /* Transaction card date */
-  var dateEl = document.getElementById('pmt-txn-date');
-  if (dateEl) {
-    var d = new Date();
-    dateEl.textContent = d.toLocaleDateString('en-CA', { month:'short', day:'numeric', year:'numeric' });
-  }
-
   /* header scroll */
   var header = document.getElementById('site-header');
-  if (header) window.addEventListener('scroll', function() {
-    header.classList.toggle('site-header--scrolled', window.scrollY > 60);
-  }, { passive:true });
-
+  if (header) {
+    window.addEventListener('scroll', function() {
+      header.classList.toggle('site-header--scrolled', window.scrollY > 60);
+    }, { passive: true });
+  }
   /* nav dropdowns */
   var triggers = document.querySelectorAll('.nav-dropdown-trigger');
   function closeAll() {
@@ -705,36 +829,83 @@
     });
   });
   document.addEventListener('click', closeAll);
-  document.addEventListener('keydown', function(e) { if (e.key==='Escape') closeAll(); });
-
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeAll(); });
   /* FAQ accordion */
   document.querySelectorAll('.faq-trigger').forEach(function(btn) {
     btn.addEventListener('click', function() {
       var expanded = btn.getAttribute('aria-expanded') === 'true';
       var body = document.getElementById(btn.getAttribute('aria-controls'));
       btn.setAttribute('aria-expanded', !expanded);
-      body.classList.toggle('faq-open', !expanded);
+      if (!expanded) { body.classList.add('faq-open'); }
+      else { body.classList.remove('faq-open'); }
     });
   });
 
-  /* Copy buttons */
-  document.querySelectorAll('[data-copy]').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var text = btn.dataset.copy;
-      navigator.clipboard.writeText(text).then(function() {
-        var confirm = btn.querySelector('.pmt-copy-confirm');
-        if (!confirm) return;
-        confirm.style.display = 'inline';
-        setTimeout(function() { confirm.style.display = 'none'; }, 2000);
-      }).catch(function() {
-        /* fallback: select text */
-        var ta = document.createElement('textarea');
-        ta.value = text;
-        document.body.appendChild(ta);
-        ta.select();
-        document.execCommand('copy');
-        document.body.removeChild(ta);
+
+  /* ── Sticky side nav show/hide + active tracking ── */
+  (function() {
+    var stickyNav = document.getElementById('faq-sticky-nav');
+    if (!stickyNav) return;
+    var faqSection = document.querySelector('.faq-page-section');
+    var contactSection = document.querySelector('.faq-contact-section');
+    var stickyBtns = stickyNav.querySelectorAll('.faq-sticky-btn[data-target]');
+
+    function updateVisibility() {
+      if (!faqSection || !contactSection) return;
+      var faqTop    = faqSection.getBoundingClientRect().top;
+      var contactBottom = contactSection.getBoundingClientRect().bottom;
+      var visible = faqTop < window.innerHeight * 0.5 && contactBottom > 0;
+      stickyNav.hidden = !visible;
+    }
+
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var id = entry.target.id;
+          stickyBtns.forEach(function(btn) {
+            btn.classList.toggle('active', btn.dataset.target === id);
+          });
+        }
       });
+    }, { rootMargin: '-20% 0px -60% 0px', threshold: 0 });
+
+    document.querySelectorAll('.faq-block[data-category]').forEach(function(b) {
+      observer.observe(b);
+    });
+
+    window.addEventListener('scroll', updateVisibility, { passive: true });
+    updateVisibility();
+  })();
+
+  /* ── Active category nav tracking ── */
+  (function() {
+    var navBtns = document.querySelectorAll('.faq-cat-btn[data-target]');
+    if (!navBtns.length) return;
+
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var id = entry.target.id;
+          navBtns.forEach(function(btn) {
+            btn.classList.toggle('active', btn.dataset.target === id);
+          });
+        }
+      });
+    }, { rootMargin: '-20% 0px -60% 0px', threshold: 0 });
+
+    document.querySelectorAll('.faq-block[data-category]').forEach(function(block) {
+      observer.observe(block);
+    });
+  })();
+
+  /* smooth scroll for category links */
+  document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+      var target = document.getElementById(this.getAttribute('href').slice(1));
+      if (!target) return;
+      e.preventDefault();
+      var offset = target.getBoundingClientRect().top + window.scrollY - 90;
+      window.scrollTo({ top: offset, behavior: 'smooth' });
     });
   });
 })();
@@ -742,279 +913,132 @@
 
 <style>
 /* ══════════════════════════════════════
-   ONLINE PAYMENT — Page Styles
+   SUPPORT & FAQ — Page Styles
 ══════════════════════════════════════ */
 
+
+/* Hero right column */
+.faq-hero-right { display:flex;flex-direction:column;align-items:center;gap:1.5rem; }
+.faq-hero-mascot-wrap { position:relative;display:flex;justify-content:center; }
+.faq-hero-mascot-img { width:160px;height:auto;filter:drop-shadow(-8px 0 28px rgba(232,32,32,0.3)) drop-shadow(0 20px 32px rgba(0,0,0,0.6));animation:mascotFloat 5s ease-in-out infinite; }
+.faq-hero-mascot-glow { position:absolute;bottom:-8px;left:50%;transform:translateX(-50%);width:90px;height:12px;background:radial-gradient(ellipse,rgba(232,32,32,0.45) 0%,transparent 70%);filter:blur(5px); }
+
+/* Sticky side nav */
+.faq-sticky-nav {
+  position:fixed; left:1.5rem; top:50%; transform:translateY(-50%);
+  z-index:50; display:flex; flex-direction:column; gap:4px;
+  background:rgba(11,26,51,0.92); backdrop-filter:blur(12px);
+  border:1px solid rgba(255,255,255,0.1); border-radius:16px;
+  padding:12px 10px; box-shadow:0 8px 32px rgba(0,0,0,0.3);
+  transition:opacity 0.3s, transform 0.3s;
+}
+.faq-sticky-nav[hidden] { display:none; }
+.faq-sticky-nav ul { list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:3px; }
+.faq-sticky-btn {
+  display:flex; align-items:center; gap:7px;
+  padding:7px 10px; border-radius:9px; text-decoration:none;
+  font-size:0.75rem; font-weight:600; color:rgba(255,255,255,0.5);
+  white-space:nowrap; transition:all 0.15s;
+}
+.faq-sticky-btn svg { flex-shrink:0; color:rgba(255,255,255,0.3); transition:color 0.15s; }
+.faq-sticky-btn:hover { background:rgba(255,255,255,0.08); color:rgba(255,255,255,0.85); }
+.faq-sticky-btn:hover svg { color:rgba(255,255,255,0.6); }
+.faq-sticky-btn.active { background:rgba(232,32,32,0.15); color:#fff; border:1px solid rgba(232,32,32,0.3); }
+.faq-sticky-btn.active svg { color:#e82020; }
+.faq-sticky-cta {
+  display:block; margin-top:8px; padding:8px 10px; border-radius:9999px;
+  background:#e82020; color:#fff; font-size:0.6875rem; font-weight:800;
+  text-decoration:none; text-align:center; letter-spacing:0.02em;
+  box-shadow:0 2px 0 #8b0000; transition:all 0.15s;
+}
+.faq-sticky-cta:hover { background:#c41515; transform:translateY(-1px); }
+@media(max-width:1280px) { .faq-sticky-nav { display:none !important; } }
+
+/* CTA card improvements */
+.faq-cta-mascot-wrap { position:relative;display:flex;justify-content:center;margin-bottom:0.5rem; }
+.faq-cta-mascot { width:130px;height:auto;filter:drop-shadow(0 12px 24px rgba(0,0,0,0.5));animation:mascotFloat 5s ease-in-out infinite; }
+.faq-cta-mascot-glow { position:absolute;bottom:-6px;left:50%;transform:translateX(-50%);width:80px;height:10px;background:radial-gradient(ellipse,rgba(232,32,32,0.4) 0%,transparent 70%);filter:blur(4px); }
+.faq-cta-trust { display:flex;flex-direction:column;gap:5px;margin-bottom:1.25rem; }
+.faq-cta-trust span { display:flex;align-items:center;gap:6px;font-size:0.75rem;color:rgba(255,255,255,0.55); }
+.faq-cta-card { background:linear-gradient(160deg,rgba(232,32,32,0.18),rgba(232,32,32,0.06));border:1px solid rgba(232,32,32,0.32);border-radius:22px;padding:2rem 1.75rem;text-align:center; }
+.faq-cta-card h3 { font-size:1.25rem;font-weight:800;color:#fff;margin-bottom:0.625rem; }
+.faq-cta-card > p { font-size:0.875rem;color:rgba(255,255,255,0.5);line-height:1.65;margin-bottom:1.25rem; }
+
 /* Hero */
+.faq-hero { position:relative; overflow:hidden; }
+.faq-hero-bg { position:absolute;inset:0;pointer-events:none;overflow:hidden; }
+.faq-hero-orb-r { position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(232,32,32,0.18) 0%,transparent 65%);bottom:-280px;right:-160px;filter:blur(20px);animation:orbPulse 8s ease-in-out infinite; }
+.faq-hero-orb-b { position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(26,110,240,0.12) 0%,transparent 65%);top:-160px;left:-100px;filter:blur(18px); }
+.faq-hero-beam { position:absolute;top:0;right:0;width:65%;height:100%;background:conic-gradient(from 200deg at 100% 0%,transparent 0deg,rgba(232,32,32,0.14) 22deg,transparent 52deg); }
+.faq-hero-edge { position:absolute;top:0;right:0;width:1px;height:100%;background:linear-gradient(180deg,rgba(232,32,32,0.7) 0%,rgba(232,32,32,0.15) 50%,transparent 100%); }
+.faq-hero-inner { position:relative;z-index:2;display:grid;grid-template-columns:1fr 260px;gap:3rem;align-items:start;padding:3.5rem 0 4rem; }
+.faq-hero-cats { padding-top:3.25rem; }
+.faq-hero-content h1 { font-size:clamp(1.75rem,3.5vw,2.75rem);font-weight:800;color:#fff;letter-spacing:-0.03em;line-height:1.2;margin:0.75rem 0 1rem; }
+.faq-hero-sub { font-size:1rem;color:rgba(255,255,255,0.5);line-height:1.7;margin-bottom:2rem; }
+.faq-hero-contact { display:flex;flex-direction:column;gap:8px; }
+.faq-contact-card { display:flex;align-items:center;gap:12px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:10px 14px;text-decoration:none;transition:background 0.15s,border-color 0.15s; }
+.faq-contact-card:hover { background:rgba(255,255,255,0.09);border-color:rgba(255,255,255,0.18); }
+.faq-contact-card--hours { cursor:default; }
+.faq-contact-icon { width:32px;height:32px;border-radius:8px;background:rgba(232,32,32,0.12);border:1px solid rgba(232,32,32,0.22);color:#e82020;display:flex;align-items:center;justify-content:center;flex-shrink:0; }
+.faq-contact-card > div { display:flex;flex-direction:column;gap:1px; }
+.faq-contact-label { font-size:0.6875rem;color:rgba(255,255,255,0.35);font-weight:600;text-transform:uppercase;letter-spacing:0.07em; }
+.faq-contact-value { font-size:0.9375rem;font-weight:700;color:#fff; }
 
+/* Category quick-nav */
+.faq-hero-cats { display:flex;flex-direction:column;gap:6px; }
+.faq-cats-label { font-size:0.6875rem;font-weight:700;color:rgba(255,255,255,0.3);text-transform:uppercase;letter-spacing:0.09em;margin-bottom:4px; }
+.faq-cat-btn { display:flex;align-items:center;gap:9px;padding:9px 14px;border-radius:10px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.09);text-decoration:none;font-size:0.8125rem;font-weight:500;color:rgba(255,255,255,0.65);transition:all 0.15s; }
+.faq-cat-btn:hover { background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.18);color:#fff; }
+.faq-cat-btn svg { flex-shrink:0;color:rgba(232,32,32,0.7); }
+.faq-cat-btn.active { background:rgba(232,32,32,0.15);border-color:rgba(232,32,32,0.4);color:#fff; }
+.faq-cat-btn.active svg { color:#e82020; }
 
-/* ── Transaction card ── */
-.pmt-hero-visual { position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center; }
-.pmt-txn-card {
-  width:100%;max-width:320px;
-  background:#0d1829;
-  border:1px solid rgba(255,255,255,0.12);
-  border-radius:22px;
-  overflow:hidden;
-  box-shadow:0 24px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.05);
-  animation:txnFloat 5s ease-in-out infinite;
+/* FAQ page section */
+.faq-page-section { background:#f8f9fb;position:relative; }
+.faq-page-section::before { content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#e82020 30%,#ff6a4d 50%,#e82020 70%,transparent); }
+.faq-block { background:#fff;border:1px solid #e2e6ed;border-left:4px solid var(--faq-accent,#e82020);border-radius:20px;padding:2rem;margin-bottom:1.5rem;box-shadow:0 1px 4px rgba(11,26,51,0.06);transition:box-shadow 0.2s; }
+.faq-block:hover { box-shadow:0 4px 16px rgba(11,26,51,0.10); }
+.faq-block:last-child { margin-bottom:0; }
+.section-header--left { display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;margin-bottom:1.5rem;padding-bottom:1.25rem;border-bottom:1.5px solid #f1f3f7;text-align:center; }
+.section-header--left h2 { font-size:1.125rem;font-weight:800;color:#0b1a33;margin:0; }
+.section-header--left p { display:none; }
+.faq-cat-icon { width:40px;height:40px;border-radius:12px;background:color-mix(in srgb,var(--faq-accent,#e82020) 10%,transparent);border:1px solid color-mix(in srgb,var(--faq-accent,#e82020) 25%,transparent);color:var(--faq-accent,#e82020);display:flex;align-items:center;justify-content:center;flex-shrink:0; }
+.faq-body a { color:#e82020; }
+
+/* Contact section */
+.faq-contact-section { position:relative;overflow:hidden; }
+.faq-contact-bg { position:absolute;inset:0;pointer-events:none;overflow:hidden; }
+.faq-cnt-orb-r { position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(232,32,32,0.16) 0%,transparent 65%);bottom:-250px;right:-150px;filter:blur(20px); }
+.faq-cnt-orb-b { position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(26,110,240,0.1) 0%,transparent 65%);top:-150px;left:-80px;filter:blur(16px); }
+.faq-cnt-beam { position:absolute;top:0;left:0;width:55%;height:100%;background:conic-gradient(from 345deg at 0% 0%,transparent 0deg,rgba(232,32,32,0.12) 20deg,transparent 50deg); }
+.faq-cnt-edge { position:absolute;top:0;left:0;width:1px;height:100%;background:linear-gradient(180deg,rgba(232,32,32,0.7) 0%,rgba(232,32,32,0.15) 50%,transparent 100%); }
+.faq-contact-inner { position:relative;z-index:2;display:grid;grid-template-columns:1fr 320px;gap:3rem;align-items:start; }
+.faq-contact-text h2 { font-size:1.75rem;font-weight:800;color:#fff;margin:0.75rem 0 0.75rem; }
+.faq-contact-text > p { font-size:0.9375rem;color:rgba(255,255,255,0.5);line-height:1.7;margin-bottom:1.75rem; }
+.faq-cnt-cards { display:flex;flex-direction:column;gap:10px; }
+.faq-cnt-card { display:flex;align-items:center;gap:14px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:14px 16px;text-decoration:none;transition:all 0.15s; }
+.faq-cnt-card:hover { background:rgba(255,255,255,0.09);border-color:rgba(255,255,255,0.18); }
+.faq-cnt-card-icon { width:40px;height:40px;border-radius:10px;background:rgba(232,32,32,0.12);border:1px solid rgba(232,32,32,0.22);color:#e82020;display:flex;align-items:center;justify-content:center;flex-shrink:0; }
+.faq-cnt-card strong { display:block;font-size:0.9375rem;font-weight:700;color:#fff; }
+.faq-cnt-card span { font-size:0.75rem;color:rgba(255,255,255,0.4); }
+.faq-cta-card { background:linear-gradient(135deg,rgba(232,32,32,0.14),rgba(232,32,32,0.05));border:1px solid rgba(232,32,32,0.28);border-radius:20px;padding:1.75rem;text-align:center; }
+.faq-cta-card img { margin:0 auto 1rem;filter:drop-shadow(0 8px 16px rgba(0,0,0,0.5));animation:mascotFloat 5s ease-in-out infinite; }
+.faq-cta-card h3 { font-size:1.125rem;font-weight:800;color:#fff;margin-bottom:0.5rem; }
+.faq-cta-card > p { font-size:0.875rem;color:rgba(255,255,255,0.5);line-height:1.6;margin-bottom:1.25rem; }
+.faq-cta-note { font-size:0.6875rem;color:rgba(255,255,255,0.3);margin-top:0.5rem; }
+
+/* Responsive */
+@media(max-width:900px) {
+  .faq-hero-inner { grid-template-columns:1fr;gap:2rem;padding:2.5rem 0 3rem; }
+  .faq-hero-cats { flex-direction:row;flex-wrap:wrap; }
+  .faq-cat-btn { flex:0 0 auto; }
+  .faq-contact-inner { grid-template-columns:1fr; }
+  .faq-contact-cta { max-width:480px; }
 }
-@keyframes txnFloat {
-  0%,100% { transform:translateY(0px) rotate(-1deg); }
-  50%      { transform:translateY(-10px) rotate(-1deg); }
+@media(max-width:600px) {
+  .faq-hero-cats { display:none; }
+  .faq-cat-btn { font-size:0.75rem;padding:7px 10px; }
 }
-.pmt-txn-header {
-  display:flex;align-items:center;gap:5px;
-  padding:12px 16px 10px;
-  border-bottom:1px solid rgba(255,255,255,0.07);
-  background:rgba(255,255,255,0.03);
-}
-.pmt-txn-header-dot { width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.15); }
-.pmt-txn-header-dot--green { background:#16a34a; }
-.pmt-txn-header-label { font-size:0.6875rem;font-weight:600;color:rgba(255,255,255,0.4);margin-left:6px;letter-spacing:0.04em; }
-.pmt-txn-status {
-  display:flex;align-items:center;gap:10px;
-  padding:14px 16px 10px;
-  border-bottom:1px solid rgba(255,255,255,0.07);
-}
-.pmt-txn-status-icon {
-  width:32px;height:32px;border-radius:50%;
-  background:rgba(22,163,74,0.15);border:1.5px solid rgba(22,163,74,0.3);
-  display:flex;align-items:center;justify-content:center;flex-shrink:0;
-}
-.pmt-txn-status strong { display:block;font-size:0.8125rem;font-weight:700;color:#fff; }
-.pmt-txn-status span { font-size:0.6875rem;color:rgba(255,255,255,0.4); }
-.pmt-txn-amount {
-  display:flex;align-items:baseline;gap:6px;
-  padding:16px 16px 12px;
-  border-bottom:1px solid rgba(255,255,255,0.07);
-}
-.pmt-txn-currency { font-size:0.875rem;font-weight:700;color:rgba(255,255,255,0.4); }
-.pmt-txn-value { font-size:2rem;font-weight:800;color:#fff;letter-spacing:-0.03em; }
-.pmt-txn-details { padding:4px 0; }
-.pmt-txn-row {
-  display:flex;justify-content:space-between;align-items:center;
-  padding:8px 16px;gap:1rem;
-  font-size:0.75rem;
-}
-.pmt-txn-row span:first-child { color:rgba(255,255,255,0.35);font-weight:500;flex-shrink:0; }
-.pmt-txn-row span:last-child { color:rgba(255,255,255,0.75);font-weight:600;text-align:right; }
-.pmt-txn-to { font-size:0.6875rem;word-break:break-all;text-align:right; }
-.pmt-txn-row--status { padding-bottom:12px; }
-.pmt-txn-badge {
-  display:inline-flex;align-items:center;gap:5px;
-  background:rgba(22,163,74,0.12);border:1px solid rgba(22,163,74,0.25);
-  border-radius:9999px;padding:3px 10px;
-  color:#4ade80;font-size:0.6875rem;font-weight:700;
-}
-.pmt-txn-badge-dot {
-  width:5px;height:5px;border-radius:50%;background:#4ade80;
-  box-shadow:0 0 6px rgba(74,222,128,0.7);
-  animation:orbPulse 2s ease-in-out infinite;
-}
-.pmt-txn-footer {
-  display:flex;align-items:center;gap:6px;
-  padding:10px 16px;
-  border-top:1px solid rgba(255,255,255,0.07);
-  background:rgba(22,163,74,0.05);
-  font-size:0.6875rem;color:rgba(255,255,255,0.35);font-weight:500;
-}
-.pmt-txn-glow {
-  position:absolute;bottom:-20px;left:50%;transform:translateX(-50%);
-  width:160px;height:20px;
-  background:radial-gradient(ellipse,rgba(22,163,74,0.3) 0%,transparent 70%);
-  filter:blur(8px);
-}
-@media(max-width:900px){ .pmt-hero-visual { display:none; } }
-
-
-/* ── Before you start banner ── */
-.pmt-before-banner { display:flex;align-items:stretch;background:#fff;border:1.5px solid #e2e6ed;border-radius:16px;margin-bottom:2rem;overflow:hidden; }
-@media(max-width:768px){ .pmt-before-banner { flex-direction:column; } }
-.pmt-before-item { display:flex;align-items:flex-start;gap:12px;padding:1.25rem 1.5rem;flex:1; }
-.pmt-before-divider { width:1px;background:#e2e6ed;flex-shrink:0; }
-@media(max-width:768px){ .pmt-before-divider { width:100%;height:1px; } }
-.pmt-before-icon { width:36px;height:36px;border-radius:10px;background:rgba(22,163,74,0.08);border:1px solid rgba(22,163,74,0.2);color:#16a34a;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px; }
-.pmt-before-icon--red { background:rgba(220,38,38,0.07);border-color:rgba(220,38,38,0.18);color:#dc2626; }
-.pmt-before-icon--amber { background:rgba(245,158,11,0.08);border-color:rgba(245,158,11,0.2);color:#d97706; }
-.pmt-before-item strong { display:block;font-size:0.875rem;font-weight:700;color:#0b1a33;margin-bottom:3px; }
-.pmt-before-item span { font-size:0.8125rem;color:#6b7789;line-height:1.55; }
-.pmt-before-item code { font-family:monospace;background:#fef2f2;color:#e82020;padding:1px 5px;border-radius:4px;font-size:0.8125rem; }
-
-/* ── Step cards equal height + connectors ── */
-.pmt-steps-grid--connected { position:relative; }
-.pmt-steps-grid { align-items:stretch; }
-.pmt-step-card { display:flex;flex-direction:column; }
-.pmt-step-card p { flex:1; }
-
-/* Arrow connectors — desktop only */
-@media(min-width:901px) {
-  .pmt-steps-grid--connected::before,
-  .pmt-steps-grid--connected::after {
-    content:"→";
-    position:absolute;
-    top:50%;
-    transform:translateY(-50%);
-    font-size:1.5rem;
-    color:rgba(232,32,32,0.35);
-    font-weight:700;
-    pointer-events:none;
-    z-index:2;
-  }
-  .pmt-steps-grid--connected::before { left:calc(33.333% - 10px); }
-  .pmt-steps-grid--connected::after  { left:calc(66.666% - 10px); }
-}
-
-/* ── Security answer big ── */
-.pmt-detail-row--answer { flex-direction:column;align-items:flex-start;gap:6px; }
-.pmt-detail-exact--big { font-size:1.125rem;padding:6px 16px;background:#fff8f8;border:2px solid rgba(232,32,32,0.35);letter-spacing:0.05em; }
-
-/* ── Sticky mobile bar ── */
-.pmt-sticky-bar {
-  display:none;
-  position:fixed;bottom:0;left:0;right:0;z-index:90;
-  background:#0b1a33;border-top:1px solid rgba(255,255,255,0.1);
-  padding:10px 16px 12px;
-  box-shadow:0 -4px 20px rgba(0,0,0,0.3);
-  align-items:center;gap:10px;
-}
-@media(max-width:768px){ .pmt-sticky-bar { display:flex; } }
-.pmt-sticky-label { display:flex;align-items:center;gap:5px;font-size:0.6875rem;font-weight:700;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:0.07em;white-space:nowrap; }
-.pmt-sticky-copy {
-  flex:1;display:flex;align-items:center;justify-content:space-between;gap:8px;
-  background:rgba(232,32,32,0.12);border:1px solid rgba(232,32,32,0.3);
-  border-radius:9999px;padding:8px 14px;
-  font-size:0.75rem;font-weight:600;color:#fff;font-family:inherit;cursor:pointer;
-  transition:background 0.15s;min-width:0;
-}
-.pmt-sticky-copy:hover { background:rgba(232,32,32,0.22); }
-.pmt-sticky-copy span:first-child { overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1; }
-.pmt-sticky-copy svg { flex-shrink:0; }
-
-/* Add bottom padding on mobile so sticky bar doesn't cover content */
-@media(max-width:768px){ main { padding-bottom:60px; } }
-
-
-/* Hero stat bar */
-.pmt-hero-stats { display:flex;align-items:center;flex-wrap:wrap;gap:0;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:0.875rem 1.5rem;margin-bottom:2rem; }
-.pmt-hero-stat { display:flex;flex-direction:column;gap:3px;padding:0 1.125rem; }
-.pmt-hero-stat:first-child { padding-left:0; }
-.pmt-hero-stat strong { font-size:1rem;font-weight:800;color:#e82020;line-height:1; }
-.pmt-hero-stat span { font-size:0.6875rem;color:rgba(255,255,255,0.4);font-weight:500; }
-.pmt-stat-div { width:1px;height:32px;background:rgba(255,255,255,0.1);flex-shrink:0; }
-
-/* Hero CTA button */
-.pmt-hero-cta {
-  display:inline-flex;align-items:center;gap:8px;
-  background:linear-gradient(135deg,#e82020,#c41515);color:#fff;
-  border:none;border-radius:9999px;padding:13px 28px;text-decoration:none;
-  font-size:1rem;font-weight:700;
-  box-shadow:0 1px 0 rgba(255,255,255,0.15) inset,0 -3px 0 rgba(0,0,0,0.25) inset,0 8px 24px rgba(232,32,32,0.4),0 4px 0 #8b0000;
-  transform:perspective(400px) translateZ(0);transition:transform 0.15s,box-shadow 0.15s;
-}
-.pmt-hero-cta:hover {
-  transform:perspective(400px) translateZ(6px) translateY(-2px);
-  box-shadow:0 1px 0 rgba(255,255,255,0.18) inset,0 -3px 0 rgba(0,0,0,0.25) inset,0 16px 36px rgba(232,32,32,0.55),0 6px 0 #8b0000;
-}
-.pmt-hero { position:relative;overflow:hidden; }
-.pmt-bg-streams {
-  position:absolute;inset:0;width:100%;height:100%;
-  pointer-events:none;
-}
-
-.pmt-hero-bg { position:absolute;inset:0;pointer-events:none;overflow:hidden; }
-.pmt-orb-r { position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(232,32,32,0.18) 0%,transparent 65%);bottom:-280px;right:-160px;filter:blur(20px);animation:orbPulse 8s ease-in-out infinite; }
-.pmt-orb-b { position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(26,110,240,0.12) 0%,transparent 65%);top:-160px;left:-100px;filter:blur(18px); }
-
-.pmt-edge { position:absolute;top:0;right:0;width:1px;height:100%;background:linear-gradient(180deg,rgba(232,32,32,0.7) 0%,rgba(232,32,32,0.15) 50%,transparent 100%); }
-.pmt-hero-inner { position:relative;z-index:2;display:grid;grid-template-columns:1fr 300px;gap:3.5rem;align-items:center;padding:5rem 0 5.5rem; }
-.pmt-hero-content .badge { display:inline-block;margin-bottom:0.875rem; }
-.pmt-hero-content h1 { font-size:clamp(2rem,4vw,3rem);font-weight:900;color:#fff;letter-spacing:-0.04em;line-height:1.15;margin-bottom:1.125rem; }
-.pmt-hero-sub { font-size:1rem;color:rgba(255,255,255,0.5);line-height:1.7;max-width:520px;margin-bottom:1.5rem; }
-
-.pmt-hero-visual { display:flex;flex-direction:column;align-items:center;gap:1rem;position:relative; }
-.pmt-etransfer-badge { display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:14px;padding:12px 16px; }
-.pmt-etransfer-badge strong { display:block;font-size:0.875rem;font-weight:800;color:#fff; }
-.pmt-etransfer-badge span { font-size:0.75rem;color:rgba(255,255,255,0.45); }
-.pmt-hero-mascot { width:100px;height:auto;filter:drop-shadow(0 8px 20px rgba(0,0,0,0.5));animation:mascotFloat 5s ease-in-out infinite; }
-.pmt-hero-glow { position:absolute;bottom:-8px;left:50%;transform:translateX(-50%);width:80px;height:10px;background:radial-gradient(ellipse,rgba(232,32,32,0.4) 0%,transparent 70%);filter:blur(5px); }
-
-/* Steps */
-.pmt-steps { position:relative; }
-.pmt-steps::before { content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#e82020 30%,#ff6a4d 50%,#e82020 70%,transparent); }
-.pmt-steps-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem; }
-@media(max-width:900px){ .pmt-steps-grid { grid-template-columns:1fr; } }
-.pmt-step-card { background:#fff;border:1px solid #e2e6ed;border-radius:20px;padding:1.75rem;box-shadow:0 1px 4px rgba(11,26,51,0.06);position:relative;overflow:hidden; }
-.pmt-step-card::before { content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#e82020,#ff6a4d); }
-.pmt-step-num { font-size:3rem;font-weight:900;color:rgba(232,32,32,0.08);line-height:1;margin-bottom:0.75rem;letter-spacing:-0.05em; }
-.pmt-step-icon { width:44px;height:44px;border-radius:12px;background:rgba(232,32,32,0.07);border:1px solid rgba(232,32,32,0.15);color:#e82020;display:flex;align-items:center;justify-content:center;margin-bottom:1rem; }
-.pmt-step-card h3 { font-size:1.0625rem;font-weight:700;color:#0b1a33;margin-bottom:0.625rem; }
-.pmt-step-card p { font-size:0.875rem;color:#4a5568;line-height:1.75;margin-bottom:1rem; }
-.pmt-step-note { display:flex;align-items:flex-start;gap:7px;font-size:0.75rem;color:#6b7789;line-height:1.55;background:#f8f9fb;border-radius:8px;padding:10px 12px; }
-.pmt-step-note svg { flex-shrink:0;margin-top:1px;color:#9ca3af; }
-.pmt-step-note--warn { background:rgba(245,158,11,0.06);color:#92400e; }
-.pmt-step-note--warn svg { color:#f59e0b; }
-.pmt-step-note--success { background:rgba(22,163,74,0.06);color:#14532d; }
-.pmt-step-note--success svg { color:#16a34a; }
-
-/* Detail box */
-.pmt-detail-box { background:#f8f9fb;border:1px solid #e2e6ed;border-radius:12px;overflow:hidden;margin-bottom:1rem; }
-.pmt-detail-row { display:flex;align-items:center;justify-content:space-between;gap:0.75rem;padding:10px 14px;border-bottom:1px solid #e2e6ed;font-size:0.8125rem; }
-.pmt-detail-row:last-child { border-bottom:none; }
-.pmt-detail-row--highlight { background:rgba(232,32,32,0.03); }
-.pmt-detail-label { font-weight:600;color:#6b7789;flex-shrink:0; }
-.pmt-detail-val { color:#0b1a33;font-weight:500;text-align:right; }
-.pmt-detail-exact { font-family:monospace;background:#fff;border:1px solid #e2e6ed;border-radius:6px;padding:2px 8px;color:#e82020;font-weight:700; }
-.pmt-copy-note { font-size:0.6875rem;color:#9ca3af;font-weight:400; }
-.pmt-detail-row--email { flex-direction:row;align-items:center;gap:0.75rem; }
-.pmt-copy-btn { display:flex;align-items:center;justify-content:space-between;gap:8px;background:rgba(232,32,32,0.06);border:1px solid rgba(232,32,32,0.18);border-radius:8px;padding:7px 10px;cursor:pointer;font-family:inherit;color:#e82020;transition:all 0.15s;flex:1;min-width:0; }
-.pmt-copy-btn:hover { background:rgba(232,32,32,0.12); }
-.pmt-copy-email { font-size:0.75rem;font-weight:700;line-height:1.35;flex:1;min-width:0; }
-.pmt-copy-right { display:flex;flex-direction:column;align-items:center;gap:2px;flex-shrink:0; }
-.pmt-copy-tap { font-size:0.5625rem;color:rgba(232,32,32,0.6);white-space:nowrap;font-weight:600;letter-spacing:0.04em; }
-.pmt-copy-confirm { display:none;color:#16a34a;font-size:0.6875rem;font-weight:700; }
-
-/* Quick reference */
-.pmt-ref { position:relative;overflow:hidden; }
-.pmt-ref-bg { position:absolute;inset:0;pointer-events:none;overflow:hidden; }
-.pmt-ref-orb-r { position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(232,32,32,0.16) 0%,transparent 65%);bottom:-250px;right:-150px;filter:blur(20px); }
-.pmt-ref-orb-b { position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(26,110,240,0.1) 0%,transparent 65%);top:-150px;left:-80px;filter:blur(16px); }
-.pmt-ref-beam { position:absolute;top:0;left:0;width:55%;height:100%;background:conic-gradient(from 345deg at 0% 0%,transparent 0deg,rgba(232,32,32,0.12) 20deg,transparent 50deg); }
-.pmt-ref-edge { position:absolute;top:0;left:0;width:1px;height:100%;background:linear-gradient(180deg,rgba(232,32,32,0.7) 0%,rgba(232,32,32,0.15) 50%,transparent 100%); }
-.pmt-ref-inner { position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start; }
-@media(max-width:768px){ .pmt-ref-inner { grid-template-columns:1fr; } }
-.pmt-ref-card { background:#0d1829;border:1px solid rgba(255,255,255,0.09);border-radius:18px;overflow:hidden; }
-.pmt-ref-row { display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:14px 18px;border-bottom:1px solid rgba(255,255,255,0.07);flex-wrap:wrap; }
-.pmt-ref-row:last-child { border-bottom:none; }
-.pmt-ref-label { font-size:0.75rem;font-weight:700;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:0.07em;flex-shrink:0; }
-.pmt-ref-val-wrap { display:flex;align-items:center;gap:8px; }
-.pmt-ref-val { font-size:0.875rem;font-weight:600;color:#fff; }
-.pmt-ref-val a { color:#e82020;text-decoration:none; }
-.pmt-ref-val--exact { font-family:monospace;background:rgba(232,32,32,0.12);border:1px solid rgba(232,32,32,0.25);border-radius:6px;padding:2px 10px;color:#ff8080;font-weight:700; }
-.pmt-ref-copy { display:flex;align-items:center;gap:5px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:7px;padding:4px 9px;cursor:pointer;color:rgba(255,255,255,0.6);font-size:0.6875rem;font-family:inherit;font-weight:600;transition:all 0.15s; }
-.pmt-ref-copy:hover { background:rgba(255,255,255,0.12);color:#fff; }
-.pmt-ref-faq-title { font-size:0.75rem;font-weight:700;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:0.09em;margin-bottom:0.75rem; }
-.pmt-ref .faq-trigger { color:#fff; }
-.pmt-ref .faq-item { border-color:rgba(255,255,255,0.1); }
-.pmt-ref .faq-body { color:rgba(255,255,255,0.55);font-size:0.875rem;line-height:1.7; }
-.pmt-ref .faq-body a { color:#e82020; }
-.pmt-ref .faq-icon { border-color:rgba(255,255,255,0.2); }
-
-/* Help section */
-.pmt-help { position:relative; }
-.pmt-help::before { content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#e82020 30%,#ff6a4d 50%,#e82020 70%,transparent); }
-.pmt-help-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;max-width:960px;margin:0 auto; }
-@media(max-width:768px){ .pmt-help-grid { grid-template-columns:1fr; } }
-.pmt-help-card { display:flex;align-items:center;gap:14px;background:#f8f9fb;border:1px solid #e2e6ed;border-radius:16px;padding:1.25rem 1.5rem;text-decoration:none;transition:all 0.15s; }
-.pmt-help-card--link:hover { background:#fff;border-color:#d1d5db;box-shadow:0 4px 12px rgba(11,26,51,0.08);transform:translateY(-2px); }
-.pmt-help-icon { width:44px;height:44px;border-radius:12px;background:rgba(232,32,32,0.07);border:1px solid rgba(232,32,32,0.15);color:#e82020;display:flex;align-items:center;justify-content:center;flex-shrink:0; }
-.pmt-help-icon--blue { background:rgba(26,110,240,0.07);border-color:rgba(26,110,240,0.15);color:#1a6ef0; }
-.pmt-help-card > div { flex:1;display:flex;flex-direction:column;gap:2px; }
-.pmt-help-card strong { font-size:0.9375rem;font-weight:700;color:#0b1a33; }
-.pmt-help-card span { font-size:0.875rem;color:#4a5568; }
-.pmt-help-card small { font-size:0.75rem;color:#9ca3af; }
-.pmt-help-arrow { color:#d1d5db;flex-shrink:0;transition:transform 0.15s,color 0.15s; }
-.pmt-help-card--link:hover .pmt-help-arrow { color:#e82020;transform:translateX(3px); }
 
 /* ── DARK HEADER ── */
 .site-header--dark {

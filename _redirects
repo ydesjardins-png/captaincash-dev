@@ -1,0 +1,14 @@
+# Redirect old .html flat files to new /slug/ structure
+/claim-your-cash.html           /claim-your-cash/           301
+/renew-your-loan.html           /renew-your-loan/           301
+/online-payment.html            /online-payment/            301
+/how-it-works.html              /how-does-it-work/          301
+/support.html                   /support/                   301
+/about.html                     /about-us/                  301
+/contact.html                   /contact-us/                301
+/testimonials.html              /testimonials/              301
+/pages/bad-credit-loans.html    /bad-credit-loans-canada/   301
+/pages/installment-loans.html   /installment-loans-canada/  301
+/pages/no-credit-check-loans.html /no-credit-check-loans-canada/ 301
+/pages/payday-loans.html        /payday-loans/              301
+/pages/loans-canada.html        /loans-in-canada/           301
