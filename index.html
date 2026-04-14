@@ -37,6 +37,30 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
   <link rel="stylesheet" href="/css/main.css?v=4">
+<script>
+(function(){
+  fetch('/data/loan-config.json')
+    .then(function(r){return r.json();})
+    .then(function(cfg){
+      window.CC_CONFIG=cfg;
+      document.dispatchEvent(new CustomEvent('cc:config-ready'));
+    })
+    .catch(function(){
+      window.CC_CONFIG={
+        loan:{min:500,max:1000,step:100,apr:23,costMultiplier:1.5,
+              termMinDays:90,termMaxDays:150,termDefaultDays:120,locale:'en-CA'},
+        repaymentFrequencies:{
+          weekly:  {label:'Weekly',   intervalDays:7, paymentsDefault:13},
+          biweekly:{label:'Bi-weekly',intervalDays:14,paymentsDefault:7 },
+          monthly: {label:'Monthly',  intervalDays:30,paymentsDefault:4 }
+        },
+        fees:{nsf:45,deferral:25}
+      };
+      document.dispatchEvent(new CustomEvent('cc:config-ready'));
+    });
+})();
+</script>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -1265,7 +1289,8 @@
 
   slider.addEventListener('input', updateCalc);
   document.addEventListener('cc:config-ready', updateCalc);
-  updateCalc();
+  // Run immediately if config already loaded, otherwise wait for event
+  if (window.CC_CONFIG) { updateCalc(); }
 
   /* ── dark header transition ── */
   const header = document.getElementById('site-header');
@@ -2736,6 +2761,7 @@ h1 em {
       var slTerm = document.getElementById('sl-term');
       if (slAmt) slAmt.addEventListener('input', updateCost);
       if (slTerm) slTerm.addEventListener('input', updateCost);
+      document.addEventListener('cc:config-ready', updateCost);
       document.querySelectorAll('.cost-freq-btn').forEach(function(btn) {
         btn.addEventListener('click', function() {
           document.querySelectorAll('.cost-freq-btn').forEach(function(b) { b.classList.remove('cost-freq-btn--active'); });
