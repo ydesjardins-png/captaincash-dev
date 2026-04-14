@@ -10,6 +10,29 @@
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
   <link rel="stylesheet" href="/css/main.css?v=4">
+<script>
+(function(){
+  fetch('/data/loan-config.json')
+    .then(function(r){return r.json();})
+    .then(function(cfg){
+      window.CC_CONFIG=cfg;
+      document.dispatchEvent(new CustomEvent('cc:config-ready'));
+    })
+    .catch(function(){
+      window.CC_CONFIG={
+        loan:{min:500,max:1000,step:100,apr:23,costMultiplier:1.5,
+              termMinDays:90,termMaxDays:150,termDefaultDays:120,locale:'en-CA'},
+        repaymentFrequencies:{
+          weekly:  {label:'Weekly',   intervalDays:7, paymentsDefault:13},
+          biweekly:{label:'Bi-weekly',intervalDays:14,paymentsDefault:7 },
+          monthly: {label:'Monthly',  intervalDays:30,paymentsDefault:4 }
+        },
+        fees:{nsf:45,deferral:25}
+      };
+      document.dispatchEvent(new CustomEvent('cc:config-ready'));
+    });
+})();
+</script>
   <style>
 /* Skip to content link */
 .skip-link { position:absolute;top:-100px;left:1rem;padding:8px 16px;background:#e82020;color:#fff;font-size:0.875rem;font-weight:700;border-radius:0 0 8px 8px;text-decoration:none;z-index:9999;transition:top 0.1s; }
@@ -2339,7 +2362,7 @@ h1 em {
   });
   function updateSummary(){
     var amt = parseInt(document.getElementById('amount').value)||500;
-    var total = Math.round(amt*1.5);
+    var total = Math.round(amt*(window.CC_CONFIG?window.CC_CONFIG.loan.costMultiplier:1.5));
     document.getElementById('sum-amount').textContent = '$'+amt.toLocaleString();
     document.getElementById('sum-total').textContent = '~$'+total.toLocaleString();
     var sbAmt=document.getElementById('sb-amount'), sbTot=document.getElementById('sb-total');

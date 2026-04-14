@@ -1224,22 +1224,25 @@
 <script src="/js/main.js"></script>
 <script>
 (function() {
-  /* ── calculator ── */
-  const slider   = document.getElementById('loan-slider');
-  const display  = document.getElementById('calc-display');
-  const rAmount  = document.getElementById('r-amount');
-  const rPayment = document.getElementById('r-payment');
-  const rTotal   = document.getElementById('r-total');
-  let currentFreq = 'biweekly';
+  /* ── Hero calculator — reads from CC_CONFIG ── */
+  var slider      = document.getElementById('loan-slider');
+  var display     = document.getElementById('calc-display');
+  var rAmount     = document.getElementById('r-amount');
+  var rPayment    = document.getElementById('r-payment');
+  var rTotal      = document.getElementById('r-total');
+  var currentFreq = 'biweekly';
 
-  function fmt(n) { return '$' + n.toLocaleString('en-CA', {minimumFractionDigits:2,maximumFractionDigits:2}); }
-  function fmtInt(n) { return '$' + n.toLocaleString('en-CA'); }
+  function fmt(n)    { return '$' + n.toLocaleString('en-CA', {minimumFractionDigits:2,maximumFractionDigits:2}); }
+  function fmtInt(n) { return '$' + Math.round(n).toLocaleString('en-CA'); }
 
   function updateCalc() {
-    const amt   = parseInt(slider.value);
-    const total = Math.round(amt * 1.5);
-    const payments = currentFreq === 'weekly' ? 13 : currentFreq === 'biweekly' ? 7 : 4;
-    const per  = total / payments;
+    var cfg = window.CC_CONFIG;
+    if (!cfg) return;
+    var freqs = cfg.repaymentFrequencies;
+    var amt   = parseInt(slider.value);
+    var total = Math.round(amt * cfg.loan.costMultiplier);
+    var freq  = freqs[currentFreq] || freqs.biweekly;
+    var per   = total / freq.paymentsDefault;
 
     display.textContent  = fmtInt(amt);
     rAmount.textContent  = fmtInt(amt);
@@ -1247,15 +1250,13 @@
     rTotal.textContent   = fmtInt(total);
     slider.setAttribute('aria-valuenow', amt);
 
-    /* update slider fill */
-    const pct = ((amt - 500) / 500) * 100;
+    var pct = ((amt - cfg.loan.min) / (cfg.loan.max - cfg.loan.min)) * 100;
     slider.style.setProperty('--fill', pct + '%');
   }
 
-  /* freq buttons */
-  document.querySelectorAll('.freq-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.freq-btn').forEach(b => b.classList.remove('freq-btn--active'));
+  document.querySelectorAll('.freq-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.freq-btn').forEach(function(b) { b.classList.remove('freq-btn--active'); });
       btn.classList.add('freq-btn--active');
       currentFreq = btn.dataset.freq;
       updateCalc();
@@ -1263,6 +1264,7 @@
   });
 
   slider.addEventListener('input', updateCalc);
+  document.addEventListener('cc:config-ready', updateCalc);
   updateCalc();
 
   /* ── dark header transition ── */
@@ -2674,20 +2676,24 @@ h1 em {
   <script>
   (function() {
     var costFreq = 'biweekly';
-    function fmt(n) { return '$' + Math.round(n).toLocaleString('en-CA'); }
-    function fmtD(n) { return '$' + parseFloat(n).toFixed(2); }
+    function fmt(n)    { return '$' + Math.round(n).toLocaleString('en-CA'); }
+    function fmtD(n)   { return '$' + parseFloat(n).toFixed(2); }
     function addDays(d, n) { var r = new Date(d); r.setDate(r.getDate() + n); return r; }
     function fmtDate(d) { return d.toLocaleDateString('en-CA', {month:'short', day:'numeric', year:'numeric'}); }
     function updateCost() {
+      var cfg  = window.CC_CONFIG;
+      if (!cfg) return;
+      var freqs = cfg.repaymentFrequencies;
       var slAmt = document.getElementById('sl-amt');
       var slTerm = document.getElementById('sl-term');
       if (!slAmt) return;
-      var amt = parseInt(slAmt.value);
-      var days = parseInt(slTerm.value);
-      var total = Math.round(amt * 1.5);
-      var cost = total - amt;
-      var interval = costFreq === 'weekly' ? 7 : costFreq === 'biweekly' ? 14 : 30;
-      var nPay = Math.max(1, Math.round(days / interval));
+      var amt   = parseInt(slAmt.value);
+      var days  = parseInt(slTerm.value);
+      var total = Math.round(amt * cfg.loan.costMultiplier);
+      var cost  = total - amt;
+      var freq  = freqs[costFreq] || freqs.biweekly;
+      var interval = freq.intervalDays;
+      var nPay  = Math.max(1, Math.round(days / interval));
       var perPay = total / nPay;
       document.getElementById('lbl-amt').textContent = fmt(amt);
       document.getElementById('lbl-term').textContent = days + ' days';

@@ -1,0 +1,46 @@
+{
+  "_comment": "Captain Cash — loan calculator config. All calculators on the site read from this file. Update here to update everywhere.",
+
+  "loan": {
+    "min":         500,
+    "max":         1000,
+    "step":        100,
+    "apr":         23,
+    "costMultiplier": 1.5,
+    "termMinDays": 90,
+    "termMaxDays": 150,
+    "termDefaultDays": 120,
+    "currency":    "CAD",
+    "locale":      "en-CA"
+  },
+
+  "repaymentFrequencies": {
+    "weekly":    { "label": "Weekly",     "intervalDays": 7,  "paymentsDefault": 13 },
+    "biweekly":  { "label": "Bi-weekly",  "intervalDays": 14, "paymentsDefault": 7  },
+    "monthly":   { "label": "Monthly",    "intervalDays": 30, "paymentsDefault": 4  }
+  },
+
+  "fees": {
+    "nsf":      45,
+    "deferral": 25,
+    "deferralNoticeHours": 48
+  },
+
+  "examples": {
+    "500":  { "total": 750,  "label": "$500 loan → ~$750 total repayment" },
+    "750":  { "total": 1125, "label": "$750 loan → ~$1,125 total repayment" },
+    "1000": { "total": 1500, "label": "$1,000 loan → ~$1,500 total repayment" }
+  },
+
+  "eligibility": {
+    "minMonthlyIncome":    1200,
+    "minEmploymentMonths": 3,
+    "minBankAccountMonths": 3
+  },
+
+  "funding": {
+    "cutoffHour":    14,
+    "cutoffTimezone": "ET",
+    "method":        "Interac e-Transfer"
+  }
+}
