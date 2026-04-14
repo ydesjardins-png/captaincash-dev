@@ -382,9 +382,10 @@ e-transfer funding, and a commitment to customer respect."
 7. **Not a broker** — customers deal directly with us (vs. lead-gen sites that sell data)
 
 ### Competitive weaknesses to address in design/copy:
-- Captain Cash Trustpilot score is only 2.3/5 (competitors range from 4.3–4.9)
-  → Do NOT lead with "trusted" claims without specific proof
-  → Build trust through transparency, testimonials, and process clarity instead
+- Captain Cash Trustpilot score is 4.0+/5 with 5,600+ verified reviews (as of April 2026)
+  → This is a STRENGTH — lead with it. Display the score and review count prominently
+  → Homepage hero, funnel sidebar, about page, claim-your-cash page should all show the badge
+  → Competitive context: GoDay 4.3, Pay2Day 4.9, MoneyMart 4.7 — Captain Cash is in range
 - Lower loan cap ($1,000) vs. competitors who go to $1,500+
   → Frame as "right-sized loans" — not encouraging overborrowing
 
@@ -421,4 +422,4 @@ e-transfer funding, and a commitment to customer respect."
 | Cash4You        | Payday+install | $1,500+    | 12–60 months  | 4.7        | ON focus  |
 | MrPayday        | Payday         | $1,500     | ~31 days      | 4.7        | 3         |
 | CreditMatik     | Open credit    | $1,500     | Flexible      | N/A        | 2 (QC/ON) |
-| **Captain Cash**| **Installment**| **$1,000** | **90–150 days**| **2.3**  | **9**     |
+| **Captain Cash**| **Installment**| **$1,000** | **90–150 days**| **4.0+** | **9**     |

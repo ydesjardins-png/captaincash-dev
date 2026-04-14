@@ -26,7 +26,7 @@ Priorities: Authority. Trust. Relevance. Conversion alignment. Not shortcuts.
 **NOT served:** QC, MB, SK
 **Founded:** 2015 | **HQ:** Halifax, NS | **CLA member**
 **Key differentiator:** Installment repayment (90–150 days) vs. payday lump sum
-**Current Trustpilot:** 2.3/5 — do NOT lead with review count; build trust through content
+**Current Trustpilot:** 4.0+/5 — 5,600+ verified reviews (April 2026). USE this as a trust signal. Display score and review count prominently on homepage, funnel sidebar, and about page.
 
 **YMYL classification:** Clear YMYL Financial Security — Google's highest scrutiny tier.
 Every SEO decision must strengthen E-E-A-T (Experience, Expertise, Authoritativeness, Trust).
