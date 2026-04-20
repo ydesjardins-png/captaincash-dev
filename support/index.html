@@ -1148,7 +1148,7 @@
     0 3px 0 #8b0000;
 }
 .btn-header-red:hover {
-  transform:perspective(400px) translateZ(4px) translateY(-1px);
+  transform: translateY(-1px);
   box-shadow:
     0 1px 0 rgba(255,255,255,0.18) inset,
     0 -2px 0 rgba(0,0,0,0.3) inset,
@@ -1174,7 +1174,7 @@
     0 3px 0 #7a3800;
 }
 .btn-header-amber:hover {
-  transform:perspective(400px) translateZ(4px) translateY(-1px);
+  transform: translateY(-1px);
   box-shadow:
     0 1px 0 rgba(255,255,255,0.18) inset,
     0 -2px 0 rgba(0,0,0,0.3) inset,
@@ -1428,7 +1428,7 @@ h1 em {
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 .btn-hero-primary:hover {
-  transform: perspective(500px) translateZ(8px) translateY(-2px);
+  transform: translateY(-2px);
   box-shadow:
     0 1px 0 rgba(255,255,255,0.18) inset,
     0 -3px 0 rgba(0,0,0,0.3) inset,
@@ -1461,7 +1461,7 @@ h1 em {
 }
 .btn-hero-ghost:hover {
   background: rgba(255,255,255,0.12); color: #fff;
-  transform: perspective(500px) translateZ(8px) translateY(-2px);
+  transform: translateY(-2px);
   box-shadow:
     0 1px 0 rgba(255,255,255,0.12) inset,
     0 -2px 0 rgba(0,0,0,0.25) inset,
@@ -1634,7 +1634,7 @@ h1 em {
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 .calc-apply-btn:hover {
-  transform: perspective(400px) translateZ(6px) translateY(-2px);
+  transform: translateY(-2px);
   box-shadow:
     0 1px 0 rgba(255,255,255,0.18) inset,
     0 -3px 0 rgba(0,0,0,0.3) inset,
@@ -1767,12 +1767,12 @@ h1 em {
   transition: transform 0.3s ease, border-color 0.3s, background 0.3s, box-shadow 0.3s;
   display: flex; flex-direction: column;
   box-shadow: 0 2px 0 rgba(255,255,255,0.04) inset, 0 8px 32px rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.06) inset;
-  transform: perspective(800px) translateZ(0px);
+  will-change: transform; backface-visibility: hidden; -webkit-backface-visibility: hidden;
 }
 .bento-card:hover {
   background: #111f36;
   border-color: rgba(255,255,255,0.18);
-  transform: perspective(800px) translateZ(12px) translateY(-4px);
+  transform: translateY(-4px);
   box-shadow: 0 2px 0 rgba(255,255,255,0.06) inset, 0 24px 48px rgba(0,0,0,0.45), 0 1px 0 rgba(255,255,255,0.08) inset;
 }
 .bento-card-shine {
@@ -1868,7 +1868,7 @@ h1 em {
   transition: transform 0.25s, box-shadow 0.25s;
 }
 .compare-card-them:hover {
-  transform: perspective(600px) translateZ(6px) translateY(-3px);
+  transform: translateY(-3px);
   box-shadow: 0 12px 32px rgba(11,26,51,0.08);
   z-index: 1; position: relative;
 }
@@ -1884,7 +1884,7 @@ h1 em {
   transition: transform 0.25s, box-shadow 0.25s;
 }
 .compare-card-us:hover {
-  transform: perspective(600px) translateZ(10px) translateY(-3px);
+  transform: translateY(-3px);
   box-shadow: 0 20px 48px rgba(232,32,32,0.18);
 }
 /* VS divider column */
@@ -1976,10 +1976,10 @@ h1 em {
   position:relative; overflow:hidden;
   transition:transform 0.3s ease, border-color 0.3s, box-shadow 0.3s;
   box-shadow:0 2px 0 rgba(255,255,255,0.04) inset, 0 8px 32px rgba(0,0,0,0.3);
-  transform:perspective(600px) translateZ(0px);
+  will-change: transform; backface-visibility: hidden; -webkit-backface-visibility: hidden;
 }
 .elig-card:hover {
-  transform:perspective(600px) translateZ(12px) translateY(-4px);
+  transform: translateY(-4px);
   border-color:rgba(255,255,255,0.16);
   box-shadow:0 2px 0 rgba(255,255,255,0.06) inset, 0 24px 48px rgba(0,0,0,0.45);
 }
@@ -1991,10 +1991,10 @@ h1 em {
   position:relative; overflow:hidden;
   transition:transform 0.3s ease, box-shadow 0.3s;
   box-shadow:0 2px 0 rgba(255,255,255,0.04) inset, 0 8px 32px rgba(232,32,32,0.12);
-  transform:perspective(600px) translateZ(0px);
+  will-change: transform; backface-visibility: hidden; -webkit-backface-visibility: hidden;
 }
 .elig-cta-card:hover {
-  transform:perspective(600px) translateZ(14px) translateY(-4px);
+  transform: translateY(-4px);
   box-shadow:0 2px 0 rgba(255,255,255,0.06) inset, 0 24px 48px rgba(232,32,32,0.22);
 }
 .elig-card-label {
@@ -2107,12 +2107,12 @@ h1 em {
   border-radius:20px; padding:2rem;
   transition:transform 0.3s ease, border-color 0.3s, background 0.3s, box-shadow 0.3s;
   box-shadow: 0 2px 0 rgba(255,255,255,0.05) inset, 0 8px 32px rgba(0,0,0,0.3);
-  transform: perspective(600px) translateZ(0px);
+  will-change: transform; backface-visibility: hidden; -webkit-backface-visibility: hidden;
 }
 .glass-testimonial:hover {
   background:rgba(255,255,255,0.08);
   border-color:rgba(255,255,255,0.18);
-  transform: perspective(600px) translateZ(14px) translateY(-4px);
+  transform: translateY(-4px);
   box-shadow: 0 2px 0 rgba(255,255,255,0.07) inset, 0 24px 48px rgba(0,0,0,0.45);
 }
 .t-stars { color:#fbbf24; font-size:1.1rem; letter-spacing:0.04em; margin-bottom:1rem; }
@@ -2250,7 +2250,7 @@ h1 em {
   position: relative;
 }
 .btn-steps-cta:hover {
-  transform: perspective(400px) translateZ(6px) translateY(-2px);
+  transform: translateY(-2px);
   box-shadow:
     0 1px 0 rgba(255,255,255,0.18) inset,
     0 -3px 0 rgba(0,0,0,0.3) inset,
