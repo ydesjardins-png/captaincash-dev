@@ -18,81 +18,155 @@
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://captaincash.ca/#organization",
+      "name": "Captain Cash",
+      "url": "https://captaincash.ca/",
+      "logo": "https://captaincash.ca/images/mascot/sprites/logo-lockup-small.webp",
+      "telephone": "1-888-226-1026",
+      "email": "support@captaincash.ca",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1701 Hollis Street W. Suite 800",
+        "addressLocality": "Halifax",
+        "addressRegion": "NS",
+        "postalCode": "B3J 2T9",
+        "addressCountry": "CA"
+      },
+      "foundingDate": "2015",
+      "numberOfEmployees": 50,
+      "memberOf": {
         "@type": "Organization",
-        "@id": "https://captaincash.ca/#organization",
-        "name": "Captain Cash",
-        "url": "https://captaincash.ca/",
-        "logo": "https://captaincash.ca/images/mascot/sprites/logo-lockup-small.webp",
-        "telephone": "1-888-226-1026",
-        "email": "support@captaincash.ca",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "1701 Hollis Street W. Suite 800",
-          "addressLocality": "Halifax",
-          "addressRegion": "NS",
-          "postalCode": "B3J 2T9",
-          "addressCountry": "CA"
-        },
-        "foundingDate": "2015",
-        "numberOfEmployees": 50,
-        "memberOf": {"@type":"Organization","name":"Canadian Lenders Association"}
+        "name": "Canadian Lenders Association"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://captaincash.ca/#website",
+      "url": "https://captaincash.ca/",
+      "name": "Captain Cash",
+      "publisher": {
+        "@id": "https://captaincash.ca/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://captaincash.ca/loans/nunavut/",
+      "url": "https://captaincash.ca/loans/nunavut/",
+      "name": "Online Loans Nunavut — No Credit Check | Captain Cash",
+      "isPartOf": {
+        "@id": "https://captaincash.ca/#website"
       },
-      {
-        "@type": "WebSite",
-        "@id": "https://captaincash.ca/#website",
-        "url": "https://captaincash.ca/",
-        "name": "Captain Cash",
-        "publisher": {"@id": "https://captaincash.ca/#organization"}
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://captaincash.ca/loans/nunavut/",
-        "url": "https://captaincash.ca/loans/nunavut/",
-        "name": "Online Loans Nunavut — No Credit Check | Captain Cash",
-        "isPartOf": { "@id": "https://captaincash.ca/#website" },
-        "breadcrumb": {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {"@type":"ListItem","position":1,"name":"Home","item":"https://captaincash.ca/"},
-            {"@type":"ListItem","position":2,"name":"Loans Canada","item":"https://captaincash.ca/loans-in-canada/"},
-            {"@type":"ListItem","position":3,"name":"Loans Nunavut","item":"https://captaincash.ca/loans/nunavut/"}
-          ]
-        }
-      },
-      {
-        "@type": "FinancialProduct",
-        "name": "Online Loan Nunavut",
-        "provider": { "@id": "https://captaincash.ca/#organization" },
-        "description": "Online installment loans for Nunavut residents. $500–$1,000, 90–150 days, no credit check, APR 23%, same-day Interac e-Transfer.",
-        "amount": { "@type": "MonetaryAmount", "minValue": 500, "maxValue": 1000, "currency": "CAD" },
-        "annualPercentageRate": 23,
-        "areaServed": "Nunavut"
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
           {
-            "@type": "Question",
-            "name": "Can I get a loan in Nunavut with bad credit?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Captain Cash does not perform a credit check. We assess your income and banking stability. If you earn at least $1,200/month by direct deposit and have an active Canadian bank account, you may qualify regardless of your credit score." }
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://captaincash.ca/"
           },
           {
-            "@type": "Question",
-            "name": "How fast can I get a loan in Nunavut?",
-            "acceptedAnswer": { "@type": "Answer", "text": "The application takes about 5 minutes. If approved before 2 PM ET on a business day, funds are sent by Interac e-Transfer the same day." }
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Loans Canada",
+            "item": "https://captaincash.ca/loans-in-canada/"
           },
           {
-            "@type": "Question",
-            "name": "Are there many online lenders available to Nunavut residents?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Not many. Nunavut is underserved by most Canadian online lenders. Captain Cash is one of the few licensed lenders who actively accept applications from Nunavut residents. Our fully online process — no branch, no fax, no in-person requirement — is well-suited to the territory's geography." }
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Loans Nunavut",
+            "item": "https://captaincash.ca/loans/nunavut/"
           }
         ]
       }
-    ]
-  }
+    },
+    {
+      "@type": "FinancialProduct",
+      "name": "Online Loan Nunavut",
+      "provider": {
+        "@id": "https://captaincash.ca/#organization"
+      },
+      "description": "Online installment loans for Nunavut residents. $500–$1,000, 90–150 days, no credit check, APR 23%, same-day Interac e-Transfer.",
+      "amount": {
+        "@type": "MonetaryAmount",
+        "minValue": 500,
+        "maxValue": 1000,
+        "currency": "CAD"
+      },
+      "annualPercentageRate": 23,
+      "areaServed": "Nunavut"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I get a loan in Nunavut with bad credit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Captain Cash does not perform a credit check. We assess your income and banking stability. If you earn at least $1,200/month by direct deposit and have an active Canadian bank account, you may qualify regardless of your credit score."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How fast can I get a loan in Nunavut?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The application takes about 5 minutes. If approved before 2 PM ET on a business day, funds are sent by Interac e-Transfer the same day."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there many online lenders available to Nunavut residents?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not many. Nunavut is underserved by most Canadian online lenders. Captain Cash is one of the few licensed lenders who actively accept applications from Nunavut residents. Our fully online process — no branch, no fax, no in-person requirement — is well-suited to the territory's geography."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://captaincash.ca/loans/nunavut/#localbusiness",
+      "name": "Captain Cash",
+      "description": "Online installment loans for Nunavut residents. $500–$1,000, no credit check, same-day Interac e-Transfer. APR 23%.",
+      "url": "https://captaincash.ca",
+      "telephone": "1-888-226-1026",
+      "email": "support@captaincash.ca",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1701 Hollis Street W. Suite 800",
+        "addressLocality": "Halifax",
+        "addressRegion": "NS",
+        "postalCode": "B3J 2T9",
+        "addressCountry": "CA"
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "Nunavut",
+        "containedInPlace": {
+          "@type": "Country",
+          "name": "Canada"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "6000",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "priceRange": "$500-$1000",
+      "currenciesAccepted": "CAD",
+      "paymentAccepted": "Interac e-Transfer",
+      "openingHours": "Mo-Fr 09:00-17:00"
+    }
+  ]
+}
   </script>
   <link rel="stylesheet" href="/css/main.css?v=4">
   <style>

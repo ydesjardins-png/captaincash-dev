@@ -18,77 +18,158 @@
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://captaincash.ca/#organization",
+      "name": "Captain Cash",
+      "url": "https://captaincash.ca/",
+      "logo": "https://captaincash.ca/images/mascot/sprites/logo-lockup-small.webp",
+      "telephone": "1-888-226-1026",
+      "email": "support@captaincash.ca",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1701 Hollis Street W. Suite 800",
+        "addressLocality": "Halifax",
+        "addressRegion": "NS",
+        "postalCode": "B3J 2T9",
+        "addressCountry": "CA"
+      },
+      "foundingDate": "2015",
+      "numberOfEmployees": 50,
+      "memberOf": {
         "@type": "Organization",
-        "@id": "https://captaincash.ca/#organization",
-        "name": "Captain Cash",
-        "url": "https://captaincash.ca/",
-        "logo": "https://captaincash.ca/images/mascot/sprites/logo-lockup-small.webp",
-        "telephone": "1-888-226-1026",
-        "email": "support@captaincash.ca",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "1701 Hollis Street W. Suite 800",
-          "addressLocality": "Halifax",
-          "addressRegion": "NS",
-          "postalCode": "B3J 2T9",
-          "addressCountry": "CA"
-        },
-        "foundingDate": "2015",
-        "numberOfEmployees": 50,
-        "memberOf": {"@type":"Organization","name":"Canadian Lenders Association"}
+        "name": "Canadian Lenders Association"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://captaincash.ca/#website",
+      "url": "https://captaincash.ca/",
+      "name": "Captain Cash",
+      "publisher": {
+        "@id": "https://captaincash.ca/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://captaincash.ca/loans/northwest-territories/hay-river/",
+      "url": "https://captaincash.ca/loans/northwest-territories/hay-river/",
+      "name": "Online Loans Hay River NT — No Credit Check | Captain Cash",
+      "isPartOf": {
+        "@id": "https://captaincash.ca/#website"
       },
-      {
-        "@type": "WebSite",
-        "@id": "https://captaincash.ca/#website",
-        "url": "https://captaincash.ca/",
-        "name": "Captain Cash",
-        "publisher": {"@id": "https://captaincash.ca/#organization"}
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://captaincash.ca/loans/northwest-territories/hay-river/",
-        "url": "https://captaincash.ca/loans/northwest-territories/hay-river/",
-        "name": "Online Loans Hay River NT — No Credit Check | Captain Cash",
-        "isPartOf": { "@id": "https://captaincash.ca/#website" },
-        "breadcrumb": {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {"@type":"ListItem","position":1,"name":"Home","item":"https://captaincash.ca/"},
-            {"@type":"ListItem","position":2,"name":"Loans Canada","item":"https://captaincash.ca/loans-in-canada/"},
-            {"@type":"ListItem","position":3,"name":"Loans Northwest Territories","item":"https://captaincash.ca/loans/northwest-territories/"},
-            {"@type":"ListItem","position":4,"name":"Loans Hay River","item":"https://captaincash.ca/loans/northwest-territories/hay-river/"}
-          ]
-        }
-      },
-      {
-        "@type": "FinancialProduct",
-        "name": "Online Loan Hay River",
-        "provider": { "@id": "https://captaincash.ca/#organization" },
-        "description": "Online installment loans for Hay River residents. $500–$1,000, 90–150 days, no credit check, APR 23%, same-day Interac e-Transfer.",
-        "amount": { "@type": "MonetaryAmount", "minValue": 500, "maxValue": 1000, "currency": "CAD" },
-        "annualPercentageRate": 23,
-        "areaServed": "Hay River, Northwest Territories"
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
           {
-            "@type": "Question",
-            "name": "Can I get an online loan in Hay River?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Captain Cash offers online installment loans to Hay River residents in Northwest Territories. No credit check, $500–$1,000, same-day Interac e-Transfer if approved before 2 PM ET. Apply in 5 minutes." }
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://captaincash.ca/"
           },
           {
-            "@type": "Question",
-            "name": "How fast can I get a loan in Hay River?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Apply online in 5 minutes. If approved before 2 PM ET on a business day, funds arrive by Interac e-Transfer the same day — directly to your bank account." }
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Loans Canada",
+            "item": "https://captaincash.ca/loans-in-canada/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Loans Northwest Territories",
+            "item": "https://captaincash.ca/loans/northwest-territories/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Loans Hay River",
+            "item": "https://captaincash.ca/loans/northwest-territories/hay-river/"
           }
         ]
       }
-    ]
-  }
+    },
+    {
+      "@type": "FinancialProduct",
+      "name": "Online Loan Hay River",
+      "provider": {
+        "@id": "https://captaincash.ca/#organization"
+      },
+      "description": "Online installment loans for Hay River residents. $500–$1,000, 90–150 days, no credit check, APR 23%, same-day Interac e-Transfer.",
+      "amount": {
+        "@type": "MonetaryAmount",
+        "minValue": 500,
+        "maxValue": 1000,
+        "currency": "CAD"
+      },
+      "annualPercentageRate": 23,
+      "areaServed": "Hay River, Northwest Territories"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I get an online loan in Hay River?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Captain Cash offers online installment loans to Hay River residents in Northwest Territories. No credit check, $500–$1,000, same-day Interac e-Transfer if approved before 2 PM ET. Apply in 5 minutes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How fast can I get a loan in Hay River?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Apply online in 5 minutes. If approved before 2 PM ET on a business day, funds arrive by Interac e-Transfer the same day — directly to your bank account."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://captaincash.ca/loans/northwest-territories/hay-river/#localbusiness",
+      "name": "Captain Cash",
+      "description": "Online installment loans for Hay River residents. $500–$1,000, no credit check, same-day Interac e-Transfer. APR 23%.",
+      "url": "https://captaincash.ca",
+      "telephone": "1-888-226-1026",
+      "email": "support@captaincash.ca",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1701 Hollis Street W. Suite 800",
+        "addressLocality": "Halifax",
+        "addressRegion": "NS",
+        "postalCode": "B3J 2T9",
+        "addressCountry": "CA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 60.8162,
+        "longitude": -115.7989
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Hay River",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "Northwest Territories"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "6000",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "priceRange": "$500-$1000",
+      "currenciesAccepted": "CAD",
+      "paymentAccepted": "Interac e-Transfer",
+      "openingHours": "Mo-Fr 09:00-17:00"
+    }
+  ]
+}
   </script>
   <link rel="stylesheet" href="/css/main.css?v=4">
   <style>

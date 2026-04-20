@@ -18,81 +18,155 @@
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://captaincash.ca/#organization",
+      "name": "Captain Cash",
+      "url": "https://captaincash.ca/",
+      "logo": "https://captaincash.ca/images/mascot/sprites/logo-lockup-small.webp",
+      "telephone": "1-888-226-1026",
+      "email": "support@captaincash.ca",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1701 Hollis Street W. Suite 800",
+        "addressLocality": "Halifax",
+        "addressRegion": "NS",
+        "postalCode": "B3J 2T9",
+        "addressCountry": "CA"
+      },
+      "foundingDate": "2015",
+      "numberOfEmployees": 50,
+      "memberOf": {
         "@type": "Organization",
-        "@id": "https://captaincash.ca/#organization",
-        "name": "Captain Cash",
-        "url": "https://captaincash.ca/",
-        "logo": "https://captaincash.ca/images/mascot/sprites/logo-lockup-small.webp",
-        "telephone": "1-888-226-1026",
-        "email": "support@captaincash.ca",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "1701 Hollis Street W. Suite 800",
-          "addressLocality": "Halifax",
-          "addressRegion": "NS",
-          "postalCode": "B3J 2T9",
-          "addressCountry": "CA"
-        },
-        "foundingDate": "2015",
-        "numberOfEmployees": 50,
-        "memberOf": {"@type":"Organization","name":"Canadian Lenders Association"}
+        "name": "Canadian Lenders Association"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://captaincash.ca/#website",
+      "url": "https://captaincash.ca/",
+      "name": "Captain Cash",
+      "publisher": {
+        "@id": "https://captaincash.ca/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://captaincash.ca/loans/alberta/",
+      "url": "https://captaincash.ca/loans/alberta/",
+      "name": "Online Loans Alberta — No Credit Check | Captain Cash",
+      "isPartOf": {
+        "@id": "https://captaincash.ca/#website"
       },
-      {
-        "@type": "WebSite",
-        "@id": "https://captaincash.ca/#website",
-        "url": "https://captaincash.ca/",
-        "name": "Captain Cash",
-        "publisher": {"@id": "https://captaincash.ca/#organization"}
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://captaincash.ca/loans/alberta/",
-        "url": "https://captaincash.ca/loans/alberta/",
-        "name": "Online Loans Alberta — No Credit Check | Captain Cash",
-        "isPartOf": { "@id": "https://captaincash.ca/#website" },
-        "breadcrumb": {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {"@type":"ListItem","position":1,"name":"Home","item":"https://captaincash.ca/"},
-            {"@type":"ListItem","position":2,"name":"Loans Canada","item":"https://captaincash.ca/loans-in-canada/"},
-            {"@type":"ListItem","position":3,"name":"Loans Alberta","item":"https://captaincash.ca/loans/alberta/"}
-          ]
-        }
-      },
-      {
-        "@type": "FinancialProduct",
-        "name": "Online Loan Alberta",
-        "provider": { "@id": "https://captaincash.ca/#organization" },
-        "description": "Online installment loans for Alberta residents. $500–$1,000, 90–150 days, no credit check, APR 23%, same-day Interac e-Transfer.",
-        "amount": { "@type": "MonetaryAmount", "minValue": 500, "maxValue": 1000, "currency": "CAD" },
-        "annualPercentageRate": 23,
-        "areaServed": "Alberta"
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
           {
-            "@type": "Question",
-            "name": "Can I get a loan in Alberta with bad credit?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Captain Cash does not perform a credit check. We assess your income and banking stability. If you earn at least $1,200/month by direct deposit and have an active Canadian bank account, you may qualify regardless of your credit score." }
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://captaincash.ca/"
           },
           {
-            "@type": "Question",
-            "name": "How fast can I get a loan in Alberta?",
-            "acceptedAnswer": { "@type": "Answer", "text": "The application takes about 5 minutes. If approved before 2 PM ET on a business day, funds are sent by Interac e-Transfer the same day." }
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Loans Canada",
+            "item": "https://captaincash.ca/loans-in-canada/"
           },
           {
-            "@type": "Question",
-            "name": "Are payday loan rules in Alberta different from other provinces?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Alberta caps payday loan fees at $15 per $100 and requires lenders to provide a 2-business-day cancellation period. Captain Cash is an installment lender operating under different Alberta lending regulations. APR 23% and full repayment schedule are disclosed before you sign." }
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Loans Alberta",
+            "item": "https://captaincash.ca/loans/alberta/"
           }
         ]
       }
-    ]
-  }
+    },
+    {
+      "@type": "FinancialProduct",
+      "name": "Online Loan Alberta",
+      "provider": {
+        "@id": "https://captaincash.ca/#organization"
+      },
+      "description": "Online installment loans for Alberta residents. $500–$1,000, 90–150 days, no credit check, APR 23%, same-day Interac e-Transfer.",
+      "amount": {
+        "@type": "MonetaryAmount",
+        "minValue": 500,
+        "maxValue": 1000,
+        "currency": "CAD"
+      },
+      "annualPercentageRate": 23,
+      "areaServed": "Alberta"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I get a loan in Alberta with bad credit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Captain Cash does not perform a credit check. We assess your income and banking stability. If you earn at least $1,200/month by direct deposit and have an active Canadian bank account, you may qualify regardless of your credit score."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How fast can I get a loan in Alberta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The application takes about 5 minutes. If approved before 2 PM ET on a business day, funds are sent by Interac e-Transfer the same day."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are payday loan rules in Alberta different from other provinces?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Alberta caps payday loan fees at $15 per $100 and requires lenders to provide a 2-business-day cancellation period. Captain Cash is an installment lender operating under different Alberta lending regulations. APR 23% and full repayment schedule are disclosed before you sign."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://captaincash.ca/loans/alberta/#localbusiness",
+      "name": "Captain Cash",
+      "description": "Online installment loans for Alberta residents. $500–$1,000, no credit check, same-day Interac e-Transfer. APR 23%.",
+      "url": "https://captaincash.ca",
+      "telephone": "1-888-226-1026",
+      "email": "support@captaincash.ca",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1701 Hollis Street W. Suite 800",
+        "addressLocality": "Halifax",
+        "addressRegion": "NS",
+        "postalCode": "B3J 2T9",
+        "addressCountry": "CA"
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "Alberta",
+        "containedInPlace": {
+          "@type": "Country",
+          "name": "Canada"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "6000",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "priceRange": "$500-$1000",
+      "currenciesAccepted": "CAD",
+      "paymentAccepted": "Interac e-Transfer",
+      "openingHours": "Mo-Fr 09:00-17:00"
+    }
+  ]
+}
   </script>
   <link rel="stylesheet" href="/css/main.css?v=4">
   <style>
