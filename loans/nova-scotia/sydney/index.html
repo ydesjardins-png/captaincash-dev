@@ -523,8 +523,8 @@ h1 em {
 .hero-inline-proof strong { color: #fff; font-weight: 600; }
 
 /* ── GLASS CALCULATOR ── */
-.calc-wrap { position: relative; width: 100%; padding-top: 24px; padding-bottom: 0; align-self: end; transform: perspective(1000px) translateZ(0px); transition: transform 0.3s ease; }
-.calc-wrap:hover { transform: perspective(1000px) translateZ(8px) translateY(-4px); }
+.calc-wrap { position: relative; width: 100%; padding-top: 24px; padding-bottom: 0; align-self: end; will-change: transform; backface-visibility: hidden; -webkit-backface-visibility: hidden; transition: transform 0.3s ease; }
+.calc-wrap:hover { transform: translateY(-4px); }
 .glass-card {
   position: relative;
   background: rgba(255,255,255,0.06);
@@ -1216,7 +1216,7 @@ h1 em {
   text-align:center;
   transition:transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s;
   box-shadow: 0 2px 0 #e2e6ed, 0 4px 16px rgba(11,26,51,0.06);
-  transform: perspective(600px) translateZ(0px);
+  will-change: transform; backface-visibility: hidden; -webkit-backface-visibility: hidden;
 }
 .step-card-light::before {
   content:''; position:absolute; top:0; left:10%; right:10%; height:2px;
@@ -1224,7 +1224,7 @@ h1 em {
   border-radius:9999px; opacity:0; transition:opacity 0.25s;
 }
 .step-card-light:hover {
-  transform: perspective(600px) translateZ(14px) translateY(-4px);
+  transform: translateY(-4px);
   box-shadow: 0 2px 0 #e82020, 0 16px 36px rgba(232,32,32,0.12);
   border-color: rgba(232,32,32,0.25);
 }
