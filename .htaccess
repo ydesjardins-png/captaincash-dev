@@ -64,7 +64,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ $1/index.html [L]
 
 # ── 8. Custom 404 page ───────────────────────────────────────────
-ErrorDocument 404 /404/index.html
+ErrorDocument 404 /404.html
 
 # ═══════════════════════════════════════════════════════════════
 # CACHE HEADERS — mirrors netlify.toml exactly
