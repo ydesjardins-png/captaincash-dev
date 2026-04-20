@@ -468,9 +468,9 @@
 
         <div class="calc-freq-label" id="freq-label">Payment frequency</div>
         <div class="calc-freq-btns" role="group" aria-labelledby="freq-label">
-          <button class="freq-btn" data-freq="weekly">Weekly</button>
-          <button class="freq-btn freq-btn--active" data-freq="biweekly">Bi-weekly</button>
-          <button class="freq-btn" data-freq="monthly">Monthly</button>
+          <button class="freq-btn" data-freq="weekly" aria-pressed="false">Weekly</button>
+          <button class="freq-btn freq-btn--active" data-freq="biweekly" aria-pressed="true">Bi-weekly</button>
+          <button class="freq-btn" data-freq="monthly" aria-pressed="false">Monthly</button>
         </div>
 
         <div class="calc-results" aria-live="polite" aria-label="Repayment summary">
@@ -936,9 +936,9 @@
           <div class="cost-ctrl-row">
             <div class="cost-ctrl-meta"><span>Payment frequency</span></div>
             <div class="cost-freq-btns" role="group" aria-label="Payment frequency">
-              <button class="cost-freq-btn" data-f="weekly">Weekly</button>
-              <button class="cost-freq-btn cost-freq-btn--active" data-f="biweekly">Bi-weekly</button>
-              <button class="cost-freq-btn" data-f="monthly">Monthly</button>
+              <button class="cost-freq-btn" data-f="weekly" aria-pressed="false">Weekly</button>
+              <button class="cost-freq-btn cost-freq-btn--active" data-f="biweekly" aria-pressed="true">Bi-weekly</button>
+              <button class="cost-freq-btn" data-f="monthly" aria-pressed="false">Monthly</button>
             </div>
           </div>
         </div>
@@ -1309,6 +1309,8 @@
     rPayment.textContent = fmt(per);
     rTotal.textContent   = fmtInt(total);
     slider.setAttribute('aria-valuenow', amt);
+    slider.setAttribute('aria-valuetext', '$' + amt + ' dollars');
+    slider.setAttribute('aria-valuetext', '$' + amt + ' dollars');
 
     var pct = ((amt - cfg.loan.min) / (cfg.loan.max - cfg.loan.min)) * 100;
     slider.style.setProperty('--fill', pct + '%');
@@ -1316,8 +1318,8 @@
 
   document.querySelectorAll('.freq-btn').forEach(function(btn) {
     btn.addEventListener('click', function() {
-      document.querySelectorAll('.freq-btn').forEach(function(b) { b.classList.remove('freq-btn--active'); });
-      btn.classList.add('freq-btn--active');
+      document.querySelectorAll('.freq-btn').forEach(function(b) { b.classList.remove('freq-btn--active'); b.setAttribute('aria-pressed','false'); });
+      btn.classList.add('freq-btn--active'); btn.setAttribute('aria-pressed','true');
       currentFreq = btn.dataset.freq;
       updateCalc();
     });
@@ -2769,7 +2771,9 @@ h1 em {
       document.getElementById('cost-prog').style.width = '0%';
       document.getElementById('cost-prog-lbl').textContent = '0 of ' + nPay + ' payments made';
       slAmt.setAttribute('aria-valuenow', amt);
+      slAmt.setAttribute('aria-valuetext', '$' + amt + ' dollars');
       slTerm.setAttribute('aria-valuenow', days);
+      slTerm.setAttribute('aria-valuetext', days + ' days');
       var today = new Date();
       var start = addDays(today, 14);
       var body = document.getElementById('sched-body');
@@ -2803,8 +2807,8 @@ h1 em {
       document.addEventListener('cc:config-ready', updateCost);
       document.querySelectorAll('.cost-freq-btn').forEach(function(btn) {
         btn.addEventListener('click', function() {
-          document.querySelectorAll('.cost-freq-btn').forEach(function(b) { b.classList.remove('cost-freq-btn--active'); });
-          btn.classList.add('cost-freq-btn--active');
+          document.querySelectorAll('.cost-freq-btn').forEach(function(b) { b.classList.remove('cost-freq-btn--active'); b.setAttribute('aria-pressed','false'); });
+          btn.classList.add('cost-freq-btn--active'); btn.setAttribute('aria-pressed','true');
           costFreq = btn.dataset.f;
           updateCost();
         });
