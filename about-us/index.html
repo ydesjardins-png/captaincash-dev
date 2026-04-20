@@ -18,48 +18,115 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://captaincash.ca/#organization",
-        "name": "Captain Cash",
-        "legalName": "Captain Cash, a division of Opal Financial",
-        "url": "https://captaincash.ca/",
-        "foundingDate": "2015-01",
-        "foundingLocation": { "@type": "Place", "name": "British Columbia, Canada" },
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "1701 Hollis Street W. Suite 800",
-          "addressLocality": "Halifax",
-          "addressRegion": "NS",
-          "postalCode": "B3J 2T9",
-          "addressCountry": "CA"
-        },
-        "telephone": "+18882261026",
-        "email": "support@captaincash.ca",
-        "numberOfEmployees": { "@type": "QuantitativeValue", "value": 50 },
-        "memberOf": { "@type": "Organization", "name": "Canadian Lenders Association" },
-        "areaServed": ["ON","BC","AB","NS","NB","PE","NL","NU","NT"],
-        "description": "Captain Cash is a licensed Canadian installment lender providing $500–$1,000 loans with no credit check since January 2015."
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://captaincash.ca/#organization",
+      "name": "Captain Cash",
+      "legalName": "Captain Cash, a division of Opal Financial",
+      "url": "https://captaincash.ca/",
+      "foundingDate": "2015-01",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "British Columbia, Canada"
       },
-      {
-        "@type": "WebPage",
-        "@id": "https://captaincash.ca/about/",
-        "url": "https://captaincash.ca/about/",
-        "name": "About Us — Licensed Canadian Lender Since 2015 | Captain Cash",
-        "isPartOf": { "@id": "https://captaincash.ca/#website" },
-        "about": { "@id": "https://captaincash.ca/#organization" },
-        "breadcrumb": {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {"@type":"ListItem","position":1,"name":"Home","item":"https://captaincash.ca/"},
-            {"@type":"ListItem","position":2,"name":"About Us","item":"https://captaincash.ca/about/"}
-          ]
-        }
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1701 Hollis Street W. Suite 800",
+        "addressLocality": "Halifax",
+        "addressRegion": "NS",
+        "postalCode": "B3J 2T9",
+        "addressCountry": "CA"
+      },
+      "telephone": "+18882261026",
+      "email": "support@captaincash.ca",
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "value": 50
+      },
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Canadian Lenders Association"
+      },
+      "areaServed": [
+        "ON",
+        "BC",
+        "AB",
+        "NS",
+        "NB",
+        "PE",
+        "NL",
+        "NU",
+        "NT"
+      ],
+      "description": "Captain Cash is a licensed Canadian installment lender providing $500–$1,000 loans with no credit check since January 2015."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://captaincash.ca/about/",
+      "url": "https://captaincash.ca/about/",
+      "name": "About Us — Licensed Canadian Lender Since 2015 | Captain Cash",
+      "isPartOf": {
+        "@id": "https://captaincash.ca/#website"
+      },
+      "about": {
+        "@id": "https://captaincash.ca/#organization"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://captaincash.ca/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About Us",
+            "item": "https://captaincash.ca/about/"
+          }
+        ]
       }
-    ]
-  }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://captaincash.ca/#localbusiness",
+      "name": "Captain Cash",
+      "description": "Online installment loans for Canadians. $500–$1,000, no credit check, same-day Interac e-Transfer. APR 23%. Licensed lender since 2015.",
+      "url": "https://captaincash.ca",
+      "telephone": "1-888-226-1026",
+      "email": "support@captaincash.ca",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1701 Hollis Street W. Suite 800",
+        "addressLocality": "Halifax",
+        "addressRegion": "NS",
+        "postalCode": "B3J 2T9",
+        "addressCountry": "CA"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Canada"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "6000",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "priceRange": "$500-$1000",
+      "currenciesAccepted": "CAD",
+      "paymentAccepted": "Interac e-Transfer",
+      "openingHours": "Mo-Fr 09:00-17:00",
+      "foundingDate": "2015",
+      "numberOfEmployees": 50
+    }
+  ]
+}
   </script>
   <link rel="stylesheet" href="/css/main.css?v=4">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">

@@ -18,81 +18,158 @@
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://captaincash.ca/#organization",
+      "name": "Captain Cash",
+      "url": "https://captaincash.ca/",
+      "logo": "https://captaincash.ca/images/mascot/sprites/logo-lockup-small.webp",
+      "telephone": "1-888-226-1026",
+      "email": "support@captaincash.ca",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1701 Hollis Street W. Suite 800",
+        "addressLocality": "Halifax",
+        "addressRegion": "NS",
+        "postalCode": "B3J 2T9",
+        "addressCountry": "CA"
+      },
+      "foundingDate": "2015",
+      "numberOfEmployees": 50,
+      "memberOf": {
         "@type": "Organization",
-        "@id": "https://captaincash.ca/#organization",
-        "name": "Captain Cash",
-        "url": "https://captaincash.ca/",
-        "logo": "https://captaincash.ca/images/mascot/sprites/logo-lockup-small.webp",
-        "telephone": "1-888-226-1026",
-        "email": "support@captaincash.ca",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "1701 Hollis Street W. Suite 800",
-          "addressLocality": "Halifax",
-          "addressRegion": "NS",
-          "postalCode": "B3J 2T9",
-          "addressCountry": "CA"
-        },
-        "foundingDate": "2015",
-        "numberOfEmployees": 50,
-        "memberOf": {"@type":"Organization","name":"Canadian Lenders Association"}
+        "name": "Canadian Lenders Association"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://captaincash.ca/#website",
+      "url": "https://captaincash.ca/",
+      "name": "Captain Cash",
+      "publisher": {
+        "@id": "https://captaincash.ca/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://captaincash.ca/payday-loans/",
+      "url": "https://captaincash.ca/payday-loans/",
+      "name": "Payday Loans Canada — Better Alternative | Captain Cash",
+      "description": "Captain Cash offers a flexible installment loan alternative to payday loans in Canada. No credit check. $500–$1,000. 90–150 day repayment. APR 23%.",
+      "isPartOf": {
+        "@id": "https://captaincash.ca/#website"
       },
-      {
-        "@type": "WebSite",
-        "@id": "https://captaincash.ca/#website",
-        "url": "https://captaincash.ca/",
-        "name": "Captain Cash",
-        "publisher": {"@id": "https://captaincash.ca/#organization"}
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://captaincash.ca/payday-loans/",
-        "url": "https://captaincash.ca/payday-loans/",
-        "name": "Payday Loans Canada — Better Alternative | Captain Cash",
-        "description": "Captain Cash offers a flexible installment loan alternative to payday loans in Canada. No credit check. $500–$1,000. 90–150 day repayment. APR 23%.",
-        "isPartOf": { "@id": "https://captaincash.ca/#website" },
-        "breadcrumb": {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {"@type":"ListItem","position":1,"name":"Home","item":"https://captaincash.ca/"},
-            {"@type":"ListItem","position":2,"name":"Payday Loans Canada","item":"https://captaincash.ca/payday-loans/"}
-          ]
-        }
-      },
-      {
-        "@type": "FinancialProduct",
-        "name": "Payday Loan Alternative — Installment Loan",
-        "provider": { "@id": "https://captaincash.ca/#organization" },
-        "description": "A flexible installment loan alternative to payday loans. $500–$1,000 repaid over 90–150 days in scheduled payments. No credit check. APR 23%.",
-        "amount": { "@type": "MonetaryAmount", "minValue": 500, "maxValue": 1000, "currency": "CAD" },
-        "annualPercentageRate": 23,
-        "areaServed": ["Ontario","British Columbia","Alberta","Nova Scotia","New Brunswick","PEI","Newfoundland and Labrador","Nunavut","Northwest Territories"]
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
           {
-            "@type": "Question",
-            "name": "Is Captain Cash a payday lender?",
-            "acceptedAnswer": { "@type": "Answer", "text": "No. Captain Cash is an installment lender, not a payday lender. You repay over 90–150 days in scheduled payments rather than in a single lump sum on your next payday. This makes repayment far more manageable for most borrowers." }
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://captaincash.ca/"
           },
           {
-            "@type": "Question",
-            "name": "What is the difference between a payday loan and an installment loan?",
-            "acceptedAnswer": { "@type": "Answer", "text": "A payday loan requires full repayment on your next payday — typically in 14 to 31 days — as a lump sum. An installment loan spreads repayment over 90 to 150 days in smaller, scheduled payments that align with your pay cycle. Installment loans are generally easier to manage without disrupting your monthly cash flow." }
-          },
-          {
-            "@type": "Question",
-            "name": "Can I get a same-day loan as a payday loan alternative in Canada?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Captain Cash offers same-day Interac e-Transfer funding if you are approved before 2 PM ET on a business day — with no credit check and a 5-minute application." }
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Payday Loans Canada",
+            "item": "https://captaincash.ca/payday-loans/"
           }
         ]
       }
-    ]
-  }
+    },
+    {
+      "@type": "FinancialProduct",
+      "name": "Payday Loan Alternative — Installment Loan",
+      "provider": {
+        "@id": "https://captaincash.ca/#organization"
+      },
+      "description": "A flexible installment loan alternative to payday loans. $500–$1,000 repaid over 90–150 days in scheduled payments. No credit check. APR 23%.",
+      "amount": {
+        "@type": "MonetaryAmount",
+        "minValue": 500,
+        "maxValue": 1000,
+        "currency": "CAD"
+      },
+      "annualPercentageRate": 23,
+      "areaServed": [
+        "Ontario",
+        "British Columbia",
+        "Alberta",
+        "Nova Scotia",
+        "New Brunswick",
+        "PEI",
+        "Newfoundland and Labrador",
+        "Nunavut",
+        "Northwest Territories"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Captain Cash a payday lender?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Captain Cash is an installment lender, not a payday lender. You repay over 90–150 days in scheduled payments rather than in a single lump sum on your next payday. This makes repayment far more manageable for most borrowers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between a payday loan and an installment loan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A payday loan requires full repayment on your next payday — typically in 14 to 31 days — as a lump sum. An installment loan spreads repayment over 90 to 150 days in smaller, scheduled payments that align with your pay cycle. Installment loans are generally easier to manage without disrupting your monthly cash flow."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get a same-day loan as a payday loan alternative in Canada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Captain Cash offers same-day Interac e-Transfer funding if you are approved before 2 PM ET on a business day — with no credit check and a 5-minute application."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://captaincash.ca/#localbusiness",
+      "name": "Captain Cash",
+      "description": "Online installment loans for Canadians. $500–$1,000, no credit check, same-day Interac e-Transfer. APR 23%. Licensed lender since 2015.",
+      "url": "https://captaincash.ca",
+      "telephone": "1-888-226-1026",
+      "email": "support@captaincash.ca",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1701 Hollis Street W. Suite 800",
+        "addressLocality": "Halifax",
+        "addressRegion": "NS",
+        "postalCode": "B3J 2T9",
+        "addressCountry": "CA"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Canada"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "6000",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "priceRange": "$500-$1000",
+      "currenciesAccepted": "CAD",
+      "paymentAccepted": "Interac e-Transfer",
+      "openingHours": "Mo-Fr 09:00-17:00",
+      "foundingDate": "2015",
+      "numberOfEmployees": 50
+    }
+  ]
+}
   </script>
   <link rel="stylesheet" href="/css/main.css?v=4">
   <style>

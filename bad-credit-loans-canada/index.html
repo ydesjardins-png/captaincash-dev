@@ -18,82 +18,159 @@
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://captaincash.ca/#organization",
+      "name": "Captain Cash",
+      "url": "https://captaincash.ca/",
+      "logo": "https://captaincash.ca/images/mascot/sprites/logo-lockup-small.webp",
+      "telephone": "1-888-226-1026",
+      "email": "support@captaincash.ca",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1701 Hollis Street W. Suite 800",
+        "addressLocality": "Halifax",
+        "addressRegion": "NS",
+        "postalCode": "B3J 2T9",
+        "addressCountry": "CA"
+      },
+      "foundingDate": "2015",
+      "numberOfEmployees": 50,
+      "memberOf": {
         "@type": "Organization",
-        "@id": "https://captaincash.ca/#organization",
-        "name": "Captain Cash",
-        "url": "https://captaincash.ca/",
-        "logo": "https://captaincash.ca/images/mascot/sprites/logo-lockup-small.webp",
-        "telephone": "1-888-226-1026",
-        "email": "support@captaincash.ca",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "1701 Hollis Street W. Suite 800",
-          "addressLocality": "Halifax",
-          "addressRegion": "NS",
-          "postalCode": "B3J 2T9",
-          "addressCountry": "CA"
-        },
-        "foundingDate": "2015",
-        "numberOfEmployees": 50,
-        "memberOf": {"@type":"Organization","name":"Canadian Lenders Association"}
+        "name": "Canadian Lenders Association"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://captaincash.ca/#website",
+      "url": "https://captaincash.ca/",
+      "name": "Captain Cash",
+      "publisher": {
+        "@id": "https://captaincash.ca/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://captaincash.ca/bad-credit-loans/",
+      "url": "https://captaincash.ca/bad-credit-loans/",
+      "name": "Bad Credit Loans Canada — No Credit Check | Captain Cash",
+      "description": "Bad credit loans in Canada. No credit check. $500–$1,000. Same-day Interac e-Transfer. Captain Cash has been helping Canadians since 2015.",
+      "isPartOf": {
+        "@id": "https://captaincash.ca/#website"
       },
-      {
-        "@type": "WebSite",
-        "@id": "https://captaincash.ca/#website",
-        "url": "https://captaincash.ca/",
-        "name": "Captain Cash",
-        "publisher": {"@id": "https://captaincash.ca/#organization"}
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://captaincash.ca/bad-credit-loans/",
-        "url": "https://captaincash.ca/bad-credit-loans/",
-        "name": "Bad Credit Loans Canada — No Credit Check | Captain Cash",
-        "description": "Bad credit loans in Canada. No credit check. $500–$1,000. Same-day Interac e-Transfer. Captain Cash has been helping Canadians since 2015.",
-        "isPartOf": { "@id": "https://captaincash.ca/#website" },
-        "breadcrumb": {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {"@type":"ListItem","position":1,"name":"Home","item":"https://captaincash.ca/"},
-            {"@type":"ListItem","position":2,"name":"Bad Credit Loans Canada","item":"https://captaincash.ca/bad-credit-loans/"}
-          ]
-        }
-      },
-      {
-        "@type": "FinancialProduct",
-        "name": "Bad Credit Loan",
-        "provider": { "@id": "https://captaincash.ca/#organization" },
-        "description": "Installment loans for Canadians with bad credit or no credit history. $500–$1,000, 90–150 days, APR 23%, no credit check.",
-        "amount": { "@type": "MonetaryAmount", "minValue": 500, "maxValue": 1000, "currency": "CAD" },
-        "annualPercentageRate": 23,
-        "feesAndCommissionsSpecification": "No application fee. NSF fee $45. Deferral fee $25.",
-        "areaServed": ["Ontario","British Columbia","Alberta","Nova Scotia","New Brunswick","PEI","Newfoundland and Labrador","Nunavut","Northwest Territories"]
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
           {
-            "@type": "Question",
-            "name": "Can I get a loan in Canada with bad credit?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Captain Cash does not perform a credit check. We assess your income, employment stability, and banking history instead. If you have a steady income of at least $1,200 per month and an active Canadian bank account, you may qualify regardless of your credit score." }
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://captaincash.ca/"
           },
           {
-            "@type": "Question",
-            "name": "Will applying for a bad credit loan affect my credit score?",
-            "acceptedAnswer": { "@type": "Answer", "text": "No. Captain Cash does not perform a hard credit inquiry. Applying will not appear on your credit report and will not lower your credit score." }
-          },
-          {
-            "@type": "Question",
-            "name": "How much can I borrow with bad credit?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Captain Cash offers loans from $500 to $1,000 for qualified applicants. The approved amount is based on your income and repayment capacity, not your credit history." }
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Bad Credit Loans Canada",
+            "item": "https://captaincash.ca/bad-credit-loans/"
           }
         ]
       }
-    ]
-  }
+    },
+    {
+      "@type": "FinancialProduct",
+      "name": "Bad Credit Loan",
+      "provider": {
+        "@id": "https://captaincash.ca/#organization"
+      },
+      "description": "Installment loans for Canadians with bad credit or no credit history. $500–$1,000, 90–150 days, APR 23%, no credit check.",
+      "amount": {
+        "@type": "MonetaryAmount",
+        "minValue": 500,
+        "maxValue": 1000,
+        "currency": "CAD"
+      },
+      "annualPercentageRate": 23,
+      "feesAndCommissionsSpecification": "No application fee. NSF fee $45. Deferral fee $25.",
+      "areaServed": [
+        "Ontario",
+        "British Columbia",
+        "Alberta",
+        "Nova Scotia",
+        "New Brunswick",
+        "PEI",
+        "Newfoundland and Labrador",
+        "Nunavut",
+        "Northwest Territories"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I get a loan in Canada with bad credit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Captain Cash does not perform a credit check. We assess your income, employment stability, and banking history instead. If you have a steady income of at least $1,200 per month and an active Canadian bank account, you may qualify regardless of your credit score."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will applying for a bad credit loan affect my credit score?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Captain Cash does not perform a hard credit inquiry. Applying will not appear on your credit report and will not lower your credit score."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much can I borrow with bad credit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Captain Cash offers loans from $500 to $1,000 for qualified applicants. The approved amount is based on your income and repayment capacity, not your credit history."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://captaincash.ca/#localbusiness",
+      "name": "Captain Cash",
+      "description": "Online installment loans for Canadians. $500–$1,000, no credit check, same-day Interac e-Transfer. APR 23%. Licensed lender since 2015.",
+      "url": "https://captaincash.ca",
+      "telephone": "1-888-226-1026",
+      "email": "support@captaincash.ca",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1701 Hollis Street W. Suite 800",
+        "addressLocality": "Halifax",
+        "addressRegion": "NS",
+        "postalCode": "B3J 2T9",
+        "addressCountry": "CA"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Canada"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "6000",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "priceRange": "$500-$1000",
+      "currenciesAccepted": "CAD",
+      "paymentAccepted": "Interac e-Transfer",
+      "openingHours": "Mo-Fr 09:00-17:00",
+      "foundingDate": "2015",
+      "numberOfEmployees": 50
+    }
+  ]
+}
   </script>
   <link rel="stylesheet" href="/css/main.css?v=4">
   <style>

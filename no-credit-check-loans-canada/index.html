@@ -18,81 +18,158 @@
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://captaincash.ca/#organization",
+      "name": "Captain Cash",
+      "url": "https://captaincash.ca/",
+      "logo": "https://captaincash.ca/images/mascot/sprites/logo-lockup-small.webp",
+      "telephone": "1-888-226-1026",
+      "email": "support@captaincash.ca",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1701 Hollis Street W. Suite 800",
+        "addressLocality": "Halifax",
+        "addressRegion": "NS",
+        "postalCode": "B3J 2T9",
+        "addressCountry": "CA"
+      },
+      "foundingDate": "2015",
+      "numberOfEmployees": 50,
+      "memberOf": {
         "@type": "Organization",
-        "@id": "https://captaincash.ca/#organization",
-        "name": "Captain Cash",
-        "url": "https://captaincash.ca/",
-        "logo": "https://captaincash.ca/images/mascot/sprites/logo-lockup-small.webp",
-        "telephone": "1-888-226-1026",
-        "email": "support@captaincash.ca",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "1701 Hollis Street W. Suite 800",
-          "addressLocality": "Halifax",
-          "addressRegion": "NS",
-          "postalCode": "B3J 2T9",
-          "addressCountry": "CA"
-        },
-        "foundingDate": "2015",
-        "numberOfEmployees": 50,
-        "memberOf": {"@type":"Organization","name":"Canadian Lenders Association"}
+        "name": "Canadian Lenders Association"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://captaincash.ca/#website",
+      "url": "https://captaincash.ca/",
+      "name": "Captain Cash",
+      "publisher": {
+        "@id": "https://captaincash.ca/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://captaincash.ca/no-credit-check-loans/",
+      "url": "https://captaincash.ca/no-credit-check-loans/",
+      "name": "No Credit Check Loans Canada | Captain Cash",
+      "description": "No credit check loans in Canada. Applying will not affect your credit score. $500–$1,000. Same-day Interac e-Transfer. APR 23%.",
+      "isPartOf": {
+        "@id": "https://captaincash.ca/#website"
       },
-      {
-        "@type": "WebSite",
-        "@id": "https://captaincash.ca/#website",
-        "url": "https://captaincash.ca/",
-        "name": "Captain Cash",
-        "publisher": {"@id": "https://captaincash.ca/#organization"}
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://captaincash.ca/no-credit-check-loans/",
-        "url": "https://captaincash.ca/no-credit-check-loans/",
-        "name": "No Credit Check Loans Canada | Captain Cash",
-        "description": "No credit check loans in Canada. Applying will not affect your credit score. $500–$1,000. Same-day Interac e-Transfer. APR 23%.",
-        "isPartOf": { "@id": "https://captaincash.ca/#website" },
-        "breadcrumb": {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {"@type":"ListItem","position":1,"name":"Home","item":"https://captaincash.ca/"},
-            {"@type":"ListItem","position":2,"name":"No Credit Check Loans","item":"https://captaincash.ca/no-credit-check-loans/"}
-          ]
-        }
-      },
-      {
-        "@type": "FinancialProduct",
-        "name": "No Credit Check Loan",
-        "provider": { "@id": "https://captaincash.ca/#organization" },
-        "description": "Online installment loans with no credit check. $500–$1,000, 90–150 days, APR 23%. Applying will not affect your credit score.",
-        "amount": { "@type": "MonetaryAmount", "minValue": 500, "maxValue": 1000, "currency": "CAD" },
-        "annualPercentageRate": 23,
-        "areaServed": ["Ontario","British Columbia","Alberta","Nova Scotia","New Brunswick","PEI","Newfoundland and Labrador","Nunavut","Northwest Territories"]
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
           {
-            "@type": "Question",
-            "name": "Will applying for a no credit check loan affect my credit score?",
-            "acceptedAnswer": { "@type": "Answer", "text": "No. Captain Cash does not perform a hard credit inquiry. Applying will not appear on your credit report and will not lower your credit score." }
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://captaincash.ca/"
           },
           {
-            "@type": "Question",
-            "name": "How does Captain Cash approve loans without a credit check?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Instead of a credit check, Captain Cash reviews your monthly income, employment stability, bank account age, and banking activity. If you earn at least $1,200 per month by direct deposit and have a stable job for 3+ months, you may qualify." }
-          },
-          {
-            "@type": "Question",
-            "name": "Can I get a no credit check loan in Canada same day?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. If your application is approved before 2 PM ET on a business day, your funds are sent by Interac e-Transfer the same day." }
+            "@type": "ListItem",
+            "position": 2,
+            "name": "No Credit Check Loans",
+            "item": "https://captaincash.ca/no-credit-check-loans/"
           }
         ]
       }
-    ]
-  }
+    },
+    {
+      "@type": "FinancialProduct",
+      "name": "No Credit Check Loan",
+      "provider": {
+        "@id": "https://captaincash.ca/#organization"
+      },
+      "description": "Online installment loans with no credit check. $500–$1,000, 90–150 days, APR 23%. Applying will not affect your credit score.",
+      "amount": {
+        "@type": "MonetaryAmount",
+        "minValue": 500,
+        "maxValue": 1000,
+        "currency": "CAD"
+      },
+      "annualPercentageRate": 23,
+      "areaServed": [
+        "Ontario",
+        "British Columbia",
+        "Alberta",
+        "Nova Scotia",
+        "New Brunswick",
+        "PEI",
+        "Newfoundland and Labrador",
+        "Nunavut",
+        "Northwest Territories"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Will applying for a no credit check loan affect my credit score?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Captain Cash does not perform a hard credit inquiry. Applying will not appear on your credit report and will not lower your credit score."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Captain Cash approve loans without a credit check?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Instead of a credit check, Captain Cash reviews your monthly income, employment stability, bank account age, and banking activity. If you earn at least $1,200 per month by direct deposit and have a stable job for 3+ months, you may qualify."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get a no credit check loan in Canada same day?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. If your application is approved before 2 PM ET on a business day, your funds are sent by Interac e-Transfer the same day."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://captaincash.ca/#localbusiness",
+      "name": "Captain Cash",
+      "description": "Online installment loans for Canadians. $500–$1,000, no credit check, same-day Interac e-Transfer. APR 23%. Licensed lender since 2015.",
+      "url": "https://captaincash.ca",
+      "telephone": "1-888-226-1026",
+      "email": "support@captaincash.ca",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1701 Hollis Street W. Suite 800",
+        "addressLocality": "Halifax",
+        "addressRegion": "NS",
+        "postalCode": "B3J 2T9",
+        "addressCountry": "CA"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Canada"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "6000",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "priceRange": "$500-$1000",
+      "currenciesAccepted": "CAD",
+      "paymentAccepted": "Interac e-Transfer",
+      "openingHours": "Mo-Fr 09:00-17:00",
+      "foundingDate": "2015",
+      "numberOfEmployees": 50
+    }
+  ]
+}
   </script>
   <link rel="stylesheet" href="/css/main.css?v=4">
   <style>
