@@ -15,8 +15,8 @@ Options -Indexes
 RewriteEngine On
 
 # ── 1. Force HTTPS ───────────────────────────────────────────────
-RewriteCond %{HTTPS} off
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#RewriteCond %{HTTPS} off
+#RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # ── 2. Force www (remove if you prefer non-www) ──────────────────
 # Uncomment the block below if you want www.captaincash.ca canonical
@@ -25,7 +25,7 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # ── 3. Pass /blog/ directly to WordPress ─────────────────────────
 # WordPress has its own .htaccess in /blog/ — don't intercept it
-RewriteRule ^blog(/.*)?$ - [L]
+#RewriteRule ^blog(/.*)?$ - [L]
 
 # ── 4. Serve directory index files ───────────────────────────────
 # /slug/ → /slug/index.html (core of the URL structure)
