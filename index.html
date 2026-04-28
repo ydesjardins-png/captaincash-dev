@@ -102,7 +102,7 @@
       "provider": {
         "@id": "https://captaincash.ca/#organization"
       },
-      "description": "Online installment loans from $500 to $1,000 for Canadians. No credit check. Repay over 90 to 150 days. Funded by Interac e-Transfer same business day if approved before 2 PM ET.",
+      "description": "Online installment loans from $500 to $1,000 for Canadians. No credit check. Repay over 90 to 150 days. Funded same business day if approved before 2:30 PM ET.",
       "amount": {
         "@type": "MonetaryAmount",
         "minValue": 500,
@@ -139,7 +139,7 @@
           "name": "How fast will I receive my money?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "If approved before 2 PM ET on a business day, funds are sent by Interac e-Transfer the same day directly to your Canadian bank account."
+            "text": "If approved before 2:30 PM ET on a business day, funds are deposited the same day directly to your Canadian bank account. Faster funding options may be available depending on the method selected."
           }
         },
         {
@@ -362,12 +362,12 @@
     <div class="trust-bar-divider" aria-hidden="true"></div>
     <div class="trust-bar-item">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-      <span>Same-day e-Transfer</span>
+      <span>Fast deposit</span>
     </div>
     <div class="trust-bar-divider" aria-hidden="true"></div>
     <div class="trust-bar-item">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-      <span>APR 23% — transparent</span>
+      <span>APR — 23%</span>
     </div>
   </div>
 </div>
@@ -402,7 +402,7 @@
           <p class="hero-sub">No credit check. No paperwork. Trusted by 12,000+ Canadians since 2015.</p>
       </div>
 
-      <p class="hero-body">Get $500–$1,000 by Interac e-Transfer the same business day. Repay over 90–150 days in instalments that fit your schedule. Apply in 5 minutes from your phone.</p>
+      <p class="hero-body">Get $500–$1,000 — funded the same business day. Repay over 90–150 days in installments that fit your schedule. Applying takes less than 5 minutes.</p>
 
       <div class="hero-mascot-mobile" aria-hidden="true">
         <img src="/images/mascot.webp" alt="" width="160" height="195" loading="eager">
@@ -419,15 +419,15 @@
 
       <ul class="hero-trust-pills" aria-label="Key benefits">
         <li><span aria-hidden="true">✓</span> No credit check</li>
-        <li><span aria-hidden="true">✓</span> Same-day e-Transfer</li>
+        <li><span aria-hidden="true">✓</span> Fast deposit</li>
         <li><span aria-hidden="true">✓</span> 100% paperless</li>
-        <li><span aria-hidden="true">★</span> Trustpilot 4.0 · 5,600+ reviews</li>
+        <li><span aria-hidden="true">★</span> Trustpilot 4.7 · 5,600+ reviews</li>
       </ul>
 
       <!-- inline social proof notification — part of the content flow -->
       <div class="hero-inline-proof" aria-hidden="true">
         <span class="hero-float-dot hero-float-dot--green" style="flex-shrink:0"></span>
-        <span><strong>e-Transfer sent</strong> — same business day</span>
+        <span><strong>Flexible funding options</strong> — same business day</span>
       </div>
     </div>
 
@@ -439,6 +439,20 @@
       <div class="hero-mascot-glow"></div>
     </div>
 
+    <!-- ⚠️ DEV NOTE — CALCULATOR MATH FIX REQUIRED
+         Reported by Cam (2026-04-16): bi-weekly $500 loan shows $107.14
+         but should be ~$125; monthly $187.50 should be higher.
+         The math is driven by paymentsDefault values in:
+           /data/loan-config.json
+         Specifically these keys:
+           repaymentFrequencies.weekly.paymentsDefault   (currently 13)
+           repaymentFrequencies.biweekly.paymentsDefault (currently 7)
+           repaymentFrequencies.monthly.paymentsDefault  (currently 4)
+         Calculator JS reading these values:
+           /js/main.js  (CC_CONFIG loader)
+           + inline <script> later in this file (search "Hero calculator")
+         FIX: update the JSON values only — do NOT touch the JS.
+    -->
     <!-- RIGHT — glass calculator -->
     <div class="calc-wrap">
       <div class="glass-card" role="region" aria-label="Loan repayment calculator">
@@ -524,7 +538,7 @@
     <div class="section-header">
       <span class="badge badge-red">How it works</span>
       <h2>Your cash in 3 simple steps</h2>
-      <p>From application to e-Transfer in as little as a few hours. No branch visit, no paperwork, no credit check.</p>
+      <p>From applying to having money in your account in as little as a few hours. No branch visit, no paperwork, no credit check.</p>
     </div>
     <div class="steps-grid">
       <!-- pixel-perfect connector — threads between circles, never through them -->
@@ -552,7 +566,7 @@
           <div class="step-num-solid" aria-hidden="true">02</div>
         </div>
         <h3>Get approved the same day</h3>
-        <p>Our team reviews your income and banking history — not your credit score. 92% of applicants receive a decision the same business day. If approved, you will review your repayment schedule before accepting. No obligation until you sign.</p>
+        <p>Our team reviews your income and banking history as part of our approval process — not your credit score. 92% of applicants receive a decision the same business day. If approved, you'll review your full repayment schedule before signing.</p>
         <ul class="step-detail-list">
           <li>Income-based review, not credit score</li>
           <li>Clear repayment terms upfront</li>
@@ -565,13 +579,13 @@
           <div class="step-num-solid" aria-hidden="true">03</div>
         </div>
         <h3>Money in your account</h3>
-        <p>Once you accept your loan agreement, funds are sent by Interac e-Transfer directly to your Canadian bank account. Approved before 2 PM ET on a business day? You can receive your money the same day. Then repay over 90–150 days in instalments that match your pay schedule.</p>
+        <p>Upon approval, funds are deposited directly to your Canadian bank account. If approved before 2:30 PM ET on a business day, you can receive your money the same day. Faster funding options may be available depending on the method selected. Repayments are spread over 90–150 days and align with your pay schedule.</p>
         <ul class="step-detail-list">
-          <li>Interac e-Transfer to any Canadian bank</li>
+          <li>Funds deposited to any Canadian bank</li>
           <li>Repay weekly, bi-weekly, or monthly</li>
           <li>APR 23% — full cost shown before you sign</li>
         </ul>
-        <div class="step-time-badge step-time-badge--light"><span class="step-time-dot" aria-hidden="true"></span> Same day if before 2 PM ET</div>
+        <div class="step-time-badge step-time-badge--light"><span class="step-time-dot" aria-hidden="true"></span> Same day if before 2:30 PM ET</div>
       </div>
     </div>
     <div class="text-center" style="margin-top:3rem">
@@ -602,7 +616,7 @@
     <div class="section-header section-header--dark">
       <span class="badge badge-red-dark">Why Captain Cash</span>
       <h2>Built for real Canadians</h2>
-      <p>Since 2015 we have helped 12,000+ Canadians get the short-term cash they needed — without the credit check, the branch visit, or the lump-sum payday trap.</p>
+      <p>Since 2015, over 12,000 Canadians have turned to us for fast, flexible short-term loans — no branch visits, no traditional credit checks, and no lump-sum repayment stress.</p>
     </div>
 
     <div class="bento-grid">
@@ -635,7 +649,7 @@
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
         </div>
         <h4>Same-day funding</h4>
-        <p>Approved before 2 PM ET on a business day? Your funds are sent by Interac e-Transfer the same day — straight to any Canadian bank account. No waiting, no cheques.</p>
+        <p>Funds are deposited directly into your Canadian bank account if approved before 2:30 PM ET. Alternative funding options may be available for faster access.</p>
       </div>
 
       <!-- Bank-grade security -->
@@ -667,7 +681,7 @@
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
         </div>
         <h4>Flexible repayment</h4>
-        <p>Unlike payday loans that demand a lump-sum on your next paycheque, Captain Cash lets you repay over 90–150 days. Choose weekly, bi-weekly, or monthly instalments to match your pay schedule. A $500 loan repays at approximately $750 total at 23% APR.</p>
+        <p>Unlike payday loans that demand a lump-sum on your next paycheque, Captain Cash lets you repay over 90–150 days. Choose weekly, bi-weekly, or monthly installments to match your pay schedule. A $500 loan repays at approximately $750 total at 23% APR.</p>
         <div class="bento-freq-demo" aria-hidden="true">
           <span>Weekly</span><span class="bento-freq-active">Bi-weekly</span><span>Monthly</span>
         </div>
@@ -719,7 +733,7 @@
     <div class="section-header">
       <span class="badge badge-red">Why it matters</span>
       <h2>Not a payday loan — a smarter alternative</h2>
-      <p>Payday loans can trap you in a cycle of debt. One lump-sum repayment on your next paycheque often leaves you short — and borrowing again. Captain Cash is built differently, on purpose.</p>
+      <p>Payday loans can be difficult to manage. A single lump-sum repayment on your next paycheque can be a stretch for many borrowers. Captain Cash is built differently, on purpose.</p>
     </div>
 
     <div class="compare-layout">
@@ -761,14 +775,14 @@
       <!-- US card -->
       <div class="compare-card-us animate">
         <div class="cmp-label cmp-label--us">
-          <span class="cmp-dot cmp-dot--us" aria-hidden="true"></span>Captain Cash instalment loan
+          <span class="cmp-dot cmp-dot--us" aria-hidden="true"></span>Captain Cash installment loan
         </div>
         <h3 class="cmp-title">Repay at your pace</h3>
         <p class="cmp-sub">Spread repayment over 90–150 days. Smaller payments, less pressure on your budget.</p>
         <ul class="cmp-rows">
           <li class="cmp-row">
             <span class="cmp-icon cmp-icon--good" aria-hidden="true">✓</span>
-            <div><strong>Repay over 90–150 days</strong><span>Weekly, bi-weekly, or monthly instalments</span></div>
+            <div><strong>Repay over 90–150 days</strong><span>Weekly, bi-weekly, or monthly installments</span></div>
           </li>
           <li class="cmp-row">
             <span class="cmp-icon cmp-icon--good" aria-hidden="true">✓</span>
@@ -824,7 +838,7 @@
           </li>
           <li class="elig-item">
             <span class="elig-icon elig-icon--good" aria-hidden="true">✓</span>
-            <div><strong>Earn at least $1,200/month</strong><span>Employment, EI, CPP or other regular income</span></div>
+            <div><strong>Earn at least $1,200/month</strong><span>Employment income for new clients. EI, CPP, or other regular income may be accepted for renewals.</span></div>
           </li>
           <li class="elig-item">
             <span class="elig-icon elig-icon--good" aria-hidden="true">✓</span>
@@ -1097,7 +1111,7 @@
             <span class="faq-icon" aria-hidden="true"></span>
           </button>
           <div class="faq-body" id="faq-2" role="region">
-            <p>If you are approved before 2 PM ET on a business day, funds are sent by Interac e-Transfer the same day — directly to your Canadian bank account. Applications received after 2 PM ET or on weekends are processed the next business day.</p>
+            <p>If you are approved before 2:30 PM ET on a business day, funds are deposited the same day directly to your Canadian bank account. Applications received after 2:30 PM ET, on weekends, or on holidays are processed the next business day. Faster funding options may be available depending on the method selected.</p>
           </div>
         </div>
 
@@ -1246,7 +1260,7 @@
           <li><a href="/loans-in-canada/">Loans in Canada</a></li>
           <li><a href="/payday-loans/">Payday loans</a></li>
           <li><a href="/bad-credit-loans-canada/">Bad credit loans</a></li>
-          <li><a href="/installment-loans-canada/">Instalment loans</a></li>
+          <li><a href="/installment-loans-canada/">Installment loans</a></li>
           <li><a href="/no-credit-check-loans-canada/">No credit check</a></li>
         </ul>
       </div>
@@ -1357,14 +1371,14 @@
   background: #000;
   box-shadow: 0 1px 0 rgba(255,255,255,0.08);
 }
-.site-header--dark .nav-links a { color: rgba(255,255,255,0.65); }
+.site-header--dark .nav-links a { color: rgba(255,255,255,0.8); }
 /* ── NAV DROPDOWNS ── */
 .nav-item { position:relative; }
 .nav-dropdown-trigger {
   display:flex; align-items:center; gap:5px;
   background:none; border:none; cursor:pointer;
   font-family:inherit; font-size:0.875rem; font-weight:500;
-  color:rgba(255,255,255,0.65); padding:6px 10px; border-radius:8px;
+  color:rgba(255,255,255,0.8); padding:6px 10px; border-radius:8px;
   transition:background 0.15s, color 0.15s;
 }
 .nav-dropdown-trigger:hover,
@@ -1516,7 +1530,7 @@
 .trust-bar-item {
   display: flex; align-items: center; gap: 6px;
   font-size: 0.75rem; font-weight: 500;
-  color: rgba(255,255,255,0.45);
+  color: rgba(255,255,255,0.75);
   padding: 4px 16px; white-space: nowrap;
 }
 .trust-bar-item svg { color: rgba(232,32,32,0.7); flex-shrink: 0; }
@@ -1823,7 +1837,7 @@ h1 em {
 }
 .calc-display-label {
   font-size: 0.6875rem; text-transform: uppercase;
-  letter-spacing: 0.07em; color: rgba(255,255,255,0.4); margin-bottom: 4px;
+  letter-spacing: 0.07em; color: rgba(255,255,255,0.7); margin-bottom: 4px;
 }
 .calc-display-amount {
   font-size: 2.2rem; font-weight: 800; color: #e82020; line-height: 1;
@@ -1861,12 +1875,12 @@ h1 em {
 
 .calc-marks {
   display: flex; justify-content: space-between;
-  font-size: 0.6875rem; color: rgba(255,255,255,0.28);
+  font-size: 0.6875rem; color: rgba(255,255,255,0.55);
   margin-bottom: 20px;
 }
 .calc-freq-label {
   font-size: 0.6875rem; text-transform: uppercase;
-  letter-spacing: 0.07em; color: rgba(255,255,255,0.4);
+  letter-spacing: 0.07em; color: rgba(255,255,255,0.7);
   margin-bottom: 8px;
 }
 .calc-freq-btns {
@@ -1876,7 +1890,7 @@ h1 em {
   flex: 1; padding: 8px 4px;
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 9999px; color: rgba(255,255,255,0.5);
+  border-radius: 9999px; color: rgba(255,255,255,0.7);
   font-size: 0.8125rem; font-weight: 600; cursor: pointer;
   transition: all 0.2s; font-family: inherit;
 }
@@ -1891,7 +1905,7 @@ h1 em {
 }
 .calc-result-row {
   display: flex; justify-content: space-between; align-items: center;
-  font-size: 0.875rem; color: rgba(255,255,255,0.5);
+  font-size: 0.875rem; color: rgba(255,255,255,0.75);
 }
 .calc-result-row strong { font-weight: 600; color: rgba(255,255,255,0.85); }
 .calc-result-divider { height: 1px; background: rgba(255,255,255,0.1); margin: 2px 0; }
@@ -1930,7 +1944,7 @@ h1 em {
 }
 .calc-fine {
   text-align: center; font-size: 0.6875rem;
-  color: rgba(255,255,255,0.28); margin-top: 10px; line-height: 1.6;
+  color: rgba(255,255,255,0.6); margin-top: 10px; line-height: 1.6;
 }
 
 /* ── HERO STAT STRIP ── */
