@@ -30,7 +30,7 @@
         "url": "https://captaincash.ca/",
         "logo": "https://captaincash.ca/images/mascot/sprites/logo-lockup-small.webp",
         "telephone": "1-888-226-1026",
-        "email": "support@captaincash.ca",
+        "email": "info@captaincash.ca",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "1701 Hollis Street W. Suite 800",
@@ -69,7 +69,7 @@
           {"@type":"Question","name":"Can I apply without a credit check?","acceptedAnswer":{"@type":"Answer","text":"Yes. Captain Cash does not perform a traditional credit check. We assess applications based on your income and banking history. Applying will not place a hard inquiry on your credit file."}},
           {"@type":"Question","name":"What income do I need to qualify?","acceptedAnswer":{"@type":"Answer","text":"You need a minimum monthly income of $1,200, received by direct deposit or e-Transfer from your employer or income source. You must also have at least 3 months of continuous employment or consistent income history."}},
           {"@type":"Question","name":"How much does a Captain Cash loan cost?","acceptedAnswer":{"@type":"Answer","text":"The APR is 23%. A $500 loan repays approximately $750 in total over 90 to 150 days. An NSF fee of $45 applies for failed payments. A deferral fee of $25 applies with 48 hours notice."}},
-          {"@type":"Question","name":"When will I receive my money?","acceptedAnswer":{"@type":"Answer","text":"If approved before 2 PM ET on a business day, funds are sent by Interac e-Transfer the same day. Applications approved after 2 PM ET are processed the next business day."}},
+          {"@type":"Question","name":"When will I receive my money?","acceptedAnswer":{"@type":"Answer","text":"Funds are deposited directly into your Canadian bank account if approved before 2:30 PM ET. Alternative funding options may be available for faster access. Applications submitted on weekends or on holidays are processed the next business day."}},
           {"@type":"Question","name":"How do I defer a payment?","acceptedAnswer":{"@type":"Answer","text":"Contact Captain Cash at least 48 hours before your scheduled payment date. A deferral fee of $25 applies. Note that the first and last payments cannot be deferred."}},
           {"@type":"Question","name":"Can I repay my loan early?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can repay your loan early at any time with no prepayment penalty. Your first scheduled payment must still be processed as originally scheduled."}},
           {"@type":"Question","name":"Will Captain Cash log into my bank account?","acceptedAnswer":{"@type":"Answer","text":"No. Captain Cash never sees your login credentials. The bank verification system provides read-only access to your bank statement. Your credentials are never stored or accessible by our team."}},
@@ -270,13 +270,13 @@
             <span class="faq-contact-value">1-888-226-1026</span>
           </div>
         </a>
-        <a href="mailto:support@captaincash.ca" class="faq-contact-card">
+        <a href="mailto:info@captaincash.ca" class="faq-contact-card">
           <span class="faq-contact-icon" aria-hidden="true">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           </span>
           <div>
             <span class="faq-contact-label">Email us</span>
-            <span class="faq-contact-value">support@captaincash.ca</span>
+            <span class="faq-contact-value">info@captaincash.ca</span>
           </div>
         </a>
         <div class="faq-contact-card faq-contact-card--hours">
@@ -392,7 +392,7 @@
               <span>Which income sources are not accepted?</span><span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-body" id="faq-e3" role="region">
-              <p>The following are not accepted for new applications: social assistance, student loans, child tax benefit, CPP, private pensions, disability income, and other insurance income. Employment Insurance (EI) may be accepted for <a href="/renew-your-loan/">renewals</a> after a successful first repayment.</p>
+              <p>The following are not accepted for new applications: social assistance, student loans, child tax benefit, CPP, private pensions, disability income, and other insurance income. Employment Insurance (EI), other insurance, CPP, or private pensions may be accepted for <a href="/renew-your-loan/">renewals</a>. Certain conditions apply.</p>
             </div>
           </div>
         </div>
@@ -448,6 +448,19 @@
               <span>What fees apply to my loan?</span><span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-body" id="faq-c2" role="region">
+              <!-- ⚠️ DEV NOTE — FUNDING-METHOD FEES TO BE ADDED
+                   Reported by Cam (2026-04-20, sheet row 34): the FAQ
+                   answer below lists NSF, deferral, application, and early
+                   repayment fees but omits the cost of paid funding methods
+                   (Instant Deposit, EFT, Fast Service).
+                   Same root issue as sheet rows 27 (Claim Your Cash form
+                   fee disclosure) and 67 (Renew page).
+                   ACTION REQUIRED: once Yan / operations confirm the dollar
+                   amounts for each paid funding option, append them to the
+                   answer paragraph below in the same format, e.g.:
+                     "Instant Deposit fee: $X.XX. EFT fee: $X.XX.
+                      Fast Service fee: $X.XX."
+              -->
               <p>NSF fee: $45 if a payment fails. Deferral fee: $25 with 48 hours notice. Application fee: free. Early repayment penalty: none. All fees are disclosed in your loan agreement before you sign.</p>
             </div>
           </div>
@@ -474,7 +487,7 @@
               <span>How do I make an early payment?</span><span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-body" id="faq-c5" role="region">
-              <p>Call us at 1-888-226-1026 or email <a href="mailto:support@captaincash.ca">support@captaincash.ca</a> at least 48 hours before your next payment. You can also visit our <a href="/online-payment/">online payment page</a> for instructions.</p>
+              <p>Call us at 1-888-226-1026 or email <a href="mailto:info@captaincash.ca">info@captaincash.ca</a> at least 48 hours before your next payment. You can also visit our <a href="/online-payment/">online payment page</a> for instructions.</p>
             </div>
           </div>
           <div class="faq-item animate" role="listitem">
@@ -482,7 +495,7 @@
               <span>Is there a prepayment penalty?</span><span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-body" id="faq-c6" role="region">
-              <p>No. You can repay your loan in full at any time with no prepayment penalty. Because interest accrues daily on the outstanding balance, paying early reduces the total amount you owe. Your first scheduled payment must still be processed as originally planned.</p>
+              <p>You may repay your loan in full at any time with no prepayment penalty. Because interest accrues daily on the outstanding balance, paying early will reduce the total amount owing. Your first scheduled payment must still be processed as originally planned, and we ask that you contact us at least 48 hours before your next payment is due.</p>
             </div>
           </div>
         </div>
@@ -504,7 +517,7 @@
               <span>When will I receive my funds after approval?</span><span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-body" id="faq-f1" role="region">
-              <p>If approved and signed before 2 PM ET on a business day, funds are sent by Interac e-Transfer the same day. Applications completed after 2 PM ET, on weekends, or on holidays are processed the next business day.</p>
+              <p>Funds are deposited directly into your Canadian bank account if approved before 2:30 PM ET. Alternative funding options may be available for faster access. Applications submitted on weekends or on holidays are processed the next business day.</p>
             </div>
           </div>
           <div class="faq-item animate" role="listitem">
@@ -512,7 +525,7 @@
               <span>How are funds sent to me?</span><span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-body" id="faq-f2" role="region">
-              <p>Funds are sent by Interac e-Transfer to the Canadian bank account you provided. You'll receive an email notification with deposit instructions. There are no transfer fees from Captain Cash.</p>
+              <p>Funds are deposited into the Canadian bank account you provide. Interac e-Transfer deposits may be available for returning clients. You will receive an email with deposit instructions.</p>
             </div>
           </div>
           <div class="faq-item animate" role="listitem">
@@ -546,7 +559,7 @@
               <span>What if my Interac e-Transfer expires before I deposit it?</span><span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-body" id="faq-f6" role="region">
-              <p>Interac e-Transfers typically expire after 30 days. If your transfer expires before you deposit it, contact our team at 1-888-226-1026 and we will resend the funds. Make sure to check your spam or junk folder if you did not receive the e-Transfer notification email.</p>
+              <p>Interac e-Transfers expire after 7 days. If a transfer expires before being deposited, please contact our team at 1-888-226-1026 and we will review your file. If you have not received your notification email, please check your spam or junk folder.</p>
             </div>
           </div>
         </div>
@@ -602,7 +615,7 @@
               <span>How do I contact Captain Cash about my loan?</span><span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-body" id="faq-m5" role="region">
-              <p>You can reach our Halifax-based team by phone at 1-888-226-1026 or by email at <a href="mailto:support@captaincash.ca">support@captaincash.ca</a>. We are available Monday–Friday, 8:00 AM–5:00 PM ET. For payment changes, contact us at least 48 hours before your scheduled date.</p>
+              <p>You can reach our team by phone at 1-888-226-1026 or by email at <a href="mailto:info@captaincash.ca">info@captaincash.ca</a>. We are available Monday–Friday, 8:00 AM–5:00 PM ET. For payment changes, contact us at least 48 hours before your scheduled date.</p>
             </div>
           </div>
           <div class="faq-item animate" role="listitem">
@@ -610,7 +623,7 @@
               <span>What happens at the end of my loan?</span><span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-body" id="faq-m6" role="region">
-              <p>Once your final payment is processed, your loan is considered fully repaid. You will receive a confirmation from our team. At that point, you may be eligible to apply for a renewal. We recommend reviewing your finances before renewing to ensure it remains the right choice for your situation.</p>
+              <p>Once your final payment is processed, your loan is considered fully repaid. At that point, you may be eligible to apply for a renewal. We recommend reviewing your finances before renewing to ensure it remains the right choice for your situation.</p>
             </div>
           </div>
         </div>
@@ -698,7 +711,7 @@
     <div class="faq-contact-text">
       <span class="badge badge-red-dark">Still need help?</span>
       <h2>Our team is here for you</h2>
-      <p>Our Halifax-based customer service team handles every inquiry in-house. We are not a call centre — you will speak with someone who knows your file.</p>
+      <p>Need help or have a question? Give us a call — we're here to help every step of the way.</p>
       <div class="faq-cnt-cards">
         <a href="tel:18882261026" class="faq-cnt-card">
           <div class="faq-cnt-card-icon" aria-hidden="true">
@@ -709,12 +722,12 @@
             <span>Mon–Fri · 8 AM–5 PM ET</span>
           </div>
         </a>
-        <a href="mailto:support@captaincash.ca" class="faq-cnt-card">
+        <a href="mailto:info@captaincash.ca" class="faq-cnt-card">
           <div class="faq-cnt-card-icon" aria-hidden="true">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           </div>
           <div>
-            <strong>support@captaincash.ca</strong>
+            <strong>info@captaincash.ca</strong>
             <span>We respond within one business day</span>
           </div>
         </a>
@@ -736,7 +749,7 @@
           <div class="faq-cta-mascot-glow"></div>
         </div>
         <h3>Ready to apply?</h3>
-        <p>Takes 5 minutes. No credit check. Same-day e-Transfer if approved before 2 PM ET.</p>
+        <p>Takes 5 minutes. No credit check. Get approved today.</p>
         <div class="faq-cta-trust">
           <span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> No credit check</span>
           <span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Free to apply</span>

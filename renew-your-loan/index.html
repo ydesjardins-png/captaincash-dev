@@ -1849,7 +1849,7 @@ h1 em {
       <!-- Returning customer callout -->
       <div style="background:#eff6ff;border:1px solid rgba(26,110,240,0.2);border-left:4px solid #1a6ef0;border-radius:0 12px 12px 0;padding:1rem 1.25rem;margin:1.25rem 0;display:flex;gap:12px;align-items:flex-start">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1a6ef0" stroke-width="2" style="flex-shrink:0;margin-top:1px" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        <p style="margin:0;font-size:0.875rem;color:#1e3a62;line-height:1.65">Returning customers in good standing may use Employment Insurance (EI) or government benefits as qualifying income. Your previous repayment history is on file.</p>
+        <p style="margin:0;font-size:0.875rem;color:#1e3a62;line-height:1.65">Returning customers in good standing may use other regular income sources (such as EI, CPP, or other insurance benefits).</p>
       </div>
 
       <div class="funnel-section-divider"></div>
@@ -2141,6 +2141,20 @@ h1 em {
 
       <!-- Deposit method -->
       <div class="funnel-fieldset">
+        <!-- ⚠️ DEV NOTE — DEPOSIT-METHOD FEE DISCLOSURE REQUIRED
+             Reported by Cam (2026-04-20, sheet row 62): "Cost for fees
+             (Instant, EFT) not disclosed."
+             Same root issue as Claim Your Cash (sheet row 27) and FAQ
+             (sheet row 34). The 3 radio options below have no fee labels.
+             ACTION REQUIRED: once fee amounts are confirmed by Yan/ops,
+             append fee labels to the radio options, e.g.:
+               "Direct Deposit (free)"
+               "Instant Deposit ($X.XX fee)"
+               "Interac e-Transfer ($X.XX fee — returning clients only)"
+             plus a small expandable info link explaining when each fee
+             applies. Note Interac e-Transfer is renewals-only per Cam's
+             eligibility notes (sheet rows 13, 28, 33).
+        -->
         <span class="funnel-legend">Loan deposit method</span>
         <div class="funnel-radio-row">
           <label class="funnel-radio-label"><input type="radio" id="deposit-direct" name="deposit" value="deposit" checked> Direct Deposit</label>
@@ -2266,9 +2280,9 @@ h1 em {
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 11.61 19.79 19.79 0 01.21 3.06 2 2 0 012.22 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.4a16 16 0 006.53 6.53l.86-.86a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
         1-888-226-1026
       </a>
-      <a href="mailto:support@captaincash.ca" class="fsb-help-email">
+      <a href="mailto:info@captaincash.ca" class="fsb-help-email">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        support@captaincash.ca
+        info@captaincash.ca
       </a>
     </div>
 

@@ -20,7 +20,7 @@
         "url": "https://captaincash.ca/",
         "logo": "https://captaincash.ca/images/mascot/sprites/logo-lockup-small.webp",
         "telephone": "1-888-226-1026",
-        "email": "support@captaincash.ca",
+        "email": "info@captaincash.ca",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "1701 Hollis Street W. Suite 800",
@@ -3223,6 +3223,27 @@ h1 em {
      REVIEW GRID — dark
 ═══════════════════════════════════════ -->
 <section class="section section--dark tmn-reviews">
+  <!-- ⚠️ DEV/CONTENT NOTE — TESTIMONIAL AUTHENTICITY
+       Reported by Cam (2026-04-21, sheet row 90): "It is obvious that
+       the reviews are AI."
+       Cam's recommended fix: integrate real reviews from Trustpilot, OR
+       rewrite existing reviews to sound more human.
+       RECOMMENDED ACTION: pull genuine reviews from the Captain Cash
+       Trustpilot profile (https://ca.trustpilot.com/review/captaincash.ca)
+       and replace the 12 reviews below. This is the right path because:
+         1. Trustpilot reviews are verified and traceable to real customers
+         2. Adding fabricated typos/imperfections to existing AI-sounding
+            reviews to make them "look human" is also misleading
+         3. Real reviews carry stronger conversion + SEO weight
+            (schema.org/Review markup is honest)
+       Before pulling Trustpilot reviews, confirm Trustpilot's Terms of
+       Service permit republishing on Captain Cash's own site (typically
+       allowed with attribution + a TrustBox widget).
+       The 12 reviews below are wrapped in schema.org/Review markup —
+       update both the visible <article> blocks AND the JSON-LD
+       Review[] array near the top of this file (lines ~70–155) when
+       replacing content.
+  -->
   <div class="tmn-reviews-bg" aria-hidden="true">
     <div class="tmn-r-orb-r"></div>
     <div class="tmn-r-orb-b"></div>

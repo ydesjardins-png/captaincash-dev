@@ -1722,8 +1722,18 @@ h1 em {
         </div>
         <div class="conf-tl-body">
           <div class="conf-tl-title">Our team reviews your application</div>
-          <div class="conf-tl-desc">A member of our Halifax team will review your application and banking information. This is typically done within the hour during business hours.</div>
-          <div class="conf-tl-time">Within 1 hour (Mon–Fri, 8 AM–5 PM ET)</div>
+          <div class="conf-tl-desc">A member of our team will review your application and banking information during business hours.</div>
+          <!-- ⚠️ DEV NOTE — TIMING DEPENDS ON DEPOSIT METHOD
+               Sheet row 68 (Cam, 2026-04-20): "Will have to be dependant
+               on the deposit method they choose. If we can't have that
+               set up, maybe we can write 'Generally within the same
+               business day'."
+               Currently using the static fallback. If/when backend can
+               personalize this based on the user's selected deposit
+               method (passed through the funnel), replace this line
+               with conditional copy.
+          -->
+          <div class="conf-tl-time">Generally within the same business day (Mon–Fri, 8 AM–5 PM ET)</div>
         </div>
       </div>
       <div class="conf-tl-item">
@@ -1733,7 +1743,7 @@ h1 em {
         <div class="conf-tl-body">
           <div class="conf-tl-title">We contact you with a decision</div>
           <div class="conf-tl-desc">You will receive a call or email with your decision. If approved, we will confirm your exact repayment schedule.</div>
-          <div class="conf-tl-time">Same business day if submitted before 2 PM ET</div>
+          <div class="conf-tl-time">Generally within the same business day</div>
         </div>
       </div>
       <div class="conf-tl-item">
@@ -1741,9 +1751,9 @@ h1 em {
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
         </div>
         <div class="conf-tl-body">
-          <div class="conf-tl-title">Funds sent by Interac e-Transfer</div>
-          <div class="conf-tl-desc">If approved before 2 PM ET, your funds arrive by Interac e-Transfer the same business day.</div>
-          <div class="conf-tl-time">Same business day if approved before 2 PM ET</div>
+          <div class="conf-tl-title">Funds sent via your chosen method</div>
+          <div class="conf-tl-desc">If approved before 2:30 PM ET using our standard deposit method, your funds will be deposited the same business day. Faster deposit options may be available depending on the method selected.</div>
+          <div class="conf-tl-time">Generally within the same business day</div>
         </div>
       </div>
     </div>
@@ -1757,7 +1767,7 @@ h1 em {
       </div>
       <div class="conf-contact-row">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        <a href="mailto:support@captaincash.ca">support@captaincash.ca</a>
+        <a href="mailto:info@captaincash.ca">info@captaincash.ca</a>
       </div>
       <div class="conf-contact-row" style="margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid #e2e6ed">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>

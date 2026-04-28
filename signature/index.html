@@ -1786,13 +1786,27 @@ h1 em {
       <h3>4. Cancellation rights</h3>
       <p>Where applicable provincial legislation provides a cooling-off period, you have the right to cancel this agreement within 2 business days of signing without penalty, provided you return the full loan amount.</p>
 
+      <!-- ⚠️ DEV NOTE — DEFAULT CLAUSE LEGAL REVIEW REQUIRED
+           Reported by Cam (2026-04-20, sheet row 32, mistagged under
+           Claim Your Cash but lives on /signature/).
+           Issue: current language ("Failure to make a scheduled payment
+           constitutes default") implies that ONE NSF triggers default
+           and makes the full balance immediately due. Cam's recommendation:
+           default should require "multiple unresolved missed payments."
+           ACTION REQUIRED: legal/operations to confirm Captain Cash's
+           actual default policy (e.g. "after 2 consecutive missed
+           payments", "after 30 days past due", etc.) and rewrite the
+           clause below accordingly. This is a legally binding loan
+           agreement clause — copy must match operational reality.
+           DO NOT change without operations + legal sign-off.
+      -->
       <h3>5. Default</h3>
       <p>Failure to make a scheduled payment constitutes default. Upon default, the full outstanding balance becomes immediately due. Captain Cash uses responsible collection practices and will contact you directly before escalating.</p>
 
       <h3>6. Governing law</h3>
       <p>This agreement is governed by the laws of the Province of Nova Scotia and applicable federal laws of Canada. By signing below, you confirm you have read, understood, and agree to all terms of this agreement.</p>
 
-      <p style="font-size:0.8125rem;color:#9ca3af;margin-top:1rem">Captain Cash · 1701 Hollis Street W. Suite 800, Halifax, NS B3J 2T9 · 1-888-226-1026 · support@captaincash.ca</p>
+      <p style="font-size:0.8125rem;color:#9ca3af;margin-top:1rem">Captain Cash · 1701 Hollis Street W. Suite 800, Halifax, NS B3J 2T9 · 1-888-226-1026 · info@captaincash.ca</p>
     </div>
 
     <!-- Signature -->
@@ -1855,7 +1869,7 @@ h1 em {
         </li>
         <li class="fsb-list-item">
           <div class="fsb-list-icon fsb-list-icon--green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <span>Same-day e-Transfer if before 2 PM ET</span>
+          <span>Fast deposit</span>
         </li>
         <li class="fsb-list-item">
           <div class="fsb-list-icon fsb-list-icon--green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
@@ -1924,9 +1938,9 @@ h1 em {
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 11.61 19.79 19.79 0 01.21 3.06 2 2 0 012.22 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.4a16 16 0 006.53 6.53l.86-.86a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
         1-888-226-1026
       </a>
-      <a href="mailto:support@captaincash.ca" class="fsb-help-email">
+      <a href="mailto:info@captaincash.ca" class="fsb-help-email">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        support@captaincash.ca
+        info@captaincash.ca
       </a>
     </div>
 
