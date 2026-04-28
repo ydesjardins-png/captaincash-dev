@@ -285,78 +285,12 @@
         </div>
       </div>
     </div>
-    <div class="cnt-chat-ui" aria-label="Chat with our team">
-      <!-- Chat window header -->
-      <div class="cnt-chat-header">
-        <div class="cnt-chat-avatar" aria-hidden="true">
-          <img src="/images/mascot/mascot-canada-shield.webp" alt="" width="32" height="39" loading="eager">
-        </div>
-        <div class="cnt-chat-agent">
-          <strong>Captain Cash Support</strong>
-          <span><span class="cnt-chat-dot" aria-hidden="true"></span>Online now</span>
-        </div>
-        <div class="cnt-chat-close" aria-hidden="true">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-        </div>
-      </div>
-
-      <!-- Chat messages -->
-      <div class="cnt-chat-body">
-        <!-- Agent message 1 -->
-        <div class="cnt-chat-msg cnt-chat-msg--agent cnt-chat-anim" style="animation-delay:0.2s">
-          <div class="cnt-chat-bubble cnt-chat-bubble--agent">
-            Hi there 👋 How can we help you today?
-          </div>
-          <span class="cnt-chat-time">Just now</span>
-        </div>
-
-        <!-- Agent message 2 -->
-        <div class="cnt-chat-msg cnt-chat-msg--agent cnt-chat-anim" style="animation-delay:0.5s">
-          <div class="cnt-chat-bubble cnt-chat-bubble--agent">
-            Our Halifax team is available <strong>Mon–Fri, 8 AM–5 PM ET</strong>. Pick the fastest option for you:
-          </div>
-        </div>
-
-        <!-- Quick reply buttons -->
-        <div class="cnt-chat-replies cnt-chat-anim" style="animation-delay:0.9s" role="group" aria-label="Contact options">
-          <a href="tel:18882261026" class="cnt-reply-btn cnt-reply-btn--red">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-            Call 1-888-226-1026
-          </a>
-          <a href="mailto:info@captaincash.ca" class="cnt-reply-btn">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            Send an email
-          </a>
-          <a href="/support/" class="cnt-reply-btn">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-            Browse FAQ
-          </a>
-        </div>
-
-        <!-- User message (faint, typing feel) -->
-        <div class="cnt-chat-msg cnt-chat-msg--user cnt-chat-anim" style="animation-delay:1.4s">
-          <div class="cnt-chat-bubble cnt-chat-bubble--user">
-            I have a question about my loan…
-          </div>
-          <span class="cnt-chat-time">Just now</span>
-        </div>
-
-        <!-- Typing indicator -->
-        <div class="cnt-chat-msg cnt-chat-msg--agent cnt-chat-anim" style="animation-delay:1.9s">
-          <div class="cnt-chat-bubble cnt-chat-bubble--agent cnt-typing">
-            <span></span><span></span><span></span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Input bar -->
-      <div class="cnt-chat-input" aria-hidden="true">
-        <div class="cnt-chat-input-field">Type your message…</div>
-        <button class="cnt-chat-send" tabindex="-1" aria-label="Send">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-        </button>
-      </div>
-    </div>
+    <!-- Fake live-chat UI block removed per Darryl's review (sheet row 95):
+         live chat is not currently offered, so showing a chat window with
+         "Online now" status and a typing indicator was misleading. Hero is
+         now single-column with the contact cards as the primary CTA.
+         Orphaned .cnt-chat-* CSS rules remain in <style> for now and can
+         be cleaned up in a future pass. -->
   </div>
 </section>
 
@@ -704,7 +638,8 @@
 .cnt-orb-b { position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(26,110,240,0.12) 0%,transparent 65%);top:-160px;left:-100px;filter:blur(18px); }
 .cnt-beam { position:absolute;top:0;right:0;width:65%;height:100%;background:conic-gradient(from 200deg at 100% 0%,transparent 0deg,rgba(232,32,32,0.14) 22deg,transparent 52deg); }
 .cnt-edge { position:absolute;top:0;right:0;width:1px;height:100%;background:linear-gradient(180deg,rgba(232,32,32,0.7) 0%,rgba(232,32,32,0.15) 50%,transparent 100%); }
-.cnt-hero-inner { position:relative;z-index:2;display:grid;grid-template-columns:1fr 360px;gap:3.5rem;align-items:center;padding:4rem 0 5rem; }
+.cnt-hero-inner { position:relative;z-index:2;display:grid;grid-template-columns:1fr;gap:0;align-items:center;padding:4rem 0 5rem; }
+.cnt-hero-content { max-width:760px; }
 .cnt-hero-content .badge { display:inline-block;margin-bottom:0.875rem; }
 .cnt-hero-content h1 { font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:800;color:#fff;letter-spacing:-0.03em;line-height:1.2;margin-bottom:1rem; }
 .cnt-hero-sub { font-size:1rem;color:rgba(255,255,255,0.85);line-height:1.7;max-width:520px;margin-bottom:2rem; }
